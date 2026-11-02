@@ -1,0 +1,4114 @@
+{
+  "restaurants": {
+    "1002028": {
+      "package_id": "vlotus",
+      "name": "Ussina 01 Thao Dien (2)_TEST"
+    },
+    "1003217": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 10 VincomImperialHP(3)_CLO"
+    },
+    "1004750": {
+      "package_id": "vlotus",
+      "name": "Ussina 02 Vincom Landmark 81 (4)"
+    },
+    "1007316": {
+      "package_id": "vlotus",
+      "name": "Ushi Mania 01 Aeon Mall Tan Phu (5)"
+    },
+    "1009522": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 11 Aeon Ha Dong (006)"
+    },
+    "1009539": {
+      "package_id": "vlotus",
+      "name": "Test"
+    },
+    "1010570": {
+      "package_id": "vlotus",
+      "name": "Coco Ichibanya 02 Ly Tu Trong (7)"
+    },
+    "1011505": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 12 VC Pham Ngoc Thach (8)"
+    },
+    "1011659": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 05 Tan Dinh (9)"
+    },
+    "1011744": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 01 Aeon Mall Tan Phu (010)"
+    },
+    "1011745": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 04 Vivo City (11)"
+    },
+    "1011746": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 07 - 3 Thang 2 (12)_Close"
+    },
+    "1011747": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 08 Thao Dien (13)"
+    },
+    "1011748": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 06 Aeon Binh Tan (14)"
+    },
+    "1011749": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 02 Ly Tu Trong (15)"
+    },
+    "1011750": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 03 Aeon Binh Duong (16)"
+    },
+    "1011751": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 09 Lieu Giai (17)"
+    },
+    "1011967": {
+      "package_id": "vlotus",
+      "name": "Yoshinoya 01 Ly Tu Trong (18)"
+    },
+    "1015222": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 13 Aeon Mall HaiPhong (19)"
+    },
+    "1015293": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 14 Van Hanh Mall (20)"
+    },
+    "1016632": {
+      "package_id": "vlotus",
+      "name": "Conservo Bakery Ly Tu Trong (21)"
+    },
+    "1022308": {
+      "package_id": "vlotus",
+      "name": "Ushi Mania 02 Ly Tu Trong (22)"
+    },
+    "1022900": {
+      "package_id": "vlotus",
+      "name": "Coco Ichibanya 03 Le Thanh Ton (23)"
+    },
+    "1023337": {
+      "package_id": "vlotus",
+      "name": "Ushi Mania 03 Lieu Giai (24)"
+    },
+    "1026308": {
+      "package_id": "vlotus",
+      "name": "Tenku 01 Vincom Landmark 81 (25)"
+    },
+    "1028612": {
+      "package_id": "vlotus",
+      "name": "Ushi Mania 04 Royal City (26)"
+    },
+    "1032017": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 15 Lotte Mall Tay Ho (28)"
+    },
+    "1032151": {
+      "package_id": "vlotus",
+      "name": "Coco Ichibanya 04 Lotte Mall Tay Ho (27)"
+    },
+    "1032759": {
+      "package_id": "vlotus",
+      "name": "Ushi Mania 05 Lotte Mall Tay Ho (29)"
+    },
+    "1038302": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 16 AeonMall Long Bien (30)"
+    },
+    "1041210": {
+      "package_id": "vlotus",
+      "name": "Yoshinoya 02 CMT8 (31)"
+    },
+    "1041542": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 17 Grand Park Q9 (32)"
+    },
+    "1041771": {
+      "package_id": "vlotus",
+      "name": "Coco Ichibanya 05 Grand Park Q9(33)_CLOS"
+    },
+    "1042483": {
+      "package_id": "vlotus",
+      "name": "Coco Ichibanya 06 GigaMall(35)_CLOSE"
+    },
+    "1042484": {
+      "package_id": "vlotus",
+      "name": "Yoshinoya 03 Gigamall Thu Duc (34)_CLOSE"
+    },
+    "1044823": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 18 Aeon Mall Hue (36)"
+    },
+    "1045088": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 19 Gigamall Thu Duc (37)"
+    },
+    "1048470": {
+      "package_id": "vlotus",
+      "name": "Ushi Mania 06 Aeon Mall Binh Tan (38)"
+    },
+    "1050567": {
+      "package_id": "vlotus",
+      "name": "Ushi Mania 07 Aeon Mall Long Bien (39)"
+    },
+    "1052956": {
+      "package_id": "vlotus",
+      "name": "Conservo Bakery - CMT8 (40)"
+    },
+    "1053432": {
+      "package_id": "vlotus",
+      "name": "Marukame Udon 20 CMT8 (41)"
+    },
+    "1066271": {
+      "package_id": "vlotus",
+      "name": "Yoshinoya 04 Aeon Tan Phu (42)"
+    },
+    "1072659": {
+      "package_id": "vlotus",
+      "name": "Marugame Udon 21 Aeon Thanh Khe (44)"
+    },
+    "1072664": {
+      "package_id": "vlotus",
+      "name": "Ushi Mania 08 Aeon Thanh Khe (43)"
+    },
+    "1074815": {
+      "package_id": "vlotus",
+      "name": "Coco Ichibanya 07 Aeon Mall Ha Dong"
+    },
+    "1080084": {
+      "package_id": "vlotus",
+      "name": "Ushi Mania 09 Aeon Thanh Hoa (48)"
+    },
+    "1080104": {
+      "package_id": "vlotus",
+      "name": "Marugame Udon 22 Aeon Thanh Hoa (46)"
+    },
+    "1006870": {
+      "package_id": "com_ga_dong_nguyen",
+      "name": "DONDON - ThisoMall"
+    },
+    "1010763": {
+      "package_id": "com_ga_dong_nguyen",
+      "name": "Đông Nguyên Chợ Lớn (007)"
+    },
+    "1011675": {
+      "package_id": "com_ga_dong_nguyen",
+      "name": "DONDON - Aeon Mall Tan Phu (008)"
+    },
+    "1001415": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai 7 - Royal City HN -HN6048(0047)"
+    },
+    "1001504": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai 13 -Lotte Dao Tan -HN6055(0032)"
+    },
+    "1002151": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai Express Aeon Binh Duong-6105(0070)"
+    },
+    "1005808": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai 9 - Time City -HN6049(0030)"
+    },
+    "1006706": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai 17 - Vincom NCT -HN6052(0034)"
+    },
+    "1006816": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai 15 -Aeon Long Bien -HN6051(0033)"
+    },
+    "1006824": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai 5 - Vincom Ba Trieu -HN6047(0029)"
+    },
+    "1007265": {
+      "package_id": "gsf_masterdata",
+      "name": "King Alacarte Vincom B -6092(0049)"
+    },
+    "1009136": {
+      "package_id": "gsf_masterdata",
+      "name": "King Mix Vivo City -6123(0061)"
+    },
+    "1009137": {
+      "package_id": "gsf_masterdata",
+      "name": "King Mix Cresent Mall Q7 -6078(0075)"
+    },
+    "1009673": {
+      "package_id": "gsf_masterdata",
+      "name": "King Deli 1-Vincom Ba Trieu -6021(0027)"
+    },
+    "1010547": {
+      "package_id": "gsf_masterdata",
+      "name": "King Deli 3 - Royal City HN -6023(0046)"
+    },
+    "1010565": {
+      "package_id": "gsf_masterdata",
+      "name": "King Deli 4 - Time City -6024(0028)"
+    },
+    "1010733": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Aeon Binh Tan -6076(0005)"
+    },
+    "1011127": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Aeon Tan Phu -6121(0060)"
+    },
+    "1013666": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Vincom Quang Trung -6072(0063)"
+    },
+    "1013667": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Vincom Phan Van Tri -6073(0058)"
+    },
+    "1013920": {
+      "package_id": "gsf_masterdata",
+      "name": "King Mix Phan Xich Long -6077(0076)"
+    },
+    "1014918": {
+      "package_id": "gsf_masterdata",
+      "name": "King Mix Le Van Sy -6075(0002)"
+    },
+    "1015800": {
+      "package_id": "gsf_masterdata",
+      "name": "King Buffet CMT8 (0092)"
+    },
+    "1015850": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF 2-Times City-6012(0035)"
+    },
+    "1015994": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Sense Ca Mau -6110(0098)"
+    },
+    "1016229": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF 5 - AEON Long Bien-6015(0037)"
+    },
+    "1016234": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF 1-Royal City HN-6011(0017)"
+    },
+    "1018298": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Vincom An Giang-6109(0066)"
+    },
+    "1019468": {
+      "package_id": "gsf_masterdata",
+      "name": "Khao Lao 3-BigC Thang Long-HN6029(0113)"
+    },
+    "1020172": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Vincom Kien Giang -6111(0096)"
+    },
+    "1020177": {
+      "package_id": "gsf_masterdata",
+      "name": "Khao Lao Aeon Tan Phu -6088(0003)"
+    },
+    "1024074": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot Story VC Kien Giang -6112(0097)"
+    },
+    "1024316": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot 3 - AEON Long Bien-HN6006(0040)"
+    },
+    "1027094": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot Story Van Hanh Mall -6130(0144)"
+    },
+    "1027095": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot Story Aeon Tan Phu -6117(0054)"
+    },
+    "1027348": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot Story Aeon Binh Tan -6064(0007)"
+    },
+    "1027349": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Vincom Vinh Long -6113(0095)"
+    },
+    "1027350": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Vincom Bien Hoa -6107(0067)"
+    },
+    "1031362": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot Story Phan Xich Long (0108)"
+    },
+    "1032150": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Aeon Binh Duong -6104(0065)"
+    },
+    "1034032": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot Story Aeon Binh Duong -6154(0141)"
+    },
+    "1035735": {
+      "package_id": "gsf_masterdata",
+      "name": "King Mix Sense Can Tho -6134(0123)"
+    },
+    "1036810": {
+      "package_id": "gsf_masterdata",
+      "name": "Sushi Kei 2-AEON Long Bien-HN6041(0044)"
+    },
+    "1036888": {
+      "package_id": "gsf_masterdata",
+      "name": "Tasaki BBQ Van Hanh Mall -6151(0147)"
+    },
+    "1036897": {
+      "package_id": "gsf_masterdata",
+      "name": "Tasaki BBQ Aeon Binh Tan - 6150(0135)"
+    },
+    "1042987": {
+      "package_id": "gsf_masterdata",
+      "name": "Sushi Kei Van Hanh Mall -6148(0146)"
+    },
+    "1044707": {
+      "package_id": "gsf_masterdata",
+      "name": "Sushi Kei Aeon Binh Tan -6146(0136)"
+    },
+    "1046546": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot 8 - Vincom Thanh Hoa-HN6160(0159)"
+    },
+    "1048568": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Tan Son Nhi -6139(0140)"
+    },
+    "1048973": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Vincom Thu Duc -6071(0064)"
+    },
+    "1049137": {
+      "package_id": "gsf_masterdata",
+      "name": "Khao Lao Cresent Mall -6142(0130)"
+    },
+    "1049138": {
+      "package_id": "gsf_masterdata",
+      "name": "Khao Lao Van Hanh Mall -6143(0145)"
+    },
+    "1050132": {
+      "package_id": "gsf_masterdata",
+      "name": "Meiwei Van Hanh Mall -6155(0158)"
+    },
+    "1061654": {
+      "package_id": "gsf_masterdata",
+      "name": "Khao Lao Landmark Tower -6171(0180)"
+    },
+    "1061655": {
+      "package_id": "gsf_masterdata",
+      "name": "Shiki Kei 01 Landmark Tower -6172(0181)"
+    },
+    "1061656": {
+      "package_id": "gsf_masterdata",
+      "name": "Capriciosa Landmark Tower -6170(0182)"
+    },
+    "1064900": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot Story Nha Trang-6188(0189)"
+    },
+    "1064901": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Nha Trang -6187(0190)"
+    },
+    "1069349": {
+      "package_id": "gsf_masterdata",
+      "name": "FRC - King BBQ  - TP Vinh(0012)"
+    },
+    "1070108": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Su Van Hanh (0080)"
+    },
+    "1070430": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Su Van Hanh (0080)"
+    },
+    "1078188": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Vincom Phu Yen (0128)"
+    },
+    "1078190": {
+      "package_id": "gsf_masterdata",
+      "name": "FRC-King BF Vincom Phu Yen(0128)"
+    },
+    "1080012": {
+      "package_id": "gsf_masterdata",
+      "name": "Khao Lao 9-Vincom Bac Ninh-HN6196(0193)"
+    },
+    "1086457": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Di An Binh Duong-6186(0195)"
+    },
+    "1097593": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Van Hanh Mall -6199(0197)"
+    },
+    "1110844": {
+      "package_id": "gsf_masterdata",
+      "name": "Meiwei 3 - Lotte Center DT-6208(0205)"
+    },
+    "1129278": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot Story Vincom Ca Mau -6221(0217)"
+    },
+    "1129279": {
+      "package_id": "gsf_masterdata",
+      "name": "Buk Buk Vincom Tay Ninh -6225(0218)"
+    },
+    "1129280": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Vincom Quang Ngai -6223(0219)"
+    },
+    "1138189": {
+      "package_id": "gsf_masterdata",
+      "name": "King Mix Giga Mall -6211(0224)"
+    },
+    "1138190": {
+      "package_id": "gsf_masterdata",
+      "name": "Sushi Kei Giga Mall -6215(0225)"
+    },
+    "1138403": {
+      "package_id": "gsf_masterdata",
+      "name": "Meiwei 4 - Royal City - 6219(0228)"
+    },
+    "1148516": {
+      "package_id": "gsf_masterdata",
+      "name": "FRC-King BF Binh Phuoc(0232)"
+    },
+    "1203744": {
+      "package_id": "gsf_masterdata",
+      "name": "FRC-King BF Son Dong Ben Tre(0236)"
+    },
+    "1204554": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot 14 - Tran Duy Hung -HN6231(0240)"
+    },
+    "1251569": {
+      "package_id": "gsf_masterdata",
+      "name": "Sushi Kei Aeon Tan Phu -6228(0241)"
+    },
+    "1251570": {
+      "package_id": "gsf_masterdata",
+      "name": "Meiwei Aeon Tan Phu - 6229(0242)"
+    },
+    "1311489": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Cao Lanh Dong Thap-6243(0253)"
+    },
+    "1317593": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF 14 - Aeon Mall HD-6237(0254)"
+    },
+    "1317595": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai 23 - Aeon Mall HD-HN6241(0256)"
+    },
+    "1317596": {
+      "package_id": "gsf_masterdata",
+      "name": "Khao Lao 11-Aeon Mall HD-HN6246(0257)"
+    },
+    "1317598": {
+      "package_id": "gsf_masterdata",
+      "name": "Meiwei 5 - Aeon Mall HD - 6242(0259)"
+    },
+    "1317974": {
+      "package_id": "gsf_masterdata",
+      "name": "FRC - Hotpot Story - Bac Ninh(0266)"
+    },
+    "1426362": {
+      "package_id": "gsf_masterdata",
+      "name": "FRC-King BF Son Dong Ben Tre 2 (0273)"
+    },
+    "1430128": {
+      "package_id": "gsf_masterdata",
+      "name": "Tasaki BBQ 4 - Aeon Mall HD -6252(0274)"
+    },
+    "1442560": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Vincom Bac Lieu-6253(0277)"
+    },
+    "1442561": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF Vincom My Tho-6254(0278)"
+    },
+    "1451076": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF 15 - Vinsmart TM - HN-6255(0281)"
+    },
+    "1451384": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai 25 - Vinsmart TM - HN6256(0280)"
+    },
+    "1454493": {
+      "package_id": "gsf_masterdata",
+      "name": "King Mix Vincom Dong Khoi -6258(0283)"
+    },
+    "1455436": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai 27 - Vincom TDH -HN6263(0285)"
+    },
+    "1462423": {
+      "package_id": "gsf_masterdata",
+      "name": "Sushi Kei 8 Royal City - HN6268(0288)"
+    },
+    "1462709": {
+      "package_id": "gsf_masterdata",
+      "name": "Meiwei 6 Vincom Ba Trieu HN - 6265(0289)"
+    },
+    "1465035": {
+      "package_id": "gsf_masterdata",
+      "name": "King Mix ThisoMall Thu Duc -6262(0290)"
+    },
+    "1465970": {
+      "package_id": "gsf_masterdata",
+      "name": "Hotpot Story ThisoMall -6266(0291)"
+    },
+    "1465971": {
+      "package_id": "gsf_masterdata",
+      "name": "Sushi Kei ThisoMall -6269(0292)"
+    },
+    "1465972": {
+      "package_id": "gsf_masterdata",
+      "name": "Khao Lao ThisoMall -6267(0293)"
+    },
+    "1466252": {
+      "package_id": "gsf_masterdata",
+      "name": "King BF 17- Ocean Park-6270(0294)"
+    },
+    "1468162": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai Express - Ocean Park-HN6271(0295)"
+    },
+    "1479766": {
+      "package_id": "gsf_masterdata",
+      "name": "Wulao - Vincom Ba Trieu - HN 6273(0297)"
+    },
+    "1481408": {
+      "package_id": "gsf_masterdata",
+      "name": "King Mix Xuan Khanh Can Tho -6272(0300)"
+    },
+    "1487332": {
+      "package_id": "gsf_masterdata",
+      "name": "Meiwei - IPH Xuan Thuy - HN 6274(0299)"
+    },
+    "1494796": {
+      "package_id": "gsf_masterdata",
+      "name": "Wulao - Lotte Vo Chi Cong- HN 6277(0298)"
+    },
+    "1496292": {
+      "package_id": "gsf_masterdata",
+      "name": "Wulao - Le Van Sy - HCM 6275(0301)"
+    },
+    "1505327": {
+      "package_id": "gsf_masterdata",
+      "name": "Wulao - Hoang Dao Thuy - HN 6280(0302)"
+    },
+    "1509822": {
+      "package_id": "gsf_masterdata",
+      "name": "Wulao - Cresent Mall - HCM-6279(0303)"
+    },
+    "1510403": {
+      "package_id": "gsf_masterdata",
+      "name": "WuLao - Lotte Dao Tan - HN 6281(0304)"
+    },
+    "1510450": {
+      "package_id": "gsf_masterdata",
+      "name": "Wulao - Nguyen Tri Phuong 6278(0305)"
+    },
+    "1513962": {
+      "package_id": "gsf_masterdata",
+      "name": "Sizzler Cresent Mall-6283(0306)"
+    },
+    "1529267": {
+      "package_id": "gsf_masterdata",
+      "name": "Wulao - Giga mall - HCM 6284(0308)"
+    },
+    "1543980": {
+      "package_id": "gsf_masterdata",
+      "name": "Taipan - Van Hanh Mall - 6287(0310)"
+    },
+    "1543981": {
+      "package_id": "gsf_masterdata",
+      "name": "TianXin - Van Hanh Mall - 6288(0309)"
+    },
+    "1584429": {
+      "package_id": "gsf_masterdata",
+      "name": "TianXin - Van Hanh Mall 2 - 6288(0313)"
+    },
+    "1586003": {
+      "package_id": "gsf_masterdata",
+      "name": "Meiwei - Aeon Mall Hai Phong 6291(0314)"
+    },
+    "1592317": {
+      "package_id": "gsf_masterdata",
+      "name": "Wulao - Aeon Mall Ha Dong-HN6292(0315)"
+    },
+    "1593505": {
+      "package_id": "gsf_masterdata",
+      "name": "Khao Lao VinCom Phan Van Tri-6297(0316)"
+    },
+    "1595161": {
+      "package_id": "gsf_masterdata",
+      "name": "Thai Express - Aeon Hai Duong 6293(0317)"
+    },
+    "1595162": {
+      "package_id": "gsf_masterdata",
+      "name": "Meiwei - Aeon Mall Thanh Hoa 6295(0319)"
+    },
+    "1595330": {
+      "package_id": "gsf_masterdata",
+      "name": "ThaiExpress - Aeon Thanh Hoa 6294(0318)"
+    },
+    "2": {
+      "package_id": "qsr_masterdata",
+      "name": "Head Office"
+    },
+    "1000085": {
+      "package_id": "ggg_hcm_data",
+      "name": "Vuvuzela TH-NC (0021)"
+    },
+    "1000087": {
+      "package_id": "ggg_hcm_data",
+      "name": "Vuvuzela Trang Thi (0023)"
+    },
+    "1000098": {
+      "package_id": "ggg_hcm_data",
+      "name": "Ashima 3 Nguyen Dinh Chieu (0034)"
+    },
+    "1000099": {
+      "package_id": "ggg_hcm_data",
+      "name": "Ashima 5 Tu Xuong (0035)"
+    },
+    "1000100": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Phu My Hung (0036)"
+    },
+    "1000102": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Le Thanh Ton (0038)"
+    },
+    "1000103": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Lotte Mart Can Tho (0129)"
+    },
+    "1000104": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Phan Xich Long (0040)"
+    },
+    "1000105": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Trai (0041)"
+    },
+    "1000106": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Cao Thang (0042)"
+    },
+    "1000108": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Su Van Hanh (0044)"
+    },
+    "1000109": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Cong Hoa (0045)"
+    },
+    "1000119": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Le Van Sy (0059)"
+    },
+    "1000121": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi SSG Dien Bien Phu (0128)"
+    },
+    "1000123": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House SSG Dien Bien Phu (0127)"
+    },
+    "1000128": {
+      "package_id": "ggg_hcm_data",
+      "name": "SumoBBQ Phan Xich Long (0049)"
+    },
+    "1002397": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi - Hoa Binh Tower - HN(319)"
+    },
+    "1003747": {
+      "package_id": "ggg_hcm_data",
+      "name": "RK7 5000 RESTAURANT TEST"
+    },
+    "1008671": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Can Tho (096)"
+    },
+    "1012823": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vivo City (0077)"
+    },
+    "1012856": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vivo City (0078)"
+    },
+    "1020468": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Aeon Tan Phu (0080)"
+    },
+    "1020935": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom B Le Thanh Ton (081)"
+    },
+    "1022975": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Son (0083)"
+    },
+    "1026671": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Da Nang (090)"
+    },
+    "1026942": {
+      "package_id": "ggg_hcm_data",
+      "name": "Crystal Jade Vincom Da Nang (089)"
+    },
+    "1034992": {
+      "package_id": "ggg_hcm_data",
+      "name": "Vuvuzela Nguyen Trai-HN (0093)"
+    },
+    "1036059": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Can Tho (0095)"
+    },
+    "1037795": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Phan Xich Long (0099)"
+    },
+    "1037861": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Aeon Mall Binh Duong (0101)"
+    },
+    "1037869": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Thu Duc (0102)"
+    },
+    "1037903": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Aeon Binh Duong (0085)"
+    },
+    "1037907": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi BigC Dong Nai (0062)"
+    },
+    "1037925": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Truong Son (0103)"
+    },
+    "1042177": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Thu Duc (0105)"
+    },
+    "1042328": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Bien Hoa (0107)"
+    },
+    "1042834": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Bien Hoa (0108)"
+    },
+    "1053854": {
+      "package_id": "ggg_hcm_data",
+      "name": "Vuvuzela TTTM Artemis - Ha Noi (0308)"
+    },
+    "1063630": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Kim Binh Duong (135)"
+    },
+    "1077054": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Long Xuyen (0150)"
+    },
+    "1077055": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Long Xuyen (0149)"
+    },
+    "1077126": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Aeon Tan Phu (152)"
+    },
+    "1077128": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House E-Mart Go Vap (151)"
+    },
+    "1077129": {
+      "package_id": "ggg_hcm_data",
+      "name": "SumoBBQ Vincom Thao Dien (0147)"
+    },
+    "1095197": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Buon Me Thuot (158)"
+    },
+    "1095198": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Buon Me Thuot (159)"
+    },
+    "1095199": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Le Van Viet (0160)"
+    },
+    "1095200": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Le Van Viet (161)"
+    },
+    "1097777": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House 14 Truong Son (0471)"
+    },
+    "1101077": {
+      "package_id": "ggg_hcm_data",
+      "name": "K-Pub Phan Xich Long (0473)"
+    },
+    "1103847": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Lotte  Go Vap (0172)"
+    },
+    "1104651": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Estella (0474)"
+    },
+    "1104718": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Lotte Go Vap (0173)"
+    },
+    "1107110": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Vincom Le Thanh Ton (0477)"
+    },
+    "1108305": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Binh Phu (0479)"
+    },
+    "1109528": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House BigC Ben Tre (0481)"
+    },
+    "1109529": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi BigC Ben Tre (0482)"
+    },
+    "1111497": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Vinh Long (0483)"
+    },
+    "1111499": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Vinh Long (0486)"
+    },
+    "1111500": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House BigC Da Nang (0485)"
+    },
+    "1111786": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Da Nang (0175)"
+    },
+    "1114699": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Vincom Bien Hoa (0489)"
+    },
+    "1116847": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Binh Phu (0498)"
+    },
+    "1116848": {
+      "package_id": "ggg_hcm_data",
+      "name": "Hutong Nguyen Tri Phuong (0499)"
+    },
+    "1116850": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah BigC Truong Chinh (0497)"
+    },
+    "1117968": {
+      "package_id": "ggg_hcm_data",
+      "name": "SumoBBQ Vincom Da Nang (0178)"
+    },
+    "1118032": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Garden Mall (0501)"
+    },
+    "1120364": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Aeon Binh Tan (0180)"
+    },
+    "1120365": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Aeon Binh Tan (0182)"
+    },
+    "1120366": {
+      "package_id": "ggg_hcm_data",
+      "name": "Crystal Jade Aeon Binh Tan (0184)"
+    },
+    "1120627": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Ba Hom (0508)"
+    },
+    "1128356": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Sai Gon Centre (0189)"
+    },
+    "1128358": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Sai Gon Centre (0190)"
+    },
+    "1128429": {
+      "package_id": "ggg_hcm_data",
+      "name": "Crystal Jade Sai Gon Centre (0192)"
+    },
+    "1130328": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi My Tho (0503)"
+    },
+    "1130533": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi BigC Buon Me Thuot (0504)"
+    },
+    "1131373": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House BigC Dong Nai (0515)"
+    },
+    "1132350": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Lotte Nha Trang (0193)"
+    },
+    "1132354": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Lotte Nha Trang (0194)"
+    },
+    "1137763": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Phan Xich Long (0517)"
+    },
+    "1137766": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Lotte Can Tho (0521)"
+    },
+    "1138312": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Le Trong Tan (0522)"
+    },
+    "1143058": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Sai Gon Centre (0531)"
+    },
+    "1143466": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Ariyana Nha Trang (0544)"
+    },
+    "1144487": {
+      "package_id": "ggg_hcm_data",
+      "name": "Crystal Jade Vincom Xuan Khanh (0200)"
+    },
+    "1144488": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Xuan Khanh (0201)"
+    },
+    "1144489": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Xuan Khanh (0199)"
+    },
+    "1152754": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Vincom Thao Dien (0569)"
+    },
+    "1152755": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Thao Dien (0567)"
+    },
+    "1152756": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Huynh Tan Phat (0545)"
+    },
+    "1166527": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Hong Dao (0004)"
+    },
+    "1171663": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Aeon Binh Duong (0550)"
+    },
+    "1172990": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Vivo City (0552)"
+    },
+    "1173080": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Phan Huy Ich (0551)"
+    },
+    "1175982": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Tan Son Nhi (0558)"
+    },
+    "1175983": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Pham Van Thuan (0555)"
+    },
+    "1175984": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Van Qua (0556)"
+    },
+    "1175985": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Van Qua (0557)"
+    },
+    "1176696": {
+      "package_id": "ggg_hcm_data",
+      "name": "Icook Kho Gia Phu (0560)"
+    },
+    "1177665": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Vivo City (0549)"
+    },
+    "1186043": {
+      "package_id": "ggg_hcm_data",
+      "name": "K-Pub Lotte Phan Van Tri (0572)"
+    },
+    "1189589": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi - Emart Phan Van Tri (0574)"
+    },
+    "1192309": {
+      "package_id": "ggg_hcm_data",
+      "name": "K-Pub Aeon Binh Duong (0577)"
+    },
+    "1193802": {
+      "package_id": "ggg_hcm_data",
+      "name": "K-Pub Emart Phan Van Tri (0580)"
+    },
+    "1193904": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Lotte Phan Van Tri (0579)"
+    },
+    "1198017": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Aeon Binh Duong (0586)"
+    },
+    "1198316": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Nguyen Chi Thanh Da Lat (0592)"
+    },
+    "1199212": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Chi Thanh Da Lat (594)"
+    },
+    "1199612": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Le Thi Ha (0595)"
+    },
+    "1202453": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Vincom Xuan Khanh Can Tho (0596)"
+    },
+    "1203057": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Viettel Building (0598)"
+    },
+    "1203118": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House DS7 Binh Tan (0599)"
+    },
+    "1203119": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi DS7 Binh Tan (0600)"
+    },
+    "1205284": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Duong 41 (0604)"
+    },
+    "1205358": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Aeon Tan Phu (0605)"
+    },
+    "1205359": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Aeon Tan Phu (0606)"
+    },
+    "1206173": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Ai Quoc - BH (0610)"
+    },
+    "1206174": {
+      "package_id": "ggg_hcm_data",
+      "name": "K-Pub Aeon Tan Phu (0609)"
+    },
+    "1207207": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Aeon Binh Tan (611)"
+    },
+    "1208265": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Thi Thap (0613)"
+    },
+    "1216219": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Van Linh DNang (0219)"
+    },
+    "1216221": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Saigonres Plaza (0222)"
+    },
+    "1216222": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Saigonres Plaza(0221)"
+    },
+    "1216223": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Van Linh DNang (0220)"
+    },
+    "1216730": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Au Co (0223)"
+    },
+    "1217416": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Thiso Mall Mai Chi Tho (0629)"
+    },
+    "1217418": {
+      "package_id": "ggg_hcm_data",
+      "name": "K-Pub Lotte Phu Tho (0627)"
+    },
+    "1217419": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Lotte Phu Tho (0626)"
+    },
+    "1217420": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Thiso Mall Mai Chi Tho (0625)"
+    },
+    "1217421": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Thiso Mall Mai Chi Tho (0624)"
+    },
+    "1217422": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Thiso Mall Mai Chi Tho(0623)"
+    },
+    "1217425": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Vincom Dong Khoi (0622)"
+    },
+    "1217426": {
+      "package_id": "ggg_hcm_data",
+      "name": "K-Pub Thiso Mall Mai Chi Tho (0621)"
+    },
+    "1228412": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Sense City Ca Mau (0231)"
+    },
+    "1228414": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Sense City Ca Mau (0230)"
+    },
+    "1231680": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah TOPs Au Co (0643)"
+    },
+    "1231698": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Huynh Tan Phat (0644)"
+    },
+    "1231699": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Diamond Plaza (0645)"
+    },
+    "1235900": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Le Hong Phong BD (0651)"
+    },
+    "1238999": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Tran Hung Dao - HCM (0654)"
+    },
+    "1239453": {
+      "package_id": "ggg_hcm_data",
+      "name": "Yutang Vincom Da Nang (0655)"
+    },
+    "1240775": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Lotte Quan 7 (0657)"
+    },
+    "1241600": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Lotte Quan 7 (0660)"
+    },
+    "1243295": {
+      "package_id": "ggg_hcm_data",
+      "name": "K-Pub Thong Nhat Moi - Vung Tau (0661)"
+    },
+    "1244321": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Van Lac (0664)"
+    },
+    "1246277": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Menas Mall Saigon Airport (0671)"
+    },
+    "1248924": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Tri Phuong (0236)"
+    },
+    "1256648": {
+      "package_id": "ggg_hcm_data",
+      "name": "Shogun Phan Xich Long (0681)"
+    },
+    "1256649": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Sora Binh Duong (0682)"
+    },
+    "1256650": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Sora Binh Duong (0683)"
+    },
+    "1262398": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Dang Van Bi (0694)"
+    },
+    "1262614": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Hung Vuong Plaza (0697)"
+    },
+    "1262615": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Hung Vuong Plaza (0698)"
+    },
+    "1262616": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Hung Vuong Plaza (0699)"
+    },
+    "1262617": {
+      "package_id": "ggg_hcm_data",
+      "name": "Crystal Jade Hung Vuong Plaza (0700)"
+    },
+    "1274006": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Cao Thang (0237)"
+    },
+    "1274010": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Hong Dao (0238)"
+    },
+    "1274011": {
+      "package_id": "ggg_hcm_data",
+      "name": "Ashima Xuan Thuy (0239)"
+    },
+    "1275796": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Lotte Can Tho (0735)"
+    },
+    "1275797": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Phu My Vung Tau (0710)"
+    },
+    "1275798": {
+      "package_id": "ggg_hcm_data",
+      "name": "CloudPot Truong Cong Dinh (0720)"
+    },
+    "1275799": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Le Thi Ha (0719)"
+    },
+    "1275800": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Le Van Quoi (0721)"
+    },
+    "1275801": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Go Can Tho (0711)"
+    },
+    "1275802": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Vincom Da Nang (0712)"
+    },
+    "1279303": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Lotte Nguyen Huu Tho (714)"
+    },
+    "1279305": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Lotte Nguyen Huu Tho (0716)"
+    },
+    "1286522": {
+      "package_id": "ggg_hcm_data",
+      "name": "CloudPot Sora Binh Duong (0728)"
+    },
+    "1289253": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Hung Vuong Plaza (0730)"
+    },
+    "1289255": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Coop Quang Trung (0731)"
+    },
+    "1289372": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Le Van Sy (0738)"
+    },
+    "1289373": {
+      "package_id": "ggg_hcm_data",
+      "name": "Man Tang Guo Phan Xich Long (0736)"
+    },
+    "1299248": {
+      "package_id": "ggg_hcm_data",
+      "name": "SumoBBQ Aeon Binh Duong (0241)"
+    },
+    "1319101": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Cao Thang (0760)"
+    },
+    "1319102": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Giga Mall (0761)"
+    },
+    "1319103": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Son (0762)"
+    },
+    "1319104": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Bien Hoa (0763)"
+    },
+    "1320724": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Ariyana Nha Trang (0766)"
+    },
+    "1329392": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Grand Park Thu Duc (0770)"
+    },
+    "1329435": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi Kichi Grand Park Thu Duc (0771)"
+    },
+    "1329480": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Grand Park Thu Duc (0774)"
+    },
+    "1338139": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Aeon Hue (0780)"
+    },
+    "1338140": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Aeon Hue (0781)"
+    },
+    "1338141": {
+      "package_id": "ggg_hcm_data",
+      "name": "CloudPot Aeon Hue (0783)"
+    },
+    "1339643": {
+      "package_id": "ggg_hcm_data",
+      "name": "Hang Cuon Cao Thang (0785)"
+    },
+    "1341770": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Thao Dien (0244)"
+    },
+    "1345452": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Thiso Phan Huy Ich (0790)"
+    },
+    "1345453": {
+      "package_id": "ggg_hcm_data",
+      "name": "Shogun Thiso Phan Huy Ich (0793)"
+    },
+    "1345454": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Thiso Phan Huy Ich (0792)"
+    },
+    "1345455": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Thiso Phan Huy Ich (0791)"
+    },
+    "1345456": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi ParcMall Ta Quang Buu (0794)"
+    },
+    "1348828": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Phan Xich Long (0798)"
+    },
+    "1348829": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House ParcMall Ta Quang Buu (0799)"
+    },
+    "1352867": {
+      "package_id": "ggg_hcm_data",
+      "name": "Shogun ParcMall Ta Quang Buu (0802)"
+    },
+    "1352934": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah ParcMall Ta Quang Buu (0803)"
+    },
+    "1353117": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloudpot ParcMall Ta Quang Buu (0804)"
+    },
+    "1354344": {
+      "package_id": "ggg_hcm_data",
+      "name": "Hang Cuon Lotte Mart Can Tho (0806)"
+    },
+    "1362694": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vinh Lac Kien Giang (0811)"
+    },
+    "1362695": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vinh Lac Kien Giang (0812)"
+    },
+    "1362696": {
+      "package_id": "ggg_hcm_data",
+      "name": "Hang Cuon Nguyen Thi Thap (0810)"
+    },
+    "1364299": {
+      "package_id": "ggg_hcm_data",
+      "name": "Wow Yaniniku Van Hanh Mall (0818)"
+    },
+    "1365711": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Go Bac Lieu (0821)"
+    },
+    "1365712": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Go Bac Lieu (0822)"
+    },
+    "1365713": {
+      "package_id": "ggg_hcm_data",
+      "name": "Blue Bay Lotte Phu Tho (0820)"
+    },
+    "1370414": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Anh Thu (0245)"
+    },
+    "1370415": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Anh Thu (0246)"
+    },
+    "1371096": {
+      "package_id": "ggg_hcm_data",
+      "name": "SumoBBQ 106A Cao Thang (0827)"
+    },
+    "1371099": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Aeon Tan Phu (0825)"
+    },
+    "1371100": {
+      "package_id": "ggg_hcm_data",
+      "name": "Blue Bay Lotte Cong Hoa (0826)"
+    },
+    "1371139": {
+      "package_id": "ggg_hcm_data",
+      "name": "Woomaster Le Quy Don (0824)"
+    },
+    "1382207": {
+      "package_id": "ggg_hcm_data",
+      "name": "Blue Bay Aeon Binh Tan (0833)"
+    },
+    "1382209": {
+      "package_id": "ggg_hcm_data",
+      "name": "Sushi X Vincom Thao Dien (0835)"
+    },
+    "1382412": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Van Hanh Mall (0836)"
+    },
+    "1396742": {
+      "package_id": "ggg_hcm_data",
+      "name": "Man Tang Le Quy Don (0837)"
+    },
+    "1408227": {
+      "package_id": "ggg_hcm_data",
+      "name": "CloudPot SC Vivo (0848)"
+    },
+    "1417341": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi KNG Mall Phu My (0852)"
+    },
+    "1418334": {
+      "package_id": "ggg_hcm_data",
+      "name": "Hang Cuon Phan Xich Long (0854)"
+    },
+    "1419728": {
+      "package_id": "ggg_hcm_data",
+      "name": "Clout Pot Vincom Thao Dien (0855)"
+    },
+    "1423047": {
+      "package_id": "ggg_hcm_data",
+      "name": "Hang Cuon Van Hanh Mall (0863)"
+    },
+    "1430918": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Van Troi (0866)"
+    },
+    "1430919": {
+      "package_id": "ggg_hcm_data",
+      "name": "Hang Cuon - Sai Gon Centre (0867)"
+    },
+    "1437982": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Go Dau Binh Duong (0249)"
+    },
+    "1437983": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Go Dau Binh Duong (0250)"
+    },
+    "1448922": {
+      "package_id": "ggg_hcm_data",
+      "name": "Happy Bull Nha Trang (0874)"
+    },
+    "1461400": {
+      "package_id": "ggg_hcm_data",
+      "name": "Man Tang Guo Nguyen Trai (0878)"
+    },
+    "1461402": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Phan Dinh Phung Quang Ngai879"
+    },
+    "1472775": {
+      "package_id": "ggg_hcm_data",
+      "name": "Shogun - Cao Thang - HCM (888)"
+    },
+    "1479533": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Aeon Long An (0880)"
+    },
+    "1479534": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Aeon Long An (0881)"
+    },
+    "1479535": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Aeon Long An (0880)"
+    },
+    "1484563": {
+      "package_id": "ggg_hcm_data",
+      "name": "Lach Ca Lach Cach-Phan Xich Long (897)"
+    },
+    "1484599": {
+      "package_id": "ggg_hcm_data",
+      "name": "Lach Ca Lach Cach-Nguyen Thi Thap (898)"
+    },
+    "1484600": {
+      "package_id": "ggg_hcm_data",
+      "name": "Lach Ca Lach Cach-Cao Thang(899)"
+    },
+    "1484601": {
+      "package_id": "ggg_hcm_data",
+      "name": "Lach Ca Lach Cach-Coop Su Van Hanh(900)"
+    },
+    "1484602": {
+      "package_id": "ggg_hcm_data",
+      "name": "Lach Ca Lach Cach-Sai Gon Center (901)"
+    },
+    "1488034": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Aeon Binh Tan (0902)"
+    },
+    "1488073": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Lotte Cong Hoa (0903)"
+    },
+    "1493003": {
+      "package_id": "ggg_hcm_data",
+      "name": "Hutong Palace Hung Vuong Plaza (0909)"
+    },
+    "1494610": {
+      "package_id": "ggg_hcm_data",
+      "name": "Lach Ca Lach Cach- Lotte Phu Tho (910)"
+    },
+    "1504249": {
+      "package_id": "ggg_hcm_data",
+      "name": "Sushi X Su Van Hanh (0911)"
+    },
+    "1510882": {
+      "package_id": "ggg_hcm_data",
+      "name": "Ashima Nguyen Trai (0255)"
+    },
+    "1512750": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo Van Hanh Mall (0929)"
+    },
+    "1513261": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo - Diamond Le Duan,HCM (0933)"
+    },
+    "1513282": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo - Diamond Le Duan,HCM (0933)"
+    },
+    "1513283": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo - Diamond Le Duan, HCM (933)"
+    },
+    "1516440": {
+      "package_id": "ggg_hcm_data",
+      "name": "Union DistrictPizza&Grill Xuan Thuy(934)"
+    },
+    "1519913": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi Kichi Bcons Binh Duong (0937)"
+    },
+    "1519914": {
+      "package_id": "ggg_hcm_data",
+      "name": "Yutang Bcons Binh Duong (938)"
+    },
+    "1519915": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Bcons Binh Duong (920)"
+    },
+    "1521947": {
+      "package_id": "ggg_hcm_data",
+      "name": "Crystal Jade Parc Mall (917)"
+    },
+    "1523130": {
+      "package_id": "ggg_hcm_data",
+      "name": "RESTEST"
+    },
+    "1523340": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Lotte Da Nang (0260)"
+    },
+    "1523341": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Ariyana Nha Trang (0261)"
+    },
+    "1523343": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Lotte Da Nang (0263)"
+    },
+    "1523344": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Ariyana Nha Trang (0264)"
+    },
+    "1523423": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Van Lac (0939)"
+    },
+    "1523425": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Garden Mall (0940)"
+    },
+    "1523426": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Ninh Thuan (0941)"
+    },
+    "1523427": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Ninh Thuan (0942)"
+    },
+    "1523979": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Lotte Cong Hoa (0931)"
+    },
+    "1523980": {
+      "package_id": "ggg_hcm_data",
+      "name": "Yutang Lotte Cong Hoa (0932)"
+    },
+    "1525216": {
+      "package_id": "ggg_hcm_data",
+      "name": "Yutang Lotte Can Tho (0944)"
+    },
+    "1527470": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Viettel (945)"
+    },
+    "1530198": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo-Nguyen Tri Phuong HCM (947)"
+    },
+    "1536449": {
+      "package_id": "ggg_hcm_data",
+      "name": "Fly Chef Sky Garden Q7 (0952)"
+    },
+    "1536450": {
+      "package_id": "ggg_hcm_data",
+      "name": "Fly Chef Nguyen Thai Binh (0953)"
+    },
+    "1536451": {
+      "package_id": "ggg_hcm_data",
+      "name": "Fly Chef Dien Bien Phu (0954)"
+    },
+    "1536452": {
+      "package_id": "ggg_hcm_data",
+      "name": "Yutang Van Hanh Mall (0957)"
+    },
+    "1536453": {
+      "package_id": "ggg_hcm_data",
+      "name": "Yutang Nguyen Chi Thanh Da Lat (0955)"
+    },
+    "1541158": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo 2 Thang 9 Da Nang (0962)"
+    },
+    "1541159": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi 2 Thang 9 Da Nang (0963)"
+    },
+    "1544065": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Grand Park Quan 9 (0967)"
+    },
+    "1544066": {
+      "package_id": "ggg_hcm_data",
+      "name": "Yutang Grand Park Quan 9 (0968)"
+    },
+    "1544067": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo Lotte Phu Tho (0970)"
+    },
+    "1544068": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Go Bien Hoa (0969)"
+    },
+    "1545605": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo Thong Nhat Vung Tau (0973)"
+    },
+    "1545607": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Thi Thap HCM (0974)"
+    },
+    "1554537": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Aeon Mall Da Nang (0981)"
+    },
+    "1554538": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Aeon Mall Da Nang (0982)"
+    },
+    "1554539": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Aeon Mall Da Nang (0983)"
+    },
+    "1554540": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Aeon Mall Da Nang (0984)"
+    },
+    "1554541": {
+      "package_id": "ggg_hcm_data",
+      "name": "Shogun Grand Park (0985)"
+    },
+    "1554542": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House EZY Center Bien Hoa (0986)"
+    },
+    "1554543": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot EZY Center Bien Hoa (0987)"
+    },
+    "1554545": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo EZY Center Bien Hoa (0988)"
+    },
+    "1556375": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Lotte Phu Tho (0992)"
+    },
+    "1556376": {
+      "package_id": "ggg_hcm_data",
+      "name": "Wow Yaniniku Grand Park (0971)"
+    },
+    "1556387": {
+      "package_id": "ggg_hcm_data",
+      "name": "SumoBBQ Grand Park (0972)"
+    },
+    "1566429": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo Hung Vuong Plaza HCM (993)"
+    },
+    "1566444": {
+      "package_id": "ggg_hcm_data",
+      "name": "Chixmax Vivo City (994)"
+    },
+    "1575453": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Pandora Truong Chinh (0998)"
+    },
+    "1577281": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo Le Van Sy (1001)"
+    },
+    "1577288": {
+      "package_id": "ggg_hcm_data",
+      "name": "Pizza 360 Grand Park Q9 (999)"
+    },
+    "1579922": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Bao Loc Lam Dong (1000)"
+    },
+    "1585694": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Van Hanh Mall (0274)"
+    },
+    "1585695": {
+      "package_id": "ggg_hcm_data",
+      "name": "Hutong Van Hanh Mall (0273)"
+    },
+    "1585696": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Van Hanh Mall (0272)"
+    },
+    "1585697": {
+      "package_id": "ggg_hcm_data",
+      "name": "Crystal Jade Van Hanh Mall (0271)"
+    },
+    "1599831": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo Phan Xich Long (1002)"
+    },
+    "1601402": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo Ly Thai To, An Giang (1007)"
+    },
+    "1601403": {
+      "package_id": "ggg_hcm_data",
+      "name": "Dao Niu Guo Thiso Mai Chi Tho HCM(1008)"
+    },
+    "1601404": {
+      "package_id": "ggg_hcm_data",
+      "name": "Wow Yakiniku Thiso Mai Chi Tho,HCM(1009)"
+    },
+    "1604300": {
+      "package_id": "ggg_hcm_data",
+      "name": "Ashima Thiso Mai Chi Tho HCM (1013)"
+    },
+    "1611246": {
+      "package_id": "ggg_hcm_data",
+      "name": "Pizza 360 Thiso Mai Chi Tho HCM (1017)"
+    },
+    "1618399": {
+      "package_id": "ggg_hcm_data",
+      "name": "Chixmax Van Hanh Mall (1011)"
+    },
+    "1618401": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Phan Dinh Phung QN (1018)"
+    },
+    "1618804": {
+      "package_id": "ggg_hcm_data",
+      "name": "CloudPot - Vincom An Giang (1012)"
+    },
+    "1619813": {
+      "package_id": "ggg_hcm_data",
+      "name": "Union DistrictPizza&Grill Duong 22(1019)"
+    },
+    "1621978": {
+      "package_id": "ggg_hcm_data",
+      "name": "Cloud Pot Thiso Mai Chi Tho (1015)"
+    },
+    "1632028": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House NTMK, Vinh Long (1029)"
+    },
+    "1647516": {
+      "package_id": "ggg_hcm_data",
+      "name": "Ashima Aeon Binh Tan (1030)"
+    },
+    "1647517": {
+      "package_id": "ggg_hcm_data",
+      "name": "Yutang Aeon Tan Phu (1031)"
+    },
+    "1647518": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Menas Mall (1032)"
+    },
+    "1683156": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vo Thi Sau - Bien Hoa (0296)"
+    },
+    "1715210": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vo Thi Sau - Bien Hoa (0295)"
+    },
+    "1749039": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Dinh Tien Hoang (0302)"
+    },
+    "1756260": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Hoang Van Thu (0309)"
+    },
+    "1770423": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Duc Canh (0310)"
+    },
+    "1813409": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Kim Gia Lai (0315)"
+    },
+    "1813410": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Kim Gia Lai (0316)"
+    },
+    "1830083": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Ly Thuong Kiet - VT (0323)"
+    },
+    "1830084": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Ly Thuong Kiet - VT (0322)"
+    },
+    "1865226": {
+      "package_id": "ggg_hcm_data",
+      "name": "Vuvuzela Ha Dong (0317)"
+    },
+    "1888408": {
+      "package_id": "ggg_hcm_data",
+      "name": "Vuvuzela - Hoa Binh Tower - HN(318)"
+    },
+    "1893424": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Cao Thang (0326)"
+    },
+    "1894595": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Vincom Da Nang (0330)"
+    },
+    "1903256": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Anh Thu 2 (0333)"
+    },
+    "1903257": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Anh Thu 2 (0334)"
+    },
+    "1910219": {
+      "package_id": "ggg_hcm_data",
+      "name": "SumoBBQ Giga Mall Pham Van Dong (0337)"
+    },
+    "1910228": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah GigaMall Pham Van Dong (0340)"
+    },
+    "1916551": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi GigaMall Pham Van Dong (338)"
+    },
+    "1916552": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House GigaMall Pham Van Dong (0339)"
+    },
+    "1916553": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Tran Nao (0341)"
+    },
+    "1916554": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Cao Thang (0343)"
+    },
+    "1916555": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Estella Palace Quan 2 (0342)"
+    },
+    "1938188": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Go Dau Binh Duong (0344)"
+    },
+    "1968569": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Lotte Can Tho (0346)"
+    },
+    "2072815": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Vincom Le Van Viet (0361)"
+    },
+    "2096541": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Ba Ria Vung Tau (0364)"
+    },
+    "2096542": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Ba Ria Vung Tau (0363)"
+    },
+    "2191393": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Lotte Go Vap (0371)"
+    },
+    "2199031": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House An Duong Vuong (0374)"
+    },
+    "2208747": {
+      "package_id": "ggg_hcm_data",
+      "name": "Vuvuzela Tran Thai Tong (0359)"
+    },
+    "2220411": {
+      "package_id": "ggg_hcm_data",
+      "name": "Hutong Aeon Tan Phu (0377)"
+    },
+    "2228036": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Nguyen Kim An Giang (0381)"
+    },
+    "2228037": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi An Duong Vuong (0380)"
+    },
+    "2230876": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Tan Son Nhi (0383)"
+    },
+    "2232403": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Tay Ninh (0386)"
+    },
+    "2237695": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah An Duong Vuong (0389)"
+    },
+    "2286736": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Cao Lanh (0392)"
+    },
+    "2301276": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi An Duong Vuong BD (0395)"
+    },
+    "2302424": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House An Duong Vuong BD (0396)"
+    },
+    "2302430": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Tri Phuong DNg (0398)"
+    },
+    "2307742": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Tri Phuong DNg (0399)"
+    },
+    "2308967": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Tran Hung Dao - PT (0405)"
+    },
+    "2308968": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Tran Hung Dao - PT (0404)"
+    },
+    "2310343": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Vincom Xuan Khanh (0406)"
+    },
+    "2315653": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Phan Huy Ich (0425)"
+    },
+    "2321170": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Kontum (0431)"
+    },
+    "2321171": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Vincom Soc Trang (0434)"
+    },
+    "2321172": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Kontum (0432)"
+    },
+    "2321173": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Vincom Soc Trang (0433)"
+    },
+    "2322665": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi CMT8 Tay Ninh (0441)"
+    },
+    "2322667": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi BigC Binh Duong (0442)"
+    },
+    "2322668": {
+      "package_id": "ggg_hcm_data",
+      "name": "Kichi-Kichi Nguyen Duy Trinh (0447)"
+    },
+    "2322670": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Nguyen Hue (0443)"
+    },
+    "2347217": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House My Tho Tien Giang (0461)"
+    },
+    "2351160": {
+      "package_id": "ggg_hcm_data",
+      "name": "Gogi House Cao Lanh - Dong Thap (0465)"
+    },
+    "1": {
+      "package_id": "qsr_masterdata",
+      "name": "Restaurant Name"
+    },
+    "1000063": {
+      "package_id": "ggg_hn_data",
+      "name": "Ashima Trieu Viet Vuong (0002)"
+    },
+    "1000065": {
+      "package_id": "ggg_hn_data",
+      "name": "Ashima Giang Van Minh (0003)"
+    },
+    "1000067": {
+      "package_id": "ggg_hn_data",
+      "name": "SumoBBQ Hoang Quoc Viet (0005)"
+    },
+    "1000075": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Big C Ha Noi (0011)"
+    },
+    "1000078": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Vincom Ba Trieu (0014)"
+    },
+    "1000083": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Royal (0019)"
+    },
+    "1000092": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House BigC (0028)"
+    },
+    "1000093": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Tran Thai Tong (0029)"
+    },
+    "1000094": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Royal (0030)"
+    },
+    "1002395": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi Hoang Dao Thuy (0292)"
+    },
+    "1002396": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi Trieu Viet Vuong (0174)"
+    },
+    "1005445": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Bui Thi Xuan (0068)"
+    },
+    "1006339": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Trung Yen (0070)"
+    },
+    "1006682": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Vincom Ha Long (0069)"
+    },
+    "1017085": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Aeon Mall Long Bien - HN(0382)"
+    },
+    "1047302": {
+      "package_id": "ggg_hn_data",
+      "name": "Yutang Ly Thai To - Bac Ninh (0423)"
+    },
+    "1047303": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Ly Thai To - Bac Ninh (0422)"
+    },
+    "1047994": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Aeon Mall Ha Dong (0415)"
+    },
+    "1047995": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi - Aeon Mall Ha Dong (0416)"
+    },
+    "1047996": {
+      "package_id": "ggg_hn_data",
+      "name": "SumoBBQ Aeon Mall Ha Dong (0417)"
+    },
+    "1047998": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi - Aeon Mall Ha Dong (0419)"
+    },
+    "1047999": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Aeon Mall Ha Dong (0420)"
+    },
+    "1052661": {
+      "package_id": "ggg_hn_data",
+      "name": "The Coffee Inn Truong Chinh (0119)"
+    },
+    "1054283": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Phu Loc - Lang Son (0427)"
+    },
+    "1054284": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Phu Loc - Lang Son (0428)"
+    },
+    "1062509": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Aeon Mall Long Bien (0132)"
+    },
+    "1062514": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Lac Long Quan (0134)"
+    },
+    "1064125": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Tasco Mall Long Bien (0453)"
+    },
+    "1064812": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Giang Van Minh (0136)"
+    },
+    "1067446": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah BigC Thang Long - HN (0454)"
+    },
+    "1075097": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - Bien Hoa - Ha Nam (0450)"
+    },
+    "1075579": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Ha Nam - Bien Hoa - Ha Nam (0449)"
+    },
+    "1076721": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Times City (0143)"
+    },
+    "1088714": {
+      "package_id": "ggg_hn_data",
+      "name": "The Coffee Inn Truong Chinh (0119)"
+    },
+    "1088810": {
+      "package_id": "ggg_hn_data",
+      "name": "ICook Nguyen Thai Hoc (0156)"
+    },
+    "1089039": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Vincom TDH - HN (0458)"
+    },
+    "1093315": {
+      "package_id": "ggg_hn_data",
+      "name": "Yutang BigC Thang Long - Ha Noi (0435)"
+    },
+    "1102887": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Times Garden - QN (0463)"
+    },
+    "1111904": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Viet Tri - Phu Tho (0469)"
+    },
+    "1117501": {
+      "package_id": "ggg_hn_data",
+      "name": "KTOP Aeon Mall Ha Dong - HN (0475)"
+    },
+    "1122804": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Vincom Thai Binh (0186)"
+    },
+    "1166700": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Dong A Nam Dinh (0207)"
+    },
+    "1168732": {
+      "package_id": "ggg_hn_data",
+      "name": "Shogun Pham Ngoc Thach (0209)"
+    },
+    "1170103": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Hung Vuong - Bac Giang (0478)"
+    },
+    "1170226": {
+      "package_id": "ggg_hn_data",
+      "name": "Shogun Royal City - HN (0480)"
+    },
+    "1174993": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Quan Su - HN (0487)"
+    },
+    "1176668": {
+      "package_id": "ggg_hn_data",
+      "name": "Yutang Aeon Mall Long Bien-Ha Noi(0488)"
+    },
+    "1178062": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Vinhome Ocean Park (0492)"
+    },
+    "1178063": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Vinhome Ocean Park (0491)"
+    },
+    "1178064": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Vinhome Ocean Park (0490)"
+    },
+    "1178065": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Aeon Mall Hai Phong (0493)"
+    },
+    "1178066": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Aeon Mall Hai Phong (0494)"
+    },
+    "1178067": {
+      "package_id": "ggg_hn_data",
+      "name": "K-Pub Aeon Mall Hai Phong (0495)"
+    },
+    "1178068": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Aeon Mall Hai Phong (0496)"
+    },
+    "1183960": {
+      "package_id": "ggg_hn_data",
+      "name": "Kpub - Aeon Mall Ha Dong - HN(0507)"
+    },
+    "1184021": {
+      "package_id": "ggg_hn_data",
+      "name": "Crystal Jade-Tran Duy Hung-Ha Noi (505)"
+    },
+    "1185701": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Trang Tien (0514)"
+    },
+    "1185702": {
+      "package_id": "ggg_hn_data",
+      "name": "Shogun Lotte Dao Tan-HN (0513)"
+    },
+    "1185714": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Giang Vo - HN (0512)"
+    },
+    "1194943": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Lac Long Quan  (0211)"
+    },
+    "1197331": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Huynh Thuc Khang (0176)"
+    },
+    "1199169": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Linh Dam (0213)"
+    },
+    "1207274": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Nguy Nhu Kon Tum (0215)"
+    },
+    "1209102": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Vincom Pham Ngoc Thach (0537)"
+    },
+    "1213650": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Linh Dam (0216)"
+    },
+    "1215328": {
+      "package_id": "ggg_hn_data",
+      "name": "Shogun Bac Ninh (0538)"
+    },
+    "1215358": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Times City (0542)"
+    },
+    "1216198": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Phan Boi Chau TN (0218)"
+    },
+    "1223608": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Cao Thang Thanh Hoa (0225)"
+    },
+    "1225606": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Tu Son Bac Ninh (0229)"
+    },
+    "1229508": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Vincom Pham Ngoc Thach (0546)"
+    },
+    "1232325": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi - Park Home TTT - HN (0554)"
+    },
+    "1233255": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Times City - HN (0541)"
+    },
+    "1242300": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah - Tran Thai Tong - HN (0564)"
+    },
+    "1272163": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi - Aeon Mall Long Bien - HN (0575)"
+    },
+    "1277353": {
+      "package_id": "ggg_hn_data",
+      "name": "SumoBBQ - Giang Vo HN (0583)"
+    },
+    "1280776": {
+      "package_id": "ggg_hn_data",
+      "name": "Cang tin A11 - Benh Vien BM - HN (0587)"
+    },
+    "1281744": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah - Royal - HN (0593)"
+    },
+    "1282537": {
+      "package_id": "ggg_hn_data",
+      "name": "Cang tin K - Benh Vien BM - HN (0588)"
+    },
+    "1293111": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Tran Phu (0602)"
+    },
+    "1297062": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah - Le Thai To - HN (0607)"
+    },
+    "1317711": {
+      "package_id": "ggg_hn_data",
+      "name": "Shogun Time City - HN (0617)"
+    },
+    "1317941": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi The Zei Le Duc Tho-HN(0618)"
+    },
+    "1318310": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - Tan Mai 2 - HN (0620)"
+    },
+    "1332619": {
+      "package_id": "ggg_hn_data",
+      "name": "UP Pizza & Grill-Hoang Dao Thuy (0634)"
+    },
+    "1348095": {
+      "package_id": "ggg_hn_data",
+      "name": "Chix Max - Nguyen Huy Tuong - HN (0642)"
+    },
+    "1348879": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Dong A - Nam Dinh (0638)"
+    },
+    "1355072": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - Van Quan - HN (0648)"
+    },
+    "1355128": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Mega Pham Van Dong HN (0650)"
+    },
+    "1364435": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Nguyen Khanh Toan - HN (0652)"
+    },
+    "1376149": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi Phan Dinh Phung-HN(0659)"
+    },
+    "1379639": {
+      "package_id": "ggg_hn_data",
+      "name": "Ashima Phan Dinh Phung (0662)"
+    },
+    "1379991": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah - Trich Sai - HN (0663)"
+    },
+    "1380210": {
+      "package_id": "ggg_hn_data",
+      "name": "Woomaster-Ngo Thi Nham-HN (0666)"
+    },
+    "1383827": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - IPH Xuan Thuy - HN (0667)"
+    },
+    "1384721": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi IPH-Xuan Thuy (0670)"
+    },
+    "1390647": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - Tran Phu - HN (0672)"
+    },
+    "1390706": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - Tran Thu Do - HN (0673)"
+    },
+    "1402307": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - Nguyen Dang Dao - BN (0675)"
+    },
+    "1408947": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - Le Trong Tan - HN (0676)"
+    },
+    "1423058": {
+      "package_id": "ggg_hn_data",
+      "name": "Chix Max - Lotte Vo Chi Cong - HN (0687)"
+    },
+    "1423196": {
+      "package_id": "ggg_hn_data",
+      "name": "Crystal Jade - Lotte VCC - Ha Noi (689)"
+    },
+    "1423197": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah - Lotte Vo Chi Cong - HN (0685)"
+    },
+    "1423205": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Lotte Vo Chi Cong- HN (0684)"
+    },
+    "1423266": {
+      "package_id": "ggg_hn_data",
+      "name": "Yutang - Lotte Vo Chi Cong - HN (0686)"
+    },
+    "1424303": {
+      "package_id": "ggg_hn_data",
+      "name": "Universal Tea - Le Van Thiem - HN (0690)"
+    },
+    "1425741": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi - Vu Pham Ham - HN (0691)"
+    },
+    "1426109": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi The Loop IPH-Xuan Thuy-HN(0692)"
+    },
+    "1431896": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Le Van Luong - HN (0696)"
+    },
+    "1437459": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Linh Dam - HN (0701)"
+    },
+    "1445712": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Le Van Luong (0252)"
+    },
+    "1454990": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi The Zei Le Duc Tho-HN (0707)"
+    },
+    "1455042": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi - Lotte Dao Tan - HN (0706)"
+    },
+    "1458419": {
+      "package_id": "ggg_hn_data",
+      "name": "FlyChef Ha Yen Quyet - HN (0708)"
+    },
+    "1464026": {
+      "package_id": "ggg_hn_data",
+      "name": "Yutang Aeon Mall Ha Dong - HN (0713)"
+    },
+    "1464562": {
+      "package_id": "ggg_hn_data",
+      "name": "TEST"
+    },
+    "1470503": {
+      "package_id": "ggg_hn_data",
+      "name": "Hang Cuon Tran Phu HN (0718)"
+    },
+    "1474875": {
+      "package_id": "ggg_hn_data",
+      "name": "Universal Tea - Tran Quoc Toan (0723)"
+    },
+    "1488238": {
+      "package_id": "ggg_hn_data",
+      "name": "Man Tang Guo - The Loop IPH (0734)"
+    },
+    "1493491": {
+      "package_id": "ggg_hn_data",
+      "name": "Universal Tea - Vu Pham Ham - HN (0737)"
+    },
+    "1508956": {
+      "package_id": "ggg_hn_data",
+      "name": "Pho Inn Thai Phien - HN (0743)"
+    },
+    "1509360": {
+      "package_id": "ggg_hn_data",
+      "name": "Mak Mak Thai - Le Hong Phong - HP (0744)"
+    },
+    "1509744": {
+      "package_id": "ggg_hn_data",
+      "name": "Universal Tea - Hao Nam - HN (0745)"
+    },
+    "1525948": {
+      "package_id": "ggg_hn_data",
+      "name": "Sakura - Kim Ma - HN (0748)"
+    },
+    "1536516": {
+      "package_id": "ggg_hn_data",
+      "name": "Sakura - Bui Thi Xuan - HN (0754)"
+    },
+    "1536542": {
+      "package_id": "ggg_hn_data",
+      "name": "Sakura - Tran Thai Tong - HN (0753)"
+    },
+    "1536618": {
+      "package_id": "ggg_hn_data",
+      "name": "Mama Bakery - Kim Ma - HN (0752)"
+    },
+    "1536882": {
+      "package_id": "ggg_hn_data",
+      "name": "Chibo - 551 Kim Ma - HN (0755)"
+    },
+    "1536897": {
+      "package_id": "ggg_hn_data",
+      "name": "Chibo - Hoang Ngan - HN (0756)"
+    },
+    "1547238": {
+      "package_id": "ggg_hn_data",
+      "name": "Univesal Coffee-Phan Dinh Phung-HN(0765)"
+    },
+    "1552553": {
+      "package_id": "ggg_hn_data",
+      "name": "Hang Cuon Nguyen Khang HN (0767)"
+    },
+    "1553541": {
+      "package_id": "ggg_hn_data",
+      "name": "Shogun - Nguyen Van Loc - HN (0768)"
+    },
+    "1568968": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi-Trung Hoa Nhan Chinh-HN (772)"
+    },
+    "1580299": {
+      "package_id": "ggg_hn_data",
+      "name": "GSO Truong Chinh - Ha Noi (0778)"
+    },
+    "1586315": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House An Khanh - HN (0782)"
+    },
+    "1588232": {
+      "package_id": "ggg_hn_data",
+      "name": "Hang Cuon Aeon mall Ha Dong, HN (0784)"
+    },
+    "1590988": {
+      "package_id": "ggg_hn_data",
+      "name": "Canteen To Hoa Dai Nam (0786)"
+    },
+    "1591029": {
+      "package_id": "ggg_hn_data",
+      "name": "Canteen - Cafe To Hoa Dai Nam-HN (0787)"
+    },
+    "1601358": {
+      "package_id": "ggg_hn_data",
+      "name": "Hang Cuon Le Hong Phong, HP (0788)"
+    },
+    "1609740": {
+      "package_id": "ggg_hn_data",
+      "name": "Flychef Nguyen Huy Tuong - HN(0797)"
+    },
+    "1618214": {
+      "package_id": "ggg_hn_data",
+      "name": "Yutang Lotte Dao Tan (0801)"
+    },
+    "1629664": {
+      "package_id": "ggg_hn_data",
+      "name": "Hang Cuon Le Thanh Tong, QN (0805)"
+    },
+    "1645880": {
+      "package_id": "ggg_hn_data",
+      "name": "Vinh Xanh Mipec LB (0814)"
+    },
+    "1648624": {
+      "package_id": "ggg_hn_data",
+      "name": "Chixmax Trung Hoa (813)"
+    },
+    "1661400": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Nguyen Hoang 2 (0819)"
+    },
+    "1663482": {
+      "package_id": "ggg_hn_data",
+      "name": "Hang Cuon Vinhomes Bach Dang HP (0823)"
+    },
+    "1676782": {
+      "package_id": "ggg_hn_data",
+      "name": "Ashima Hoang Dao Thuy (0290)"
+    },
+    "1681382": {
+      "package_id": "ggg_hn_data",
+      "name": "Pho Inn Noi Bai - HN (0828)"
+    },
+    "1684555": {
+      "package_id": "ggg_hn_data",
+      "name": "Woomaster-Trung Hoa-HN (0829)"
+    },
+    "1684916": {
+      "package_id": "ggg_hn_data",
+      "name": "Lach Ca Lach Cach - The Loop IPH (0830)"
+    },
+    "1684917": {
+      "package_id": "ggg_hn_data",
+      "name": "Lach Ca Lach Cach - Lotte VCC (0831)"
+    },
+    "1688156": {
+      "package_id": "ggg_hn_data",
+      "name": "Universal Tea - Lotte Vo Chi Cong (0832)"
+    },
+    "1707845": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi TTTM Tasco Mall HN (294)"
+    },
+    "1712572": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Van Phuc (0298)"
+    },
+    "1713529": {
+      "package_id": "ggg_hn_data",
+      "name": "Lach Ca Lach Cach - Dao Tan, HN (0839)"
+    },
+    "1714771": {
+      "package_id": "ggg_hn_data",
+      "name": "Cloudpot AeonMall Xuan Thuy- HN (0840)"
+    },
+    "1729967": {
+      "package_id": "ggg_hn_data",
+      "name": "Sushi X - Trung Hoa - HN (0843)"
+    },
+    "1730088": {
+      "package_id": "ggg_hn_data",
+      "name": "SushiX - Times City - HN (0842)"
+    },
+    "1730255": {
+      "package_id": "ggg_hn_data",
+      "name": "Hutong - Vinh Yen - Vinh Phuc (0844)"
+    },
+    "1733220": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Viet Tri Phu Tho (0300)"
+    },
+    "1738456": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House TTTM Trang Tien HN (301)"
+    },
+    "1739607": {
+      "package_id": "ggg_hn_data",
+      "name": "Pho Inn - Le Thai To - HN (0847)"
+    },
+    "1753250": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi L.V.Thang Ninh Binh(307)"
+    },
+    "1753251": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House L.V.Thang Ninh Binh(306)"
+    },
+    "1765756": {
+      "package_id": "ggg_hn_data",
+      "name": "SumoBBQ N04 Hoang Dao Thuy, HN (0849)"
+    },
+    "1775884": {
+      "package_id": "ggg_hn_data",
+      "name": "Hang Cuon - Cao Thang - Thanh Hoa (0850)"
+    },
+    "1792999": {
+      "package_id": "ggg_hn_data",
+      "name": "FlyChef Kim Nguu - HN(0851)"
+    },
+    "1798512": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Le Hong Phong 2A HP (0853)"
+    },
+    "1802108": {
+      "package_id": "ggg_hn_data",
+      "name": "Ashima - Huynh Thuc Khang - HN (0312)"
+    },
+    "1806381": {
+      "package_id": "ggg_hn_data",
+      "name": "Bap Bung GO Thang Long - HN (0857)"
+    },
+    "1807642": {
+      "package_id": "ggg_hn_data",
+      "name": "Hang Cuon - Vincom Ba Trieu, HN (0856)"
+    },
+    "1809044": {
+      "package_id": "ggg_hn_data",
+      "name": "Hutong - Nguyen Thi Luu, Bac Giang (0859"
+    },
+    "1809720": {
+      "package_id": "ggg_hn_data",
+      "name": "Wow!Yakiniku Times City (0858)"
+    },
+    "1810364": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Nguyen Luong Bang 2-HD (0860)"
+    },
+    "1815487": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi - Luong Dinh Cua (0861)"
+    },
+    "1829862": {
+      "package_id": "ggg_hn_data",
+      "name": "Dao Niu Gou Le Duc Tho - HN (0864)"
+    },
+    "1839743": {
+      "package_id": "ggg_hn_data",
+      "name": "Mama s Bakery - Tran Thai Tong, HN(0865)"
+    },
+    "1855568": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House To Hieu - Ha Noi (314)"
+    },
+    "1861733": {
+      "package_id": "ggg_hn_data",
+      "name": "Lach Ca Lach Cach – Aeon LB, HN (0870)"
+    },
+    "1862672": {
+      "package_id": "ggg_hn_data",
+      "name": "Universal Tea - Tran Huy Lieu (0868)"
+    },
+    "1862816": {
+      "package_id": "ggg_hn_data",
+      "name": "Cloud Pot - Tran Huy Lieu, HN (0869)"
+    },
+    "1864215": {
+      "package_id": "ggg_hn_data",
+      "name": "Cha Ca Van Van - Ocean Park (0871)"
+    },
+    "1868005": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Ton Duc Thang - VP (0872)"
+    },
+    "1878538": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Mipec Tay Son - HN (0873)"
+    },
+    "1887849": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Thai Ha - HN  (0320)"
+    },
+    "1912658": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah - Tran Phu - Ha Noi (0876)"
+    },
+    "1913152": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Lang Ha, HN (0877)"
+    },
+    "1950279": {
+      "package_id": "ggg_hn_data",
+      "name": "Univesal Coffee-Aeon Ha Dong-HN(0882)"
+    },
+    "1958732": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Lao Cai (0327)"
+    },
+    "1972513": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Lotte Dao Tan - HN (0331)"
+    },
+    "1972733": {
+      "package_id": "ggg_hn_data",
+      "name": "Lach Ca Lach Cach - LeHongPhongHP (0886)"
+    },
+    "1972986": {
+      "package_id": "ggg_hn_data",
+      "name": "Lach Ca Lach Cach - Vinhome IPHP (0889)"
+    },
+    "1973645": {
+      "package_id": "ggg_hn_data",
+      "name": "Lach Ca Lach Cach - LeThanhTongQN (0890)"
+    },
+    "1975879": {
+      "package_id": "ggg_hn_data",
+      "name": "Lach Ca Lach Cach - NguyenKhangHN (0884)"
+    },
+    "1976517": {
+      "package_id": "ggg_hn_data",
+      "name": "UP & Grill - Vincom Ba Trieu, HN (0887)"
+    },
+    "1977030": {
+      "package_id": "ggg_hn_data",
+      "name": "Lach Ca Lach Cach - Tran Phu - HN (0885)"
+    },
+    "1978534": {
+      "package_id": "ggg_hn_data",
+      "name": "Hutong Palace - Vincom TDH - HN (0893)"
+    },
+    "1982574": {
+      "package_id": "ggg_hn_data",
+      "name": "Chix Max - Aeon Mall Long Bien (0896)"
+    },
+    "1984311": {
+      "package_id": "ggg_hn_data",
+      "name": "Lach Ca Lach Cach - Aeon HD, HN (0891)"
+    },
+    "1995177": {
+      "package_id": "ggg_hn_data",
+      "name": "HuTong Palace-Lotte Tay Ho, HN (0894)"
+    },
+    "1999594": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Hanoi Centre, HN (0904)"
+    },
+    "1999829": {
+      "package_id": "ggg_hn_data",
+      "name": "Lach Ca Lach Cach - Go! TL HN (0892)"
+    },
+    "2003773": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi - Hanoi Center - HN (0905)"
+    },
+    "2004896": {
+      "package_id": "ggg_hn_data",
+      "name": "Ngon Ya Ramen - Trung Hoa-HN (0906)"
+    },
+    "2009445": {
+      "package_id": "ggg_hn_data",
+      "name": "Union Pizza-Nguyen Khanh Toan-HN (0907)"
+    },
+    "2039141": {
+      "package_id": "ggg_hn_data",
+      "name": "Pizza 360 - Royal City, HN (0916)"
+    },
+    "2043522": {
+      "package_id": "ggg_hn_data",
+      "name": "Dao Niu Guo-Vinh Phuc (0912)"
+    },
+    "2048766": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Aeon Mall LB HN(0349)"
+    },
+    "2049351": {
+      "package_id": "ggg_hn_data",
+      "name": "SumoBBQ Aeon Mall LB HN (0348)"
+    },
+    "2071367": {
+      "package_id": "ggg_hn_data",
+      "name": "D2C - 315 Truong Chinh, HN (0930)"
+    },
+    "2071614": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah - Nguyen Thi Luu - BG (0918)"
+    },
+    "2071798": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi - Aeon Mall Ha Dong (0919)"
+    },
+    "2072016": {
+      "package_id": "ggg_hn_data",
+      "name": "Dao Niu Gou Thai Ha - HN (0921)"
+    },
+    "2072054": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi - Hoang Dao Thuy - HN (0895)"
+    },
+    "2072144": {
+      "package_id": "ggg_hn_data",
+      "name": "Van Van - GO! Thang Long - HN (0926)"
+    },
+    "2073748": {
+      "package_id": "ggg_hn_data",
+      "name": "Dao Niu Gou Mipec Long Bien - HN (0923)"
+    },
+    "2073750": {
+      "package_id": "ggg_hn_data",
+      "name": "Chix Max - Vincom Thai Binh (0927)"
+    },
+    "2076776": {
+      "package_id": "ggg_hn_data",
+      "name": "Ashima - VC Metropolis - HN (0935)"
+    },
+    "2080994": {
+      "package_id": "ggg_hn_data",
+      "name": "Dao Niu Guo - Le Thai To, HN (0922)"
+    },
+    "2083170": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah - Cao Thang, Thanh Hoa (0915)"
+    },
+    "2097410": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi - VC Metropolis - HN (0928)"
+    },
+    "2100525": {
+      "package_id": "ggg_hn_data",
+      "name": "Ashima - Aeon Mall Ha Dong-HN(0936)"
+    },
+    "2102410": {
+      "package_id": "ggg_hn_data",
+      "name": "Dao Niu Guo - Tran Huy Lieu - HN (0924)"
+    },
+    "2103618": {
+      "package_id": "ggg_hn_data",
+      "name": "YuTang - VC Ocean Park - HN (0943)"
+    },
+    "2109553": {
+      "package_id": "ggg_hn_data",
+      "name": "Dao Niu Guo-Ha Long, Quang Ninh (0946)"
+    },
+    "2110326": {
+      "package_id": "ggg_hn_data",
+      "name": "Union Pizza-Phan Dinh Phung-HN (0948)"
+    },
+    "2125963": {
+      "package_id": "ggg_hn_data",
+      "name": "Flychef Nguyen Van Loc - HN(0951)"
+    },
+    "2137810": {
+      "package_id": "ggg_hn_data",
+      "name": "Pizza360 - GO Thang Long, HN (0949)"
+    },
+    "2144712": {
+      "package_id": "ggg_hn_data",
+      "name": "Flychef 40 - Xuan La, HN (0950)"
+    },
+    "2152018": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Hang Bun - HN (0958)"
+    },
+    "2152588": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi - Lacasta Gallery,HN (0960)"
+    },
+    "2159183": {
+      "package_id": "ggg_hn_data",
+      "name": "Mama Bakery - Aeon Ha Dong - HN (0961)"
+    },
+    "2159251": {
+      "package_id": "ggg_hn_data",
+      "name": "Chixmax - AeonMall Ha Dong, HN (0965)"
+    },
+    "2171017": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Lacasta Van Phu - HN (0959)"
+    },
+    "2171019": {
+      "package_id": "ggg_hn_data",
+      "name": "Chibo - Aeon Mall Ha Dong, HN (0966)"
+    },
+    "2194776": {
+      "package_id": "ggg_hn_data",
+      "name": "Dao Niu Guo Tran Phu - HN (979)"
+    },
+    "2196341": {
+      "package_id": "ggg_hn_data",
+      "name": "Wow!Yakiniku Lotte Vo Chi Cong (0976)"
+    },
+    "2196680": {
+      "package_id": "ggg_hn_data",
+      "name": "Dao Niu Guo - Bac Ninh (0980)"
+    },
+    "2196772": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi-Kichi Vincom Smart City (989)"
+    },
+    "2196796": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House, Yen Bai (0975)"
+    },
+    "2197833": {
+      "package_id": "ggg_hn_data",
+      "name": "Wow!Yakiniku Tran Thai Tong, HN (0977)"
+    },
+    "2198777": {
+      "package_id": "ggg_hn_data",
+      "name": "Wow!Yakiniku - Go Thang Long, HN (0978)"
+    },
+    "2206378": {
+      "package_id": "ggg_hn_data",
+      "name": "Daruma Trung Hoa, HN (0956)"
+    },
+    "2208313": {
+      "package_id": "ggg_hn_data",
+      "name": "Ashima Forest-Aeon Mall Ha Dong-HN(0991)"
+    },
+    "2208929": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - Nguyen Van Cu - HN (0990)"
+    },
+    "2243609": {
+      "package_id": "ggg_hn_data",
+      "name": "Dao Niu Guo - Thanh Hoa (0995)"
+    },
+    "2271888": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi - Tran Thai Tong, HN(0996)"
+    },
+    "2319595": {
+      "package_id": "ggg_hn_data",
+      "name": "Man Tang Guo-Aeon Mall Hai Phong (1006)"
+    },
+    "2319656": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Aeon Thanh Hoa (1005)"
+    },
+    "2323957": {
+      "package_id": "ggg_hn_data",
+      "name": "Woomaster-Aeon Mall Ha Dong, HN (1014)"
+    },
+    "2340358": {
+      "package_id": "ggg_hn_data",
+      "name": "Canteen FPT Duy Tân (1016)"
+    },
+    "2345544": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - Aeon Mall Thanh Hoa (1003)"
+    },
+    "2367188": {
+      "package_id": "ggg_hn_data",
+      "name": "Canteen 123Mart FPT Duy Tân, HN (1020)"
+    },
+    "2371115": {
+      "package_id": "ggg_hn_data",
+      "name": "Wow!Yakiniku-Vincom Metropolis, HN(1027)"
+    },
+    "2371772": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - Aeon Mall Hai Duong (1024)"
+    },
+    "2371908": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Aeon Hai Duong (1026)"
+    },
+    "2372257": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi - AeonMall Thanh Hoa (1004)"
+    },
+    "2372258": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi - Aeon Mall Hai Duong (1023)"
+    },
+    "2372484": {
+      "package_id": "ggg_hn_data",
+      "name": "Manwah Aeonmall Ha Long (1021)"
+    },
+    "2372569": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House - Aeon Mall Ha Long (1028)"
+    },
+    "2372575": {
+      "package_id": "ggg_hn_data",
+      "name": "Chixmax - Aeon Mall Hai Duong (1025)"
+    },
+    "2376593": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi - Aeonmall Ha Long-QN (1022)"
+    },
+    "2399545": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Vincom HP(0373)"
+    },
+    "2406300": {
+      "package_id": "ggg_hn_data",
+      "name": "Chixmax - AeonRubik Xuan Thuy, HN (1033)"
+    },
+    "2407798": {
+      "package_id": "ggg_hn_data",
+      "name": "Isushi - Ha Long - Quang Ninh(0997)"
+    },
+    "2407840": {
+      "package_id": "ggg_hn_data",
+      "name": "UP & Grill - Thai Ha, HN (1037)"
+    },
+    "2407884": {
+      "package_id": "ggg_hn_data",
+      "name": "Kichi Kichi - Nguyen Van Cu - HN (1036)"
+    },
+    "2408088": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Cau Dien - HN (1035)"
+    },
+    "2413668": {
+      "package_id": "ggg_hn_data",
+      "name": "Dao Niu Guo - Aeon Xuan Thuy, HN (1038)"
+    },
+    "2453809": {
+      "package_id": "ggg_hn_data",
+      "name": "Gogi House Ham Nghi HN (0391)"
+    },
+    "1653742": {
+      "package_id": "ggg_hcm_data",
+      "name": "Isushi Aeon Hue (1040)"
+    },
+    "1654137": {
+      "package_id": "ggg_hcm_data",
+      "name": "Manwah Aeon Hue (1041)"
+    },
+    "1002245": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_068_EST_HCM"
+    },
+    "1002246": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_053_SVH_HCM"
+    },
+    "1002391": {
+      "package_id": "qsr_masterdata",
+      "name": "1. TPC - Training"
+    },
+    "1003921": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_050_VNT_KHA"
+    },
+    "1003960": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_002_VRCT_HAN"
+    },
+    "1003975": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_071_VTDH_HAN"
+    },
+    "1008496": {
+      "package_id": "qsr_masterdata",
+      "name": "CHANG_001_CT_HCM"
+    },
+    "1008497": {
+      "package_id": "qsr_masterdata",
+      "name": "CHANG_002_LTT_HCM"
+    },
+    "1008498": {
+      "package_id": "qsr_masterdata",
+      "name": "CHANG_004_PXL_HCM"
+    },
+    "1008499": {
+      "package_id": "qsr_masterdata",
+      "name": "CHANG_003_VVN_HCM"
+    },
+    "1011726": {
+      "package_id": "qsr_masterdata",
+      "name": "CHANG_005_NDC_HCM"
+    },
+    "1013026": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_013_VBT_HAN"
+    },
+    "1013027": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_014_TCT_HAN"
+    },
+    "1013028": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_016_VBH_DNI"
+    },
+    "1013029": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_018_ALB_HAN"
+    },
+    "1013030": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_019_SCBT_BTE"
+    },
+    "1013031": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_020_VAG_AG"
+    },
+    "1013032": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_021_VVT_PTO"
+    },
+    "1013033": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_025_SCCT_CTO"
+    },
+    "1013034": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_026_LGV_HCM"
+    },
+    "1013035": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_027_LNT_NTG"
+    },
+    "1013036": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_029_VPNT_HAN"
+    },
+    "1013037": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_032_VVC_HCM"
+    },
+    "1013038": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_033_VRCT_HAN"
+    },
+    "1013039": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_035_BCLB_HAN"
+    },
+    "1013040": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_037_SCCM_CMA"
+    },
+    "1013041": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_038_EGV_HCM"
+    },
+    "1013042": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_041_VHM_HCM"
+    },
+    "1013043": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_042_BCTL_HAN"
+    },
+    "1013044": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_044_NTC_NTG"
+    },
+    "1013045": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_045_BCMT_MT"
+    },
+    "1013046": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_046_EST_HCM"
+    },
+    "1013047": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_047_PVD_HCM"
+    },
+    "1013048": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_048_VLG_HAN"
+    },
+    "1013049": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_049_VS_HAN"
+    },
+    "1013050": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_050_AHD_HAN"
+    },
+    "1013051": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_051_CSM_HCM"
+    },
+    "1017401": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_007_NTH_HCM"
+    },
+    "1017402": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_012_VTD_HCM"
+    },
+    "1017403": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_061_SHA_HCM"
+    },
+    "1017404": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_003_NTMK_HCM"
+    },
+    "1017405": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_005_LVS_HCM"
+    },
+    "1017406": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_040_GDM_HCM"
+    },
+    "1017407": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_051_BH_HCM"
+    },
+    "1017408": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_025_HG_HCM"
+    },
+    "1017409": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_030_HTP_HCM"
+    },
+    "1017410": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_043_HTP2_HCM"
+    },
+    "1017411": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_075_NDC_HCM"
+    },
+    "1017412": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_079_CSM_HCM"
+    },
+    "1017413": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_039_PH_HCM"
+    },
+    "1017414": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_076_QL50_HCM"
+    },
+    "1017415": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_077_HB_LDO"
+    },
+    "1017416": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_008_PXL_HCM"
+    },
+    "1017417": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_044_D2_HCM"
+    },
+    "1017418": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_058_HHT_HCM"
+    },
+    "1017789": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_056_TN_HCM"
+    },
+    "1017790": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_032_QTR_HCM"
+    },
+    "1017791": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_038_PVT_HCM"
+    },
+    "1017792": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_018_VVN_HCM"
+    },
+    "1017793": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_069_SPVD_HCM"
+    },
+    "1017794": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_019_BC_HCM"
+    },
+    "1017796": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_029_TSN_HCM"
+    },
+    "1017797": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_042_LVS2_HCM"
+    },
+    "1017798": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_022_NS_HCM"
+    },
+    "1017799": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_067_ATP_HCM"
+    },
+    "1017801": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_054_LVQ_HCM"
+    },
+    "1017802": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_020_NAT_HCM"
+    },
+    "1017805": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_006_VBH_DNI"
+    },
+    "1017810": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_035_PGS_DNI"
+    },
+    "1017811": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_013_VAG_AGG"
+    },
+    "1017812": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_015_SCBT_BT"
+    },
+    "1017813": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_017_SCCT_CTO"
+    },
+    "1017839": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_033_SCCM_CMA"
+    },
+    "1017840": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_059_BCMT_TG"
+    },
+    "1017841": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_077_HB_LDO"
+    },
+    "1017843": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_066_CBL_LDO"
+    },
+    "1017844": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_016_VBMT_DLK"
+    },
+    "1017846": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_046_CBMT_DLK"
+    },
+    "1017847": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_060_VTS_VTU"
+    },
+    "1017849": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_047_HL_VTU"
+    },
+    "1017850": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_001_CG_HAN"
+    },
+    "1017851": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_062_TCT_HAN"
+    },
+    "1017852": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_011_DTN_HAN"
+    },
+    "1017853": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_027_VBTL_HAN"
+    },
+    "1017854": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_036_ALB_HAN"
+    },
+    "1017928": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_074_AHD_HAN"
+    },
+    "1017929": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_078_NCT_HAN"
+    },
+    "1017930": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_082_LD_HAN"
+    },
+    "1017935": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_063_VLTT_BAN"
+    },
+    "1017936": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_014_VVT_PTO"
+    },
+    "1017939": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_065_TH_HPO"
+    },
+    "1017941": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_073_LT_HPO"
+    },
+    "1017942": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_055_VXGP_NAD"
+    },
+    "1017944": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_070_NK_TH"
+    },
+    "1017946": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_081_NVC_VIN"
+    },
+    "1017948": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_052_VH_HUE"
+    },
+    "1017950": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_072_NVT_DNA"
+    },
+    "1017951": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_049_CDNG_DNA"
+    },
+    "1017953": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_024_NTT_KHA"
+    },
+    "1017955": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_057_23.10_KHA"
+    },
+    "1018101": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_004_LDH_HCM"
+    },
+    "1018111": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_021_XD_HAN"
+    },
+    "1018112": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_037_QTV_VIN"
+    },
+    "1018113": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_041_HVLA_LA"
+    },
+    "1018115": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_045_HB_HCM"
+    },
+    "1018187": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_052_ABD_BD"
+    },
+    "1018533": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_083_AHP_HP"
+    },
+    "1018766": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_053_AHP_HP"
+    },
+    "1024935": {
+      "package_id": "qsr_masterdata",
+      "name": "2. Dairy Queen - Training"
+    },
+    "1024936": {
+      "package_id": "qsr_masterdata",
+      "name": "3. Chang Thai - Training"
+    },
+    "1024937": {
+      "package_id": "qsr_masterdata",
+      "name": "4. Swensens - Training"
+    },
+    "1026378": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_001_NTH_HCM"
+    },
+    "1026379": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_006_PXL_HCM"
+    },
+    "1026380": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_007_ALB_HAN"
+    },
+    "1026381": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_008_VTD_HCM"
+    },
+    "1026382": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_014_VHM_HCM"
+    },
+    "1026383": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_015_TCT_HAN"
+    },
+    "1026384": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_016_EST_HCM"
+    },
+    "1026385": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_018_VLG_HAN"
+    },
+    "1026386": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_019_SPVD_HCM"
+    },
+    "1026387": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_020_VS_HAN"
+    },
+    "1026388": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_021_AHD_HAN"
+    },
+    "1031198": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_001_DDN_HCM"
+    },
+    "1031199": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_002_VHM_HCM"
+    },
+    "1031200": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_003_NAT_HCM"
+    },
+    "1031201": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_004_NTT_HCM"
+    },
+    "1031202": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_005_VTH_THA"
+    },
+    "1031203": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_007_TSN_HCM"
+    },
+    "1031204": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_008_HB_HCM"
+    },
+    "1031205": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_009_NTMK_HCM"
+    },
+    "1031206": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_011_SCCT_CTO"
+    },
+    "1031207": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_013_D2_HCM"
+    },
+    "1031208": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_014_CBL_LDO"
+    },
+    "1031209": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_017_SPVD_HCM"
+    },
+    "1031246": {
+      "package_id": "qsr_masterdata",
+      "name": "AKA_012_BCMT_TG"
+    },
+    "1031321": {
+      "package_id": "qsr_masterdata",
+      "name": "TCC_001_HT_HCM"
+    },
+    "1031323": {
+      "package_id": "qsr_masterdata",
+      "name": "TCC_002_VVC_HCM"
+    },
+    "1031324": {
+      "package_id": "qsr_masterdata",
+      "name": "TCC_003_XT_HCM"
+    },
+    "1032866": {
+      "package_id": "qsr_masterdata",
+      "name": "5.AKA - Trainning"
+    },
+    "1033035": {
+      "package_id": "qsr_masterdata",
+      "name": "6.TCC - Trainning"
+    },
+    "1034187": {
+      "package_id": "qsr_masterdata",
+      "name": "TCC-001-HT-HCM"
+    },
+    "1039526": {
+      "package_id": "qsr_masterdata",
+      "name": "UAT_POSTEST_TPC"
+    },
+    "1039631": {
+      "package_id": "qsr_masterdata",
+      "name": "UAT_POSTEST_DQ"
+    },
+    "1041224": {
+      "package_id": "qsr_masterdata",
+      "name": "UAT_POSTEST_SW"
+    },
+    "1041225": {
+      "package_id": "qsr_masterdata",
+      "name": "UAT_POSTEST_AKA"
+    },
+    "1041226": {
+      "package_id": "qsr_masterdata",
+      "name": "UAT_POSTEST_CHANGTHAI"
+    },
+    "1041227": {
+      "package_id": "qsr_masterdata",
+      "name": "UAT_POSTEST_TCC"
+    },
+    "1046865": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_POPUP"
+    },
+    "1046867": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_AEON Tan Phu"
+    },
+    "1046868": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_Pop Up"
+    },
+    "1050255": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Nguyen Van Loc"
+    },
+    "1050256": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_Go Nha Trang"
+    },
+    "1054742": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_Van Hanh Mall"
+    },
+    "1066089": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_Aeon Tan Phu"
+    },
+    "1067602": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_Hoang Hoa Tham"
+    },
+    "1070369": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Nguyen Van Linh_Da Nang"
+    },
+    "1070370": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_The Manor Ha Noi"
+    },
+    "1075306": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Cuu Long"
+    },
+    "1078962": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Le Thai To_Bac Ninh"
+    },
+    "1080829": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Panorama Hung Vuong_Nha Trang"
+    },
+    "1088445": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_Duong So Bay"
+    },
+    "1090713": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_EVENT4"
+    },
+    "1091199": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Nguyen Thi Dinh"
+    },
+    "1091802": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_Nguyen Thi Dinh"
+    },
+    "1098056": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_Canh Vien"
+    },
+    "1103937": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_Sense Pham Van Dong"
+    },
+    "1103938": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_Lotte Go Vap"
+    },
+    "1104032": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Luong Ngoc Quyen_Thai Nguyen"
+    },
+    "1109202": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_Hung Vuong Plaza"
+    },
+    "1109773": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_Le Van Sy"
+    },
+    "1116093": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_To Hien Thanh"
+    },
+    "1120195": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Vo Thi Sau_Bien Hoa"
+    },
+    "1124801": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_Xuan La"
+    },
+    "1129434": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_Le Dai Hanh"
+    },
+    "1131545": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Vanh Dai Trong"
+    },
+    "1131550": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Vanh Dai Trong"
+    },
+    "1134631": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Aeon Hue"
+    },
+    "1134632": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Tan Mai"
+    },
+    "1135624": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Parc Mall"
+    },
+    "1135625": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_Parc Mall"
+    },
+    "1135626": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_Parc Mall"
+    },
+    "1137792": {
+      "package_id": "qsr_masterdata",
+      "name": "Chang_Cao Thang"
+    },
+    "1139402": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Le Van Viet"
+    },
+    "1158999": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Aeon Mall_Tan An"
+    },
+    "1159000": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Ap Bac"
+    },
+    "1159318": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_Ha Noi Center"
+    },
+    "1159319": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Van Phu"
+    },
+    "1160188": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Aeon Tan An"
+    },
+    "1161590": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Van Phu_Ha Noi"
+    },
+    "1163879": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Le Thi Ha"
+    },
+    "1163975": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_EVENT"
+    },
+    "1164831": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Mau Than"
+    },
+    "1168234": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_EVENT1"
+    },
+    "1168235": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_EVENT2"
+    },
+    "1168236": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_EVENT3"
+    },
+    "1168306": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Lotte Mart  Da Nang"
+    },
+    "1174222": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Dong Da_Da Nang"
+    },
+    "1174479": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_Store"
+    },
+    "1176191": {
+      "package_id": "qsr_masterdata",
+      "name": "SW_Nguyen Duc Canh"
+    },
+    "1180925": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Aeon Mall_Thanh Hoa"
+    },
+    "1181212": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Truong Thinh Phat"
+    },
+    "1181213": {
+      "package_id": "qsr_masterdata",
+      "name": "DQ_Go Thang Long"
+    },
+    "1185418": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Hung Vuong Binh Duong"
+    },
+    "1188471": {
+      "package_id": "qsr_masterdata",
+      "name": "TPC_Bach Dang_HPG"
+    }
+  },
+  "packages": {
+    "vlotus": {
+      "file": "vlotus.json",
+      "source_file": "refsdata_vlotus.udb",
+      "restaurants_count": 49,
+      "menu_items_count": 12804,
+      "price_scales_count": 35,
+      "size_kb": 2426.1
+    },
+    "gsf_masterdata": {
+      "package_id": "gsf_masterdata",
+      "display_name": "GSF",
+      "file": "gsf_masterdata.json",
+      "source_file": "SQL: 192.168.62.92,9433/RS_REPH",
+      "restaurants_count": 119,
+      "menu_items_count": 11270,
+      "price_scales_count": 135,
+      "size_kb": 3784.3
+    },
+    "ggg_hcm_data": {
+      "package_id": "ggg_hcm_data",
+      "display_name": "GGG_HCM_PROD",
+      "file": "ggg_hcm_data.json",
+      "source_file": "SQL: 192.168.201.124/GGGHCMREPH_PROD",
+      "restaurants_count": 371,
+      "menu_items_count": 13964,
+      "price_scales_count": 889,
+      "size_kb": 8676.6
+    },
+    "ggg_hn_data": {
+      "package_id": "ggg_hn_data",
+      "display_name": "GGG_HN",
+      "file": "ggg_hn_data.json",
+      "source_file": "SQL: 192.168.201.194/REPHAN_PROD",
+      "restaurants_count": 277,
+      "menu_items_count": 28991,
+      "price_scales_count": 753,
+      "size_kb": 14649.2
+    },
+    "com_ga_dong_nguyen": {
+      "file": "com_ga_dong_nguyen.json",
+      "display_name": "Cơm Gà Đông Nguyên",
+      "source_file": "refsdata.udb",
+      "restaurants_count": 5,
+      "menu_items_count": 958,
+      "price_scales_count": 8,
+      "size_kb": 475.2
+    },
+    "qsr_masterdata": {
+      "file": "qsr_masterdata.json",
+      "display_name": "QSR_Master",
+      "source_file": "refsdata_qsr_data.udb",
+      "restaurants_count": 206,
+      "menu_items_count": 6958,
+      "price_scales_count": 48,
+      "size_kb": 9505.9
+    }
+  }
+}

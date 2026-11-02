@@ -1,0 +1,90 @@
+{
+  "id": "AKA_CHANG_XML_INVOICE",
+  "name": "AKA_CHANG_XML_INVOICE",
+  "short_name": "AKA_CHANG_XML_INVOICE",
+  "restaurant_ids": [
+    "1008496",
+    "1008497",
+    "1008498",
+    "1008499",
+    "1011726",
+    "1024936",
+    "1031198",
+    "1031199",
+    "1031200",
+    "1031201",
+    "1031202",
+    "1031203",
+    "1031204",
+    "1031205",
+    "1031206",
+    "1031207",
+    "1031208",
+    "1031209",
+    "1031246",
+    "1032866",
+    "1041225",
+    "1041226",
+    "1054742",
+    "1067602",
+    "1088445",
+    "1091802",
+    "1098056",
+    "1103937",
+    "1103938",
+    "1109773",
+    "1116093",
+    "1124801",
+    "1129434",
+    "1137792"
+  ],
+  "master_display_name": "QSR_Master",
+  "master_package": "qsr_masterdata",
+  "format": "RK7 RECEIPT/CHECKDATA v1.0",
+  "reference": "IN LAI AKA_CHANG.mak",
+  "tags": {
+    "root": "RECEIPT",
+    "checkdata": "CHECKDATA",
+    "temp": "",
+    "check": "CHECK",
+    "dishes": "DISHES",
+    "taxes": "TAXES",
+    "payments": "PAYMENTS",
+    "discounts": "DISCOUNTS"
+  },
+  "fields": {
+    "check": {
+      "shift_date_field": "ShiftDate",
+      "concept": "",
+      "concept_from_master": false
+    },
+    "dishes": {
+      "id_field": "Ident",
+      "name_field": "Name",
+      "amount_field": "PriceAmount",
+      "sapcode_field": "",
+      "include_empty_price_dishes": true
+    },
+    "taxes": {
+      "id_field": "Ident",
+      "rate_field": "TaxRate",
+      "include_tax_ident": true,
+      "include_combo_ident": false,
+      "default_tax_ident": "1",
+      "default_tax_name": "VAT",
+      "default_add_to_price": "1"
+    },
+    "payments": {
+      "not_invoice_value": "0",
+      "include_prepays": true
+    },
+    "discounts": {
+      "include_discount_num": false,
+      "exclude_charges": true
+    }
+  },
+  "display_modifier_ids": [],
+  "grouping_ignored_modifier_ids": [],
+  "version": "1.0",
+  "version_description": "Mẫu in hóa đơn điện tử QSR riêng cho Aka House và Chang Thai theo IN LAI AKA_CHANG.mak"
+}
