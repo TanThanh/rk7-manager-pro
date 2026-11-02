@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+venv/
+ENV/
+
+# Build and Release artifacts (Release files should be uploaded via GitHub Releases, not git tree)
+build-webview/
+release-webview/
+dist/
+build/
+*.spec
+
+# Database and SQLite runtime files
+*.sqlite3
+*.bak
+*.tmp
+
+# User Desktop test shortcuts & system files
+Desktop/
+.vscode/
+.idea/
