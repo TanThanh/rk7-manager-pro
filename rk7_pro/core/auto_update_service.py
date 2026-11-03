@@ -11,7 +11,7 @@ from pathlib import Path
 
 logger = logging.getLogger("rk7_pro.auto_updater")
 
-CURRENT_VERSION = "4.0.3"
+CURRENT_VERSION = "4.0.3.2"
 GITHUB_REPO = "TanThanh/rk7-manager-pro"
 API_URL = f"https://api.github.com/repos/{GITHUB_REPO}/releases/latest"
 
@@ -144,20 +144,20 @@ class AutoUpdateService:
         # Batch script instructions
         bat_content = f"""@echo off
 chcp 65001 >nul
-echo Dang cho ung dung cu dong hoan toan...
-timeout /t 2 /nobreak >nul
+echo Dang cho ung dung dong hoan toan...
+ping 127.0.0.1 -n 3 >nul
 
 :wait_loop
 tasklist /fi "PID eq {pid}" 2>nul | find "{pid}" >nul
 if not errorlevel 1 (
-    timeout /t 1 /nobreak >nul
+    ping 127.0.0.1 -n 2 >nul
     goto wait_loop
 )
 
 :: Cho he dieu hanh va antivirus nha khoa toan bo file DLL
-timeout /t 1 /nobreak >nul
+ping 127.0.0.1 -n 2 >nul
 
-:: Don dep sach cac thu muc _MEI cu tranh xung dot python312.dll
+:: Don sach cache _MEI cu
 for /d %%d in ("%TEMP%\\_MEI*") do (
     rd /s /q "%%d" 2>nul
 )
@@ -165,13 +165,17 @@ for /d %%d in ("%TEMP%\\_MEI*") do (
 echo Dang cap nhat phien ban moi...
 copy /y "{downloaded_file}" "{current_exe}" >nul
 if errorlevel 1 (
-    echo Loi ghi de file! Dang thu lai voi quyen Administrator...
-    timeout /t 2 /nobreak >nul
+    echo Loi ghi de file! Dang thu lai...
+    ping 127.0.0.1 -n 3 >nul
     copy /y "{downloaded_file}" "{current_exe}" >nul
+    if errorlevel 1 (
+        echo Thu ghi de voi quyen Administrator qua PowerShell...
+        powershell -Command "Start-Process cmd -ArgumentList '/c copy /y ""{downloaded_file}"" ""{current_exe}""' -Verb RunAs -Wait" 2>nul
+    )
 )
 
-:: Cho 1 giay on dinh sau khi copy truoc khi khoi dong lai
-timeout /t 1 /nobreak >nul
+:: Cho on dinh sau khi ghi de
+ping 127.0.0.1 -n 2 >nul
 
 echo Khoi dong lai RK7 Pro Manager...
 start "" "{current_exe}"
