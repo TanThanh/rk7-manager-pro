@@ -17141,6 +17141,16 @@ ${res.error}`);
       }
     }
 
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
     function formatReleaseNotesHTML(raw) {
       if (!raw) return '<p class="text-slate-500 italic text-sm">Bản sửa lỗi và tối ưu hóa hệ thống tổng thể.</p>';
       let content = raw.replace(/https?:\/\/\S+/g, '').replace(/\*\*Full Changelog\*\*:?/gi, '').trim();
