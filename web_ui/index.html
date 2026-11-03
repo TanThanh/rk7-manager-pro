@@ -17141,102 +17141,179 @@ ${res.error}`);
       }
     }
 
-    function cleanReleaseNotes(raw) {
-      if (!raw) return 'Bản sửa lỗi và tối ưu hóa hệ thống.';
-      return raw.replace(/https?:\/\/\S+/g, '').replace(/\*\*Full Changelog\*\*:?/gi, '').trim() || 'Bản sửa lỗi và tối ưu hóa hệ thống.';
-    }
+    function formatReleaseNotesHTML(raw) {
+      if (!raw) return '<p class="text-slate-500 italic text-sm">Bản sửa lỗi và tối ưu hóa hệ thống tổng thể.</p>';
+      let content = raw.replace(/https?:\/\/\S+/g, '').replace(/\*\*Full Changelog\*\*:?/gi, '').trim();
+      let lines = content.split('\n');
+      let html = '';
+      let inList = false;
 
-    function showAppUpdateBanner(info) {
-      if (document.getElementById('app-update-banner')) return;
-      const cleanNotes = cleanReleaseNotes(info.release_notes);
-      const banner = document.createElement('div');
-      banner.id = 'app-update-banner';
-      banner.className = 'fixed bottom-6 right-6 z-50 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-blue-100 max-w-sm flex flex-col gap-3 animate-slide-up ring-1 ring-black/5';
-      banner.innerHTML = `
-        <div class="flex items-start justify-between gap-3">
-          <div class="flex items-center gap-2">
-            <span class="flex h-2 w-2 relative">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
-            </span>
-            <span class="text-[11px] font-extrabold uppercase tracking-wider text-blue-600">Đã có phiên bản mới</span>
-          </div>
-          <button onclick="this.closest('#app-update-banner').remove()" class="p-1 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors">
-            <i class="ph ph-x text-sm"></i>
-          </button>
-        </div>
-        <div>
-          <div class="flex items-center gap-2">
-            <h4 class="text-sm font-extrabold text-slate-900">RK7 Pro Manager</h4>
-            <span class="px-2 py-0.5 rounded-full text-[10px] font-black bg-blue-50 text-blue-700 border border-blue-200">v${info.latest_version}</span>
-          </div>
-          <p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">${cleanNotes}</p>
-        </div>
-        <div id="banner-action-area" class="flex items-center gap-2 pt-0.5">
-          <button onclick="triggerAppUpdate()" class="flex-1 h-8 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-all flex items-center justify-center gap-1.5 shadow-sm active:scale-98">
-            <i class="ph ph-download-simple font-bold"></i>
-            <span>Cập nhật ngay</span>
-          </button>
-          <button onclick="this.closest('#app-update-banner').remove()" class="h-8 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-bold transition-all">Để sau</button>
-        </div>
-      `;
-      document.body.appendChild(banner);
+      lines.forEach(line => {
+        let trimmed = line.trim();
+        if (!trimmed) return;
+
+        if (trimmed.startsWith('#')) {
+          if (inList) { html += '</ul>'; inList = false; }
+          let title = trimmed.replace(/^#+\s*/, '');
+          html += `<h5 class="text-xs font-black uppercase tracking-wider text-blue-600 mt-3 mb-1.5 flex items-center gap-1.5"><i class="ph ph-sparkle text-blue-500"></i> ${escapeHtml(title)}</h5>`;
+        } else if (trimmed.startsWith('-') || trimmed.startsWith('*')) {
+          if (!inList) { html += '<ul class="space-y-1.5 text-xs text-slate-700">'; inList = true; }
+          let item = trimmed.replace(/^[-*]\s*/, '');
+          item = item.replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>');
+          html += `<li class="flex items-start gap-2 leading-relaxed"><i class="ph ph-check-circle text-emerald-500 text-sm mt-0.5 shrink-0"></i><span>${item}</span></li>`;
+        } else {
+          if (inList) { html += '</ul>'; inList = false; }
+          let item = trimmed.replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>');
+          html += `<p class="text-xs text-slate-600 leading-relaxed my-1">${item}</p>`;
+        }
+      });
+
+      if (inList) html += '</ul>';
+      return html || '<p class="text-slate-500 italic text-sm">Bản sửa lỗi và tối ưu hóa hệ thống.</p>';
     }
 
     function showAppUpdateModal(info) {
-      showAppUpdateBanner(info);
+      const existing = document.getElementById('app-update-modal-backdrop');
+      if (existing) existing.remove();
+
+      const formattedNotes = formatReleaseNotesHTML(info.release_notes);
+      const isMinor = info.latest_version && (info.latest_version.endsWith('.0') || info.latest_version.split('.').length >= 2 && info.latest_version.split('.')[1] !== '0');
+      const badgeText = isMinor ? 'Tính năng mới' : 'Bản cập nhật';
+      const badgeClass = isMinor ? 'bg-indigo-50 text-indigo-700 border-indigo-200' : 'bg-blue-50 text-blue-700 border-blue-200';
+
+      const modal = document.createElement('div');
+      modal.id = 'app-update-modal-backdrop';
+      modal.className = 'fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 transition-all duration-300 animate-fade-in';
+      modal.innerHTML = `
+        <div onclick="event.stopPropagation()" class="w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-slate-100 flex flex-col overflow-hidden animate-scale-up transform">
+          <!-- Header Banner -->
+          <div class="relative bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 p-6 text-white overflow-hidden">
+            <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+            <div class="flex items-start justify-between relative z-10">
+              <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center shadow-inner border border-white/25">
+                  <i class="ph ph-rocket-launch text-2xl text-white"></i>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <h3 class="text-lg font-black tracking-tight text-white">RK7 Pro Manager</h3>
+                    <span class="px-2 py-0.5 rounded-full text-[11px] font-black bg-white/25 text-white border border-white/30 backdrop-blur-sm">v${info.latest_version}</span>
+                  </div>
+                  <p class="text-xs text-blue-100 font-medium mt-0.5">Phiên bản mới đã sẵn sàng để nâng cấp</p>
+                </div>
+              </div>
+              <button onclick="closeAppUpdateModal()" class="w-8 h-8 rounded-full bg-white/15 hover:bg-white/25 text-white/90 flex items-center justify-center transition-colors">
+                <i class="ph ph-x text-sm font-bold"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Body: What's New & Notes -->
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-black uppercase tracking-wider text-slate-400">Thông tin bản cập nhật</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black border ${badgeClass}">${badgeText}</span>
+            </div>
+
+            <div class="bg-slate-50/80 rounded-2xl p-4 border border-slate-100/80 max-h-56 overflow-y-auto space-y-2 pr-2 text-left custom-scrollbar">
+              ${formattedNotes}
+            </div>
+
+            <!-- Progress Area (Hidden initially) -->
+            <div id="modal-update-progress-area" class="hidden space-y-2 pt-2">
+              <div class="flex items-center justify-between text-xs">
+                <span id="modal-update-status" class="font-bold text-blue-600 flex items-center gap-1.5">
+                  <i class="ph ph-spinner animate-spin"></i> Đang tải gói cập nhật...
+                </span>
+                <span id="modal-update-pct" class="font-mono font-bold text-slate-600 text-xs">0%</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden border border-slate-200/80">
+                <div id="modal-update-progress" class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2.5 rounded-full transition-all duration-150" style="width: 0%"></div>
+              </div>
+              <p id="modal-update-detail" class="text-[11px] text-slate-400 text-right font-mono">Đang kết nối...</p>
+            </div>
+          </div>
+
+          <!-- Footer Buttons -->
+          <div id="modal-update-actions" class="p-6 pt-0 flex items-center justify-end gap-3">
+            <button onclick="closeAppUpdateModal()" class="h-10 px-5 rounded-xl border border-slate-200 text-slate-600 text-xs font-bold hover:bg-slate-50 transition-colors">
+              Để sau
+            </button>
+            <button onclick="triggerAppUpdateFromModal()" class="h-10 px-6 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-xs font-bold transition-all shadow-md shadow-blue-500/25 flex items-center gap-2 active:scale-98">
+              <i class="ph ph-arrow-circle-up text-base font-bold"></i>
+              <span>Cập nhật ngay</span>
+            </button>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(modal);
     }
 
-    async function triggerAppUpdate() {
+    function showAppUpdateBanner(info) {
+      showAppUpdateModal(info);
+    }
+
+    function closeAppUpdateModal() {
+      const modal = document.getElementById('app-update-modal-backdrop');
+      if (modal) modal.remove();
+    }
+
+    async function triggerAppUpdateFromModal() {
       if (!appUpdateInfo?.download_url) {
         return alert('Không tìm thấy liên kết tải bản cập nhật.');
       }
-      const banner = document.getElementById('app-update-banner');
-      if (banner) {
-        const actionArea = banner.querySelector('#banner-action-area');
-        if (actionArea) {
-          actionArea.outerHTML = `
-            <div id="banner-progress-area" class="space-y-1.5 pt-1">
-              <div class="flex items-center justify-between text-xs">
-                <span id="banner-update-status" class="font-bold text-blue-600 flex items-center gap-1.5">
-                  <i class="ph ph-spinner animate-spin"></i> Đang tải bản cập nhật...
-                </span>
-                <span id="banner-update-pct" class="font-mono text-slate-500 font-bold text-[11px]">0%</span>
-              </div>
-              <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden border border-slate-200">
-                <div id="banner-update-progress" class="bg-blue-600 h-2 rounded-full transition-all duration-150" style="width: 0%"></div>
-              </div>
-            </div>
-          `;
-        }
+      const progressArea = document.getElementById('modal-update-progress-area');
+      const actionArea = document.getElementById('modal-update-actions');
+      if (progressArea) progressArea.classList.remove('hidden');
+      if (actionArea) {
+        actionArea.innerHTML = `
+          <div class="w-full flex items-center justify-between text-xs text-slate-500">
+            <span class="italic text-[11px]"><i class="ph ph-shield-check text-blue-600 mr-1"></i> Ứng dụng sẽ tự động dọn cache và khởi động lại sau khi tải xong.</span>
+          </div>
+        `;
       }
-      const progressContainer = document.getElementById('app-update-progress-container');
-      if (progressContainer) progressContainer.classList.remove('hidden');
 
       const res = await window.pywebview.api.start_app_update(appUpdateInfo.download_url, appUpdateInfo.file_name);
       if (!res.success) {
         alert('Lỗi cập nhật: ' + res.error);
-        if (banner) banner.remove();
+        closeAppUpdateModal();
       }
+    }
+
+    async function triggerAppUpdate() {
+      return triggerAppUpdateFromModal();
+    }
     }
 
     window.onAppUpdateProgress = (pct, downloaded, total, error) => {
       if (error) {
         alert('Lỗi khi tải bản cập nhật: ' + error);
-        document.getElementById('app-update-banner')?.remove();
+        closeAppUpdateModal();
         return;
       }
-      const bar = document.getElementById('banner-update-progress') || document.getElementById('app-update-progress-bar');
-      const pctLabel = document.getElementById('banner-update-pct');
-      const statusText = document.getElementById('banner-update-status') || document.getElementById('app-update-status-text');
+      const modalBar = document.getElementById('modal-update-progress');
+      const modalPct = document.getElementById('modal-update-pct');
+      const modalStatus = document.getElementById('modal-update-status');
+      const modalDetail = document.getElementById('modal-update-detail');
+
+      const bar = modalBar || document.getElementById('banner-update-progress') || document.getElementById('app-update-progress-bar');
+      const pctLabel = modalPct || document.getElementById('banner-update-pct');
+      const statusText = modalStatus || document.getElementById('banner-update-status') || document.getElementById('app-update-status-text');
 
       if (bar) bar.style.width = pct + '%';
       if (pctLabel) pctLabel.innerText = pct + '%';
+      
+      const downMB = (downloaded / 1024 / 1024).toFixed(1);
+      const totalMB = (total / 1024 / 1024).toFixed(1);
+      if (modalDetail && total > 0) {
+        modalDetail.innerText = `${downMB} MB / ${totalMB} MB`;
+      }
+
       if (statusText) {
         if (pct >= 100) {
-          statusText.innerHTML = '<i class="ph ph-check-circle text-emerald-600"></i> <span class="text-emerald-700">Tải xong! Đang khởi động lại...</span>';
+          statusText.innerHTML = '<i class="ph ph-check-circle text-emerald-600"></i> <span class="text-emerald-700">Đã tải xong! Đang tự động dọn dẹp và khởi động lại...</span>';
         } else {
-          statusText.innerHTML = `<i class="ph ph-spinner animate-spin"></i> Đang tải... (${Math.round(downloaded / 1024 / 1024 * 10) / 10} MB / ${Math.round(total / 1024 / 1024 * 10) / 10} MB)`;
+          statusText.innerHTML = `<i class="ph ph-spinner animate-spin"></i> Đang tải gói cập nhật (${pct}%)...`;
         }
       }
     };
