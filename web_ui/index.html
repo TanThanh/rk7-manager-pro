@@ -470,7 +470,7 @@
 
             <div class="flex items-center gap-1.5">
               <h1 class="text-sm font-extrabold tracking-tight text-[#101828] leading-tight">RK7 PRO</h1>
-              <span onclick="openAboutModal()" class="px-1.5 py-0.2 rounded-md text-[9px] font-bold bg-blue-50 text-blue-600 border border-blue-200/80 cursor-pointer hover:bg-blue-100 transition-colors" title="Nhấp để xem thông tin phiên bản">v4.0.3.2</span>
+              <span onclick="openAboutModal()" class="px-1.5 py-0.2 rounded-md text-[9px] font-bold bg-blue-50 text-blue-600 border border-blue-200/80 cursor-pointer hover:bg-blue-100 transition-colors" title="Nhấp để xem thông tin phiên bản">v4.0.3.3</span>
             </div>
 
           </div>
@@ -2987,7 +2987,7 @@
             <div class="flex-1">
               <div class="flex items-center gap-2">
                 <h3 class="text-sm font-extrabold text-[#101828]">Cập nhật phần mềm</h3>
-                <span id="app-current-version-badge" class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-600 border border-slate-200">v4.0.3.2</span>
+                <span id="app-current-version-badge" class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-600 border border-slate-200">v4.0.3.3</span>
               </div>
               <p class="text-xs text-[#667085] mt-1">Kiểm tra và tự động cập nhật phiên bản mới nhất từ GitHub.</p>
             </div>
@@ -17112,6 +17112,49 @@ ${res.error}`);
       }
     }
 
+    async function checkAppUpdateFromAbout() {
+      const btn = document.getElementById('btn-about-check-update');
+      const statusText = document.getElementById('about-modal-status');
+      const originalText = btn ? btn.innerHTML : '';
+      
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<i class="ph ph-spinner animate-spin text-sm"></i> <span>Đang kiểm tra...</span>';
+      }
+      if (statusText) {
+        statusText.innerHTML = '<span class="text-blue-600 font-medium flex items-center gap-1"><i class="ph ph-spinner animate-spin"></i> Đang kết nối GitHub kiểm tra phiên bản...</span>';
+      }
+
+      try {
+        if (!window.pywebview?.api?.check_app_update) {
+          throw new Error('Cổng pywebview chưa sẵn sàng.');
+        }
+        const res = await window.pywebview.api.check_app_update();
+        if (res.has_update) {
+          appUpdateInfo = res;
+          if (statusText) {
+            statusText.innerHTML = `<span class="text-emerald-600 font-bold">Đã có bản mới v${res.latest_version}!</span>`;
+          }
+          // Close about modal and open the big What's New modal
+          closeAboutModal();
+          showAppUpdateModal(res);
+        } else {
+          if (statusText) {
+            statusText.innerHTML = `<span class="text-emerald-600 font-bold flex items-center gap-1"><i class="ph ph-check-circle"></i> Bạn đang dùng phiên bản mới nhất (v${res.current_version || '4.0.3.3'}).</span>`;
+          }
+        }
+      } catch (err) {
+        if (statusText) {
+          statusText.innerHTML = `<span class="text-rose-600 font-medium flex items-center gap-1"><i class="ph ph-warning-circle"></i> Lỗi kiểm tra: ${err.message || err}</span>`;
+        }
+      } finally {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerHTML = originalText;
+        }
+      }
+    }
+
     async function manualCheckAppUpdate() {
       const btn = document.getElementById('btn-check-app-update');
       const statusText = document.getElementById('app-update-status-text');
@@ -17131,7 +17174,7 @@ ${res.error}`);
           showAppUpdateModal(res);
         } else {
           if (statusText) {
-            statusText.innerHTML = `<span class="text-slate-600 font-medium">Bạn đang dùng phiên bản mới nhất (${res.current_version || 'v4.0.3.2'}).</span>`;
+            statusText.innerHTML = `<span class="text-slate-600 font-medium">Bạn đang dùng phiên bản mới nhất (${res.current_version || 'v4.0.3.3'}).</span>`;
           }
         }
       } catch (err) {
@@ -17340,7 +17383,7 @@ ${res.error}`);
           <div>
             <div class="flex items-center gap-2">
               <h3 class="text-base font-extrabold text-[#101828]">RK7 PRO Manager</h3>
-              <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-blue-100 text-blue-700 border border-blue-200">v4.0.3.2 Official</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-blue-100 text-blue-700 border border-blue-200">v4.0.3.3 Official</span>
             </div>
             <p class="text-xs text-[#667085] mt-0.5">Shortcut Manager, UDB CheckView & Script Vault</p>
           </div>
@@ -17355,9 +17398,9 @@ ${res.error}`);
         <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center justify-between">
           <div>
             <div class="text-[11px] font-bold text-slate-700 uppercase tracking-wide">Trạng thái phiên bản</div>
-            <div class="text-xs text-slate-500 mt-0.5" id="about-modal-status">Đang chạy phiên bản v4.0.3.2</div>
+            <div class="text-xs text-slate-500 mt-0.5" id="about-modal-status">Đang chạy phiên bản v4.0.3.3</div>
           </div>
-          <button onclick="closeAboutModal(); manualCheckAppUpdate();" class="h-8 px-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-2xs transition-all">
+          <button id="btn-about-check-update" onclick="checkAppUpdateFromAbout()" class="h-8 px-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-2xs transition-all">
             <i class="ph ph-arrows-clockwise text-sm"></i>
             <span>Kiểm tra cập nhật</span>
           </button>
@@ -17379,8 +17422,7 @@ ${res.error}`);
               <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-200">Patch</span>
             </div>
             <ul class="text-[11px] text-slate-600 space-y-1 pl-4 list-disc leading-relaxed">
-              <li>Khắc phục triệt để lỗi <code>Failed to load Python DLL (python312.dll)</code> khi tự động cập nhật.</li>
-              <li>Tự động dọn dẹp cache tạm PyInstaller (<code>%TEMP%\_MEI*</code>) trước khi khởi động phiên bản mới.</li>
+              <li>Điều chỉnh quá trình cập nhật liên quan đến lỗi <code>Failed to load Python DLL (python312.dll)</code>.</li>
               <li>Nâng cấp giao diện thông báo cập nhật thành Modal trung tâm dạng What's New hiện đại.</li>
             </ul>
           </div>

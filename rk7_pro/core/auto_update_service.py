@@ -11,7 +11,7 @@ from pathlib import Path
 
 logger = logging.getLogger("rk7_pro.auto_updater")
 
-CURRENT_VERSION = "4.0.3.2"
+CURRENT_VERSION = "4.0.3.3"
 GITHUB_REPO = "TanThanh/rk7-manager-pro"
 API_URL = f"https://api.github.com/repos/{GITHUB_REPO}/releases/latest"
 
@@ -157,7 +157,7 @@ if not errorlevel 1 (
 :: Cho he dieu hanh va antivirus nha khoa toan bo file DLL
 ping 127.0.0.1 -n 2 >nul
 
-:: Don sach cache _MEI cu
+:: Don sach cache _MEI cu de tranh loi load python DLL
 for /d %%d in ("%TEMP%\\_MEI*") do (
     rd /s /q "%%d" 2>nul
 )
@@ -169,8 +169,8 @@ if errorlevel 1 (
     ping 127.0.0.1 -n 3 >nul
     copy /y "{downloaded_file}" "{current_exe}" >nul
     if errorlevel 1 (
-        echo Thu ghi de voi quyen Administrator qua PowerShell...
-        powershell -Command "Start-Process cmd -ArgumentList '/c copy /y ""{downloaded_file}"" ""{current_exe}""' -Verb RunAs -Wait" 2>nul
+        echo Cap nhat that bai. Giu lai file da tai: {downloaded_file}
+        exit /b 1
     )
 )
 
