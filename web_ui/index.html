@@ -1319,12 +1319,17 @@
                 <div class="flex items-center gap-2">
                   <span id="drawer-type-badge" class="px-2 py-0.5 rounded-md text-[10px] font-extrabold uppercase bg-blue-100 text-blue-700 border border-blue-200">SQL</span>
                   <h3 id="drawer-title" class="text-sm font-bold text-slate-900 truncate">Tên câu lệnh</h3>
+                  <span id="drawer-dirty-indicator" class="hidden px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-100 text-amber-800 border border-amber-300 flex items-center gap-1 shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>Chưa lưu</span>
                 </div>
                 <p id="drawer-desc" class="text-xs text-slate-500 mt-0.5 truncate">Mô tả câu lệnh...</p>
               </div>
 
               <!-- Top Drawer Actions -->
               <div class="flex items-center gap-2">
+                <button id="drawer-revert-btn" onclick="discardVaultScriptChanges()" title="Hủy bỏ sửa đổi và quay lại nội dung đã lưu" class="hidden h-8 px-3 rounded-lg bg-rose-50 border border-rose-200 hover:bg-rose-100 text-xs font-bold text-rose-700 flex items-center gap-1.5 shadow-2xs transition-all">
+                  <i class="ph ph-arrow-counter-clockwise text-sm"></i>
+                  <span>Hủy thay đổi</span>
+                </button>
                 <button id="drawer-copy-btn" onclick="copyDrawerScript()" class="h-8 px-3 rounded-lg bg-white border border-slate-200 hover:bg-slate-100 text-xs font-bold text-slate-700 flex items-center gap-1.5 shadow-2xs transition-all">
                   <i class="ph ph-copy text-sm text-slate-500"></i>
                   <span>Sao chép lệnh</span>
@@ -4619,10 +4624,92 @@
 
 
     function confirmVaultDiscard() {
-
-      return !hasVaultUnsavedChanges() || confirm('This script has unsaved changes. Discard them?');
-
+      // Do not block user with annoying browser alert; changes are preserved silently in drafts
+      return true;
     }
+
+    function isVaultScriptDirty(id) {
+      if (vaultDraft && (selectedScriptId === id || (!selectedScriptId && !id))) return true;
+      const tab = vaultTabs.get(id);
+      return Boolean(tab && tab.dirty);
+    }
+
+    async function discardVaultScriptChanges(id, event) {
+      if (event) event.stopPropagation();
+      const targetId = id || selectedScriptId;
+      if (!targetId) return;
+
+      const tab = vaultTabs.get(targetId);
+      if (tab) {
+        tab.content = tab.saved;
+        tab.dirty = false;
+        tab.draft = null;
+      }
+
+      if (window.pywebview?.api?.discard_script_draft) {
+        try {
+          await window.pywebview.api.discard_script_draft(targetId);
+        } catch (e) {
+          console.warn('Could not discard draft from disk:', e);
+        }
+      }
+
+      // If currently active in drawer, refresh the editor content
+      if (selectedScriptId === targetId) {
+        const editor = document.getElementById('vault-editor-textarea');
+        if (editor && tab) {
+          editor.value = tab.saved;
+        }
+        updateVaultHighlight();
+        const dirtyBadge = document.getElementById('drawer-dirty-indicator');
+        if (dirtyBadge) dirtyBadge.classList.add('hidden');
+        const revertBtn = document.getElementById('drawer-revert-btn');
+        if (revertBtn) revertBtn.classList.add('hidden');
+        const saveStatus = document.getElementById('vault-save-status');
+        if (saveStatus) saveStatus.textContent = 'Đã hủy thay đổi';
+        setTimeout(() => { if (saveStatus) saveStatus.textContent = ''; }, 1800);
+      }
+
+      renderVaultScripts();
+    }
+
+    async function handleCardSaveClick(btn, event) {
+      if (event) event.stopPropagation();
+      const scriptId = decodeURIComponent(btn.getAttribute('data-script-id'));
+      if (!scriptId) return;
+
+      // If this script is selected in editor, use normal save
+      if (selectedScriptId === scriptId) {
+        await saveVaultScriptContent();
+        return;
+      }
+
+      // If script is in vaultTabs with dirty state:
+      const tab = vaultTabs.get(scriptId);
+      if (tab && tab.dirty) {
+        try {
+          const res = await window.pywebview.api.save_script(scriptId, tab.content, tab.hash, tab.encoding, tab.newline);
+          if (res.success) {
+            tab.saved = tab.content;
+            tab.dirty = false;
+            tab.hash = res.hash;
+            tab.draft = null;
+            renderVaultScripts();
+          } else {
+            alert('Lỗi lưu: ' + (res.error || 'Unknown error'));
+          }
+        } catch (e) {
+          alert('Lỗi lưu: ' + e);
+        }
+      }
+    }
+
+    async function handleCardDiscardClick(btn, event) {
+      if (event) event.stopPropagation();
+      const scriptId = decodeURIComponent(btn.getAttribute('data-script-id'));
+      await discardVaultScriptChanges(scriptId, event);
+    }
+
 
 
 
@@ -4999,13 +5086,24 @@
 
       if (tab && !vaultDraft) {
 
-        tab.content = content; tab.dirty = content !== tab.saved;
+        const wasDirty = tab.dirty;
+        tab.content = content; 
+        tab.dirty = content !== tab.saved;
 
-        vaultCards.get(selectedScriptId)?.querySelector('.vault-dirty')?.classList.toggle('hidden', !tab.dirty);
+        // Update drawer title indicator & revert button
+        const dirtyBadge = document.getElementById('drawer-dirty-indicator');
+        if (dirtyBadge) dirtyBadge.classList.toggle('hidden', !tab.dirty);
+        const revertBtn = document.getElementById('drawer-revert-btn');
+        if (revertBtn) revertBtn.classList.toggle('hidden', !tab.dirty);
 
-        document.getElementById('vault-save-status').textContent = tab.dirty ? 'Unsaved changes' : 'Saved';
-
+        document.getElementById('vault-save-status').textContent = tab.dirty ? 'Chưa lưu thay đổi' : 'Đã lưu';
+        document.getElementById('vault-save-status').className = tab.dirty ? 'font-semibold text-amber-600' : 'font-semibold text-emerald-600';
         document.getElementById('vault-save-btn').disabled = !tab.dirty;
+
+        // If dirty state toggled, re-render the card badge & border
+        if (wasDirty !== tab.dirty) {
+          renderVaultScripts();
+        }
 
         renderVaultTabs();
 
@@ -5199,10 +5297,14 @@
       }
 
       filtered.forEach(s => {
+        const isDirty = isVaultScriptDirty(s.id);
         const card = document.createElement('div');
-        card.className = "bg-white border border-slate-200/90 hover:border-blue-400/80 rounded-2xl p-4 shadow-2xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group cursor-pointer relative hover:-translate-y-0.5 h-full min-h-[220px]";
+        const cardBorderClass = isDirty 
+          ? "bg-amber-50/30 border-amber-300 ring-2 ring-amber-400/30 shadow-xs" 
+          : "bg-white border-slate-200/90 hover:border-blue-400/80 shadow-2xs";
+        card.className = `${cardBorderClass} rounded-2xl p-4 hover:shadow-md transition-all duration-200 flex flex-col justify-between group cursor-pointer relative hover:-translate-y-0.5 h-full min-h-[220px]`;
         card.onclick = (e) => {
-          if (e.target.closest('.card-copy-btn') || e.target.closest('.card-fav-btn')) return;
+          if (e.target.closest('.card-copy-btn') || e.target.closest('.card-fav-btn') || e.target.closest('.card-save-btn') || e.target.closest('.card-discard-btn')) return;
           openVaultDrawer(s.id);
         };
 
@@ -5251,8 +5353,11 @@
         card.innerHTML = `
           <div class="flex-1 flex flex-col">
             <div class="flex items-center justify-between gap-2 mb-2.5 shrink-0">
-              ${typeBadge}
-              <button data-script-id="${encodeURIComponent(s.id)}" onclick="handleCardFavoriteClick(this, event)" class="card-fav-btn w-7 h-7 rounded-lg hover:bg-slate-100 flex items-center justify-center transition-colors text-slate-300 hover:text-amber-500" title="${s.is_favorite ? 'Bỏ yêu thích' : 'Lưu vào yêu thích'}">
+              <div class="flex items-center gap-1.5 min-w-0">
+                ${typeBadge}
+                ${isDirty ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-amber-100 text-amber-800 border border-amber-300 animate-pulse"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>Chưa lưu</span>` : ''}
+              </div>
+              <button data-script-id="${encodeURIComponent(s.id)}" onclick="handleCardFavoriteClick(this, event)" class="card-fav-btn w-7 h-7 rounded-lg hover:bg-slate-100 flex items-center justify-center transition-colors text-slate-300 hover:text-amber-500 shrink-0" title="${s.is_favorite ? 'Bỏ yêu thích' : 'Lưu vào yêu thích'}">
                 <i class="${s.is_favorite ? 'ph-fill ph-star text-amber-400' : 'ph ph-star'} text-sm"></i>
               </button>
             </div>
@@ -5277,10 +5382,23 @@
               <i class="ph ph-file-text text-xs"></i>
               <span>${s.line_count || 1} dòng</span>
             </span>
-            <button data-script-id="${encodeURIComponent(s.id)}" onclick="handleCardCopyClick(this, event)" class="card-copy-btn h-7 px-2.5 rounded-lg bg-slate-100/90 hover:bg-blue-600 hover:text-white text-slate-700 text-[11px] font-bold flex items-center gap-1.5 transition-all shadow-2xs hover:shadow-xs active:scale-95">
-              <i class="ph ph-copy text-xs"></i>
-              <span>Sao chép</span>
-            </button>
+            <div class="flex items-center gap-1.5">
+              ${isDirty ? `
+                <button data-script-id="${encodeURIComponent(s.id)}" onclick="handleCardDiscardClick(this, event)" title="Hủy bỏ các sửa đổi nháp và trở về bản đã lưu" class="card-discard-btn h-7 px-2 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 text-[11px] font-bold flex items-center gap-1 transition-all shadow-2xs active:scale-95">
+                  <i class="ph ph-arrow-counter-clockwise text-xs"></i>
+                  <span>Hủy</span>
+                </button>
+                <button data-script-id="${encodeURIComponent(s.id)}" onclick="handleCardSaveClick(this, event)" title="Lưu thay đổi của câu lệnh này" class="card-save-btn h-7 px-2 rounded-lg bg-amber-500 hover:bg-amber-600 text-white text-[11px] font-bold flex items-center gap-1 transition-all shadow-2xs active:scale-95">
+                  <i class="ph ph-floppy-disk text-xs"></i>
+                  <span>Lưu</span>
+                </button>
+              ` : `
+                <button data-script-id="${encodeURIComponent(s.id)}" onclick="handleCardCopyClick(this, event)" class="card-copy-btn h-7 px-2.5 rounded-lg bg-slate-100/90 hover:bg-blue-600 hover:text-white text-slate-700 text-[11px] font-bold flex items-center gap-1.5 transition-all shadow-2xs hover:shadow-xs active:scale-95">
+                  <i class="ph ph-copy text-xs"></i>
+                  <span>Sao chép</span>
+                </button>
+              `}
+            </div>
           </div>
         `;
 
@@ -5356,6 +5474,10 @@
         if (tab && editor && editor.value !== tab.content) {
           editor.value = tab.content || '';
         }
+        const dirtyBadge = document.getElementById('drawer-dirty-indicator');
+        if (dirtyBadge) dirtyBadge.classList.toggle('hidden', !tab?.dirty);
+        const revertBtn = document.getElementById('drawer-revert-btn');
+        if (revertBtn) revertBtn.classList.toggle('hidden', !tab?.dirty);
         document.getElementById('vault-detail-drawer')?.classList.remove('hidden');
         updateVaultHighlight();
         syncVaultHighlightScroll();
