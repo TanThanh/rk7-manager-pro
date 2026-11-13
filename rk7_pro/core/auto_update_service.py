@@ -11,7 +11,7 @@ from pathlib import Path
 
 logger = logging.getLogger("rk7_pro.auto_updater")
 
-CURRENT_VERSION = "4.1.0"
+CURRENT_VERSION = "4.2.0"
 GITHUB_REPO = "TanThanh/rk7-manager-pro"
 API_URL = f"https://api.github.com/repos/{GITHUB_REPO}/releases/latest"
 

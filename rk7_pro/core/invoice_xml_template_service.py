@@ -650,9 +650,19 @@ class InvoiceXmlTemplateService:
             '957', '958'
         }
 
+        profile_excluded_dish_ids = set(str(x) for x in (
+            profile.get("excluded_dish_ids", []) or
+            f_dishes.get("excluded_dish_ids", [])
+        ))
+
         def is_not_invoice_dish(dish_obj):
+            sifr = str(dish_obj.get("SIFR") or "")
+            if sifr in profile_excluded_dish_ids or sifr == "99999":
+                return True
             m_item = menu.get(dish_obj.get("SIFR"), {})
             c_code = str(m_item.get("code", ""))
+            if c_code in profile_excluded_dish_ids:
+                return True
             c_name = m_item.get("name", "").lower()
             if c_code in EXCLUDED_NOT_INVOICE_CODES:
                 return True
@@ -870,6 +880,8 @@ class InvoiceXmlTemplateService:
                 tax = min(candidates, key=tax_distance)
                 if tax:
                     dish = dish_by_uni.get(binding.get("DISHUNI"), {})
+                    if is_not_invoice_dish(dish):
+                        continue
                     item = menu.get(dish.get("SIFR"), {})
                     parent_uni = dish.get("COMBODISHUNI") or "0"
                     parent = dish_by_uni.get(parent_uni, {})

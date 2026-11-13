@@ -669,8 +669,8 @@
       "name": "ThaiExpress - Aeon Thanh Hoa 6294(0318)"
     },
     "2": {
-      "package_id": "qsr_masterdata",
-      "name": "Head Office"
+      "package_id": "cvl_data",
+      "name": "Văn phòng trung tâm"
     },
     "1000085": {
       "package_id": "ggg_hcm_data",
@@ -2145,8 +2145,8 @@
       "name": "Gogi House Cao Lanh - Dong Thap (0465)"
     },
     "1": {
-      "package_id": "qsr_masterdata",
-      "name": "Restaurant Name"
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Bitexco"
     },
     "1000063": {
       "package_id": "ggg_hn_data",
@@ -4051,6 +4051,58 @@
     "1188471": {
       "package_id": "qsr_masterdata",
       "name": "TPC_Bach Dang_HPG"
+    },
+    "1000178": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Parc Mall"
+    },
+    "1000179": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Saigon Marina"
+    },
+    "1000180": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Tran Phu"
+    },
+    "1000181": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Thai Ha"
+    },
+    "1000182": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long HaNoi Centre"
+    },
+    "1000183": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Vincom Ba Trieu"
+    },
+    "1000174": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Vincom Bien Hoa"
+    },
+    "1000175": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Coop Mart"
+    },
+    "1000176": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Vincom Quang Trung"
+    },
+    "1000177": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Landmark 81"
+    },
+    "1000416": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Vincom Thu Duc"
+    },
+    "1000417": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long Aeon Mall Le Chan HP"
+    },
+    "1004042": {
+      "package_id": "cvl_data",
+      "name": "Cuu Van Long - Aeon Mall Ha Long, QN"
     }
   },
   "packages": {
@@ -4109,6 +4161,15 @@
       "menu_items_count": 6958,
       "price_scales_count": 48,
       "size_kb": 9505.9
+    },
+    "cvl_data": {
+      "file": "cvl_data.json",
+      "display_name": "cvl_data",
+      "source_file": "refsdata_cuuvanlong.udb",
+      "restaurants_count": 15,
+      "menu_items_count": 149,
+      "price_scales_count": 5,
+      "size_kb": 288.5
     }
   }
 }

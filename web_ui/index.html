@@ -470,7 +470,7 @@
 
             <div class="flex items-center gap-1.5">
               <h1 class="text-sm font-extrabold tracking-tight text-[#101828] leading-tight">RK7 PRO</h1>
-              <span onclick="openAboutModal()" class="px-1.5 py-0.2 rounded-md text-[9px] font-bold bg-blue-50 text-blue-600 border border-blue-200/80 cursor-pointer hover:bg-blue-100 transition-colors" title="Nhấp để xem thông tin phiên bản">v4.1.0</span>
+              <span onclick="openAboutModal()" class="px-1.5 py-0.2 rounded-md text-[9px] font-bold bg-blue-50 text-blue-600 border border-blue-200/80 cursor-pointer hover:bg-blue-100 transition-colors" title="Nhấp để xem thông tin phiên bản">v4.2.0</span>
             </div>
 
           </div>
@@ -1524,11 +1524,14 @@
               </div>
 
               <div class="flex items-center justify-between pt-1">
-
+                <label class="flex items-center gap-2 cursor-pointer select-none text-xs text-slate-600 hover:text-slate-900">
+                  <input type="checkbox" id="ucs-remember-me" checked class="w-4 h-4 rounded border-slate-300 text-orange-600 focus:ring-orange-500 cursor-pointer">
+                  <span class="font-medium">Lưu tài khoản và mật khẩu</span>
+                </label>
                 <a href="https://ucs.ru" target="_blank" class="text-[11px] text-slate-400 hover:text-orange-600 transition-colors">Forgot password?</a>
-
+              </div>
+              <div class="pt-0.5">
                 <span id="ucs-login-status" class="text-[11px] font-semibold text-rose-600"></span>
-
               </div>
 
             </div>
@@ -2449,6 +2452,10 @@
 
               </button>
 
+              <button id="cv-tech-view-btn" type="button" onclick="checkviewOpenTechModal()" disabled class="h-9 px-3 rounded-xl border border-slate-200 bg-white text-slate-700 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 text-[11px] font-bold inline-flex items-center gap-1.5 disabled:opacity-40 disabled:cursor-not-allowed focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600 shadow-xs transition-colors cursor-pointer" title="Xem bảng thông tin kỹ thuật & đối soát (Mã SIFR, Ident giá, Thuế, DishUni)">
+                <i class="ph ph-table text-base text-blue-600" aria-hidden="true"></i> <span>Bảng kỹ thuật</span>
+              </button>
+
               <button id="cv-copy-print-btn" type="button" onclick="checkviewOpenReceiptModal()" disabled class="h-9 px-3 rounded-xl border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 text-[11px] font-bold inline-flex items-center gap-1.5 disabled:opacity-40 disabled:cursor-not-allowed focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600">
 
                 <i class="ph ph-printer text-base" aria-hidden="true"></i> In bản sao
@@ -2992,7 +2999,7 @@
             <div class="flex-1">
               <div class="flex items-center gap-2">
                 <h3 class="text-sm font-extrabold text-[#101828]">Cập nhật phần mềm</h3>
-                <span id="app-current-version-badge" class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-600 border border-slate-200">v4.1.0</span>
+                <span id="app-current-version-badge" class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-600 border border-slate-200">v4.2.0</span>
               </div>
               <p class="text-xs text-[#667085] mt-1">Kiểm tra và tự động cập nhật phiên bản mới nhất từ GitHub.</p>
             </div>
@@ -3241,20 +3248,22 @@
 
 
         <div>
-
           <label class="block text-xs font-bold text-slate-700 mb-1.5">Mật khẩu</label>
-
           <div class="relative">
-
             <i class="ph ph-lock absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-base"></i>
-
-            <input id="auth-input-password" type="password" required placeholder="Nhập mật khẩu..." class="w-full h-10 pl-9 pr-3 rounded-xl border border-slate-300 text-xs font-medium text-slate-900 placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 transition-all">
-
+            <input id="auth-input-password" type="password" required placeholder="Nhập mật khẩu..." class="w-full h-10 pl-9 pr-10 rounded-xl border border-slate-300 text-xs font-medium text-slate-900 placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 transition-all">
+            <button type="button" onclick="authTogglePasswordVisibility()" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1 rounded-md transition-colors" title="Ẩn/hiện mật khẩu">
+              <i id="auth-password-eye-icon" class="ph ph-eye-slash text-base"></i>
+            </button>
           </div>
-
         </div>
 
-
+        <div class="flex items-center justify-between pt-0.5">
+          <label class="flex items-center gap-2 cursor-pointer select-none text-xs text-slate-600 hover:text-slate-900">
+            <input type="checkbox" id="auth-remember-me" checked class="w-4 h-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+            <span class="font-medium">Lưu tài khoản và mật khẩu</span>
+          </label>
+        </div>
 
         <div id="auth-login-error" class="hidden p-2.5 rounded-xl bg-rose-50 border border-rose-200 text-xs text-rose-700 font-semibold text-center"></div>
 
@@ -6419,38 +6428,41 @@
 
 
 
-    function authInitSession() {
-
+    async function authInitSession() {
       try {
-
         const saved = localStorage.getItem('rk7_auth_user');
-
         if (saved) {
-
           currentUser = JSON.parse(saved);
-
         } else {
-
           currentUser = null;
-
         }
-
       } catch (e) {
-
         currentUser = null;
+      }
 
+      // If no active session, check if credentials were saved for automatic login
+      if (!currentUser) {
+        try {
+          const rawCreds = localStorage.getItem('rk7_saved_credentials');
+          if (rawCreds) {
+            const creds = JSON.parse(rawCreds);
+            if (creds && creds.username && creds.password && window.pywebview && window.pywebview.api) {
+              const res = await window.pywebview.api.auth_login(creds.username, creds.password);
+              if (res && res.success) {
+                currentUser = res.user;
+                localStorage.setItem('rk7_auth_user', JSON.stringify(currentUser));
+              }
+            }
+          }
+        } catch (e) {
+          console.warn("Auto-login error:", e);
+        }
       }
 
       authApplyPermissions();
-
       if (!currentUser) {
-
-        // Enforce mandatory login on launch
-
         authShowLoginModal(true);
-
       }
-
     }
 
 
@@ -6615,148 +6627,130 @@
 
 
 
+    function authTogglePasswordVisibility() {
+      const pInput = document.getElementById('auth-input-password');
+      const icon = document.getElementById('auth-password-eye-icon');
+      if (!pInput) return;
+      if (pInput.type === 'password') {
+        pInput.type = 'text';
+        if (icon) icon.className = 'ph ph-eye text-base';
+      } else {
+        pInput.type = 'password';
+        if (icon) icon.className = 'ph ph-eye-slash text-base';
+      }
+    }
+
     function authShowLoginModal(isMandatory = false) {
-
       if (!isMandatory && currentUser) {
-
-        // If logged in, clicking switch will prompt Logout
-
         if (confirm(`Bạn có chắc muốn đăng xuất khỏi tài khoản [${currentUser.username}]?`)) {
-
           authLogout();
-
         }
-
         return;
-
       }
 
       const modal = document.getElementById('auth-login-modal');
-
       const err = document.getElementById('auth-login-error');
-
       const closeBtn = document.getElementById('auth-modal-close-btn');
-
       const cancelBtn = document.getElementById('auth-modal-cancel-btn');
 
-
-
       if (err) err.classList.add('hidden');
-
       if (closeBtn) closeBtn.style.display = (!currentUser || isMandatory) ? 'none' : '';
-
       if (cancelBtn) cancelBtn.style.display = (!currentUser || isMandatory) ? 'none' : '';
 
-
-
       if (modal) {
-
         modal.classList.remove('hidden');
 
-        document.getElementById('auth-input-username').value = '';
+        // Check if credentials were saved
+        let savedCreds = null;
+        try {
+          const raw = localStorage.getItem('rk7_saved_credentials');
+          if (raw) savedCreds = JSON.parse(raw);
+        } catch (e) {}
 
-        document.getElementById('auth-input-password').value = '';
+        const uInput = document.getElementById('auth-input-username');
+        const pInput = document.getElementById('auth-input-password');
+        const remCheckbox = document.getElementById('auth-remember-me');
 
-        setTimeout(() => document.getElementById('auth-input-username').focus(), 100);
+        if (savedCreds && savedCreds.username) {
+          if (uInput) uInput.value = savedCreds.username || '';
+          if (pInput) pInput.value = savedCreds.password || '';
+          if (remCheckbox) remCheckbox.checked = true;
+        } else {
+          if (uInput) uInput.value = '';
+          if (pInput) pInput.value = '';
+          if (remCheckbox) remCheckbox.checked = true;
+        }
 
+        setTimeout(() => {
+          if (uInput && !uInput.value) {
+            uInput.focus();
+          } else if (pInput && !pInput.value) {
+            pInput.focus();
+          } else if (pInput) {
+            pInput.focus();
+            pInput.select();
+          }
+        }, 100);
       }
-
     }
-
-
 
     function authCloseLoginModal() {
-
-      if (!currentUser) {
-
-        // Cannot dismiss login modal without logging in
-
-        return;
-
-      }
-
+      if (!currentUser) return;
       const modal = document.getElementById('auth-login-modal');
-
       if (modal) modal.classList.add('hidden');
-
     }
 
-
-
     async function authSubmitLogin(e) {
-
       e.preventDefault();
-
       const u = document.getElementById('auth-input-username').value.trim();
-
       const p = document.getElementById('auth-input-password').value;
-
       const err = document.getElementById('auth-login-error');
-
       const btn = document.getElementById('auth-btn-submit');
-
+      const remCheckbox = document.getElementById('auth-remember-me');
       if (!u || !p) return;
 
-
-
       btn.disabled = true;
-
       btn.innerHTML = '<i class="ph ph-spinner animate-spin text-base"></i> Đang xác thực...';
-
       err.classList.add('hidden');
 
-
-
       try {
-
         const res = await window.pywebview.api.auth_login(u, p);
-
         if (!res.success) {
-
           err.innerText = res.error || 'Đăng nhập thất bại.';
-
           err.classList.remove('hidden');
-
           return;
-
         }
 
         currentUser = res.user;
-
         localStorage.setItem('rk7_auth_user', JSON.stringify(currentUser));
 
+        // Save or remove remembered credentials
+        if (remCheckbox && remCheckbox.checked) {
+          try {
+            localStorage.setItem('rk7_saved_credentials', JSON.stringify({ username: u, password: p }));
+          } catch (e) {}
+        } else {
+          try {
+            localStorage.removeItem('rk7_saved_credentials');
+          } catch (e) {}
+        }
+
         authCloseLoginModal();
-
         authApplyPermissions();
-
       } catch (ex) {
-
         err.innerText = 'Lỗi kết nối xác thực: ' + ex;
-
         err.classList.remove('hidden');
-
       } finally {
-
         btn.disabled = false;
-
         btn.innerHTML = '<i class="ph ph-sign-in text-base"></i><span>Đăng nhập</span>';
-
       }
-
     }
 
-
-
     function authLogout() {
-
       currentUser = null;
-
       localStorage.removeItem('rk7_auth_user');
-
       authApplyPermissions();
-
       authShowLoginModal(true);
-
     }
 
 
@@ -8260,46 +8254,28 @@
       const status = document.getElementById('ucs-login-status');
 
       const usernameInput = document.getElementById('ucs-username');
-
       const passwordInput = document.getElementById('ucs-password');
-
+      const remCheck = document.getElementById('ucs-remember-me');
       const username = usernameInput ? usernameInput.value.trim() : '';
-
       const password = passwordInput ? passwordInput.value : '';
-
-
+      const remember = remCheck ? remCheck.checked : true;
 
       if (!username || !password) {
-
         if (status) {
-
           status.textContent = 'Vui lòng nhập email/username và mật khẩu.';
-
           status.className = 'text-[11px] font-semibold text-rose-600';
-
         }
-
         return;
-
       }
-
-
 
       if (loginBtn) loginBtn.disabled = true;
-
       if (status) {
-
         status.textContent = 'Đang xác thực tài khoản với UCS...';
-
         status.className = 'text-[11px] font-semibold text-blue-600';
-
       }
 
-
-
       try {
-
-        const result = await window.pywebview.api.ucs_login(username, password);
+        const result = await window.pywebview.api.ucs_login(username, password, remember);
 
         if (result.success) {
 
@@ -13534,6 +13510,8 @@
       cvSelectedDetail = null;
 
       document.getElementById('cv-copy-print-btn').disabled = true;
+      const techBtnInit = document.getElementById('cv-tech-view-btn');
+      if (techBtnInit) techBtnInit.disabled = true;
 
       checkviewUpdateUnifiedExportButton();
 
@@ -13574,6 +13552,8 @@
         cvSelectedDetail = res;
 
         document.getElementById('cv-copy-print-btn').disabled = false;
+        const techBtnDone = document.getElementById('cv-tech-view-btn');
+        if (techBtnDone) techBtnDone.disabled = false;
 
         checkviewUpdateUnifiedExportButton();
 
@@ -13980,91 +13960,129 @@
 
 
       // 2. Audit Pane
-
       const auditPane = document.getElementById('cv-pane-audit');
-
       const trails = data.audit_trail || [];
+      const transfers = data.transfer_summary || [];
 
-      if (!trails.length) {
+      const opNameMap = {
+        '202': 'Tạo / Cập nhật Order',
+        '203': 'Mở lại bàn / Xem order',
+        '212': 'Đổi trạng thái order',
+        '214': 'Mở bàn mới',
+        '216': 'Sửa món của nhân viên khác',
+        '221': 'Đóng Order hoàn tất',
+        '222': 'Xác nhận giao dịch',
+        '228': 'Thêm món ăn vào order',
+        '234': 'Gửi món vào bếp/bar',
+        '249': 'Đổi bàn của order (Chuyển bàn)',
+        '309': 'Đóng Visit kết thúc bàn',
+        '320': 'Ghép bàn',
+        '420': 'Đổi hình thức thanh toán',
+        '459': 'Thanh toán & in hóa đơn',
+        '461': 'In tạm tính (Pre-check)',
+        '473': 'In lại hóa đơn (Re-print)',
+        '478': 'Áp dụng mã giảm giá / khuyến mãi',
+        '482': 'Hủy / Sửa số lượng món',
+        '491': 'Chuyển bàn (Transfer Table)',
+        '492': 'Chuyển nội dung sang order khác'
+      };
 
-        auditPane.innerHTML = '<div class="text-[#98A2B3] text-center py-16">Không có nhật ký thao tác cho visit này.</div>';
-
-      } else {
-
-        const opNameMap = {
-
-          '202': 'Tạo / Cập nhật Order',
-
-          '203': 'Mở lại bàn / Xem order',
-
-          '212': 'Đổi trạng thái order',
-
-          '214': 'Mở bàn mới',
-
-          '221': 'Đóng Order hoàn tất',
-
-          '228': 'Thêm món ăn vào order',
-
-          '234': 'Gửi món vào bếp/bar',
-
-          '309': 'Đóng Visit kết thúc bàn',
-
-          '420': 'Đổi hình thức thanh toán',
-
-          '459': 'Thanh toán & in hóa đơn',
-
-          '461': 'In tạm tính (Pre-check)',
-
-          '473': 'In lại hóa đơn (Re-print)',
-
-          '478': 'Áp dụng mã giảm giá / khuyến mãi',
-
-          '482': 'Hủy / Sửa số lượng món'
-
-        };
-
-
-
-        auditPane.innerHTML = `
-
-          <div class="text-[11px] font-bold text-[#667085] mb-2 px-1 uppercase tracking-wider">
-
-            Nhật ký ${trails.length} bước thao tác (OPERATIONLOG)
-
-          </div>
-
-          <div class="space-y-2">
-
-            ${trails.map((t, idx) => `
-
-              <div class="p-3 rounded-xl bg-[#F8FAFC] border border-[#EAECF0] text-[11.5px] space-y-1">
-
-                <div class="flex items-center justify-between text-[#667085]">
-
-                  <span class="font-bold text-[#2563EB]">#${idx + 1}. ${opNameMap[t.operation_code] || `Thao tác ${t.operation_code}`}</span>
-
-                  <span class="font-mono text-[10.5px] text-[#98A2B3]">${t.time || '—'}</span>
-
-                </div>
-
-                <div class="flex items-center justify-between text-[#344054]">
-
-                  <span>Nhân viên: <strong class="text-[#101828]">${t.operator || '—'}</strong></span>
-
-                  <span>Máy POS: ${t.station || '—'}</span>
-
-                </div>
-
-                ${t.sum_after ? `<div class="text-[#027A48] font-mono text-[11px] font-semibold">Tổng tiền sau thao tác: ${checkviewFormatCurrency(t.sum_after)} đ</div>` : ''}
-
+      const transferBannerHtml = (transfers && transfers.length > 0) ? transfers.map(ts => {
+        if (ts.direction === 'in') {
+          return `
+            <div class="p-3 mb-2.5 rounded-xl bg-purple-50/90 border border-purple-200 text-purple-900 text-xs shadow-xs space-y-1">
+              <div class="flex items-center gap-1.5 font-bold text-purple-900">
+                <i class="ph ph-arrows-left-right text-base text-purple-600 shrink-0"></i>
+                <span>Hóa đơn nhận chuyển bàn</span>
               </div>
+              <div class="flex items-center gap-2 my-1">
+                <span class="px-2 py-0.5 rounded font-mono font-bold bg-white text-slate-700 border border-purple-200 text-xs">${checkviewEscapeText(ts.from_table)}</span>
+                <i class="ph ph-arrow-right text-purple-600 font-bold"></i>
+                <span class="px-2 py-0.5 rounded font-mono font-bold bg-purple-600 text-white text-xs">${checkviewEscapeText(ts.to_table)}</span>
+              </div>
+              <div class="text-[11px] text-purple-700 pt-0.5">
+                Nhân viên thực hiện: <strong class="text-purple-950">${checkviewEscapeText(ts.operator || '—')}</strong> &bull; Lúc ${checkviewEscapeText(ts.time || '—')}
+              </div>
+            </div>
+          `;
+        } else {
+          return `
+            <div class="p-3 mb-2.5 rounded-xl bg-amber-50/90 border border-amber-200 text-amber-900 text-xs shadow-xs space-y-1">
+              <div class="flex items-center gap-1.5 font-bold text-amber-900">
+                <i class="ph ph-arrow-bend-up-right text-base text-amber-600 shrink-0"></i>
+                <span>Order này đã chuyển sang bàn khác</span>
+              </div>
+              <div class="flex items-center gap-2 my-1">
+                <span class="px-2 py-0.5 rounded font-mono font-bold bg-white text-slate-700 border border-amber-200 text-xs">${checkviewEscapeText(ts.from_table)}</span>
+                <i class="ph ph-arrow-right text-amber-600 font-bold"></i>
+                <span class="px-2 py-0.5 rounded font-mono font-bold bg-amber-600 text-white text-xs">${checkviewEscapeText(ts.to_table)}</span>
+              </div>
+              <div class="text-[11px] text-amber-700 pt-0.5">
+                Nhân viên thực hiện: <strong class="text-amber-950">${checkviewEscapeText(ts.operator || '—')}</strong> &bull; Lúc ${checkviewEscapeText(ts.time || '—')}
+              </div>
+            </div>
+          `;
+        }
+      }).join('') : '';
 
-            `).join('')}
+      if (!trails.length && !transfers.length) {
+        auditPane.innerHTML = '<div class="text-[#98A2B3] text-center py-16">Không có nhật ký thao tác cho visit này.</div>';
+      } else {
+        auditPane.innerHTML = `
+          ${transferBannerHtml}
+          ${trails.length > 0 ? `
+            <div class="text-[11px] font-bold text-[#667085] mb-2 px-1 uppercase tracking-wider">
+              Nhật ký ${trails.length} bước thao tác (OPERATIONLOG)
+            </div>
+            <div class="space-y-2">
+              ${trails.map((t, idx) => {
+                if (t.table_transfer) {
+                  return `
+                    <div class="p-3 rounded-xl bg-purple-50/70 border border-purple-200 text-[11.5px] space-y-1.5 shadow-xs">
+                      <div class="flex items-center justify-between text-purple-700">
+                        <span class="font-bold text-purple-950 flex items-center gap-1.5">
+                          <i class="ph ph-arrows-left-right text-purple-600 text-sm"></i>
+                          #${idx + 1}. ${opNameMap[t.operation_code] || `Thao tác ${t.operation_code}`}
+                        </span>
+                        <span class="font-mono text-[10.5px] text-purple-500">${t.time || '—'}</span>
+                      </div>
 
-          </div>
+                      <div class="bg-white rounded-lg p-2 border border-purple-100 flex items-center justify-between my-1">
+                        <div class="flex items-center gap-2">
+                          <span class="px-2 py-0.5 rounded font-mono font-bold bg-slate-100 text-slate-700 text-xs">${checkviewEscapeText(t.table_transfer.from_table_name)}</span>
+                          <i class="ph ph-arrow-right text-purple-600 font-bold"></i>
+                          <span class="px-2 py-0.5 rounded font-mono font-bold bg-purple-600 text-white text-xs">${checkviewEscapeText(t.table_transfer.to_table_name)}</span>
+                        </div>
+                        <span class="text-[10px] font-bold text-purple-700 uppercase tracking-wider">Đổi bàn</span>
+                      </div>
 
+                      <div class="flex items-center justify-between text-[#344054]">
+                        <span>Nhân viên chuyển: <strong class="text-[#101828]">${checkviewEscapeText(t.operator || '—')}</strong></span>
+                        <span>Máy POS: <strong>${checkviewEscapeText(t.station || '—')}</strong></span>
+                      </div>
+                      ${t.manager ? `<div class="text-[11px] text-amber-700">Người duyệt/QL: <strong>${checkviewEscapeText(t.manager)}</strong></div>` : ''}
+                      ${t.sum_after ? `<div class="text-[#027A48] font-mono text-[11px] font-semibold">Tổng tiền sau chuyển: ${checkviewFormatCurrency(t.sum_after)} đ</div>` : ''}
+                    </div>
+                  `;
+                }
+                return `
+                  <div class="p-3 rounded-xl bg-[#F8FAFC] border border-[#EAECF0] text-[11.5px] space-y-1">
+                    <div class="flex items-center justify-between text-[#667085]">
+                      <span class="font-bold text-[#2563EB]">#${idx + 1}. ${opNameMap[t.operation_code] || `Thao tác ${t.operation_code}`}</span>
+                      <span class="font-mono text-[10.5px] text-[#98A2B3]">${t.time || '—'}</span>
+                    </div>
+                    <div class="flex items-center justify-between text-[#344054]">
+                      <span>Nhân viên: <strong class="text-[#101828]">${checkviewEscapeText(t.operator || '—')}</strong></span>
+                      <span>Máy POS: ${checkviewEscapeText(t.station || '—')}</span>
+                    </div>
+                    ${t.manager ? `<div class="text-[11px] text-amber-700">Người duyệt: <strong>${checkviewEscapeText(t.manager)}</strong></div>` : ''}
+                    ${t.sum_after ? `<div class="text-[#027A48] font-mono text-[11px] font-semibold">Tổng tiền sau thao tác: ${checkviewFormatCurrency(t.sum_after)} đ</div>` : ''}
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          ` : ''}
         `;
-
       }
 
     }
@@ -14799,11 +14817,726 @@
 
 
 
+    let cvTechCurrentTab = 'dishes';
+    let cvTechItemsData = [];
+    let cvTechDiscountsData = [];
+    let cvTechPaymentsData = [];
+    let cvTechExternalsData = [];
+
+    function checkviewCopyText(val, label) {
+      if (val === undefined || val === null || val === '') return;
+      navigator.clipboard.writeText(String(val)).then(() => {
+        const toast = document.getElementById('cv-tech-copy-toast');
+        if (toast) {
+          const toastText = toast.querySelector('span');
+          if (toastText) toastText.textContent = `Đã sao chép ${label || 'giá trị'}: ${val}`;
+          toast.classList.remove('opacity-0', 'pointer-events-none');
+          clearTimeout(toast._timer);
+          toast._timer = setTimeout(() => {
+            toast.classList.add('opacity-0', 'pointer-events-none');
+          }, 2000);
+        }
+      }).catch(err => {
+        console.error('Copy failed:', err);
+      });
+    }
+
+    function checkviewSwitchTechTab(tabId) {
+      cvTechCurrentTab = tabId || 'dishes';
+      const tabs = ['dishes', 'discounts', 'payments', 'externals', 'all'];
+      tabs.forEach(t => {
+        const el = document.getElementById(`cv-tech-tab-${t}`);
+        if (!el) return;
+        if (t === cvTechCurrentTab) {
+          el.className = 'px-3.5 py-2 text-xs font-bold border-b-2 border-blue-600 text-blue-700 flex items-center gap-1.5 transition-all cursor-pointer bg-white/70 shadow-2xs';
+        } else {
+          el.className = 'px-3.5 py-2 text-xs font-semibold border-b-2 border-transparent text-slate-600 hover:text-slate-900 flex items-center gap-1.5 transition-all cursor-pointer';
+        }
+      });
+      const kw = (document.getElementById('cv-tech-search-input')?.value || '').trim().toLowerCase();
+      checkviewRenderTechTable(kw);
+    }
+
+    function checkviewOpenTechModal() {
+      if (!cvSelectedDetail) return;
+      const modal = document.getElementById('cv-tech-modal');
+      const data = cvSelectedDetail;
+
+      const printNumText = data.print_num ? ` · Bill #${data.print_num}` : '';
+      const orderText = data.order_name ? ` · Order: ${data.order_name}` : '';
+      const tableText = data.table_name ? ` · Bàn ${data.table_name}` : '';
+      const cashierText = data.operator_name ? ` · Thu ngân: ${data.operator_name}` : '';
+      const timeText = data.open_datetime ? ` · ${data.open_datetime}` : '';
+
+      document.getElementById('cv-tech-modal-title').textContent = `Check #${data.check_num}${printNumText}${tableText}`;
+      document.getElementById('cv-tech-modal-sub').textContent = `Chi tiết kỹ thuật: Món ăn, Bảng giá, Giảm giá, Tiền tệ & Mã tích điểm ngoài (CRM)${orderText}${cashierText}${timeText}`;
+
+      // 1. Parse Dishes
+      cvTechItemsData = [];
+      const sessions = data.receipt_sessions || [];
+      let rowIdx = 1;
+
+      sessions.forEach((sess, sIdx) => {
+        const sTime = sess.time || '';
+        const sScaleId = sess.price_scale_id || '';
+        const sScaleName = sess.price_scale_name || 'Std_Price';
+
+        (sess.items || []).forEach(item => {
+          const isVoid = item.is_void || (Number(item.quantity) === 0 && item.void_qnt > 0);
+          const price = Number(item.unit_price != null ? item.unit_price : item.price) || 0;
+          const total = Number(item.total_price != null ? item.total_price : item.price) || 0;
+          const net = item.net_price != null ? Number(item.net_price) : total;
+          const disc = total - net;
+
+          const mainRow = {
+            index: String(rowIdx++),
+            is_child: false,
+            session_index: sIdx + 1,
+            session_time: sTime,
+            sifr: item.sifr ? String(item.sifr) : '',
+            code: item.code ? String(item.code) : '',
+            name: item.name || '',
+            price_scale_id: String(item.price_scale_id || sScaleId || '1'),
+            price_scale_name: item.price_scale_name || sScaleName,
+            unit_price: price,
+            quantity: isVoid ? 0 : (Number(item.quantity) || 1),
+            void_qnt: item.void_qnt || (isVoid ? item.quantity : 0),
+            total_price: total,
+            discount: disc > 0 ? disc : 0,
+            net_price: net,
+            tax_rate: item.tax_rate ? String(item.tax_rate) : '',
+            dish_uni: item.dish_uni ? String(item.dish_uni) : (item.uni ? String(item.uni) : ''),
+            is_combo: Boolean(item.is_combo),
+            is_charge: Boolean(item.is_charge),
+            is_void: isVoid,
+            modifiers: item.modifiers || []
+          };
+          cvTechItemsData.push(mainRow);
+
+          if (item.is_combo && Array.isArray(item.combo_components) && item.combo_components.length) {
+            item.combo_components.forEach((comp, cIdx) => {
+              const compPrice = Number(comp.unit_price != null ? comp.unit_price : comp.price) || 0;
+              const compTotal = Number(comp.total_price != null ? comp.total_price : comp.price) || 0;
+              const compNet = comp.net_price != null ? Number(comp.net_price) : compTotal;
+              const compDisc = compTotal - compNet;
+
+              cvTechItemsData.push({
+                index: `${mainRow.index}.${cIdx + 1}`,
+                is_child: true,
+                parent_sifr: mainRow.sifr,
+                session_index: sIdx + 1,
+                session_time: sTime,
+                sifr: comp.sifr ? String(comp.sifr) : (comp.dish_uni ? String(comp.dish_uni) : ''),
+                code: comp.code ? String(comp.code) : '',
+                name: comp.name || '',
+                price_scale_id: String(comp.price_scale_id || mainRow.price_scale_id),
+                price_scale_name: comp.price_scale_name || mainRow.price_scale_name,
+                unit_price: compPrice,
+                quantity: Number(comp.quantity) || 1,
+                void_qnt: 0,
+                total_price: compTotal,
+                discount: compDisc > 0 ? compDisc : 0,
+                net_price: compNet,
+                tax_rate: comp.tax_rate ? String(comp.tax_rate) : mainRow.tax_rate,
+                dish_uni: comp.dish_uni ? String(comp.dish_uni) : (comp.uni ? String(comp.uni) : ''),
+                is_combo: false,
+                is_charge: false,
+                is_void: isVoid,
+                modifiers: comp.modifiers || []
+              });
+            });
+          }
+        });
+      });
+
+      // 2. Parse Discounts
+      cvTechDiscountsData = (data.discounts || []).map((d, idx) => ({
+        index: String(idx + 1),
+        sifr: d.sifr ? String(d.sifr) : '',
+        code: d.code ? String(d.code) : '',
+        name: d.name || `Giảm giá #${d.sifr}`,
+        amount: Number(d.amount) || 0,
+        base_sum: Number(d.base_sum) || 0,
+        card_code: d.card_code ? String(d.card_code) : '',
+        holder: d.holder || '',
+        interface: d.interface ? String(d.interface) : '',
+        uni: d.uni ? String(d.uni) : '',
+        state: d.state ? String(d.state) : ''
+      }));
+
+      // 3. Parse Payments
+      cvTechPaymentsData = (data.payments || []).map((p, idx) => ({
+        index: String(idx + 1),
+        sifr: p.sifr ? String(p.sifr) : '',
+        code: p.code ? String(p.code) : '',
+        name: p.name || `Hình thức #${p.sifr}`,
+        type_id: p.type_id ? String(p.type_id) : '',
+        type_name: p.type_name || '',
+        amount: Number(p.amount) || 0,
+        original_sum: Number(p.original_sum) || (Number(p.amount) || 0),
+        uni: p.uni ? String(p.uni) : '',
+        state: p.state ? String(p.state) : ''
+      }));
+
+      // 4. Parse External IDs & CRM
+      cvTechExternalsData = (data.external_ids || []).map((e, idx) => ({
+        index: String(idx + 1),
+        sifr: e.sifr ? String(e.sifr) : '',
+        source: e.source ? String(e.source) : '',
+        value: e.value ? String(e.value) : '',
+        kind: e.kind || 'Mã ngoài',
+        order: e.order ? String(e.order) : '',
+        uni: e.uni ? String(e.uni) : ''
+      }));
+
+      // Update badge counts on tabs
+      const bDishes = document.getElementById('cv-tech-badge-dishes');
+      if (bDishes) bDishes.textContent = cvTechItemsData.filter(i => !i.is_child).length;
+      const bDisc = document.getElementById('cv-tech-badge-discounts');
+      if (bDisc) bDisc.textContent = cvTechDiscountsData.length;
+      const bPay = document.getElementById('cv-tech-badge-payments');
+      if (bPay) bPay.textContent = cvTechPaymentsData.length;
+      const bExt = document.getElementById('cv-tech-badge-externals');
+      if (bExt) bExt.textContent = cvTechExternalsData.length;
+
+      const searchInput = document.getElementById('cv-tech-search-input');
+      if (searchInput) searchInput.value = '';
+
+      cvTechCurrentTab = 'dishes';
+      checkviewSwitchTechTab('dishes');
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      if (searchInput) searchInput.focus();
+    }
+
+    function checkviewCloseTechModal() {
+      const modal = document.getElementById('cv-tech-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      const btn = document.getElementById('cv-tech-view-btn');
+      if (btn) btn.focus();
+    }
+
+    function checkviewFilterTechTable() {
+      const kw = (document.getElementById('cv-tech-search-input')?.value || '').trim().toLowerCase();
+      checkviewRenderTechTable(kw);
+    }
+
+    function checkviewRenderTechTable(filterKw = '') {
+      const container = document.getElementById('cv-tech-container');
+      const chipsEl = document.getElementById('cv-tech-summary-chips');
+      const footTotals = document.getElementById('cv-tech-footer-totals');
+      if (!container) return;
+
+      const money = val => `${checkviewFormatCurrency(Number(val) || 0)} ₫`;
+      const escape = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+      let sectionsHtml = [];
+
+      // Helper function to build a copyable badge
+      const copyBadge = (val, label, extraClass = 'bg-blue-50 text-blue-700 border-blue-200/80 hover:bg-blue-100') => {
+        if (!val) return '<span class="text-slate-300 font-mono text-xs">—</span>';
+        return `
+          <button type="button" onclick="checkviewCopyText('${escape(val)}', '${escape(label)}')" class="inline-flex items-center gap-1 font-mono text-[11px] font-semibold border px-1.5 py-0.5 rounded shadow-2xs transition-colors cursor-pointer ${extraClass}" title="Nhấp để copy ${escape(label)}">
+            <span>${escape(val)}</span>
+            <i class="ph ph-copy text-[10px] opacity-70"></i>
+          </button>
+        `;
+      };
+
+      // 1. SECTION: DISHES
+      if (cvTechCurrentTab === 'dishes' || cvTechCurrentTab === 'all') {
+        let items = cvTechItemsData;
+        if (filterKw) {
+          items = cvTechItemsData.filter(r => 
+            r.name.toLowerCase().includes(filterKw) ||
+            r.sifr.toLowerCase().includes(filterKw) ||
+            r.code.toLowerCase().includes(filterKw) ||
+            r.price_scale_name.toLowerCase().includes(filterKw) ||
+            r.price_scale_id.toLowerCase().includes(filterKw) ||
+            r.dish_uni.toLowerCase().includes(filterKw)
+          );
+        }
+
+        const rowsHtml = items.length ? items.map(row => {
+          const isChild = row.is_child;
+          const isVoid = row.is_void;
+          const rowBg = isVoid ? 'bg-rose-50/40 text-slate-400' : (isChild ? 'bg-slate-50/60 hover:bg-blue-50/30' : 'hover:bg-blue-50/40');
+
+          const sifrBadge = copyBadge(row.sifr, 'Mã SIFR món');
+          const codeBadge = row.code ? copyBadge(row.code, 'Mã Code món', 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200') : '<span class="text-slate-300 font-mono text-xs">—</span>';
+
+          const priceScaleBadge = `
+            <button type="button" onclick="checkviewCopyText('${escape(row.price_scale_id)}', 'Ident Thang giá')" class="inline-flex items-center gap-1 font-mono text-[10px] font-medium text-slate-700 hover:text-blue-700 bg-slate-100 hover:bg-blue-50 px-1.5 py-0.5 rounded border border-slate-200 transition-colors cursor-pointer" title="Ident: #${escape(row.price_scale_id)} (Click để copy ID)">
+              <i class="ph ph-tag text-blue-500 text-[10px]"></i>
+              <span>${escape(row.price_scale_name)}</span>
+              <span class="text-blue-600 font-bold">#${escape(row.price_scale_id)}</span>
+            </button>
+          `;
+
+          const dishUniBadge = copyBadge(row.dish_uni, 'DishUni', 'bg-white text-slate-500 border-slate-200 hover:bg-slate-100');
+
+          const tags = [];
+          if (row.is_combo) tags.push('<span class="px-1.5 py-0.2 rounded text-[10px] font-bold bg-amber-100 text-amber-800 border border-amber-200">COMBO</span>');
+          if (row.is_charge) tags.push('<span class="px-1.5 py-0.2 rounded text-[10px] font-bold bg-purple-100 text-purple-800 border border-purple-200">PHỤ THU</span>');
+          if (isVoid) tags.push(`<span class="px-1.5 py-0.2 rounded text-[10px] font-bold bg-rose-100 text-rose-700 border border-rose-200">ĐÃ HỦY (${row.void_qnt})</span>`);
+          if (isChild) tags.push('<span class="px-1.5 py-0.2 rounded text-[10px] font-medium bg-slate-200 text-slate-700">Thành phần</span>');
+
+          const modsHtml = (row.modifiers || []).map(m => `
+            <div class="text-[10px] text-slate-500 font-normal pl-4 flex items-center gap-1 mt-0.5">
+              <span class="text-slate-400">↳</span> <span>${escape(m)}</span>
+            </div>
+          `).join('');
+
+          const nameCell = `
+            <div class="${isChild ? 'pl-4 border-l-2 border-slate-300 ml-1' : ''}">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                ${isChild ? '<span class="text-slate-400 font-mono text-[11px]">↳</span>' : ''}
+                <span class="font-bold ${isVoid ? 'line-through text-slate-400' : (isChild ? 'text-slate-700 text-[11px]' : 'text-slate-900 text-xs')}">${escape(row.name)}</span>
+                ${tags.join(' ')}
+              </div>
+              ${modsHtml}
+            </div>
+          `;
+
+          const qtyHtml = isVoid
+            ? `<span class="line-through text-rose-500 font-mono text-[11px]">${row.void_qnt}×</span>`
+            : `<span class="font-mono font-bold ${isChild ? 'text-slate-500 text-[11px]' : 'text-slate-800 text-xs'}">${row.quantity}×</span>`;
+
+          const taxBadge = row.tax_rate
+            ? `<span class="font-mono text-[10px] font-semibold px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">${escape(row.tax_rate)}%</span>`
+            : '<span class="text-slate-300 font-mono text-xs">—</span>';
+
+          return `
+            <tr class="${rowBg} transition-colors border-b border-slate-100">
+              <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-400">${escape(row.index)}</td>
+              <td class="py-2 px-3 whitespace-nowrap">${sifrBadge}</td>
+              <td class="py-2 px-3 whitespace-nowrap">${codeBadge}</td>
+              <td class="py-2 px-4">${nameCell}</td>
+              <td class="py-2 px-3 whitespace-nowrap">${priceScaleBadge}</td>
+              <td class="py-2 px-3 text-right font-mono text-xs text-slate-700 whitespace-nowrap">${money(row.unit_price)}</td>
+              <td class="py-2 px-3 text-center whitespace-nowrap">${qtyHtml}</td>
+              <td class="py-2 px-3 text-right font-mono text-xs text-slate-700 whitespace-nowrap">${money(row.total_price)}</td>
+              <td class="py-2 px-3 text-right font-mono text-xs ${row.discount > 0 ? 'text-rose-600 font-semibold' : 'text-slate-400'} whitespace-nowrap">${row.discount > 0 ? `-${money(row.discount)}` : '—'}</td>
+              <td class="py-2 px-3 text-right font-mono text-xs font-bold text-emerald-700 whitespace-nowrap">${money(row.net_price)}</td>
+              <td class="py-2 px-3 text-center whitespace-nowrap">${taxBadge}</td>
+              <td class="py-2 px-3 text-center whitespace-nowrap">${dishUniBadge}</td>
+            </tr>
+          `;
+        }).join('') : `
+          <tr><td colspan="12" class="py-10 text-center text-slate-400">Không có món ăn phù hợp với bộ lọc</td></tr>
+        `;
+
+        sectionsHtml.push(`
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+            <div class="px-4 py-2.5 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+              <span class="font-bold text-xs text-slate-800 flex items-center gap-1.5"><i class="ph ph-bowl-food text-blue-600"></i> Danh sách Món ăn & Thang đơn giá</span>
+              <span class="text-[11px] text-slate-500 font-medium">${items.length} dòng hiển thị</span>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-left text-xs font-sans">
+                <thead class="bg-slate-100 text-slate-600 text-[11px] font-bold uppercase tracking-wider border-b border-slate-200 select-none">
+                  <tr>
+                    <th class="py-2.5 px-3 w-10 text-center">#</th>
+                    <th class="py-2.5 px-3 w-28">Mã SIFR</th>
+                    <th class="py-2.5 px-3 w-20">Mã Code</th>
+                    <th class="py-2.5 px-4 min-w-[220px]">Tên món / Mặt hàng</th>
+                    <th class="py-2.5 px-3 min-w-[150px]">Bảng giá (Price Scale)</th>
+                    <th class="py-2.5 px-3 text-right w-24">Đơn giá</th>
+                    <th class="py-2.5 px-3 text-center w-14">SL</th>
+                    <th class="py-2.5 px-3 text-right w-28">Tổng niêm yết</th>
+                    <th class="py-2.5 px-3 text-right w-24">Giảm giá</th>
+                    <th class="py-2.5 px-3 text-right w-28">Thành tiền (Net)</th>
+                    <th class="py-2.5 px-3 text-center w-16">Thuế</th>
+                    <th class="py-2.5 px-3 text-center w-24">DishUni</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">${rowsHtml}</tbody>
+              </table>
+            </div>
+          </div>
+        `);
+      }
+
+      // 2. SECTION: DISCOUNTS
+      if (cvTechCurrentTab === 'discounts' || cvTechCurrentTab === 'all') {
+        let discs = cvTechDiscountsData;
+        if (filterKw) {
+          discs = cvTechDiscountsData.filter(d => 
+            d.name.toLowerCase().includes(filterKw) ||
+            d.sifr.toLowerCase().includes(filterKw) ||
+            d.code.toLowerCase().includes(filterKw) ||
+            d.card_code.toLowerCase().includes(filterKw) ||
+            d.holder.toLowerCase().includes(filterKw) ||
+            d.interface.toLowerCase().includes(filterKw) ||
+            d.uni.toLowerCase().includes(filterKw)
+          );
+        }
+
+        const rowsHtml = discs.length ? discs.map(d => {
+          const sifrBadge = copyBadge(d.sifr, 'Mã SIFR Giảm giá');
+          const codeBadge = d.code ? copyBadge(d.code, 'Mã Code Giảm giá', 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200') : '<span class="text-slate-300 font-mono text-xs">—</span>';
+          const cardBadge = d.card_code ? copyBadge(d.card_code, 'Mã thẻ / Voucher', 'bg-amber-50 text-amber-800 border-amber-200 hover:bg-amber-100 font-bold') : '<span class="text-slate-300 font-mono text-xs">—</span>';
+          const intfBadge = d.interface ? copyBadge(d.interface, 'Interface ID', 'bg-purple-50 text-purple-700 border-purple-200 hover:bg-purple-100') : '<span class="text-slate-300 font-mono text-xs">—</span>';
+          const uniBadge = copyBadge(d.uni, 'Discount Uni', 'bg-white text-slate-500 border-slate-200 hover:bg-slate-100');
+
+          return `
+            <tr class="hover:bg-amber-50/30 transition-colors border-b border-slate-100">
+              <td class="py-2.5 px-3 text-center font-mono text-[11px] text-slate-400">${escape(d.index)}</td>
+              <td class="py-2.5 px-3 whitespace-nowrap">${sifrBadge}</td>
+              <td class="py-2.5 px-3 whitespace-nowrap">${codeBadge}</td>
+              <td class="py-2.5 px-4 font-bold text-slate-900">${escape(d.name)}</td>
+              <td class="py-2.5 px-3 text-right font-mono text-xs font-bold text-rose-600 whitespace-nowrap">-${money(d.amount)}</td>
+              <td class="py-2.5 px-3 text-right font-mono text-xs text-slate-600 whitespace-nowrap">${money(d.base_sum)}</td>
+              <td class="py-2.5 px-3 whitespace-nowrap">${cardBadge}</td>
+              <td class="py-2.5 px-4 text-xs font-medium text-slate-700">${escape(d.holder || '—')}</td>
+              <td class="py-2.5 px-3 whitespace-nowrap">${intfBadge}</td>
+              <td class="py-2.5 px-3 text-center whitespace-nowrap"><span class="px-2 py-0.5 text-[10px] font-bold rounded-full ${d.state === '5' ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-slate-100 text-slate-600'}">State ${escape(d.state || '5')}</span></td>
+              <td class="py-2.5 px-3 text-center whitespace-nowrap">${uniBadge}</td>
+            </tr>
+          `;
+        }).join('') : `
+          <tr><td colspan="11" class="py-8 text-center text-slate-400">Không có chương trình giảm giá hoặc không khớp từ khóa lọc</td></tr>
+        `;
+
+        sectionsHtml.push(`
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+            <div class="px-4 py-2.5 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+              <span class="font-bold text-xs text-slate-800 flex items-center gap-1.5"><i class="ph ph-tag text-amber-600"></i> Khuyến mãi, Chiết khấu & Thẻ giảm giá</span>
+              <span class="text-[11px] text-slate-500 font-medium">${discs.length} mục giảm giá</span>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-left text-xs font-sans">
+                <thead class="bg-slate-100 text-slate-600 text-[11px] font-bold uppercase tracking-wider border-b border-slate-200 select-none">
+                  <tr>
+                    <th class="py-2.5 px-3 w-10 text-center">#</th>
+                    <th class="py-2.5 px-3 w-28">Mã SIFR</th>
+                    <th class="py-2.5 px-3 w-20">Mã Code</th>
+                    <th class="py-2.5 px-4 min-w-[200px]">Tên chương trình / Giảm giá</th>
+                    <th class="py-2.5 px-3 text-right w-28">Tiền giảm</th>
+                    <th class="py-2.5 px-3 text-right w-28">Tiền cơ sở</th>
+                    <th class="py-2.5 px-3 min-w-[140px]">Mã thẻ / Voucher</th>
+                    <th class="py-2.5 px-4 min-w-[140px]">Chủ thẻ / Khách hàng</th>
+                    <th class="py-2.5 px-3 w-28">Interface</th>
+                    <th class="py-2.5 px-3 text-center w-20">Trạng thái</th>
+                    <th class="py-2.5 px-3 text-center w-20">Uni</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">${rowsHtml}</tbody>
+              </table>
+            </div>
+          </div>
+        `);
+      }
+
+      // 3. SECTION: PAYMENTS
+      if (cvTechCurrentTab === 'payments' || cvTechCurrentTab === 'all') {
+        let pays = cvTechPaymentsData;
+        if (filterKw) {
+          pays = cvTechPaymentsData.filter(p => 
+            p.name.toLowerCase().includes(filterKw) ||
+            p.sifr.toLowerCase().includes(filterKw) ||
+            p.code.toLowerCase().includes(filterKw) ||
+            p.type_name.toLowerCase().includes(filterKw) ||
+            p.type_id.toLowerCase().includes(filterKw) ||
+            p.uni.toLowerCase().includes(filterKw)
+          );
+        }
+
+        const rowsHtml = pays.length ? pays.map(p => {
+          const sifrBadge = copyBadge(p.sifr, 'Mã SIFR Tiền tệ');
+          const codeBadge = p.code ? copyBadge(p.code, 'Mã Code Tiền tệ', 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200') : '<span class="text-slate-300 font-mono text-xs">—</span>';
+          const typeBadge = copyBadge(p.type_id, 'Mã Nhóm Tiền tệ', 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200');
+          const uniBadge = copyBadge(p.uni, 'Payment Uni', 'bg-white text-slate-500 border-slate-200 hover:bg-slate-100');
+
+          return `
+            <tr class="hover:bg-emerald-50/30 transition-colors border-b border-slate-100">
+              <td class="py-2.5 px-3 text-center font-mono text-[11px] text-slate-400">${escape(p.index)}</td>
+              <td class="py-2.5 px-3 whitespace-nowrap">${sifrBadge}</td>
+              <td class="py-2.5 px-3 whitespace-nowrap">${codeBadge}</td>
+              <td class="py-2.5 px-4 font-bold text-slate-900">${escape(p.name)}</td>
+              <td class="py-2.5 px-3 whitespace-nowrap"><span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-blue-50 text-blue-700 border border-blue-200">${escape(p.type_name || 'Hình thức')}</span> <span class="ml-1">${typeBadge}</span></td>
+              <td class="py-2.5 px-3 text-right font-mono text-xs text-slate-700 whitespace-nowrap">${money(p.original_sum)}</td>
+              <td class="py-2.5 px-3 text-right font-mono text-xs font-bold text-emerald-700 whitespace-nowrap">${money(p.amount)}</td>
+              <td class="py-2.5 px-3 text-center whitespace-nowrap"><span class="px-2 py-0.5 text-[10px] font-bold rounded-full ${p.state === '6' ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-slate-100 text-slate-600'}">${p.state === '6' ? 'Đã thanh toán (6)' : `State ${p.state}`}</span></td>
+              <td class="py-2.5 px-3 text-center whitespace-nowrap">${uniBadge}</td>
+            </tr>
+          `;
+        }).join('') : `
+          <tr><td colspan="9" class="py-8 text-center text-slate-400">Không có dữ liệu thanh toán tiền tệ</td></tr>
+        `;
+
+        sectionsHtml.push(`
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+            <div class="px-4 py-2.5 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+              <span class="font-bold text-xs text-slate-800 flex items-center gap-1.5"><i class="ph ph-credit-card text-emerald-600"></i> Hình thức Thanh toán & Tiền tệ (Currencies)</span>
+              <span class="text-[11px] text-slate-500 font-medium">${pays.length} lượt thanh toán</span>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-left text-xs font-sans">
+                <thead class="bg-slate-100 text-slate-600 text-[11px] font-bold uppercase tracking-wider border-b border-slate-200 select-none">
+                  <tr>
+                    <th class="py-2.5 px-3 w-10 text-center">#</th>
+                    <th class="py-2.5 px-3 w-28">Mã SIFR</th>
+                    <th class="py-2.5 px-3 w-20">Mã Code</th>
+                    <th class="py-2.5 px-4 min-w-[200px]">Tên hình thức thanh toán</th>
+                    <th class="py-2.5 px-3 min-w-[160px]">Nhóm tiền tệ</th>
+                    <th class="py-2.5 px-3 text-right w-28">Tiền nguyên tệ</th>
+                    <th class="py-2.5 px-3 text-right w-28">Tiền thực thu (Net)</th>
+                    <th class="py-2.5 px-3 text-center w-24">Trạng thái</th>
+                    <th class="py-2.5 px-3 text-center w-20">Uni</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">${rowsHtml}</tbody>
+              </table>
+            </div>
+          </div>
+        `);
+      }
+
+      // 4. SECTION: EXTERNAL IDS & CRM
+      if (cvTechCurrentTab === 'externals' || cvTechCurrentTab === 'all') {
+        let exts = cvTechExternalsData;
+        if (filterKw) {
+          exts = cvTechExternalsData.filter(e => 
+            e.value.toLowerCase().includes(filterKw) ||
+            e.kind.toLowerCase().includes(filterKw) ||
+            e.sifr.toLowerCase().includes(filterKw) ||
+            e.source.toLowerCase().includes(filterKw) ||
+            e.uni.toLowerCase().includes(filterKw)
+          );
+        }
+
+        const rowsHtml = exts.length ? exts.map(e => {
+          const sifrBadge = copyBadge(e.sifr, 'Mã SIFR ngoài');
+          const valBadge = `
+            <button type="button" onclick="checkviewCopyText('${escape(e.value)}', '${escape(e.kind)}')" class="inline-flex items-center gap-1.5 font-mono text-xs font-bold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-2.5 py-1 rounded-lg shadow-2xs transition-colors cursor-pointer" title="Nhấp để copy giá trị mã ngoài">
+              <span>${escape(e.value)}</span>
+              <i class="ph ph-copy text-xs text-indigo-500"></i>
+            </button>
+          `;
+          const srcBadge = copyBadge(e.source, 'Mã Source/GUID', 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 max-w-[200px] truncate');
+          const uniBadge = copyBadge(e.uni, 'External Uni', 'bg-white text-slate-500 border-slate-200 hover:bg-slate-100');
+
+          return `
+            <tr class="hover:bg-indigo-50/20 transition-colors border-b border-slate-100">
+              <td class="py-2.5 px-3 text-center font-mono text-[11px] text-slate-400">${escape(e.index)}</td>
+              <td class="py-2.5 px-3 whitespace-nowrap">${sifrBadge}</td>
+              <td class="py-2.5 px-4 whitespace-nowrap"><span class="px-2 py-0.5 rounded text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">${escape(e.kind)}</span></td>
+              <td class="py-2.5 px-4 font-mono">${valBadge}</td>
+              <td class="py-2.5 px-4 font-mono text-[11px] text-slate-500 whitespace-nowrap">${srcBadge}</td>
+              <td class="py-2.5 px-3 text-center font-mono text-xs text-slate-600 whitespace-nowrap">${escape(e.order || '—')}</td>
+              <td class="py-2.5 px-3 text-center whitespace-nowrap">${uniBadge}</td>
+            </tr>
+          `;
+        }).join('') : `
+          <tr><td colspan="7" class="py-8 text-center text-slate-400">Không có mã tích điểm, mã booking hoặc dữ liệu CRM ngoài</td></tr>
+        `;
+
+        sectionsHtml.push(`
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+            <div class="px-4 py-2.5 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+              <span class="font-bold text-xs text-slate-800 flex items-center gap-1.5"><i class="ph ph-identification-card text-indigo-600"></i> Mã ngoài, Tích điểm CRM, Thẻ thành viên & Booking</span>
+              <span class="text-[11px] text-slate-500 font-medium">${exts.length} bản ghi</span>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-left text-xs font-sans">
+                <thead class="bg-slate-100 text-slate-600 text-[11px] font-bold uppercase tracking-wider border-b border-slate-200 select-none">
+                  <tr>
+                    <th class="py-2.5 px-3 w-10 text-center">#</th>
+                    <th class="py-2.5 px-3 w-28">Mã SIFR</th>
+                    <th class="py-2.5 px-4 min-w-[180px]">Phân loại định danh</th>
+                    <th class="py-2.5 px-4 min-w-[200px]">Giá trị mã ngoài (ExtID / Value)</th>
+                    <th class="py-2.5 px-4 min-w-[220px]">Nguồn ngoài (ExtSource / GUID)</th>
+                    <th class="py-2.5 px-3 text-center w-20">Order</th>
+                    <th class="py-2.5 px-3 text-center w-20">Uni</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">${rowsHtml}</tbody>
+              </table>
+            </div>
+          </div>
+        `);
+      }
+
+      container.innerHTML = sectionsHtml.join('');
+
+      // Update Summary Chips & Footer
+      const fin = cvSelectedDetail.financial || {};
+      const totalDiscAmount = cvTechDiscountsData.reduce((acc, d) => acc + (d.amount || 0), 0) || Number(fin.disc_sum) || 0;
+      const totalPayAmount = cvTechPaymentsData.reduce((acc, p) => acc + (p.amount || 0), 0) || Number(fin.basic_sum) || 0;
+
+      if (chipsEl) {
+        if (cvTechCurrentTab === 'dishes') {
+          const mainItems = cvTechItemsData.filter(i => !i.is_child);
+          const totalQty = mainItems.reduce((acc, i) => acc + (i.quantity || 0), 0);
+          chipsEl.innerHTML = `
+            <span class="inline-flex items-center gap-1 bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md font-semibold"><i class="ph ph-bowl-food"></i> ${mainItems.length} món (${totalQty} phần)</span>
+            <span class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-1 rounded-md font-semibold"><i class="ph ph-currency-circle-dollar"></i> Tiền món: ${money(fin.prlist_sum)}</span>
+          `;
+        } else if (cvTechCurrentTab === 'discounts') {
+          chipsEl.innerHTML = `
+            <span class="inline-flex items-center gap-1 bg-amber-50 text-amber-800 border border-amber-200 px-2.5 py-1 rounded-md font-semibold"><i class="ph ph-tag"></i> ${cvTechDiscountsData.length} chương trình</span>
+            <span class="inline-flex items-center gap-1 bg-rose-50 text-rose-700 border border-rose-200 px-2.5 py-1 rounded-md font-semibold"><i class="ph ph-minus-circle"></i> Tổng giảm: -${money(totalDiscAmount)}</span>
+          `;
+        } else if (cvTechCurrentTab === 'payments') {
+          chipsEl.innerHTML = `
+            <span class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-1 rounded-md font-semibold"><i class="ph ph-credit-card"></i> ${cvTechPaymentsData.length} hình thức</span>
+            <span class="inline-flex items-center gap-1 bg-blue-50 text-blue-700 border border-blue-200 px-2.5 py-1 rounded-md font-semibold"><i class="ph ph-check-circle"></i> Thực thu: ${money(totalPayAmount)}</span>
+          `;
+        } else if (cvTechCurrentTab === 'externals') {
+          chipsEl.innerHTML = `
+            <span class="inline-flex items-center gap-1 bg-indigo-50 text-indigo-700 border border-indigo-200 px-2.5 py-1 rounded-md font-semibold"><i class="ph ph-identification-card"></i> ${cvTechExternalsData.length} mã CRM / Booking / Pager</span>
+          `;
+        } else {
+          chipsEl.innerHTML = `
+            <span class="inline-flex items-center gap-1 bg-slate-100 text-slate-700 px-2 py-0.5 rounded-md font-medium">Món: ${cvTechItemsData.filter(i=>!i.is_child).length}</span>
+            <span class="inline-flex items-center gap-1 bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-md font-medium">Giảm: -${money(totalDiscAmount)}</span>
+            <span class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded-md font-medium">Thu: ${money(totalPayAmount)}</span>
+            <span class="inline-flex items-center gap-1 bg-indigo-50 text-indigo-700 border border-indigo-200 px-2 py-0.5 rounded-md font-medium">Mã ngoài: ${cvTechExternalsData.length}</span>
+          `;
+        }
+      }
+
+      if (footTotals) {
+        footTotals.innerHTML = `
+          <span>Tiền món gốc: <strong class="text-slate-900 font-mono">${money(fin.prlist_sum)}</strong></span>
+          <span>·</span>
+          <span>Giảm giá: <strong class="text-rose-600 font-mono">-${money(totalDiscAmount)}</strong></span>
+          <span>·</span>
+          <span>Tiền thanh toán: <strong class="text-emerald-700 font-mono">${money(totalPayAmount)}</strong></span>
+          ${Number(fin.tax_sum) > 0 ? `<span>·</span><span>VAT: <strong class="text-blue-700 font-mono">${money(fin.tax_sum)}</strong></span>` : ''}
+        `;
+      }
+    }
+
+    function checkviewCopyTechTable() {
+      const escapeVal = s => String(s ?? '').replace(/	/g, ' ');
+      let lines = [];
+
+      if (cvTechCurrentTab === 'dishes' || cvTechCurrentTab === 'all') {
+        lines.push('=== DANH SÁCH MÓN ĂN & BẢNG GIÁ ===');
+        lines.push(['STT', 'Mã SIFR', 'Mã Code', 'Tên món', 'Bảng giá', 'Ident Bảng giá', 'Đơn giá', 'SL', 'Tổng niêm yết', 'Giảm giá', 'Thành tiền (Net)', 'Thuế VAT', 'DishUni', 'Loại dòng'].join('	'));
+        cvTechItemsData.forEach(r => {
+          const rowType = r.is_void ? 'Hủy' : (r.is_combo ? 'Combo' : (r.is_child ? 'Thành phần combo' : (r.is_charge ? 'Phụ thu' : 'Món')));
+          const cleanName = (r.is_child ? '  ↳ ' : '') + r.name + (r.modifiers && r.modifiers.length ? ` (${r.modifiers.join(', ')})` : '');
+          lines.push([r.index, r.sifr, r.code, escapeVal(cleanName), escapeVal(r.price_scale_name), r.price_scale_id, r.unit_price, r.quantity, r.total_price, r.discount, r.net_price, r.tax_rate, r.dish_uni, rowType].join('	'));
+        });
+        lines.push('');
+      }
+
+      if (cvTechCurrentTab === 'discounts' || cvTechCurrentTab === 'all') {
+        lines.push('=== DANH SÁCH KHUYẾN MÃI & GIẢM GIÁ ===');
+        lines.push(['STT', 'Mã SIFR', 'Mã Code', 'Tên chương trình giảm giá', 'Tiền giảm', 'Tiền cơ sở', 'Mã thẻ / Voucher', 'Chủ thẻ', 'Interface ID', 'Trạng thái', 'Uni'].join('	'));
+        cvTechDiscountsData.forEach(d => {
+          lines.push([d.index, d.sifr, d.code, escapeVal(d.name), d.amount, d.base_sum, d.card_code, escapeVal(d.holder), d.interface, d.state, d.uni].join('	'));
+        });
+        lines.push('');
+      }
+
+      if (cvTechCurrentTab === 'payments' || cvTechCurrentTab === 'all') {
+        lines.push('=== HÌNH THỨC THANH TOÁN & TIỀN TỆ ===');
+        lines.push(['STT', 'Mã SIFR', 'Mã Code', 'Tên hình thức', 'Nhóm tiền tệ', 'Mã nhóm (Type ID)', 'Tiền nguyên tệ', 'Tiền thực thu', 'Trạng thái', 'Uni'].join('	'));
+        cvTechPaymentsData.forEach(p => {
+          lines.push([p.index, p.sifr, p.code, escapeVal(p.name), escapeVal(p.type_name), p.type_id, p.original_sum, p.amount, p.state, p.uni].join('	'));
+        });
+        lines.push('');
+      }
+
+      if (cvTechCurrentTab === 'externals' || cvTechCurrentTab === 'all') {
+        lines.push('=== MÃ NGOÀI, TÍCH ĐIỂM CRM & BOOKING ===');
+        lines.push(['STT', 'Mã SIFR', 'Phân loại định danh', 'Giá trị mã ngoài (ExtID)', 'Nguồn ngoài (ExtSource / Interface)', 'Order', 'Uni'].join('	'));
+        cvTechExternalsData.forEach(e => {
+          lines.push([e.index, e.sifr, escapeVal(e.kind), escapeVal(e.value), escapeVal(e.source), e.order, e.uni].join('	'));
+        });
+        lines.push('');
+      }
+
+      navigator.clipboard.writeText(lines.join('\n')).then(() => {
+        const toast = document.getElementById('cv-tech-copy-toast');
+        if (toast) {
+          const toastText = toast.querySelector('span');
+          if (toastText) toastText.textContent = 'Đã sao chép dữ liệu vào Clipboard (sẵn sàng dán trực tiếp vào Excel)!';
+          toast.classList.remove('opacity-0', 'pointer-events-none');
+          clearTimeout(toast._timer);
+          toast._timer = setTimeout(() => {
+            toast.classList.add('opacity-0', 'pointer-events-none');
+          }, 2500);
+        }
+      });
+    }
+
+    function checkviewExportTechCsv() {
+      if (!cvSelectedDetail) return;
+      const checkNum = cvSelectedDetail.check_num || 'Check';
+      const escapeCsv = val => {
+        const str = String(val ?? '');
+        return (str.includes(',') || str.includes('"') || str.includes('\n')) ? `"${str.replace(/"/g, '""')}"` : str;
+      };
+
+      let rows = [];
+
+      if (cvTechCurrentTab === 'dishes' || cvTechCurrentTab === 'all') {
+        rows.push(['--- DANH SÁCH MÓN ĂN & BẢNG GIÁ ---']);
+        rows.push(['STT', 'Mã SIFR', 'Mã Code', 'Tên món', 'Bảng giá', 'Ident Bảng giá', 'Đơn giá', 'Số lượng', 'Tổng niêm yết', 'Giảm giá', 'Thành tiền', 'Thuế', 'DishUni', 'Phân loại'].map(escapeCsv));
+        cvTechItemsData.forEach(r => {
+          const rowType = r.is_void ? 'Hủy' : (r.is_combo ? 'Combo' : (r.is_child ? 'Thành phần combo' : (r.is_charge ? 'Phụ thu' : 'Món')));
+          const cleanName = (r.is_child ? '↳ ' : '') + r.name + (r.modifiers && r.modifiers.length ? ` (${r.modifiers.join(', ')})` : '');
+          rows.push([r.index, r.sifr, r.code, cleanName, r.price_scale_name, r.price_scale_id, r.unit_price, r.quantity, r.total_price, r.discount, r.net_price, r.tax_rate, r.dish_uni, rowType].map(escapeCsv));
+        });
+        rows.push([]);
+      }
+
+      if (cvTechCurrentTab === 'discounts' || cvTechCurrentTab === 'all') {
+        rows.push(['--- DANH SÁCH KHUYẾN MÃI & GIẢM GIÁ ---']);
+        rows.push(['STT', 'Mã SIFR', 'Mã Code', 'Tên chương trình giảm giá', 'Tiền giảm', 'Tiền cơ sở', 'Mã thẻ / Voucher', 'Chủ thẻ', 'Interface ID', 'Trạng thái', 'Uni'].map(escapeCsv));
+        cvTechDiscountsData.forEach(d => {
+          rows.push([d.index, d.sifr, d.code, d.name, d.amount, d.base_sum, d.card_code, d.holder, d.interface, d.state, d.uni].map(escapeCsv));
+        });
+        rows.push([]);
+      }
+
+      if (cvTechCurrentTab === 'payments' || cvTechCurrentTab === 'all') {
+        rows.push(['--- HÌNH THỨC THANH TOÁN & TIỀN TỆ ---']);
+        rows.push(['STT', 'Mã SIFR', 'Mã Code', 'Tên hình thức', 'Nhóm tiền tệ', 'Mã nhóm (Type ID)', 'Tiền nguyên tệ', 'Tiền thực thu', 'Trạng thái', 'Uni'].map(escapeCsv));
+        cvTechPaymentsData.forEach(p => {
+          rows.push([p.index, p.sifr, p.code, p.name, p.type_name, p.type_id, p.original_sum, p.amount, p.state, p.uni].map(escapeCsv));
+        });
+        rows.push([]);
+      }
+
+      if (cvTechCurrentTab === 'externals' || cvTechCurrentTab === 'all') {
+        rows.push(['--- MÃ NGOÀI, TÍCH ĐIỂM CRM & BOOKING ---']);
+        rows.push(['STT', 'Mã SIFR', 'Phân loại định danh', 'Giá trị mã ngoài (ExtID)', 'Nguồn ngoài (ExtSource / Interface)', 'Order', 'Uni'].map(escapeCsv));
+        cvTechExternalsData.forEach(e => {
+          rows.push([e.index, e.sifr, e.kind, e.value, e.source, e.order, e.uni].map(escapeCsv));
+        });
+        rows.push([]);
+      }
+
+      const csvContent = '\ufeff' + rows.map(r => r.join(',')).join('\r\n');
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', `Check_${checkNum}_TechData_${cvTechCurrentTab}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    }
+
+
     document.addEventListener('keydown', event => {
 
       if (event.key === 'Escape' && !document.getElementById('cv-receipt-modal').classList.contains('hidden')) {
 
         checkviewCloseReceiptModal();
+
+      } else if (event.key === 'Escape' && !document.getElementById('cv-tech-modal').classList.contains('hidden')) {
+
+        checkviewCloseTechModal();
 
       }
 
@@ -15178,6 +15911,196 @@
         <div class="flex items-center gap-2"><button type="button" onclick="checkviewCloseReceiptModal()" class="h-9 px-4 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-50">Đóng</button><button id="cv-receipt-save" type="button" onclick="checkviewSaveReceiptPdf()" class="h-9 px-4 rounded-xl bg-red-500 hover:bg-red-600 text-white text-xs font-bold inline-flex items-center gap-2 disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-red-500"><i class="ph ph-file-pdf text-base" aria-hidden="true"></i> In ra PDF</button></div>
 
       </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ==================== CHECK TECHNICAL DATA TABLE MODAL ==================== -->
+
+  <div id="cv-tech-modal" role="dialog" aria-modal="true" aria-labelledby="cv-tech-modal-title" onclick="if(event.target === this) checkviewCloseTechModal()" class="fixed inset-0 z-50 bg-slate-950/50 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-6">
+
+    <div class="w-full max-w-6xl max-h-[94vh] bg-white border border-slate-200 rounded-[20px] shadow-2xl flex flex-col overflow-hidden">
+
+      <!-- Modal Header -->
+
+      <div class="px-5 py-3.5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3 shrink-0 bg-slate-50/90">
+
+        <div class="min-w-0 flex items-center gap-3">
+
+          <span class="w-1 h-7 rounded-full bg-blue-600" aria-hidden="true"></span>
+
+          <div>
+
+            <div class="flex items-center gap-2">
+
+              <h3 id="cv-tech-modal-title" class="text-sm font-extrabold uppercase tracking-wide text-slate-900">Bảng dữ liệu kỹ thuật & Mapping Check</h3>
+
+              <span class="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-blue-50 text-blue-700 border border-blue-200">DATA MAPPING</span>
+
+            </div>
+
+            <p id="cv-tech-modal-sub" class="text-[11px] text-slate-500 mt-0.5">Chi tiết mã món, bảng giá, giảm giá, hình thức thanh toán & mã tích điểm ngoài (CRM)</p>
+
+          </div>
+
+        </div>
+
+        <div class="flex items-center gap-2">
+
+          <button type="button" onclick="checkviewCopyTechTable()" class="h-8 px-3 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold inline-flex items-center gap-1.5 shadow-2xs transition-colors cursor-pointer" title="Sao chép bảng đang xem dưới dạng TSV (dán trực tiếp vào Excel)">
+
+            <i class="ph ph-copy text-sm text-blue-600"></i>
+
+            <span>Sao chép bảng (Excel)</span>
+
+          </button>
+
+          <button type="button" onclick="checkviewExportTechCsv()" class="h-8 px-3 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold inline-flex items-center gap-1.5 shadow-2xs transition-colors cursor-pointer" title="Xuất file CSV UTF-8">
+
+            <i class="ph ph-download-simple text-sm text-emerald-600"></i>
+
+            <span>Xuất CSV</span>
+
+          </button>
+
+          <button type="button" onclick="checkviewCloseTechModal()" aria-label="Đóng bảng kỹ thuật" class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-500 hover:bg-slate-100 transition-colors cursor-pointer">
+
+            <i class="ph ph-x text-lg"></i>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Navigation Tabs (Món ăn / Giảm giá / Tiền tệ / Mã ngoài CRM / Toàn bộ) -->
+
+      <div class="px-5 pt-1.5 bg-slate-50/70 border-b border-slate-200 flex flex-wrap items-center gap-1.5 shrink-0 select-none">
+
+        <button id="cv-tech-tab-dishes" type="button" onclick="checkviewSwitchTechTab('dishes')" class="px-3.5 py-2 text-xs font-bold border-b-2 border-blue-600 text-blue-700 flex items-center gap-1.5 transition-all cursor-pointer">
+
+          <i class="ph ph-bowl-food text-sm"></i>
+
+          <span>Món ăn & Bảng giá</span>
+
+          <span id="cv-tech-badge-dishes" class="px-1.5 py-0.2 rounded-full text-[10px] bg-blue-100 text-blue-800 font-mono font-bold">0</span>
+
+        </button>
+
+
+
+        <button id="cv-tech-tab-discounts" type="button" onclick="checkviewSwitchTechTab('discounts')" class="px-3.5 py-2 text-xs font-semibold border-b-2 border-transparent text-slate-600 hover:text-slate-900 flex items-center gap-1.5 transition-all cursor-pointer">
+
+          <i class="ph ph-tag text-sm"></i>
+
+          <span>Khuyến mãi & Giảm giá</span>
+
+          <span id="cv-tech-badge-discounts" class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-200 text-slate-700 font-mono font-bold">0</span>
+
+        </button>
+
+
+
+        <button id="cv-tech-tab-payments" type="button" onclick="checkviewSwitchTechTab('payments')" class="px-3.5 py-2 text-xs font-semibold border-b-2 border-transparent text-slate-600 hover:text-slate-900 flex items-center gap-1.5 transition-all cursor-pointer">
+
+          <i class="ph ph-credit-card text-sm"></i>
+
+          <span>Tiền tệ & Thanh toán</span>
+
+          <span id="cv-tech-badge-payments" class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-200 text-slate-700 font-mono font-bold">0</span>
+
+        </button>
+
+
+
+        <button id="cv-tech-tab-externals" type="button" onclick="checkviewSwitchTechTab('externals')" class="px-3.5 py-2 text-xs font-semibold border-b-2 border-transparent text-slate-600 hover:text-slate-900 flex items-center gap-1.5 transition-all cursor-pointer">
+
+          <i class="ph ph-identification-card text-sm"></i>
+
+          <span>Mã ngoài & CRM / Tích điểm</span>
+
+          <span id="cv-tech-badge-externals" class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-200 text-slate-700 font-mono font-bold">0</span>
+
+        </button>
+
+
+
+        <button id="cv-tech-tab-all" type="button" onclick="checkviewSwitchTechTab('all')" class="px-3 py-2 text-xs font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-800 flex items-center gap-1.5 transition-all cursor-pointer ml-auto">
+
+          <i class="ph ph-squares-four text-sm"></i>
+
+          <span>Xem toàn bộ</span>
+
+        </button>
+
+      </div>
+
+
+
+      <!-- Quick Filter Bar -->
+
+      <div class="px-5 py-2.5 bg-white border-b border-slate-100 flex flex-wrap items-center justify-between gap-3 shrink-0">
+
+        <div class="flex items-center gap-2 flex-1 max-w-md">
+
+          <div class="relative w-full">
+
+            <i class="ph ph-magnifying-glass absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+
+            <input type="text" id="cv-tech-search-input" oninput="checkviewFilterTechTable()" placeholder="Lọc nhanh theo tên, mã SIFR, code, thẻ, nguồn ngoài..." class="w-full h-8 pl-8 pr-2.5 bg-slate-50 hover:bg-slate-100/70 border border-slate-200 rounded-lg text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-blue-500 transition-all" />
+
+          </div>
+
+        </div>
+
+        <div id="cv-tech-summary-chips" class="flex items-center gap-2 text-[11px] text-slate-600 font-medium">
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Content Container -->
+
+      <div id="cv-tech-container" class="min-h-0 flex-1 overflow-auto bg-slate-50/20 p-3 space-y-4">
+
+      </div>
+
+
+
+      <!-- Modal Footer -->
+
+      <div class="px-5 py-3 border-t border-slate-200 bg-slate-50/80 flex flex-wrap items-center justify-between gap-3 shrink-0">
+
+        <div id="cv-tech-footer-totals" class="text-xs text-slate-600 flex items-center gap-4 flex-wrap font-medium">
+
+        </div>
+
+        <div class="flex items-center gap-2">
+
+          <button type="button" onclick="checkviewCloseTechModal()" class="h-8 px-4 rounded-lg bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-bold transition-colors cursor-pointer">Đóng</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Floating Toast for Copy Action -->
+
+    <div id="cv-tech-copy-toast" class="fixed bottom-6 right-6 z-60 bg-slate-900 text-white text-xs font-medium px-4 py-2.5 rounded-xl shadow-xl transition-opacity duration-200 opacity-0 pointer-events-none flex items-center gap-2">
+
+      <i class="ph ph-check-circle text-emerald-400 text-base"></i>
+
+      <span></span>
 
     </div>
 
@@ -17262,7 +18185,7 @@ ${res.error}`);
           showAppUpdateModal(res);
         } else {
           if (statusText) {
-            statusText.innerHTML = `<span class="text-emerald-600 font-bold flex items-center gap-1"><i class="ph ph-check-circle"></i> Bạn đang dùng phiên bản mới nhất (v${res.current_version || '4.1.0'}).</span>`;
+            statusText.innerHTML = `<span class="text-emerald-600 font-bold flex items-center gap-1"><i class="ph ph-check-circle"></i> Bạn đang dùng phiên bản mới nhất (v${res.current_version || '4.2.0'}).</span>`;
           }
         }
       } catch (err) {
@@ -17296,7 +18219,7 @@ ${res.error}`);
           showAppUpdateModal(res);
         } else {
           if (statusText) {
-            statusText.innerHTML = `<span class="text-slate-600 font-medium">Bạn đang dùng phiên bản mới nhất (${res.current_version || 'v4.1.0'}).</span>`;
+            statusText.innerHTML = `<span class="text-slate-600 font-medium">Bạn đang dùng phiên bản mới nhất (${res.current_version || 'v4.2.0'}).</span>`;
           }
         }
       } catch (err) {
@@ -17505,7 +18428,7 @@ ${res.error}`);
           <div>
             <div class="flex items-center gap-2">
               <h3 class="text-base font-extrabold text-[#101828]">RK7 PRO Manager</h3>
-              <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-blue-100 text-blue-700 border border-blue-200">v4.1.0 Official</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-blue-100 text-blue-700 border border-blue-200">v4.2.0 Official</span>
             </div>
             <p class="text-xs text-[#667085] mt-0.5">Shortcut Manager, UDB CheckView & Script Vault</p>
           </div>
@@ -17520,7 +18443,7 @@ ${res.error}`);
         <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center justify-between">
           <div>
             <div class="text-[11px] font-bold text-slate-700 uppercase tracking-wide">Trạng thái phiên bản</div>
-            <div class="text-xs text-slate-500 mt-0.5" id="about-modal-status">Đang chạy phiên bản v4.1.0</div>
+            <div class="text-xs text-slate-500 mt-0.5" id="about-modal-status">Đang chạy phiên bản v4.2.0</div>
           </div>
           <button id="btn-about-check-update" onclick="checkAppUpdateFromAbout()" class="h-8 px-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-2xs transition-all">
             <i class="ph ph-arrows-clockwise text-sm"></i>
@@ -17533,6 +18456,23 @@ ${res.error}`);
             <i class="ph ph-sparkle text-amber-500 text-sm"></i>
             <span>Nhật ký cập nhật &amp; Thay đổi (Changelog)</span>
           </h4>
+
+          <!-- Version 4.2.0 -->
+          <div class="p-3.5 rounded-2xl bg-white border border-blue-200/90 shadow-2xs space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                <i class="ph ph-sparkle text-blue-600"></i>
+                Phiên bản 4.2.0 (Bảng Kỹ Thuật Checkview, Nhật Ký Đổi Bàn & Ghi Nhớ Đăng Nhập)
+              </span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-200">Minor</span>
+            </div>
+            <ul class="text-[11px] text-slate-600 space-y-1 pl-4 list-disc leading-relaxed">
+              <li><b>Bảng kỹ thuật hóa đơn (UCS Checkview):</b> Bổ sung modal chuyên sâu xem mã Ident món ăn (SIFR), bảng giá, danh sách khuyến mãi / chiết khấu, hình thức thanh toán & mã ngoài (CRM, Booking, SkyMonitor, thẻ thành viên). Hỗ trợ tìm kiếm, sao chép 1-click và xuất file CSV/TSV cho Excel.</li>
+              <li><b>Nhật ký đổi bàn thông minh:</b> Tự động phát hiện thao tác chuyển bàn (Op 249/491) và phiên chuyển món (stTransferIn), hiển thị trực quan <code>Bàn nguồn ➔ Bàn đích</code>, thời gian, mã trạm POS và tên nhân viên thực hiện (tra cứu từ Master Data).</li>
+              <li><b>Ghi nhớ tài khoản &amp; mật khẩu:</b> Thêm tùy chọn Lưu tài khoản và Mật khẩu (Remember Me) cho cả hệ thống RK7 Pro và UCS Portal, kèm nút bật/tắt xem mật khẩu.</li>
+              <li><b>Khắc phục lỗi khởi động (BUG-BLANK-UI):</b> Xử lý triệt để lỗi parse cú pháp giao diện gây treo màn hình thư viện khi mở ứng dụng.</li>
+            </ul>
+          </div>
 
                     <!-- Version 4.1.0 -->
           <div class="p-3.5 rounded-2xl bg-white border border-indigo-200/90 shadow-2xs space-y-2">

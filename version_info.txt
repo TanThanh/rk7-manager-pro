@@ -1,7 +1,7 @@
 VSVersionInfo(
     ffi=FixedFileInfo(
-        filevers=(4, 1, 0, 0),
-        prodvers=(4, 1, 0, 0),
+        filevers=(4, 2, 0, 0),
+        prodvers=(4, 2, 0, 0),
         mask=0x3F,
         flags=0x0,
         OS=0x40004,
@@ -16,11 +16,11 @@ VSVersionInfo(
                 [
                     StringStruct(u"CompanyName", u"ITSpecialOne"),
                     StringStruct(u"FileDescription", u"RK7 Pro Manager"),
-                    StringStruct(u"FileVersion", u"4.1.0"),
+                    StringStruct(u"FileVersion", u"4.2.0"),
                     StringStruct(u"InternalName", u"RK7_Pro_Manager"),
                     StringStruct(u"OriginalFilename", u"RK7_Pro_Manager.exe"),
                     StringStruct(u"ProductName", u"RK7 Pro Manager"),
-                    StringStruct(u"ProductVersion", u"4.1.0"),
+                    StringStruct(u"ProductVersion", u"4.2.0"),
                 ],
             )
         ]),
