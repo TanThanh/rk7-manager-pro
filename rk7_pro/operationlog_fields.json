@@ -1,0 +1,128 @@
+{
+  "MIDSERVER": {
+    "en": "Cash server",
+    "vi": "Máy chủ POS",
+    "desc": "Mã Cash Server ghi nhận sự kiện.",
+    "ref": "CASHGROUPS.SIFR"
+  },
+  "SIFR": {
+    "en": "Log ID",
+    "vi": "Mã dòng log",
+    "desc": "ID bản ghi nhật ký; không phải mã thao tác.",
+    "ref": "—"
+  },
+  "VISIT": {
+    "en": "Visit ID",
+    "vi": "Mã lượt bàn",
+    "desc": "ID visit chứa order liên quan; có thể là 0 với thao tác không gắn visit.",
+    "ref": "VISITS.SIFR"
+  },
+  "ORDERIDENT": {
+    "en": "Order ID",
+    "vi": "Mã order",
+    "desc": "ID order trong visit, không nên tra riêng lẻ.",
+    "ref": "ORDERS.IDENTINVISIT"
+  },
+  "ICOMMONSHIFT": {
+    "en": "Common shift",
+    "vi": "Ca chung",
+    "desc": "Số ca chung liên quan đến thao tác.",
+    "ref": "GLOBALSHIFTS.SHIFTNUM"
+  },
+  "DATETIME": {
+    "en": "Event time",
+    "vi": "Thời gian",
+    "desc": "Thời điểm thao tác được ghi nhận.",
+    "ref": "—"
+  },
+  "STATION": {
+    "en": "POS station",
+    "vi": "Máy POS",
+    "desc": "Mã trạm thu ngân/POS phát sinh thao tác.",
+    "ref": "CASHES.SIFR"
+  },
+  "OPERATION": {
+    "en": "Operation code",
+    "vi": "Mã thao tác",
+    "desc": "Mã chức năng/thao tác RK7; tra bảng OPERATIONS để đọc tên.",
+    "ref": "OPERATIONS.SIFR"
+  },
+  "PARAMETER": {
+    "en": "Parameter",
+    "vi": "Tham số",
+    "desc": "Giá trị bổ sung, ý nghĩa tùy mã thao tác.",
+    "ref": "Theo OPERATION"
+  },
+  "OPERATOR": {
+    "en": "Operator",
+    "vi": "Người thao tác",
+    "desc": "Mã nhân viên thực hiện thao tác.",
+    "ref": "EMPLOYEES.SIFR"
+  },
+  "OPERATORROLE": {
+    "en": "Operator role",
+    "vi": "Vai trò thao tác",
+    "desc": "Mã vai trò của nhân viên thực hiện.",
+    "ref": "EMPLOYEEGROUPS.SIFR*"
+  },
+  "MANAGER": {
+    "en": "Approver",
+    "vi": "Người xác nhận",
+    "desc": "Mã nhân viên xác nhận/phê duyệt thao tác.",
+    "ref": "EMPLOYEES.SIFR"
+  },
+  "MANAGERROLE": {
+    "en": "Approver role",
+    "vi": "Vai trò xác nhận",
+    "desc": "Mã vai trò của người xác nhận.",
+    "ref": "EMPLOYEEGROUPS.SIFR*"
+  },
+  "MENUITEM": {
+    "en": "Menu item",
+    "vi": "Mã món",
+    "desc": "Mã món liên quan, nếu thao tác tác động tới món.",
+    "ref": "MENUITEMS.SIFR"
+  },
+  "QNT": {
+    "en": "Dish quantity",
+    "vi": "SL món",
+    "desc": "Số lượng món liên quan đến thao tác; kiểm tra quy ước số lẻ/đơn vị trước khi hiển thị.",
+    "ref": "—"
+  },
+  "MAKETSCHEMEDETAIL": {
+    "en": "Print layout",
+    "vi": "Mẫu in",
+    "desc": "Mã mẫu chứng từ, nếu thao tác liên quan việc in.",
+    "ref": "MAKETSCHEMEDETAILS.SIFR"
+  },
+  "SESSIONUNI": {
+    "en": "Session ID",
+    "vi": "Mã phiên order",
+    "desc": "Định danh session/block chứa đối tượng thao tác; dùng cùng VISIT, MIDSERVER khi đối chiếu.",
+    "ref": "ORDERSESSIONS**"
+  },
+  "ORDERSUMBEFORE": {
+    "en": "Amount before",
+    "vi": "Tiền trước",
+    "desc": "Tổng giá trị order trước khi thao tác.",
+    "ref": "—"
+  },
+  "ORDERSUMAFTER": {
+    "en": "Amount after",
+    "vi": "Tiền sau",
+    "desc": "Tổng giá trị order sau khi thao tác.",
+    "ref": "—"
+  },
+  "REASONID": {
+    "en": "Void reason",
+    "vi": "Mã lý do hủy",
+    "desc": "ID lý do hủy liên quan thao tác; muốn xem tên cần tra danh mục.",
+    "ref": "ORDERVOIDS.SIFR"
+  },
+  "TRANSACT_GUID": {
+    "en": "Record GUID",
+    "vi": "GUID bản ghi",
+    "desc": "Mã GUID nhận diện bản ghi/thời điểm ghi nhận trong cơ chế đồng bộ.",
+    "ref": "—"
+  }
+}

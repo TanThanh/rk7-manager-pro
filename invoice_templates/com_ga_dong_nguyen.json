@@ -1,0 +1,92 @@
+{
+  "id": "com_ga_dong_nguyen",
+  "name": "Cơm Gà Đông Nguyên",
+  "restaurant_id": "1010763",
+  "restaurant_ids": [
+    "1010763",
+    "1006870",
+    "1011675",
+    "1",
+    "2"
+  ],
+  "master_display_name": "com_ga_dong_nguyen",
+  "master_package": "com_ga_dong_nguyen",
+  "format": "RK7 RECEIPT/CHECKDATA v2.0 CGDN",
+  "reference": "MAU IN CGDN 2026.mak, IN LAI CGDN.mak, invoice.xml, sh00329.udb",
+  "version": "2.0",
+  "tags": {
+    "root": "RECEIPT",
+    "checkdata": "CHECKDATA",
+    "temp": "",
+    "check": "CHECK",
+    "dishes": "DISHES",
+    "taxes": "TAXES",
+    "payments": "PAYMENT",
+    "discounts": "DISCOUNT"
+  },
+  "fields": {
+    "check": {
+      "shift_date_field": "memShiftDate",
+      "concept": "",
+      "concept_from_master": true
+    },
+    "dishes": {
+      "id_field": "ItemID",
+      "name_field": "Itemname",
+      "amount_field": "PriceSum",
+      "sapcode_field": "",
+      "include_empty_price_dishes": false,
+      "excluded_dish_ids": [
+        "1009279"
+      ]
+    },
+    "taxes": {
+      "id_field": "ItemID",
+      "rate_field": "Rate",
+      "include_tax_ident": false
+    },
+    "payments": {
+      "not_invoice_value": "",
+      "include_prepays": false
+    },
+    "discounts": {
+      "include_discount_num": false,
+      "exclude_charges": false
+    }
+  },
+  "display_modifier_ids": [
+    "1000619",
+    "1000558",
+    "1000579",
+    "1000569",
+    "1000611",
+    "1004527",
+    "1000606",
+    "1000573",
+    "1000574",
+    "1000539",
+    "1000551",
+    "1000562",
+    "1000592",
+    "1000566",
+    "1007404",
+    "1000607",
+    "1000563",
+    "1003137",
+    "1000614",
+    "1000576",
+    "1000575",
+    "1000557",
+    "1000649"
+  ],
+  "grouping_ignored_modifier_ids": [
+    "1000742"
+  ],
+  "combo_item_names": {
+    "1001468": "Củ sen tiềm bắp heo",
+    "1001469": "Cải xoong tiềm bắp heo"
+  },
+  "excluded_dish_ids": [
+    "1009279"
+  ]
+}

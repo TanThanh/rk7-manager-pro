@@ -387,6 +387,22 @@ class RefMasterService:
         except Exception:
             return None
 
+    def get_package_data(self, package_id: str) -> Optional[Dict[str, Any]]:
+        """Lấy toàn bộ dữ liệu JSON của một gói Master Data."""
+        target_file = self.storage_dir / f"{package_id}.json"
+        if not target_file.exists():
+            return None
+        try:
+            with open(target_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            pkg_meta = self._index_map.get("packages", {}).get(package_id, {})
+            if pkg_meta.get("display_name"):
+                data["display_name"] = pkg_meta["display_name"]
+            return data
+        except Exception as e:
+            logger.error("Lỗi đọc gói %s: %s", package_id, e)
+            return None
+
     def list_packages(self) -> List[Dict[str, Any]]:
         """Liệt kê các gói Master Data đã được nạp."""
         self._index_map = self._load_index()

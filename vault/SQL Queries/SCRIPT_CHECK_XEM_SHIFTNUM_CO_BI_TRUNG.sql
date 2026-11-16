@@ -1,0 +1,5 @@
+-- Dung de kiem tra 1 nha co bi trung ca chung, nhung ca chung bi trung
+SELECT RESTAURANT_ID, SHIFTDATE, SHIFTNUM, COUNT(*)
+FROM GLOBALSHIFTS
+GROUP BY RESTAURANT_ID, SHIFTDATE, SHIFTNUM
+HAVING COUNT(*) > 1;

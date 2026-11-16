@@ -18,6 +18,10 @@
 
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
+  <!-- Lordicon Animated Icons -->
+
+  <script src="lordicon.js"></script>
+
   <!-- Inter & JetBrains Fonts -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -470,7 +474,7 @@
 
             <div class="flex items-center gap-1.5">
               <h1 class="text-sm font-extrabold tracking-tight text-[#101828] leading-tight">RK7 PRO</h1>
-              <span onclick="openAboutModal()" class="px-1.5 py-0.2 rounded-md text-[9px] font-bold bg-blue-50 text-blue-600 border border-blue-200/80 cursor-pointer hover:bg-blue-100 transition-colors" title="Nhấp để xem thông tin phiên bản">v4.2.0</span>
+              <span onclick="openAboutModal()" class="px-1.5 py-0.2 rounded-md text-[9px] font-bold bg-blue-50 text-blue-600 border border-blue-200/80 cursor-pointer hover:bg-blue-100 transition-colors" title="Nhấp để xem thông tin phiên bản">v4.3.0</span>
             </div>
 
           </div>
@@ -547,7 +551,7 @@
 
           <button onclick="switchTab('shortcuts')" id="nav-shortcuts" class="nav-item w-full h-9 px-2.5 rounded-xl flex items-center gap-2.5 text-xs font-bold bg-[#101828] text-white transition-colors shadow-xs">
 
-            <i class="ph ph-folder text-base text-white"></i>
+            <lord-icon src="icons/shortcuts.json" target="#nav-shortcuts" trigger="hover" colors="primary:#ffffff,secondary:#ffffff" style="width:19px;height:19px;" class="shrink-0"></lord-icon>
 
             <span>Shortcut Library</span>
 
@@ -555,7 +559,7 @@
 
           <button onclick="switchTab('vault')" id="nav-vault" class="nav-item w-full h-9 px-2.5 rounded-xl flex items-center gap-2.5 text-xs font-semibold text-[#667085] hover:bg-[#F2F4F7] hover:text-[#101828] transition-colors">
 
-            <i class="ph ph-file-code text-base text-[#667085]"></i>
+            <lord-icon src="icons/vault.json" target="#nav-vault" trigger="hover" colors="primary:#667085,secondary:#101828" style="width:19px;height:19px;" class="shrink-0"></lord-icon>
 
             <span>Script Vault</span>
 
@@ -563,7 +567,7 @@
 
           <button onclick="switchTab('issues')" id="nav-issues" class="nav-item w-full h-9 px-2.5 rounded-xl flex items-center gap-2.5 text-xs font-semibold text-[#667085] hover:bg-[#F2F4F7] hover:text-[#101828] transition-colors">
 
-            <i class="ph ph-bug text-base text-[#667085]"></i>
+            <lord-icon src="icons/issues.json" target="#nav-issues" trigger="hover" colors="primary:#667085,secondary:#101828" style="width:19px;height:19px;" class="shrink-0"></lord-icon>
 
             <span>Ghi Issue</span>
 
@@ -583,7 +587,7 @@
 
           <button onclick="switchTab('checkview')" id="nav-checkview" class="nav-item w-full h-9 px-2.5 rounded-xl flex items-center gap-2.5 text-xs font-semibold text-[#667085] hover:bg-[#F2F4F7] hover:text-[#101828] transition-colors">
 
-            <i class="ph ph-receipt text-base text-[#667085]"></i>
+            <lord-icon src="icons/checkview.json" target="#nav-checkview" trigger="hover" colors="primary:#667085,secondary:#101828" style="width:19px;height:19px;" class="shrink-0"></lord-icon>
 
             <span>UCS Checkview</span>
 
@@ -591,9 +595,9 @@
 
           <button onclick="switchTab('sql-sync')" id="nav-sql-sync" class="nav-item w-full h-9 px-2.5 rounded-xl flex items-center gap-2.5 text-xs font-semibold text-[#667085] hover:bg-[#F2F4F7] hover:text-[#101828] transition-colors">
 
-            <i class="ph ph-cpu text-base text-[#667085]"></i>
+            <lord-icon src="icons/nexushub.json" target="#nav-sql-sync" trigger="hover" colors="primary:#667085,secondary:#101828" style="width:19px;height:19px;" class="shrink-0"></lord-icon>
 
-            <span>Master Nexus</span>
+            <span>Nexus HUB</span>
 
           </button>
 
@@ -653,7 +657,7 @@
 
           <button onclick="switchTab('settings')" id="nav-settings" class="nav-item w-full h-9 px-2.5 rounded-xl flex items-center gap-2.5 text-xs font-semibold text-[#667085] hover:bg-[#F2F4F7] hover:text-[#101828] transition-colors">
 
-            <i class="ph ph-gear text-base text-[#667085]"></i>
+            <lord-icon src="icons/settings.json" target="#nav-settings" trigger="hover" colors="primary:#667085,secondary:#101828" style="width:19px;height:19px;" class="shrink-0"></lord-icon>
 
             <span>Settings</span>
 
@@ -661,7 +665,7 @@
 
           <button onclick="openAboutModal()" id="nav-about" class="nav-item w-full h-9 px-2.5 rounded-xl flex items-center gap-2.5 text-xs font-semibold text-[#667085] hover:bg-[#F2F4F7] hover:text-[#101828] transition-colors">
 
-            <i class="ph ph-info text-base text-[#667085]"></i>
+            <lord-icon src="icons/about.json" target="#nav-about" trigger="hover" colors="primary:#667085,secondary:#101828" style="width:19px;height:19px;" class="shrink-0"></lord-icon>
 
             <span>Thông tin (About)</span>
 
@@ -2086,6 +2090,14 @@
 
         <div class="flex items-center gap-2">
 
+          <button id="cv-shift-report-btn" type="button" onclick="checkviewOpenShiftReportModal()" disabled class="h-8 px-3 rounded-lg bg-white hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 text-xs font-bold text-slate-700 hover:text-emerald-700 flex items-center gap-1.5 shadow-xs transition-colors cursor-pointer disabled:opacity-45 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:border-slate-200 disabled:hover:text-slate-700" title="Xem Báo cáo giao ca thu ngân (FO.201)">
+
+            <i class="ph ph-receipt text-emerald-600"></i>
+
+            <span>Báo cáo giao ca</span>
+
+          </button>
+
           <button onclick="checkviewOpenMasterModal()" class="h-8 px-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 text-xs font-bold text-slate-700 flex items-center gap-1.5 shadow-xs transition-colors cursor-pointer" title="Quản lý Master Data (refsdata.udb)">
 
             <i class="ph ph-database text-blue-600"></i>
@@ -2596,7 +2608,7 @@
 
 
 
-    <!-- ==================== TAB: MASTER NEXUS (CENTRAL HUB) ==================== -->
+    <!-- ==================== TAB: NEXUS HUB (CENTRAL DATA & CONNECTIONS) ==================== -->
 
     <div id="tab-sql-sync" class="flex-1 h-full flex flex-col overflow-hidden hidden bg-[#F8FAFC]">
 
@@ -2612,13 +2624,13 @@
 
               <span class="w-2.5 h-2.5 rounded-full bg-indigo-500 animate-pulse"></span>
 
-              <h2 class="text-xl font-extrabold text-slate-900 tracking-tight">Master Nexus · Data Command Center</h2>
+              <h2 class="text-xl font-extrabold text-slate-900 tracking-tight">Nexus HUB · Data Command Center</h2>
 
               <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-indigo-50 text-indigo-700 border border-indigo-200">Central Hub</span>
 
             </div>
 
-            <p class="text-xs text-slate-500 mt-1">Trung tâm chỉ huy &amp; quản trị dữ liệu: Quản lý kết nối SQL Server từ xa và Kho danh mục Master Data.</p>
+            <p class="text-xs text-slate-500 mt-1">Trung tâm chỉ huy &amp; quản trị kết nối: Quản lý kết nối Máy chủ (SQL / API), Dữ liệu tham chiếu và Mẫu XML Hóa đơn.</p>
 
           </div>
 
@@ -2638,7 +2650,7 @@
 
           <button type="button" onclick="nexusSwitchSubtab('sql')" id="nexus-tab-btn-sql" class="h-11 border-b-2 border-indigo-600 text-indigo-600 text-xs font-bold flex items-center gap-2 transition-colors">
 
-            <i class="ph ph-database text-base"></i> Kết nối SQL Server
+            <i class="ph ph-plugs-connected text-base"></i> Kết nối Máy chủ (SQL / API)
 
           </button>
 
@@ -2676,9 +2688,9 @@
 
           <div class="text-xs text-emerald-800 leading-relaxed">
 
-            <p class="font-bold">Cơ chế an toàn tuyệt đối (Read-Only &amp; NOLOCK)</p>
+            <p class="font-bold">Cơ chế kết nối an toàn tuyệt đối</p>
 
-            <p class="text-emerald-700 mt-0.5">Mọi thao tác đồng bộ chỉ gửi truy vấn <code class="font-mono font-bold bg-emerald-100 px-1 py-0.5 rounded">SELECT ... WITH (NOLOCK)</code>, không bao giờ khóa bảng (lock table) hay sửa đổi bất kỳ dữ liệu nào trên máy chủ của khách hàng.</p>
+            <p class="text-emerald-700 mt-0.5">Mọi thao tác đồng bộ chỉ gửi truy vấn <code class="font-mono font-bold bg-emerald-100 px-1 py-0.5 rounded">SELECT WITH (NOLOCK)</code> đối với SQL Server hoặc các lệnh <code class="font-mono font-bold bg-emerald-100 px-1 py-0.5 rounded">GetRefData</code> chỉ đọc đối với RK7 XML API, không bao giờ ghi đè hay khóa bảng trên máy chủ khách hàng.</p>
 
           </div>
 
@@ -2686,12 +2698,67 @@
 
 
 
-        <!-- Connection Cards Grid -->
+        <!-- Toolbar: Search, Filter Tabs & Actions -->
+        <div class="mb-5 bg-white p-3.5 rounded-2xl border border-slate-200 shadow-2xs flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div class="flex items-center gap-3 flex-1">
+            <!-- Search Box -->
+            <div class="relative flex-1 min-w-[280px] max-w-md">
+              <i class="ph ph-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-base"></i>
+              <input type="text" id="server-search-input" oninput="serverOnSearchInput()" placeholder="Tìm theo tên chuỗi, IP host, database, package ID..." class="w-full h-10 pl-10 pr-9 bg-slate-50 hover:bg-slate-100/70 focus:bg-white border border-slate-200 focus:border-indigo-500 rounded-xl text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 transition-all font-medium">
+              <button type="button" id="server-search-clear" onclick="serverClearSearch()" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-lg hover:bg-slate-200/70 text-slate-400 hover:text-slate-700 flex items-center justify-center transition-colors">
+                <i class="ph ph-x text-xs font-bold"></i>
+              </button>
+            </div>
 
-        <div id="sql-connections-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- Filter Pills -->
+            <div class="inline-flex items-center p-1 bg-slate-100/90 rounded-xl border border-slate-200/80 text-xs shrink-0">
+              <button type="button" onclick="serverSetFilter('all')" id="server-filter-btn-all" class="px-3.5 py-1.5 rounded-lg bg-white text-slate-900 shadow-2xs font-bold transition-all flex items-center gap-1.5 cursor-pointer">
+                <span>Tất cả</span>
+                <span id="server-badge-all" class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-100 text-slate-700 font-mono font-bold">0</span>
+              </button>
+              <button type="button" onclick="serverSetFilter('api')" id="server-filter-btn-api" class="px-3.5 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 font-semibold transition-all flex items-center gap-1.5 cursor-pointer">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>RK7 API</span>
+                <span id="server-badge-api" class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-200/70 text-slate-600 font-mono font-bold">0</span>
+              </button>
+              <button type="button" onclick="serverSetFilter('sql')" id="server-filter-btn-sql" class="px-3.5 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 font-semibold transition-all flex items-center gap-1.5 cursor-pointer">
+                <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                <span>MS SQL</span>
+                <span id="server-badge-sql" class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-200/70 text-slate-600 font-mono font-bold">0</span>
+              </button>
+            </div>
+          </div>
 
-          <!-- Rendered via JS -->
+          <!-- Right side counts & refresh -->
+          <div class="flex items-center gap-3 shrink-0 justify-between md:justify-end">
+            <span id="server-count-summary" class="text-xs text-slate-500 font-semibold">Đang tải...</span>
+            <div class="w-px h-5 bg-slate-200 hidden md:block"></div>
+            <button type="button" onclick="serverLoadConnections()" title="Làm mới danh sách" class="h-9 px-3 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 hover:text-slate-900 text-xs font-bold flex items-center gap-1.5 shadow-2xs hover:border-slate-300 transition-all cursor-pointer">
+              <i class="ph ph-arrows-clockwise text-sm text-slate-500"></i> Làm mới
+            </button>
+          </div>
+        </div>
 
+        <!-- Connection Data Table -->
+        <div id="sql-table-wrapper" class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse table-auto">
+              <thead>
+                <tr class="bg-slate-50 border-b border-slate-200 text-[11px] font-bold uppercase tracking-wider text-slate-500 font-mono">
+                  <th class="py-3 px-4 w-48">Chuỗi / Nhà hàng</th>
+                  <th class="py-3 px-3 w-32">Loại kết nối</th>
+                  <th class="py-3 px-3 min-w-[180px]">Máy chủ / Endpoint</th>
+                  <th class="py-3 px-3 w-36">Gói Master Data</th>
+                  <th class="py-3 px-3 w-44">Quy mô dữ liệu</th>
+                  <th class="py-3 px-3 w-36">Lần đồng bộ cuối</th>
+                  <th class="py-3 px-4 text-right w-60">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody id="sql-connections-list" class="divide-y divide-slate-100 text-xs">
+                <!-- Rendered via JS -->
+              </tbody>
+            </table>
+          </div>
         </div>
 
 
@@ -2894,6 +2961,8 @@
 
 
 
+
+
     <!-- ==================== TAB: SETTINGS ==================== -->
 
     <div id="tab-settings" class="flex-1 h-full flex-col overflow-y-auto hidden">
@@ -2999,7 +3068,7 @@
             <div class="flex-1">
               <div class="flex items-center gap-2">
                 <h3 class="text-sm font-extrabold text-[#101828]">Cập nhật phần mềm</h3>
-                <span id="app-current-version-badge" class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-600 border border-slate-200">v4.2.0</span>
+                <span id="app-current-version-badge" class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-600 border border-slate-200">v4.3.0</span>
               </div>
               <p class="text-xs text-[#667085] mt-1">Kiểm tra và tự động cập nhật phiên bản mới nhất từ GitHub.</p>
             </div>
@@ -3022,6 +3091,7 @@
       </div>
 
     </div>
+
 
 
 
@@ -3400,6 +3470,9 @@
           ucsInitAccount();
 
           authInitSession();
+
+          setupNavLordIcons();
+
           setTimeout(() => silentCheckAppUpdate(), 3000);
 
         }
@@ -6443,15 +6516,25 @@
       // If no active session, check if credentials were saved for automatic login
       if (!currentUser) {
         try {
-          const rawCreds = localStorage.getItem('rk7_saved_credentials');
-          if (rawCreds) {
-            const creds = JSON.parse(rawCreds);
-            if (creds && creds.username && creds.password && window.pywebview && window.pywebview.api) {
-              const res = await window.pywebview.api.auth_login(creds.username, creds.password);
-              if (res && res.success) {
-                currentUser = res.user;
+          let creds = null;
+          if (window.pywebview?.api?.auth_get_saved_credentials) {
+            const apiCreds = await window.pywebview.api.auth_get_saved_credentials();
+            if (apiCreds && apiCreds.has_saved && apiCreds.username && apiCreds.password) {
+              creds = apiCreds;
+            }
+          }
+          if (!creds) {
+            const rawCreds = localStorage.getItem('rk7_saved_credentials');
+            if (rawCreds) creds = JSON.parse(rawCreds);
+          }
+
+          if (creds && creds.username && creds.password && window.pywebview && window.pywebview.api) {
+            const res = await window.pywebview.api.auth_login(creds.username, creds.password, true);
+            if (res && res.success) {
+              currentUser = res.user;
+              try {
                 localStorage.setItem('rk7_auth_user', JSON.stringify(currentUser));
-              }
+              } catch (e) {}
             }
           }
         } catch (e) {
@@ -6497,7 +6580,7 @@
 
       if (isRestricted) {
 
-        // User 'rk7' (checkview_only): Show UCS Checkview & Master Nexus, Hide Shortcuts/Vault/Issues/Settings
+        // User 'rk7' (checkview_only): Show UCS Checkview & Nexus HUB, Hide Shortcuts/Vault/Issues/Settings
 
         if (navShortcuts) navShortcuts.style.display = 'none';
 
@@ -6521,7 +6604,7 @@
 
         document.getElementById('sidebar-user-name').innerText = currentUser.display_name || currentUser.username;
 
-        document.getElementById('sidebar-user-role').innerText = 'Checkview & Master Nexus';
+        document.getElementById('sidebar-user-role').innerText = 'Checkview & Nexus HUB';
 
         document.getElementById('sidebar-user-initials').innerText = 'R7';
 
@@ -6640,10 +6723,10 @@
       }
     }
 
-    function authShowLoginModal(isMandatory = false) {
+    async function authShowLoginModal(isMandatory = false) {
       if (!isMandatory && currentUser) {
         if (confirm(`Bạn có chắc muốn đăng xuất khỏi tài khoản [${currentUser.username}]?`)) {
-          authLogout();
+          await authLogout();
         }
         return;
       }
@@ -6660,12 +6743,22 @@
       if (modal) {
         modal.classList.remove('hidden');
 
-        // Check if credentials were saved
+        // Check if credentials were saved (prioritize backend settings, then localStorage)
         let savedCreds = null;
-        try {
-          const raw = localStorage.getItem('rk7_saved_credentials');
-          if (raw) savedCreds = JSON.parse(raw);
-        } catch (e) {}
+        if (window.pywebview?.api?.auth_get_saved_credentials) {
+          try {
+            const apiCreds = await window.pywebview.api.auth_get_saved_credentials();
+            if (apiCreds && apiCreds.has_saved) {
+              savedCreds = apiCreds;
+            }
+          } catch (e) {}
+        }
+        if (!savedCreds) {
+          try {
+            const raw = localStorage.getItem('rk7_saved_credentials');
+            if (raw) savedCreds = JSON.parse(raw);
+          } catch (e) {}
+        }
 
         const uInput = document.getElementById('auth-input-username');
         const pInput = document.getElementById('auth-input-password');
@@ -6714,7 +6807,8 @@
       err.classList.add('hidden');
 
       try {
-        const res = await window.pywebview.api.auth_login(u, p);
+        const remember = remCheckbox ? remCheckbox.checked : true;
+        const res = await window.pywebview.api.auth_login(u, p, remember);
         if (!res.success) {
           err.innerText = res.error || 'Đăng nhập thất bại.';
           err.classList.remove('hidden');
@@ -6722,10 +6816,12 @@
         }
 
         currentUser = res.user;
-        localStorage.setItem('rk7_auth_user', JSON.stringify(currentUser));
+        try {
+          localStorage.setItem('rk7_auth_user', JSON.stringify(currentUser));
+        } catch (e) {}
 
-        // Save or remove remembered credentials
-        if (remCheckbox && remCheckbox.checked) {
+        // Save or remove remembered credentials in both localStorage and backend
+        if (remember) {
           try {
             localStorage.setItem('rk7_saved_credentials', JSON.stringify({ username: u, password: p }));
           } catch (e) {}
@@ -6733,6 +6829,9 @@
           try {
             localStorage.removeItem('rk7_saved_credentials');
           } catch (e) {}
+          if (window.pywebview?.api?.auth_clear_saved_credentials) {
+            await window.pywebview.api.auth_clear_saved_credentials();
+          }
         }
 
         authCloseLoginModal();
@@ -6746,22 +6845,28 @@
       }
     }
 
-    function authLogout() {
+    async function authLogout() {
       currentUser = null;
-      localStorage.removeItem('rk7_auth_user');
+      try {
+        localStorage.removeItem('rk7_auth_user');
+      } catch (e) {}
       authApplyPermissions();
-      authShowLoginModal(true);
+      await authShowLoginModal(true);
     }
 
 
 
     function switchTab(tab) {
 
-      if (currentUser && currentUser.allowed_tabs && !currentUser.allowed_tabs.includes(tab)) {
+      if (currentUser && currentUser.allowed_tabs) {
 
-        console.warn(`User ${currentUser.username} is not allowed to access tab ${tab}`);
+        if (!currentUser.allowed_tabs.includes(tab)) {
 
-        return;
+          console.warn(`User ${currentUser.username} is not allowed to access tab ${tab}`);
+
+          return;
+
+        }
 
       }
 
@@ -6829,6 +6934,10 @@
 
           if (icon) icon.className = icon.className.replace('text-white', 'text-[#667085]');
 
+          const lord = btn.querySelector('lord-icon');
+
+          if (lord) lord.setAttribute('colors', 'primary:#667085,secondary:#101828');
+
         }
 
       });
@@ -6883,7 +6992,47 @@
 
         if (icon) icon.className = icon.className.replace('text-[#667085]', 'text-white');
 
+        const lord = targetBtn.querySelector('lord-icon');
+
+        if (lord) lord.setAttribute('colors', 'primary:#ffffff,secondary:#ffffff');
+
       }
+
+    }
+
+
+
+    // Setup interactive hover color transitions for sidebar nav lord-icons
+
+    function setupNavLordIcons() {
+
+      document.querySelectorAll('.nav-item').forEach(btn => {
+
+        btn.addEventListener('mouseenter', () => {
+
+          if (!btn.classList.contains('text-white')) {
+
+            const lord = btn.querySelector('lord-icon');
+
+            if (lord) lord.setAttribute('colors', 'primary:#101828,secondary:#475467');
+
+          }
+
+        });
+
+        btn.addEventListener('mouseleave', () => {
+
+          if (!btn.classList.contains('text-white')) {
+
+            const lord = btn.querySelector('lord-icon');
+
+            if (lord) lord.setAttribute('colors', 'primary:#667085,secondary:#101828');
+
+          }
+
+        });
+
+      });
 
     }
 
@@ -6970,6 +7119,8 @@
     let ucsHasSavedAccount = false;
 
     let ucsSavedUsername = '';
+
+    let ucsSavedPassword = '';
 
     let ucsOperationCodes = {};
 
@@ -7853,6 +8004,16 @@
 
         ucsSavedUsername = info.username || '';
 
+        ucsSavedPassword = info.password || '';
+
+        const usernameInput = document.getElementById('ucs-username');
+        const passwordInput = document.getElementById('ucs-password');
+        const remCheck = document.getElementById('ucs-remember-me');
+
+        if (usernameInput && ucsSavedUsername) usernameInput.value = ucsSavedUsername;
+        if (passwordInput && ucsSavedPassword) passwordInput.value = ucsSavedPassword;
+        if (remCheck) remCheck.checked = ucsHasSavedAccount;
+
         ucsUpdateAccountUI();
 
 
@@ -8231,7 +8392,11 @@
 
         ucsCloseUploadModal();
 
-        if (usernameInput && !usernameInput.value) usernameInput.value = ucsSavedUsername;
+        if (usernameInput && !usernameInput.value && ucsSavedUsername) usernameInput.value = ucsSavedUsername;
+        const passwordInput = document.getElementById('ucs-password');
+        if (passwordInput && !passwordInput.value && ucsSavedPassword) passwordInput.value = ucsSavedPassword;
+        const remCheck = document.getElementById('ucs-remember-me');
+        if (remCheck && ucsHasSavedAccount) remCheck.checked = true;
 
       }
 
@@ -8283,7 +8448,9 @@
 
           ucsSavedUsername = result.username;
 
-          if (passwordInput) passwordInput.value = '';
+          ucsSavedPassword = remember ? password : '';
+
+          if (passwordInput && !remember) passwordInput.value = '';
 
           if (status) status.textContent = '';
 
@@ -8342,6 +8509,8 @@
         ucsHasSavedAccount = false;
 
         ucsSavedUsername = '';
+
+        ucsSavedPassword = '';
 
         const userEl = document.getElementById('ucs-username');
 
@@ -8500,6 +8669,7 @@
         ucsHasSavedAccount = true;
 
         if (result.username) ucsSavedUsername = result.username;
+        if (result.password) ucsSavedPassword = result.password;
 
         ucsUpdateAccountUI(false);
 
@@ -13193,6 +13363,9 @@
 
       checkviewUpdateUnifiedExportButton();
 
+      const shiftReportBtn = document.getElementById('cv-shift-report-btn');
+      if (shiftReportBtn) shiftReportBtn.disabled = false;
+
 
 
       // 1. Header info
@@ -13515,6 +13688,9 @@
 
       checkviewUpdateUnifiedExportButton();
 
+      const shiftReportBtn = document.getElementById('cv-shift-report-btn');
+      if (shiftReportBtn) shiftReportBtn.disabled = false;
+
       checkviewFilterChecks(); // re-render to update active styling
 
 
@@ -13556,6 +13732,9 @@
         if (techBtnDone) techBtnDone.disabled = false;
 
         checkviewUpdateUnifiedExportButton();
+
+      const shiftReportBtn = document.getElementById('cv-shift-report-btn');
+      if (shiftReportBtn) shiftReportBtn.disabled = false;
 
         checkviewRenderPosScreen(res);
 
@@ -14271,6 +14450,9 @@
 
       checkviewUpdateUnifiedExportButton();
 
+      const shiftReportBtn = document.getElementById('cv-shift-report-btn');
+      if (shiftReportBtn) shiftReportBtn.disabled = false;
+
     }
 
 
@@ -14426,6 +14608,9 @@
       } finally {
 
         checkviewUpdateUnifiedExportButton();
+
+      const shiftReportBtn = document.getElementById('cv-shift-report-btn');
+      if (shiftReportBtn) shiftReportBtn.disabled = false;
 
       }
 
@@ -15538,6 +15723,10 @@
 
         checkviewCloseTechModal();
 
+      } else if (event.key === 'Escape' && !document.getElementById('cv-shift-report-modal').classList.contains('hidden')) {
+
+        checkviewCloseShiftReportModal();
+
       }
 
     });
@@ -15564,6 +15753,217 @@
 
       finally { button.disabled = false; }
 
+    }
+
+
+
+    let cvShiftReportData = null;
+    let cvShiftReportTab = 'summary';
+
+    async function checkviewOpenShiftReportModal(shiftNum = null) {
+      if (!cvCurrentData || !window.pywebview?.api?.checkview_get_shift_report) return;
+      const modal = document.getElementById('cv-shift-report-modal');
+      const status = document.getElementById('cv-sr-status');
+      if (status) status.textContent = 'Đang tổng hợp báo cáo giao ca...';
+      try {
+        const res = await window.pywebview.api.checkview_get_shift_report(shiftNum);
+        if (!res || !res.success) {
+          alert(`Không thể tạo báo cáo giao ca: ${res?.error || 'Lỗi không xác định'}`);
+          return;
+        }
+        cvShiftReportData = res;
+        checkviewRenderShiftReport(res);
+        checkviewSwitchShiftReportTab(cvShiftReportTab || 'summary');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.getElementById('cv-sr-close')?.focus();
+      } catch (error) {
+        alert(`Không thể tạo báo cáo giao ca: ${error.message || error}`);
+      }
+    }
+
+    function checkviewCloseShiftReportModal() {
+      const modal = document.getElementById('cv-shift-report-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+      document.getElementById('cv-shift-report-btn')?.focus();
+    }
+
+    function checkviewSwitchShiftReportTab(tab) {
+      cvShiftReportTab = tab === 'k80' ? 'k80' : 'summary';
+      const sumPane = document.getElementById('cv-sr-pane-summary');
+      const k80Pane = document.getElementById('cv-sr-pane-k80');
+      const sumBtn = document.getElementById('cv-sr-tab-summary');
+      const k80Btn = document.getElementById('cv-sr-tab-k80');
+      const copyBtn = document.getElementById('cv-sr-copy-k80');
+      const isK80 = cvShiftReportTab === 'k80';
+      if (sumPane) sumPane.classList.toggle('hidden', isK80);
+      if (k80Pane) k80Pane.classList.toggle('hidden', !isK80);
+      if (copyBtn) copyBtn.classList.toggle('hidden', !isK80);
+      if (sumBtn) {
+        sumBtn.className = isK80
+          ? 'h-8 px-3 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-100 cursor-pointer'
+          : 'h-8 px-3 rounded-lg text-xs font-bold bg-blue-600 text-white shadow-xs cursor-pointer';
+      }
+      if (k80Btn) {
+        k80Btn.className = isK80
+          ? 'h-8 px-3 rounded-lg text-xs font-bold bg-blue-600 text-white shadow-xs cursor-pointer'
+          : 'h-8 px-3 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-100 cursor-pointer';
+      }
+    }
+
+    async function checkviewChangeShiftReportShift(shiftVal) {
+      await checkviewOpenShiftReportModal(shiftVal || null);
+    }
+
+    function checkviewRenderShiftReport(rep) {
+      const h = rep.header || {};
+      const rev = rep.revenue || {};
+      const st = rep.stats || {};
+      const fmt = checkviewFormatCurrency;
+      const esc = checkviewEscapeText;
+
+      const subTitleEl = document.getElementById('cv-sr-subtitle');
+      if (subTitleEl) {
+        subTitleEl.textContent = `${h.restaurant_name || '—'} · Ngày ${h.shift_date || '—'} · ${rep.shift_label || ''}`;
+      }
+
+      // Populate shift selector
+      const sel = document.getElementById('cv-sr-shift-select');
+      if (sel) {
+        const shifts = rep.available_shifts || [];
+        sel.innerHTML = '';
+        if (shifts.length > 1) {
+          const allOpt = document.createElement('option');
+          allOpt.value = 'ALL';
+          allOpt.textContent = `Tất cả ca (${shifts.length} ca)`;
+          sel.appendChild(allOpt);
+        }
+        shifts.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s.shift_num;
+          opt.textContent = `Ca #${s.shift_num} (${s.closed_count} bill · ${fmt(s.closed_sum)} ₫)`;
+          sel.appendChild(opt);
+        });
+        if (!shifts.length) {
+          const opt = document.createElement('option');
+          opt.value = 'ALL';
+          opt.textContent = 'Toàn bộ file';
+          sel.appendChild(opt);
+        }
+        sel.value = rep.selected_shift || 'ALL';
+      }
+
+      // Meta badges
+      const metaEl = document.getElementById('cv-sr-meta');
+      if (metaEl) {
+        metaEl.innerHTML = `
+          <div class="bg-slate-50 border border-slate-200/80 rounded-xl px-3 py-2">
+            <div class="text-[10px] uppercase font-bold text-slate-400">Nhà hàng</div>
+            <div class="text-xs font-bold text-slate-800 mt-0.5">${esc(h.restaurant_name || '—')}</div>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/80 rounded-xl px-3 py-2">
+            <div class="text-[10px] uppercase font-bold text-slate-400">Ca làm việc</div>
+            <div class="text-xs font-bold text-slate-800 mt-0.5">${esc(rep.shift_label || '—')}</div>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/80 rounded-xl px-3 py-2">
+            <div class="text-[10px] uppercase font-bold text-slate-400">Thu ngân / Nhân viên</div>
+            <div class="text-xs font-bold text-slate-800 mt-0.5">${esc(h.employee_name || '—')}</div>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/80 rounded-xl px-3 py-2">
+            <div class="text-[10px] uppercase font-bold text-slate-400">Thời gian lập</div>
+            <div class="text-xs font-bold text-slate-800 mt-0.5">${esc(h.generated_at || '—')}</div>
+          </div>
+        `;
+      }
+
+      // Section 1: Revenue
+      const revRowsEl = document.getElementById('cv-sr-revenue-rows');
+      if (revRowsEl) {
+        revRowsEl.innerHTML = `
+          <tr class="border-t border-slate-200 bg-blue-50/60 font-semibold"><td class="px-3.5 py-2 text-slate-800">1. Tổng doanh thu</td><td class="px-3.5 py-2 text-right font-mono text-blue-700">${fmt(rev.gross_revenue)} ₫</td></tr>
+          <tr class="border-t border-slate-100 text-slate-600"><td class="px-3.5 py-1.5 pl-6">1.1 - Tổng giảm giá</td><td class="px-3.5 py-1.5 text-right font-mono text-amber-600">${fmt(rev.total_discount)} ₫</td></tr>
+          <tr class="border-t border-slate-100 text-slate-600"><td class="px-3.5 py-1.5 pl-6">1.2 - Service Charge</td><td class="px-3.5 py-1.5 text-right font-mono">${fmt(rev.service_charge || 0)} ₫</td></tr>
+          <tr class="border-t border-slate-100 text-slate-600"><td class="px-3.5 py-1.5 pl-6">1.3 - VAT</td><td class="px-3.5 py-1.5 text-right font-mono">${fmt(rev.vat)} ₫</td></tr>
+          <tr class="border-t border-slate-100 text-slate-600"><td class="px-3.5 py-1.5 pl-6">1.4 - Tiền trước thuế</td><td class="px-3.5 py-1.5 text-right font-mono">${fmt(rev.pre_tax)} ₫</td></tr>
+        `;
+      }
+
+      // Section 2: Currencies
+      const currRowsEl = document.getElementById('cv-sr-currency-rows');
+      if (currRowsEl) {
+        const currGroups = rep.currency_groups || [];
+        if (!currGroups.length) {
+          currRowsEl.innerHTML =
+            '<tr><td colspan="2" class="px-3.5 py-3 text-center text-slate-400">Không có giao dịch thanh toán trong ca này.</td></tr>';
+        } else {
+          currRowsEl.innerHTML = currGroups.map(g => {
+            const itemsHtml = (g.items || []).map(it => `
+              <tr class="border-t border-slate-100/80 text-slate-600">
+                <td class="px-3.5 py-1.5 pl-8">(+) ${esc(it.name)}</td>
+                <td class="px-3.5 py-1.5 text-right font-mono">${fmt(it.basic_sum)} ₫</td>
+              </tr>
+            `).join('');
+            return `
+              <tr class="border-t border-slate-200/80 bg-slate-50/80 font-semibold text-slate-800">
+                <td class="px-3.5 py-2">- Doanh thu: ${esc(g.type_name)}</td>
+                <td class="px-3.5 py-2 text-right font-mono text-slate-900">${fmt(g.total)} ₫</td>
+              </tr>
+              ${itemsHtml}
+            `;
+          }).join('');
+        }
+      }
+
+      // Section 3: Statistics + Discounts
+      const statsRowsEl = document.getElementById('cv-sr-stats-rows');
+      if (statsRowsEl) {
+        const discItems = st.discount_items || [];
+        const discHtml = discItems.map(d => `
+          <tr class="border-t border-slate-100 text-slate-600">
+            <td class="px-3.5 py-1.5 pl-8">- ${esc(d.name)}</td>
+            <td class="px-3.5 py-1.5 text-right font-mono text-amber-600">${fmt(d.sum)} ₫</td>
+          </tr>
+        `).join('');
+
+        statsRowsEl.innerHTML = `
+          <tr class="border-t border-slate-100"><td class="px-3.5 py-1.5 text-slate-600">3.1 - Tổng chưa thanh toán</td><td class="px-3.5 py-1.5 text-right font-mono text-slate-800">${fmt(st.unpaid_total)} ₫</td></tr>
+          <tr class="border-t border-slate-100"><td class="px-3.5 py-1.5 text-slate-600">3.2 - Số khách chưa thanh toán</td><td class="px-3.5 py-1.5 text-right font-mono text-slate-800">${st.unpaid_guests || 0}</td></tr>
+          <tr class="border-t border-slate-100"><td class="px-3.5 py-1.5 text-slate-600">3.3 - Số phiếu chưa thanh toán</td><td class="px-3.5 py-1.5 text-right font-mono text-slate-800">${st.unpaid_checks_count || 0}</td></tr>
+          <tr class="border-t border-slate-200 bg-emerald-50/50 font-semibold"><td class="px-3.5 py-1.5 text-slate-800">3.4 - Tổng đã thanh toán</td><td class="px-3.5 py-1.5 text-right font-mono text-emerald-700">${fmt(st.paid_total)} ₫</td></tr>
+          <tr class="border-t border-slate-100"><td class="px-3.5 py-1.5 text-slate-600">3.5 - Số khách đã thanh toán</td><td class="px-3.5 py-1.5 text-right font-mono font-semibold text-slate-800">${st.paid_guests || 0}</td></tr>
+          <tr class="border-t border-slate-100"><td class="px-3.5 py-1.5 text-slate-600">3.6 - Số phiếu đã thanh toán</td><td class="px-3.5 py-1.5 text-right font-mono font-semibold text-slate-800">${st.paid_checks_count || 0}</td></tr>
+          <tr class="border-t border-slate-200 bg-amber-50/40 font-semibold"><td class="px-3.5 py-1.5 text-slate-800">3.7 - Giảm giá</td><td class="px-3.5 py-1.5 text-right font-mono text-amber-700">${fmt(st.discount_total)} ₫</td></tr>
+          ${discHtml}
+          <tr class="border-t border-slate-200"><td class="px-3.5 py-1.5 text-slate-600">3.8 - TB Khách</td><td class="px-3.5 py-1.5 text-right font-mono font-semibold text-slate-800">${fmt(st.avg_guest)} ₫</td></tr>
+          <tr class="border-t border-slate-100"><td class="px-3.5 py-1.5 text-slate-600">3.9 - TB Phiếu</td><td class="px-3.5 py-1.5 text-right font-mono font-semibold text-slate-800">${fmt(st.avg_check)} ₫</td></tr>
+          <tr class="border-t border-slate-200"><td class="px-3.5 py-1.5 font-semibold text-slate-700">Số bill đầu / cuối</td><td class="px-3.5 py-1.5 text-right font-mono font-bold text-slate-900">${st.begin_bill || 0} → ${st.end_bill || 0}</td></tr>
+        `;
+      }
+
+      // K80 preview
+      const k80PreEl = document.getElementById('cv-sr-k80-pre');
+      if (k80PreEl) k80PreEl.textContent = rep.k80_text || '';
+
+      // Status note
+      const notes = [`Nguồn doanh thu: ${rep.data_source}`];
+      if (!h.has_master) notes.push('Chưa khớp gói Master Data (tên tiền tệ/giảm giá đang hiển thị theo mã ID)');
+      if (rep.stale_open_count > 0) notes.push(`Bỏ qua ${rep.stale_open_count} phiếu mở tồn từ ca chung cũ hơn`);
+      const statusEl = document.getElementById('cv-sr-status');
+      if (statusEl) statusEl.textContent = notes.join(' · ');
+    }
+
+    async function checkviewCopyShiftReportK80() {
+      if (!cvShiftReportData?.k80_text) return;
+      const status = document.getElementById('cv-sr-status');
+      try {
+        await navigator.clipboard.writeText(cvShiftReportData.k80_text);
+        if (status) status.textContent = 'Đã sao chép nội dung phiếu K80 (FO.201) vào Clipboard.';
+      } catch (err) {
+        if (status) status.textContent = `Không thể sao chép tự động: ${err.message || err}`;
+      }
     }
 
 
@@ -15653,6 +16053,7 @@
         }
 
         const pkgs = await window.pywebview.api.checkview_list_master_packages() || [];
+        serverMasterPackagesCache = pkgs;
 
         countEl.textContent = `${pkgs.length} gói`;
 
@@ -15909,6 +16310,116 @@
         <p id="cv-receipt-status" role="status" class="text-[11px] text-slate-500 flex-1 min-w-[180px]"></p>
 
         <div class="flex items-center gap-2"><button type="button" onclick="checkviewCloseReceiptModal()" class="h-9 px-4 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-50">Đóng</button><button id="cv-receipt-save" type="button" onclick="checkviewSaveReceiptPdf()" class="h-9 px-4 rounded-xl bg-red-500 hover:bg-red-600 text-white text-xs font-bold inline-flex items-center gap-2 disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-red-500"><i class="ph ph-file-pdf text-base" aria-hidden="true"></i> In ra PDF</button></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ==================== SHIFT HANDOVER REPORT MODAL (FO.201) ==================== -->
+
+  <div id="cv-shift-report-modal" role="dialog" aria-modal="true" aria-labelledby="cv-sr-title" onclick="if(event.target === this) checkviewCloseShiftReportModal()" class="fixed inset-0 z-50 bg-slate-950/50 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-6">
+
+    <div class="w-full max-w-4xl max-h-[92vh] bg-white border border-slate-200 rounded-[18px] shadow-2xl flex flex-col overflow-hidden">
+
+      <div class="px-5 py-3.5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3 shrink-0 bg-slate-50/70">
+
+        <div class="min-w-0 flex items-center gap-3">
+
+          <span class="w-1 h-7 rounded-full bg-emerald-500" aria-hidden="true"></span>
+
+          <div>
+
+            <div class="flex items-center gap-2">
+
+              <h3 id="cv-sr-title" class="text-sm font-extrabold uppercase tracking-wide text-slate-900">Báo cáo giao ca thu ngân</h3>
+
+              <span class="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">FO.201</span>
+
+            </div>
+
+            <p id="cv-sr-subtitle" class="text-[11px] text-slate-500 mt-0.5">—</p>
+
+          </div>
+
+        </div>
+
+        <div class="flex items-center gap-2 flex-wrap">
+
+          <select id="cv-sr-shift-select" onchange="checkviewChangeShiftReportShift(this.value)" class="h-8 px-2.5 rounded-lg bg-white border border-slate-200 text-xs font-semibold text-slate-700 focus:outline-none focus:border-blue-500"></select>
+
+          <div class="inline-flex items-center gap-1 p-0.5 rounded-xl bg-slate-100 border border-slate-200">
+
+            <button id="cv-sr-tab-summary" type="button" onclick="checkviewSwitchShiftReportTab('summary')" class="h-8 px-3 rounded-lg text-xs font-bold bg-blue-600 text-white shadow-xs cursor-pointer">Bảng tổng hợp</button>
+
+            <button id="cv-sr-tab-k80" type="button" onclick="checkviewSwitchShiftReportTab('k80')" class="h-8 px-3 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-100 cursor-pointer">Phiếu K80 (42 cột)</button>
+
+          </div>
+
+          <button id="cv-sr-close" type="button" onclick="checkviewCloseShiftReportModal()" aria-label="Đóng báo cáo giao ca" class="w-8 h-8 rounded-xl flex items-center justify-center text-slate-500 hover:bg-slate-200/70 cursor-pointer"><i class="ph ph-x text-lg" aria-hidden="true"></i></button>
+
+        </div>
+
+      </div>
+
+      <div id="cv-sr-pane-summary" class="flex-1 min-h-0 overflow-y-auto p-5 space-y-4 bg-[#F8FAFC]">
+
+        <div id="cv-sr-meta" class="grid grid-cols-2 sm:grid-cols-4 gap-2.5"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+          <div class="space-y-4">
+
+            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-2xs">
+
+              <div class="px-3.5 py-2 bg-slate-50 border-b border-slate-200 text-xs font-extrabold uppercase tracking-wide text-slate-700">1. Tổng doanh thu</div>
+
+              <table class="w-full text-xs"><tbody id="cv-sr-revenue-rows"></tbody></table>
+
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-2xs">
+
+              <div class="px-3.5 py-2 bg-slate-50 border-b border-slate-200 text-xs font-extrabold uppercase tracking-wide text-slate-700">2. Doanh thu tiền tệ</div>
+
+              <table class="w-full text-xs"><tbody id="cv-sr-currency-rows"></tbody></table>
+
+            </div>
+
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-2xs h-fit">
+
+            <div class="px-3.5 py-2 bg-slate-50 border-b border-slate-200 text-xs font-extrabold uppercase tracking-wide text-slate-700">3. Thống kê &amp; Giảm giá</div>
+
+            <table class="w-full text-xs"><tbody id="cv-sr-stats-rows"></tbody></table>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="cv-sr-pane-k80" class="flex-1 min-h-0 overflow-y-auto bg-slate-100 p-5 hidden flex justify-center">
+
+        <pre id="cv-sr-k80-pre" class="bg-white border border-slate-200 shadow-md px-5 py-4 text-[12px] leading-[1.45] font-mono text-slate-900 whitespace-pre w-max h-max rounded-lg"></pre>
+
+      </div>
+
+      <div class="px-5 py-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 shrink-0 bg-white">
+
+        <p id="cv-sr-status" role="status" class="text-[11px] text-slate-500 flex-1 min-w-[200px]"></p>
+
+        <div class="flex items-center gap-2">
+
+          <button id="cv-sr-copy-k80" type="button" onclick="checkviewCopyShiftReportK80()" class="hidden h-9 px-4 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-700 inline-flex items-center gap-1.5 cursor-pointer"><i class="ph ph-copy text-sm" aria-hidden="true"></i> Sao chép phiếu K80</button>
+
+          <button type="button" onclick="checkviewCloseShiftReportModal()" class="h-9 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-xs font-bold text-white cursor-pointer">Đóng</button>
+
+        </div>
 
       </div>
 
@@ -16198,6 +16709,8 @@
 
   <!-- ==================== SQL CONNECTION MODAL ==================== -->
 
+  <!-- ==================== SERVER CONNECTION MODAL (SQL / API) ==================== -->
+
   <div id="sql-modal" role="dialog" aria-modal="true" class="fixed inset-0 z-50 bg-slate-950/50 backdrop-blur-sm hidden items-center justify-center p-4">
 
     <div class="w-full max-w-lg bg-white border border-slate-200 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
@@ -16206,17 +16719,17 @@
 
         <div class="flex items-center gap-2.5">
 
-          <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center">
+          <div id="server-modal-icon" class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
 
-            <i class="ph ph-database text-lg"></i>
+            <i class="ph ph-lightning text-lg"></i>
 
           </div>
 
           <div>
 
-            <h3 id="sql-modal-title" class="text-sm font-extrabold text-slate-900">Thêm kết nối SQL Server</h3>
+            <h3 id="sql-modal-title" class="text-sm font-extrabold text-slate-900">Thêm kết nối Máy chủ (API / SQL)</h3>
 
-            <p class="text-[11px] text-slate-500">Cấu hình tham số kết nối trực tiếp đến database RK7</p>
+            <p id="sql-modal-desc" class="text-[11px] text-slate-500">Cấu hình kết nối để tự động kéo Master Data về máy</p>
 
           </div>
 
@@ -16233,63 +16746,125 @@
       <div class="p-6 space-y-4 overflow-y-auto max-h-[75vh]">
 
         <input type="hidden" id="sql-field-id">
+        <input type="hidden" id="server-field-type" value="api">
+
+        <!-- Selector: API vs SQL -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1.5">Loại giao thức kết nối</label>
+          <div class="grid grid-cols-2 gap-2 p-1 bg-slate-100 rounded-xl">
+            <button type="button" id="server-tab-btn-api" onclick="serverChangeModalType('api')" class="py-2 rounded-lg text-xs font-bold bg-white text-emerald-700 shadow-2xs flex items-center justify-center gap-1.5 transition-all">
+              <i class="ph ph-lightning text-base"></i> RK7 XML API (Từ xa)
+            </button>
+            <button type="button" id="server-tab-btn-sql" onclick="serverChangeModalType('sql')" class="py-2 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 flex items-center justify-center gap-1.5 transition-all">
+              <i class="ph ph-database text-base"></i> MS SQL Server (Nội bộ)
+            </button>
+          </div>
+        </div>
 
         <div>
 
-          <label class="block text-xs font-bold text-slate-700 mb-1">Tên hồ sơ / Thương hiệu <span class="text-rose-500">*</span></label>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Tên chuỗi / Nhà hàng <span class="text-rose-500">*</span></label>
 
-          <input id="sql-field-name" type="text" placeholder="Ví dụ: Cơm Gà Đông Nguyên, V-Lotus Landmark..." class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs text-slate-800 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 font-medium">
+          <input id="sql-field-name" type="text" placeholder="Ví dụ: QSR Việt Nam, Pizza Company, GGG..." class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs text-slate-800 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 font-medium">
 
         </div>
 
         <div>
+          <div class="flex items-center justify-between mb-1">
+            <label class="block text-xs font-bold text-slate-700">Mã gói Master Data (Package ID) <span class="text-rose-500">*</span></label>
+            <span class="text-[11px] text-indigo-600 font-semibold flex items-center gap-1">
+              <i class="ph ph-sparkle text-xs"></i> Chọn gói có sẵn bên dưới để cập nhật
+            </span>
+          </div>
 
-          <label class="block text-xs font-bold text-slate-700 mb-1">Mã định danh gói Master (Package ID) <span class="text-rose-500">*</span></label>
+          <div class="relative">
+            <input id="sql-field-package" list="server-package-datalist" type="text" placeholder="Chọn bên dưới hoặc nhập mã mới (vd: gsf_masterdata, qsr_masterdata...)" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition-all" autocomplete="off">
+            <datalist id="server-package-datalist"></datalist>
+          </div>
 
-          <input id="sql-field-package" type="text" placeholder="Ví dụ: com_ga_dong_nguyen, vlotus..." class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+          <!-- Quick Suggestion Box for existing packages -->
+          <div class="mt-2.5 p-2.5 rounded-xl bg-slate-50 border border-slate-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-[11px] font-bold text-slate-600 flex items-center gap-1.5">
+                <i class="ph ph-database text-indigo-500 text-xs"></i> Gói Master Data hiện có trong kho:
+              </span>
+              <span class="text-[10px] text-slate-400">Bấm để cập nhật trực tiếp vào gói</span>
+            </div>
+            <div id="server-package-chips-container" class="flex flex-wrap gap-1.5 max-h-32 overflow-y-auto pr-1">
+              <span class="text-[11px] text-slate-400 italic">Đang tải danh sách gói...</span>
+            </div>
+          </div>
 
-          <p class="text-[11px] text-slate-400 mt-1">Dùng để đặt tên file <code class="font-mono">master_refs/&lt;id&gt;.json</code> và liên kết tự động với file template XML.</p>
-
+          <p id="server-package-target-hint" class="text-[11px] text-slate-500 mt-2 flex items-center gap-1.5">
+            <i class="ph ph-info text-slate-400 text-xs"></i> 
+            <span>Lưu vào <code class="font-mono text-slate-700 bg-slate-100 px-1 py-0.5 rounded text-[10px]">master_refs/&lt;id&gt;.json</code>. Chọn gói có sẵn sẽ ghi đè cập nhật vào gói đó.</span>
+          </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-
+        <!-- API Fields Container -->
+        <div id="server-api-fields" class="space-y-3 pt-1">
           <div>
-
-            <label class="block text-xs font-bold text-slate-700 mb-1">Server Host / IP <span class="text-rose-500">*</span></label>
-
-            <input id="sql-field-host" type="text" placeholder="192.168.1.50 hoặc localhost,1433" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
-
+            <label class="block text-xs font-bold text-slate-700 mb-1">Địa chỉ IP / Host máy chủ RK7 <span class="text-rose-500">*</span></label>
+            <input id="api-field-host" type="text" oninput="serverUpdateApiUrlPreview()" placeholder="Ví dụ: 61.28.234.200:1188 hoặc 192.168.1.50" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 font-medium">
+            <p class="text-[10px] text-slate-400 mt-1 flex items-center gap-1">
+              <i class="ph ph-info text-slate-400 text-xs"></i> <span>Chỉ cần nhập IP hoặc IP:Cổng (mặc định cổng 1188). Tự động kết nối qua RK7 XML API.</span>
+            </p>
+            <input type="hidden" id="api-field-url" value="">
           </div>
 
-          <div>
-
-            <label class="block text-xs font-bold text-slate-700 mb-1">Tên Database <span class="text-rose-500">*</span></label>
-
-            <input id="sql-field-db" type="text" placeholder="RK7_DB hoặc RK7_HQ" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
-
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Tài khoản HTTP API <span class="text-rose-500">*</span></label>
+              <input id="api-field-user" type="text" value="httpapi" placeholder="httpapi" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Mật khẩu <span class="text-rose-500">*</span></label>
+              <input id="api-field-pass" type="text" value="1" placeholder="1" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 font-bold">
+            </div>
           </div>
-
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <!-- SQL Fields Container -->
+        <div id="server-sql-fields" class="space-y-3 pt-1 hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
 
-          <div>
+            <div>
 
-            <label class="block text-xs font-bold text-slate-700 mb-1">User đăng nhập</label>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Server Host / IP <span class="text-rose-500">*</span></label>
 
-            <input id="sql-field-user" type="text" placeholder="sa hoặc user_rk7" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+              <input id="sql-field-host" type="text" placeholder="192.168.1.50 hoặc localhost,1433" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+            </div>
+
+            <div>
+
+              <label class="block text-xs font-bold text-slate-700 mb-1">Tên Database <span class="text-rose-500">*</span></label>
+
+              <input id="sql-field-db" type="text" placeholder="RK7_DB hoặc RK7_HQ" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+            </div>
 
           </div>
 
-          <div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
 
-            <label class="block text-xs font-bold text-slate-700 mb-1">Mật khẩu</label>
+            <div>
 
-            <input id="sql-field-pass" type="password" placeholder="••••••••" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+              <label class="block text-xs font-bold text-slate-700 mb-1">User SQL</label>
+
+              <input id="sql-field-user" type="text" placeholder="sa hoặc user_rk7" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+            </div>
+
+            <div>
+
+              <label class="block text-xs font-bold text-slate-700 mb-1">Mật khẩu SQL</label>
+
+              <input id="sql-field-pass" type="password" placeholder="••••••••" class="w-full h-9 px-3 rounded-xl border border-slate-300 text-xs font-mono text-slate-800 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+            </div>
 
           </div>
-
         </div>
 
         <div id="sql-modal-msg" class="hidden p-3 rounded-xl text-xs font-medium"></div>
@@ -16298,7 +16873,7 @@
 
       <div class="px-6 py-4 border-t border-slate-200 bg-slate-50 flex items-center justify-between gap-3 shrink-0">
 
-        <button id="sql-btn-test" type="button" onclick="sqlTestFormConnection()" class="h-9 px-4 rounded-xl border border-slate-300 bg-white hover:bg-slate-100 text-slate-700 text-xs font-bold flex items-center gap-1.5 transition-colors">
+        <button id="sql-btn-test" type="button" onclick="serverTestFormConnection()" class="h-9 px-4 rounded-xl border border-slate-300 bg-white hover:bg-slate-100 text-slate-700 text-xs font-bold flex items-center gap-1.5 transition-colors">
 
           <i class="ph ph-plugs text-base"></i> Kiểm tra kết nối
 
@@ -16312,9 +16887,9 @@
 
           </button>
 
-          <button type="button" onclick="sqlSaveFormConnection()" class="h-9 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-1.5 shadow-xs transition-colors">
+          <button type="button" onclick="serverSaveFormConnection()" class="h-9 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold flex items-center gap-1.5 shadow-xs transition-colors">
 
-            <i class="ph ph-check text-base"></i> Lưu cấu hình
+            <i class="ph ph-check text-base"></i> Lưu kết nối
 
           </button>
 
@@ -16324,6 +16899,89 @@
 
     </div>
 
+  </div>
+
+  <!-- ==================== LIVE MASTER DATA SYNC PROGRESS MODAL ==================== -->
+  <div id="server-sync-modal" role="dialog" aria-modal="true" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="w-full max-w-xl bg-white border border-slate-200 rounded-3xl shadow-2xl flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+
+      <!-- Modal Header (Clean, balanced, non-cramped) -->
+      <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between shrink-0 bg-slate-50/90 gap-4">
+        <div class="min-w-0 pr-2">
+          <h3 id="sync-modal-title" class="text-base font-extrabold text-slate-900 tracking-tight">Đồng bộ Master Data</h3>
+          <div class="flex items-center gap-2 mt-1 text-xs text-slate-500 overflow-hidden">
+            <span id="sync-modal-subtitle" class="font-bold text-slate-800 truncate">QSR API (61.28.234.200)</span>
+            <span class="text-slate-300 shrink-0">•</span>
+            <span id="sync-modal-protocol-tag" class="px-2 py-0.5 rounded-md text-[10px] font-mono font-extrabold bg-emerald-50 text-emerald-700 border border-emerald-200 inline-flex items-center gap-1 shrink-0 whitespace-nowrap">
+              <i class="ph ph-lightning text-emerald-600"></i> RK7 XML API
+            </span>
+            <span class="text-slate-300 shrink-0">•</span>
+            <span id="sync-modal-pkg-tag" class="font-mono text-slate-400 text-[11px] shrink-0 truncate">gói: qsr_masterdata</span>
+          </div>
+        </div>
+
+        <div id="sync-modal-badge" class="px-3.5 py-1.5 rounded-full text-xs font-extrabold tracking-wide uppercase bg-amber-50 text-amber-700 border border-amber-200 flex items-center gap-2 shadow-2xs shrink-0 whitespace-nowrap">
+          <span class="relative flex h-2 w-2 shrink-0"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span></span>
+          <span>Đang đồng bộ</span>
+        </div>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 space-y-4 bg-white">
+        <!-- Unified Command Hero Card with Integrated Progress Bar -->
+        <div id="sync-spotlight-card" class="p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950 text-white shadow-lg border border-slate-800 transition-all">
+          <div class="flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3.5 min-w-0">
+              <div id="sync-spotlight-icon-wrap" class="w-11 h-11 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center text-indigo-300 shrink-0 shadow-inner">
+                <lord-icon id="sync-spotlight-icon" src="icons/nexushub.json" trigger="loop" colors="primary:#ffffff,secondary:#38bdf8" style="width:28px;height:28px;"></lord-icon>
+              </div>
+              <div class="min-w-0">
+                <div class="flex items-center gap-2 mb-1">
+                  <span id="sync-spotlight-step-label" class="text-[10px] font-mono uppercase tracking-wider text-indigo-300 font-extrabold">BẮT ĐẦU KHỞI TẠO</span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                </div>
+                <div id="sync-modal-status-text" class="text-xs font-bold text-white truncate">Đang khởi tạo kết nối máy chủ...</div>
+              </div>
+            </div>
+            <div class="text-right shrink-0">
+              <div id="sync-modal-percent" class="font-mono font-black text-2xl text-emerald-400 leading-none">0%</div>
+              <div class="text-[10px] font-mono text-slate-400 mt-1 uppercase tracking-wider">tiến độ</div>
+            </div>
+          </div>
+
+          <!-- Seamlessly Integrated Progress Bar Inside Hero Card -->
+          <div class="mt-4 w-full h-2.5 bg-slate-800/90 rounded-full overflow-hidden p-0.5 border border-slate-700/80">
+            <div id="sync-modal-progress-bar" class="h-full bg-gradient-to-r from-indigo-500 via-sky-400 to-emerald-400 rounded-full transition-all duration-300 shadow-xs" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <!-- Live Checklist Steps Container -->
+        <div class="border border-slate-200/80 rounded-2xl bg-slate-50/70 p-3.5 shadow-2xs">
+          <div class="flex items-center justify-between mb-2.5 px-1">
+            <span class="text-[11px] font-black uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+              <i class="ph ph-list-checks text-indigo-600 text-sm"></i> Tiến trình 12 bảng dữ liệu Master:
+            </span>
+            <span id="sync-modal-step-counter" class="text-[11px] font-mono font-bold text-slate-600 bg-white px-2 py-0.5 rounded-md border border-slate-200 shadow-2xs">0 / 12</span>
+          </div>
+          <div id="sync-modal-steps" class="space-y-1.5 max-h-60 overflow-y-auto pr-1 text-xs custom-scrollbar">
+            <!-- Dynamic steps -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 border-t border-slate-100 bg-slate-50 flex items-center justify-between shrink-0">
+        <div id="sync-modal-elapsed" class="text-xs font-mono text-slate-600 flex items-center gap-1.5">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-slate-200 font-bold font-mono text-xs shadow-2xs">
+            <i class="ph ph-timer text-slate-400 text-sm"></i> Thời gian: 0s
+          </span>
+        </div>
+        <button id="sync-modal-btn-close" type="button" onclick="serverCloseSyncModal()" disabled class="h-10 px-6 rounded-xl bg-slate-200 text-slate-400 font-extrabold text-xs inline-flex items-center gap-1.5 transition-all shadow-xs cursor-not-allowed">
+          Đóng
+        </button>
+      </div>
+
+    </div>
   </div>
 
 
@@ -16342,7 +17000,7 @@
 
     // ==========================================
 
-    // MASTER NEXUS CONTROLLER
+    // NEXUS HUB CONTROLLER
 
     // ==========================================
 
@@ -16394,15 +17052,15 @@
 
         actionsEl.innerHTML = `
 
-          <button type="button" onclick="sqlOpenModal()" class="h-9 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-2 shadow-xs transition-colors">
+          <button type="button" onclick="serverOpenModal()" class="h-9 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold flex items-center gap-2 shadow-xs transition-colors">
 
-            <i class="ph ph-plus-circle text-base"></i> Thêm kết nối SQL
+            <i class="ph ph-plus-circle text-base"></i> Thêm kết nối Máy chủ
 
           </button>
 
         `;
 
-        sqlLoadConnections();
+        serverLoadConnections();
 
       } else if (subtab === 'master') {
 
@@ -16447,6 +17105,7 @@
         if (!window.pywebview?.api?.checkview_list_master_packages) return;
 
         const pkgs = await window.pywebview.api.checkview_list_master_packages() || [];
+        serverMasterPackagesCache = pkgs;
 
         if (!pkgs.length) {
 
@@ -16518,7 +17177,13 @@
 
               <div class="flex items-center gap-2 shrink-0">
 
-                <button type="button" onclick="nexusUpdateMasterPackage('${pkg.package_id}', '${(pkg.display_name || pkg.package_id).replace(/'/g, "\\'")}')" class="h-9 px-3.5 rounded-xl border border-indigo-200 bg-indigo-50/50 hover:bg-indigo-100/70 text-indigo-700 text-xs font-bold inline-flex items-center gap-1.5 transition-colors" title="Nạp file refsdata.udb mới để cập nhật đè dữ liệu cho gói này">
+                ${(pkg.source_file && pkg.source_file.startsWith('API:')) ? `
+                <button type="button" onclick="nexusSyncApiPackage('${pkg.package_id}', this)" class="h-9 px-3.5 rounded-xl border border-emerald-300 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-xs font-bold inline-flex items-center gap-1.5 transition-colors shadow-2xs cursor-pointer" title="Gọi RK7 XML API để kéo dữ liệu mới nhất trực tiếp từ máy chủ">
+                  <i class="ph ph-lightning text-base text-emerald-600"></i> Đồng bộ API
+                </button>
+                ` : ''}
+
+                <button type="button" onclick="nexusUpdateMasterPackage('${pkg.package_id}', '${(pkg.display_name || pkg.package_id).replace(/'/g, "\\'")}', '${(pkg.source_file || '').replace(/'/g, "\\'")}')" class="h-9 px-3.5 rounded-xl border border-indigo-200 bg-indigo-50/50 hover:bg-indigo-100/70 text-indigo-700 text-xs font-bold inline-flex items-center gap-1.5 transition-colors" title="Cập nhật lại dữ liệu cho gói này">
 
                   <i class="ph ph-arrows-clockwise text-base"></i> Cập nhật refs
 
@@ -16628,7 +17293,60 @@
 
 
 
-    async function nexusUpdateMasterPackage(packageId, currentDisplayName) {
+    async function nexusSyncApiPackage(packageId, btnElement) {
+      if (!confirm(`Bạn có muốn gọi RK7 XML API để cập nhật dữ liệu mới nhất cho gói "${packageId}" không?\n\nQuá trình sẽ mất khoảng 40-50 giây.`)) {
+        return;
+      }
+      const origHtml = btnElement ? btnElement.innerHTML : '';
+      if (btnElement) {
+        btnElement.disabled = true;
+        btnElement.innerHTML = '<i class="ph ph-spinner animate-spin text-base"></i> Đang đồng bộ API...';
+      }
+      try {
+        let connId = 'api_qsr_prod';
+        if (window.pywebview?.api?.api_list_connections) {
+          const listRes = await window.pywebview.api.api_list_connections();
+          if (listRes?.success && listRes.connections) {
+            const found = listRes.connections.find(c => c.package_id === packageId);
+            if (found) connId = found.id;
+          }
+        }
+        if (!window.pywebview?.api?.api_sync_connection) {
+          alert('Chức năng API Sync chưa sẵn sàng trên bridge.');
+          return;
+        }
+        const res = await window.pywebview.api.api_sync_connection(connId);
+        if (res && res.success) {
+          alert(`Đồng bộ thành công từ RK7 API!\n\n` +
+                `- Gói: ${res.package_id}\n` +
+                `- Số nhà hàng: ${res.stats?.restaurants_count || 0}\n` +
+                `- Thực đơn: ${res.stats?.menu_items_count || 0} món\n` +
+                `- Thời gian tải: ${res.stats?.duration_sec || 0}s\n` +
+                `- Kích thước file: ${res.file_size_kb || 0} KB`);
+          await nexusLoadMasterPackages();
+          if (typeof checkviewReloadMasterPackages === 'function') {
+            await checkviewReloadMasterPackages();
+          }
+        } else {
+          alert('Lỗi đồng bộ API: ' + (res?.error || 'Lỗi không xác định'));
+        }
+      } catch (err) {
+        alert('Lỗi kết nối API: ' + (err.message || err));
+      } finally {
+        if (btnElement) {
+          btnElement.disabled = false;
+          btnElement.innerHTML = origHtml;
+        }
+      }
+    }
+
+    async function nexusUpdateMasterPackage(packageId, currentDisplayName, sourceFile = '') {
+      if (sourceFile && sourceFile.startsWith('API:')) {
+        if (confirm(`Gói "${currentDisplayName}" được liên kết trực tiếp với máy chủ RK7 qua API.\n\nBạn có muốn ĐỒNG BỘ TRỰC TIẾP từ máy chủ về ngay bây giờ không?`)) {
+          await nexusSyncApiPackage(packageId, null);
+          return;
+        }
+      }
 
       if (!confirm(`Bạn có muốn chọn file refsdata.udb mới để CẬP NHẬT ĐÈ vào gói "${currentDisplayName}" (${packageId}) không?\n\nDữ liệu thực đơn, món ăn, giá bán và nhà hàng của gói này sẽ được làm mới mà không tạo ra gói master_1, master_2 mới.`)) {
 
@@ -16760,520 +17478,1075 @@
 
 
 
-    async function sqlLoadConnections() {
+    // ==========================================
+    // SERVER CONNECTIONS MANAGEMENT (SQL / API)
+    // ==========================================
 
-      try {
+    let serverConnectionsList = [];
+    let serverSyncTimer = null;
+    let serverSyncStartTime = 0;
+    let serverMasterPackagesCache = [];
 
-        if (!window.pywebview?.api?.sql_list_connections) return;
-
-        const res = await window.pywebview.api.sql_list_connections();
-
-        if (res.success) {
-
-          sqlConnectionsList = res.connections || [];
-
-          sqlRenderConnections();
-
-        }
-
-      } catch (err) {
-
-        console.error("Failed to load SQL connections:", err);
-
-      }
-
-    }
-
-
-
-    function sqlRenderConnections() {
-
-      const container = document.getElementById('sql-connections-list');
-
-      const emptyState = document.getElementById('sql-empty-state');
-
+    async function serverRenderPackageSuggestions(currentPkgId = '') {
+      const container = document.getElementById('server-package-chips-container');
+      const datalist = document.getElementById('server-package-datalist');
       if (!container) return;
 
+      try {
+        if (!serverMasterPackagesCache || !serverMasterPackagesCache.length) {
+          if (window.pywebview?.api?.checkview_list_master_packages) {
+            serverMasterPackagesCache = await window.pywebview.api.checkview_list_master_packages() || [];
+          }
+        }
 
+        const pkgs = serverMasterPackagesCache || [];
 
-      if (!sqlConnectionsList || sqlConnectionsList.length === 0) {
+        // Populate datalist
+        if (datalist) {
+          datalist.innerHTML = pkgs.map(p => `<option value="${p.package_id}">${p.display_name || p.package_id} (${p.restaurants_count || 0} quán, ${p.menu_items_count || 0} món)</option>`).join('');
+        }
 
-        container.innerHTML = '';
+        if (!pkgs.length) {
+          container.innerHTML = `<span class="text-[11px] text-slate-400 italic">Chưa có gói Master Data nào trong kho.</span>`;
+          return;
+        }
 
-        emptyState.classList.remove('hidden');
+        container.innerHTML = pkgs.map(p => {
+          const isSelected = (currentPkgId && p.package_id === currentPkgId);
+          const escapedName = (p.display_name || p.package_id).replace(/"/g, '&quot;').replace(/'/g, "\\'");
+          return `
+            <button type="button" 
+              onclick="serverSelectPackage('${p.package_id}', '${escapedName}')" 
+              data-pkg-id="${p.package_id}"
+              class="server-pkg-chip px-2.5 py-1.5 rounded-lg border text-xs flex items-center gap-1.5 transition-all cursor-pointer ${isSelected ? 'bg-indigo-600 border-indigo-600 text-white font-bold shadow-2xs' : 'bg-white border-slate-200 text-slate-700 hover:border-indigo-300 hover:bg-indigo-50/60'}"
+              title="${p.display_name || p.package_id}: ${p.restaurants_count || 0} quán, ${p.menu_items_count || 0} món (${p.file || p.package_id + '.json'})">
+              <i class="ph ph-stack ${isSelected ? 'text-white' : 'text-indigo-500'} text-xs"></i>
+              <span class="font-bold text-[11px]">${p.display_name || p.package_id}</span>
+              <span class="text-[10px] font-mono ${isSelected ? 'text-indigo-100' : 'text-slate-400'}">(${p.package_id})</span>
+            </button>
+          `;
+        }).join('');
 
-        return;
+        serverUpdatePackageHint(currentPkgId);
+      } catch (e) {
+        console.error("Lỗi tải danh sách Master Packages cho modal:", e);
+        if (container) container.innerHTML = `<span class="text-[11px] text-rose-500">Không thể tải danh sách gói.</span>`;
+      }
+    }
 
+    function serverSelectPackage(packageId, displayName) {
+      const pkgInput = document.getElementById('sql-field-package');
+      const nameInput = document.getElementById('sql-field-name');
+      
+      if (pkgInput) {
+        pkgInput.value = packageId;
+      }
+      
+      if (nameInput) {
+        const curName = nameInput.value.trim();
+        if (!curName || curName === 'GSF' || curName === 'QSR' || curName.startsWith('QSR') || curName.startsWith('GGG')) {
+          nameInput.value = displayName;
+        }
       }
 
-      emptyState.classList.add('hidden');
+      // Update chip active classes
+      const chips = document.querySelectorAll('.server-pkg-chip');
+      chips.forEach(c => {
+        const id = c.getAttribute('data-pkg-id');
+        const icon = c.querySelector('i');
+        const codeSpan = c.querySelector('span.font-mono');
+        if (id === packageId) {
+          c.className = "server-pkg-chip px-2.5 py-1.5 rounded-lg border text-xs flex items-center gap-1.5 transition-all cursor-pointer bg-indigo-600 border-indigo-600 text-white font-bold shadow-2xs";
+          if (icon) icon.className = "ph ph-stack text-white text-xs";
+          if (codeSpan) codeSpan.className = "text-[10px] font-mono text-indigo-100";
+        } else {
+          c.className = "server-pkg-chip px-2.5 py-1.5 rounded-lg border text-xs flex items-center gap-1.5 transition-all cursor-pointer bg-white border-slate-200 text-slate-700 hover:border-indigo-300 hover:bg-indigo-50/60";
+          if (icon) icon.className = "ph ph-stack text-indigo-500 text-xs";
+          if (codeSpan) codeSpan.className = "text-[10px] font-mono text-slate-400";
+        }
+      });
 
+      serverUpdatePackageHint(packageId);
+    }
 
+    function serverUpdatePackageHint(packageId) {
+      const hintEl = document.getElementById('server-package-target-hint');
+      if (!hintEl) return;
+      const found = (serverMasterPackagesCache || []).find(p => p.package_id === packageId);
+      if (found) {
+        hintEl.innerHTML = `
+          <span class="inline-flex items-center gap-1.5 text-emerald-700 font-semibold text-[11px] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">
+            <i class="ph ph-check-circle-fill text-emerald-600 text-sm"></i>
+            Sẽ cập nhật và ghi đè trực tiếp vào gói: <b>${found.display_name || found.package_id}</b> (${found.restaurants_count || 0} quán, ${found.menu_items_count || 0} món)
+          </span>
+        `;
+      } else if (packageId) {
+        hintEl.innerHTML = `
+          <span class="inline-flex items-center gap-1.5 text-indigo-700 font-semibold text-[11px] bg-indigo-50 px-2.5 py-1 rounded-lg border border-indigo-200">
+            <i class="ph ph-plus-circle-fill text-indigo-600 text-sm"></i>
+            Sẽ tạo tệp Master Data mới: <code class="font-mono font-bold">${packageId}.json</code>
+          </span>
+        `;
+      } else {
+        hintEl.innerHTML = `
+          <i class="ph ph-info text-slate-400 text-xs"></i> 
+          <span>Lưu vào <code class="font-mono text-slate-700 bg-slate-100 px-1 py-0.5 rounded text-[10px]">master_refs/&lt;id&gt;.json</code>. Chọn gói có sẵn sẽ ghi đè cập nhật vào gói đó.</span>
+        `;
+      }
+    }
 
-      container.innerHTML = sqlConnectionsList.map(item => {
+    // Backward compatibility aliases
+    // sqlConnectionsList is declared at top of script
+    function sqlLoadConnections() { return serverLoadConnections(); }
+    function sqlRenderConnections() { return serverRenderConnections(); }
+    function sqlOpenModal(item = null) { return serverOpenModal(item); }
+    function sqlCloseModal() { return serverCloseModal(); }
 
+    async function serverLoadConnections() {
+      try {
+        let sqlItems = [];
+        let apiItems = [];
+
+        if (window.pywebview?.api?.sql_list_connections) {
+          try {
+            const resSql = await window.pywebview.api.sql_list_connections();
+            if (resSql?.success) {
+              sqlItems = (resSql.connections || []).map(c => ({ ...c, type: 'sql' }));
+            }
+          } catch (eSql) {
+            console.error("Lỗi tải SQL connections:", eSql);
+          }
+        }
+
+        if (window.pywebview?.api?.api_list_connections) {
+          try {
+            const resApi = await window.pywebview.api.api_list_connections();
+            if (resApi?.success) {
+              apiItems = (resApi.connections || []).map(c => ({ ...c, type: 'api' }));
+            }
+          } catch (eApi) {
+            console.error("Lỗi tải API connections:", eApi);
+          }
+        }
+
+        serverConnectionsList = [...apiItems, ...sqlItems];
+        sqlConnectionsList = serverConnectionsList;
+        serverRenderConnections();
+      } catch (err) {
+        console.error("Lỗi tổng hợp server connections:", err);
+      }
+    }
+
+    let serverFilterType = 'all'; // 'all' | 'api' | 'sql'
+    let serverSearchQuery = '';
+
+    function serverSetFilter(type) {
+      serverFilterType = type;
+      ['all', 'api', 'sql'].forEach(t => {
+        const btn = document.getElementById(`server-filter-btn-${t}`);
+        if (!btn) return;
+        if (t === type) {
+          btn.className = "px-3 py-1 rounded-lg bg-white text-slate-900 shadow-2xs font-bold transition-all flex items-center gap-1.5 cursor-pointer";
+        } else {
+          btn.className = "px-3 py-1 rounded-lg text-slate-600 hover:text-slate-900 font-medium transition-all flex items-center gap-1.5 cursor-pointer";
+        }
+      });
+      serverRenderConnections();
+    }
+
+    function serverOnSearchInput() {
+      const input = document.getElementById('server-search-input');
+      const clearBtn = document.getElementById('server-search-clear');
+      serverSearchQuery = (input?.value || '').trim().toLowerCase();
+      if (clearBtn) {
+        if (serverSearchQuery) clearBtn.classList.remove('hidden');
+        else clearBtn.classList.add('hidden');
+      }
+      serverRenderConnections();
+    }
+
+    function serverClearSearch() {
+      const input = document.getElementById('server-search-input');
+      const clearBtn = document.getElementById('server-search-clear');
+      if (input) input.value = '';
+      if (clearBtn) clearBtn.classList.add('hidden');
+      serverSearchQuery = '';
+      serverRenderConnections();
+    }
+
+    function serverRenderConnections() {
+      const container = document.getElementById('sql-connections-list');
+      const tableWrapper = document.getElementById('sql-table-wrapper');
+      const emptyState = document.getElementById('sql-empty-state');
+      const countSummary = document.getElementById('server-count-summary');
+      const badgeAll = document.getElementById('server-badge-all');
+      const badgeApi = document.getElementById('server-badge-api');
+      const badgeSql = document.getElementById('server-badge-sql');
+      if (!container) return;
+
+      const totalItems = serverConnectionsList || [];
+      const apiCount = totalItems.filter(i => i.type === 'api').length;
+      const sqlCount = totalItems.filter(i => i.type === 'sql').length;
+
+      if (badgeAll) badgeAll.textContent = totalItems.length;
+      if (badgeApi) badgeApi.textContent = apiCount;
+      if (badgeSql) badgeSql.textContent = sqlCount;
+
+      if (totalItems.length === 0) {
+        container.innerHTML = '';
+        if (tableWrapper) tableWrapper.classList.add('hidden');
+        if (emptyState) emptyState.classList.remove('hidden');
+        if (countSummary) countSummary.textContent = 'Chưa có kết nối nào';
+        return;
+      }
+
+      if (tableWrapper) tableWrapper.classList.remove('hidden');
+      if (emptyState) emptyState.classList.add('hidden');
+
+      // Filter by type
+      let filtered = totalItems;
+      if (serverFilterType === 'api') {
+        filtered = filtered.filter(i => i.type === 'api');
+      } else if (serverFilterType === 'sql') {
+        filtered = filtered.filter(i => i.type === 'sql');
+      }
+
+      // Filter by search query
+      if (serverSearchQuery) {
+        filtered = filtered.filter(i => {
+          const name = (i.name || '').toLowerCase();
+          const pkg = (i.package_id || '').toLowerCase();
+          const url = (i.url || '').toLowerCase();
+          const host = (i.host || '').toLowerCase();
+          const db = (i.database || '').toLowerCase();
+          const user = (i.user || '').toLowerCase();
+          return name.includes(serverSearchQuery) ||
+                 pkg.includes(serverSearchQuery) ||
+                 url.includes(serverSearchQuery) ||
+                 host.includes(serverSearchQuery) ||
+                 db.includes(serverSearchQuery) ||
+                 user.includes(serverSearchQuery);
+        });
+      }
+
+      if (countSummary) {
+        if (filtered.length === totalItems.length) {
+          countSummary.textContent = `Tổng cộng ${totalItems.length} kết nối`;
+        } else {
+          countSummary.textContent = `Hiển thị ${filtered.length} / ${totalItems.length} kết nối`;
+        }
+      }
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <tr>
+            <td colspan="7" class="py-12 px-4 text-center text-slate-400 bg-slate-50/50">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-slate-100 text-slate-400 flex items-center justify-center mb-2">
+                <i class="ph ph-magnifying-glass text-2xl"></i>
+              </div>
+              <p class="text-xs font-bold text-slate-700">Không tìm thấy kết nối nào khớp</p>
+              <p class="text-[11px] text-slate-400 mt-0.5">Không có kết nối nào khớp với từ khóa "${serverSearchQuery}".</p>
+              <button type="button" onclick="serverClearSearch()" class="mt-2 text-xs font-bold text-indigo-600 hover:text-indigo-800 cursor-pointer">
+                Xóa bộ lọc tìm kiếm
+              </button>
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(item => {
         const stats = item.stats || {};
-
-        return `
-
-          <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
-
-            <div>
-
-              <div class="flex items-start justify-between gap-3">
-
-                <div class="flex items-center gap-2.5">
-
-                  <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold">
-
-                    <i class="ph ph-database text-xl"></i>
-
-                  </div>
-
-                  <div>
-
-                    <h3 class="text-sm font-extrabold text-slate-900 leading-tight">${item.name || 'Chưa đặt tên'}</h3>
-
-                    <p class="text-[11px] font-mono text-slate-500 mt-0.5">Package: <span class="text-blue-600 font-bold">${item.package_id || '—'}</span></p>
-
-                  </div>
-
-                </div>
-
-                <div class="flex items-center gap-1">
-
-                  <button type="button" onclick="sqlEditConnection('${item.id}')" title="Chỉnh sửa" class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors">
-
-                    <i class="ph ph-pencil-simple text-base"></i>
-
-                  </button>
-
-                  <button type="button" onclick="sqlDeleteConnection('${item.id}')" title="Xóa" class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-400 hover:text-rose-600 hover:bg-rose-50 transition-colors">
-
-                    <i class="ph ph-trash text-base"></i>
-
-                  </button>
-
-                </div>
-
-              </div>
-
-
-
-              <div class="mt-4 pt-3 border-t border-slate-100 space-y-1.5 text-xs text-slate-600 font-mono">
-
-                <div class="flex justify-between items-center">
-
-                  <span class="text-slate-400">Host:</span>
-
-                  <span class="font-bold text-slate-800">${item.host || '—'}</span>
-
-                </div>
-
-                <div class="flex justify-between items-center">
-
-                  <span class="text-slate-400">Database:</span>
-
-                  <span class="font-bold text-slate-800">${item.database || '—'}</span>
-
-                </div>
-
-                <div class="flex justify-between items-center">
-
-                  <span class="text-slate-400">User:</span>
-
-                  <span>${item.user || '(Windows Auth)'}</span>
-
-                </div>
-
-                <div class="flex justify-between items-center">
-
-                  <span class="text-slate-400">Đồng bộ gần nhất:</span>
-
-                  <span class="text-[11px] text-slate-500">${item.last_synced || 'Chưa đồng bộ'}</span>
-
-                </div>
-
-              </div>
-
-
-
-              ${stats.menu_items_count ? `
-
-                <div class="mt-3 py-2 px-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-around text-[11px] text-slate-600 font-medium">
-
-                  <div><strong class="text-slate-900">${stats.restaurants_count || 0}</strong> quán</div>
-
-                  <div class="w-px h-3 bg-slate-200"></div>
-
-                  <div><strong class="text-slate-900">${stats.menu_items_count || 0}</strong> món</div>
-
-                  <div class="w-px h-3 bg-slate-200"></div>
-
-                  <div><strong class="text-slate-900">${stats.employees_count || 0}</strong> nv</div>
-
-                </div>
-
-              ` : ''}
-
-            </div>
-
-
-
-            <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
-
-              <button type="button" id="sql-btn-sync-${item.id}" onclick="sqlRunSync('${item.id}')" class="flex-1 h-9 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-xs transition-colors">
-
-                <i class="ph ph-arrows-clockwise text-base"></i> Đồng bộ ngay
-
-              </button>
-
-              <button type="button" onclick="sqlTestConnectionDirect('${item.id}')" title="Test kết nối" class="h-9 px-3 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 text-xs font-bold flex items-center gap-1 transition-colors">
-
-                <i class="ph ph-plugs text-base"></i> Test
-
-              </button>
-
-            </div>
-
-          </div>
-
+        const isApi = (item.type === 'api');
+
+        const badgeHtml = isApi ? `
+          <span class="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80 inline-flex items-center gap-1 shadow-2xs whitespace-nowrap">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> RK7 XML API
+          </span>
+        ` : `
+          <span class="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-blue-50 text-blue-700 border border-blue-200/80 inline-flex items-center gap-1 shadow-2xs whitespace-nowrap">
+            <i class="ph ph-database text-xs text-blue-500"></i> MS SQL Server
+          </span>
         `;
 
-      }).join('');
+        const iconBg = isApi ? "bg-gradient-to-br from-emerald-50 to-teal-50 text-emerald-600 border border-emerald-100" : "bg-gradient-to-br from-blue-50 to-indigo-50 text-blue-600 border border-blue-100";
+        const iconPh = isApi ? "ph-globe-simple" : "ph-database";
 
+        // Tách biệt ngày và giờ
+        const lastSyncedParts = (item.last_synced || '').trim().split(' ');
+        const syncDate = lastSyncedParts[0] || '';
+        const syncTime = lastSyncedParts[1] || '';
+
+        return `
+          <tr class="hover:bg-slate-50/80 transition-colors group">
+            <!-- 1. Chuỗi / Nhà hàng -->
+            <td class="py-3 px-4 align-middle">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-xl ${iconBg} flex items-center justify-center shrink-0 font-bold shadow-2xs group-hover:scale-105 transition-transform">
+                  <i class="ph ${iconPh} text-lg"></i>
+                </div>
+                <div class="min-w-0">
+                  <h4 class="font-extrabold text-slate-900 text-xs truncate max-w-[170px]" title="${item.name || ''}">${item.name || 'Chưa đặt tên'}</h4>
+                  <span class="text-[10px] font-mono text-slate-400 block mt-0.5 truncate max-w-[140px]">${item.id}</span>
+                </div>
+              </div>
+            </td>
+
+            <!-- 2. Loại kết nối -->
+            <td class="py-3 px-3 align-middle whitespace-nowrap">
+              ${badgeHtml}
+            </td>
+
+            <!-- 3. Máy chủ / Endpoint -->
+            <td class="py-3 px-3 align-middle font-mono text-[11px]">
+              ${isApi ? `
+                <div class="text-slate-800 font-bold truncate max-w-[210px]" title="${item.url || ''}">
+                  <span class="text-emerald-700 font-semibold font-sans text-[10px] uppercase tracking-wider mr-1">URL:</span>
+                  ${item.url || '—'}
+                </div>
+                <div class="text-slate-400 font-sans text-[10px] mt-0.5">
+                  Tài khoản: <strong class="text-slate-600 font-mono">${item.user || '—'}</strong>
+                </div>
+              ` : `
+                <div class="text-slate-800 font-bold flex items-center gap-1.5 flex-wrap">
+                  <span>${item.host || '—'}</span>
+                  <span class="text-slate-300 font-normal">/</span>
+                  <span class="text-blue-700 font-bold bg-blue-50 px-1.5 py-0.2 rounded border border-blue-100">${item.database || '—'}</span>
+                </div>
+                <div class="text-slate-400 font-sans text-[10px] mt-0.5">
+                  User: <strong class="text-slate-600 font-mono">${item.user || '(Windows Auth)'}</strong>
+                </div>
+              `}
+            </td>
+
+            <!-- 4. Gói Master Data -->
+            <td class="py-3 px-3 align-middle whitespace-nowrap">
+              <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-indigo-50 border border-indigo-200/80 text-indigo-700 font-mono text-[11px] font-bold shadow-2xs">
+                <i class="ph ph-package text-xs text-indigo-500"></i>
+                <span class="truncate max-w-[120px]">${item.package_id || '—'}</span>
+              </div>
+            </td>
+
+            <!-- 5. Quy mô dữ liệu -->
+            <td class="py-3 px-3 align-middle">
+              ${stats.menu_items_count ? `
+                <div class="flex items-center gap-1 flex-wrap">
+                  <span class="px-1.5 py-0.5 rounded-md bg-slate-100 text-slate-700 text-[10px] font-semibold inline-flex items-center gap-1" title="Số lượng quán">
+                    <i class="ph ph-buildings text-indigo-500"></i> <strong>${Number(stats.restaurants_count || 0).toLocaleString()}</strong> quán
+                  </span>
+                  <span class="px-1.5 py-0.5 rounded-md bg-amber-50 text-amber-800 border border-amber-200/70 text-[10px] font-bold inline-flex items-center gap-1" title="Số món ăn">
+                    <i class="ph ph-cooking-pot text-amber-600"></i> <strong>${Number(stats.menu_items_count).toLocaleString()}</strong> món
+                  </span>
+                  <span class="px-1.5 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-200/70 text-[10px] font-semibold inline-flex items-center gap-1" title="Số nhân viên / bàn">
+                    <i class="ph ph-users text-blue-500"></i> <strong>${Number(stats.employees_count || stats.tables_count || 0).toLocaleString()}</strong> ${stats.employees_count ? 'nv' : 'bàn'}
+                  </span>
+                </div>
+              ` : `
+                <span class="text-slate-400 italic text-[11px] inline-flex items-center gap-1">
+                  <i class="ph ph-clock-counter-clockwise"></i> Chưa có dữ liệu
+                </span>
+              `}
+            </td>
+
+            <!-- 6. Lần đồng bộ cuối (Tách biệt ngày và giờ) -->
+            <td class="py-3 px-3 align-middle whitespace-nowrap">
+              ${item.last_synced ? `
+                <div class="space-y-0.5">
+                  <div class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0"></span>
+                    <span>${syncDate}</span>
+                  </div>
+                  <div class="text-[11px] font-mono text-slate-500 flex items-center gap-1.5 pl-3">
+                    <span class="text-slate-600 font-semibold">${syncTime || ''}</span>
+                    ${stats.duration_sec ? `
+                      <span class="text-slate-300">•</span>
+                      <span class="text-emerald-700 font-bold text-[10px] bg-emerald-50 px-1 py-0.2 rounded border border-emerald-100">${stats.duration_sec}s</span>
+                    ` : ''}
+                  </div>
+                </div>
+              ` : `
+                <span class="text-slate-400 italic text-xs">Chưa đồng bộ</span>
+              `}
+            </td>
+
+            <!-- 7. Thao tác -->
+            <td class="py-3 px-4 align-middle text-right whitespace-nowrap">
+              <div class="flex items-center justify-end gap-1.5">
+                <button type="button" id="server-btn-sync-${item.id}" onclick="serverRunSync(${JSON.stringify(item).replace(/"/g, '&quot;')})" class="h-9 px-3.5 rounded-xl ${isApi ? 'bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 shadow-emerald-600/20' : 'bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-blue-600/20'} text-white text-xs font-extrabold inline-flex items-center gap-1.5 shadow-sm hover:shadow active:scale-95 transition-all cursor-pointer whitespace-nowrap" title="Đồng bộ toàn bộ danh mục ngay">
+                  <i class="ph-bold ${isApi ? 'ph-lightning' : 'ph-arrows-clockwise'} text-sm"></i>
+                  <span>Đồng bộ</span>
+                </button>
+
+                <button type="button" onclick="serverTestConnectionDirect(${JSON.stringify(item).replace(/"/g, '&quot;')})" title="Kiểm tra kết nối" class="h-9 px-3 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-700 text-xs font-bold inline-flex items-center gap-1 active:scale-95 transition-all cursor-pointer">
+                  <i class="ph ph-plugs text-sm text-slate-500"></i> Test
+                </button>
+
+                <button type="button" onclick="serverOpenModal(${JSON.stringify(item).replace(/"/g, '&quot;')})" title="Chỉnh sửa cấu hình" class="w-9 h-9 rounded-xl flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-slate-100 active:scale-95 transition-all cursor-pointer">
+                  <i class="ph ph-pencil-simple text-base"></i>
+                </button>
+
+                <button type="button" onclick="serverDeleteConnection('${item.id}', '${item.type || 'sql'}')" title="Xóa kết nối này" class="w-9 h-9 rounded-xl flex items-center justify-center text-slate-400 hover:text-rose-600 hover:bg-rose-50 active:scale-95 transition-all cursor-pointer">
+                  <i class="ph ph-trash text-base"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        `;
+      }).join('');
     }
 
-
-
-    function sqlOpenModal(item = null) {
+    function serverOpenModal(item = null) {
+      const isEdit = !!item;
+      const type = item?.type || (item?.url ? 'api' : 'sql');
 
       document.getElementById('sql-field-id').value = item ? item.id : '';
-
       document.getElementById('sql-field-name').value = item ? item.name : '';
-
       document.getElementById('sql-field-package').value = item ? item.package_id : '';
 
-      document.getElementById('sql-field-host').value = item ? item.host : '';
+      // API fields
+      let itemUrl = item?.url || '';
+      let host = itemUrl ? itemUrl.replace(/^https?:\/\//i, '').split('/')[0] : '';
+      const hostEl = document.getElementById('api-field-host');
+      if (hostEl) hostEl.value = host;
+      document.getElementById('api-field-user').value = item?.user || 'httpapi';
+      document.getElementById('api-field-pass').value = (item?.password !== undefined && item?.password !== null && item?.password !== '') ? item.password : '1';
+      serverUpdateApiUrlPreview();
 
-      document.getElementById('sql-field-db').value = item ? item.database : '';
+      // SQL fields
+      document.getElementById('sql-field-host').value = item?.host || '';
+      document.getElementById('sql-field-db').value = item?.database || '';
+      document.getElementById('sql-field-user').value = item?.user || '';
+      document.getElementById('sql-field-pass').value = item?.password || '';
 
-      document.getElementById('sql-field-user').value = item ? (item.user || '') : '';
-
-      document.getElementById('sql-field-pass').value = item ? (item.password || '') : '';
-
-      document.getElementById('sql-modal-title').textContent = item ? 'Chỉnh sửa kết nối SQL' : 'Thêm kết nối SQL Server';
-
+      document.getElementById('sql-modal-title').textContent = isEdit ? 'Chỉnh sửa kết nối Máy chủ' : 'Thêm kết nối Máy chủ';
       
-
       const msg = document.getElementById('sql-modal-msg');
-
-      msg.className = 'hidden';
-
-      msg.textContent = '';
-
-      
-
-      document.getElementById('sql-modal').classList.remove('hidden');
-
-      document.getElementById('sql-modal').classList.add('flex');
-
-    }
-
-
-
-    function sqlCloseModal() {
-
-      const modal = document.getElementById('sql-modal');
-
-      modal.classList.add('hidden');
-
-      modal.classList.remove('flex');
-
-    }
-
-
-
-    function sqlEditConnection(id) {
-
-      const item = sqlConnectionsList.find(c => c.id === id);
-
-      if (item) sqlOpenModal(item);
-
-    }
-
-
-
-    async function sqlTestFormConnection() {
-
-      const btn = document.getElementById('sql-btn-test');
-
-      const msg = document.getElementById('sql-modal-msg');
-
-      const profile = {
-
-        host: document.getElementById('sql-field-host').value.trim(),
-
-        database: document.getElementById('sql-field-db').value.trim(),
-
-        user: document.getElementById('sql-field-user').value.trim(),
-
-        password: document.getElementById('sql-field-pass').value.trim(),
-
-      };
-
-      if (!profile.host || !profile.database) {
-
-        alert('Vui lòng nhập Host và Database Name!');
-
-        return;
-
+      if (msg) {
+        msg.className = 'hidden';
+        msg.textContent = '';
       }
 
-      btn.disabled = true;
+      serverChangeModalType(type);
 
+      // Render master package suggestions
+      serverRenderPackageSuggestions(item ? item.package_id : '');
+
+      const pkgInput = document.getElementById('sql-field-package');
+      if (pkgInput && !pkgInput._hasPkgInputListener) {
+        pkgInput._hasPkgInputListener = true;
+        pkgInput.addEventListener('input', (e) => {
+          const val = e.target.value.trim();
+          serverUpdatePackageHint(val);
+          const chips = document.querySelectorAll('.server-pkg-chip');
+          chips.forEach(c => {
+            const id = c.getAttribute('data-pkg-id');
+            const icon = c.querySelector('i');
+            const codeSpan = c.querySelector('span.font-mono');
+            if (id === val) {
+              c.className = "server-pkg-chip px-2.5 py-1.5 rounded-lg border text-xs flex items-center gap-1.5 transition-all cursor-pointer bg-indigo-600 border-indigo-600 text-white font-bold shadow-2xs";
+              if (icon) icon.className = "ph ph-stack text-white text-xs";
+              if (codeSpan) codeSpan.className = "text-[10px] font-mono text-indigo-100";
+            } else {
+              c.className = "server-pkg-chip px-2.5 py-1.5 rounded-lg border text-xs flex items-center gap-1.5 transition-all cursor-pointer bg-white border-slate-200 text-slate-700 hover:border-indigo-300 hover:bg-indigo-50/60";
+              if (icon) icon.className = "ph ph-stack text-indigo-500 text-xs";
+              if (codeSpan) codeSpan.className = "text-[10px] font-mono text-slate-400";
+            }
+          });
+        });
+      }
+
+      const modal = document.getElementById('sql-modal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function serverCloseModal() {
+      const modal = document.getElementById('sql-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function serverChangeModalType(type) {
+      document.getElementById('server-field-type').value = type;
+      const btnApi = document.getElementById('server-tab-btn-api');
+      const btnSql = document.getElementById('server-tab-btn-sql');
+      const apiBox = document.getElementById('server-api-fields');
+      const sqlBox = document.getElementById('server-sql-fields');
+      const iconBox = document.getElementById('server-modal-icon');
+
+      if (type === 'api') {
+        if (btnApi) btnApi.className = "py-2 rounded-lg text-xs font-bold bg-white text-emerald-700 shadow-2xs flex items-center justify-center gap-1.5 transition-all";
+        if (btnSql) btnSql.className = "py-2 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 flex items-center justify-center gap-1.5 transition-all";
+        if (apiBox) apiBox.classList.remove('hidden');
+        if (sqlBox) sqlBox.classList.add('hidden');
+        if (iconBox) {
+          iconBox.className = "w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center";
+          iconBox.innerHTML = '<i class="ph ph-lightning text-lg"></i>';
+        }
+      } else {
+        if (btnSql) btnSql.className = "py-2 rounded-lg text-xs font-bold bg-white text-blue-700 shadow-2xs flex items-center justify-center gap-1.5 transition-all";
+        if (btnApi) btnApi.className = "py-2 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 flex items-center justify-center gap-1.5 transition-all";
+        if (sqlBox) sqlBox.classList.remove('hidden');
+        if (apiBox) apiBox.classList.add('hidden');
+        if (iconBox) {
+          iconBox.className = "w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center";
+          iconBox.innerHTML = '<i class="ph ph-database text-lg"></i>';
+        }
+      }
+    }
+
+    function serverUpdateApiUrlPreview() {
+      const hostEl = document.getElementById('api-field-host');
+      const hiddenUrlEl = document.getElementById('api-field-url');
+
+      if (!hostEl || !hiddenUrlEl) return;
+
+      let raw = hostEl.value.trim();
+      if (!raw) {
+        hiddenUrlEl.value = '';
+        return;
+      }
+
+      let proto = 'https://';
+      if (raw.startsWith('http://')) {
+        proto = 'http://';
+        raw = raw.replace(/^http:\/\//i, '');
+      } else if (raw.startsWith('https://')) {
+        proto = 'https://';
+        raw = raw.replace(/^https:\/\//i, '');
+      }
+
+      // If user pasted full url, clean it
+      raw = raw.replace(/^\/+/, '');
+      let host = raw.split('/')[0].trim();
+
+      // If no port, default to 1188
+      if (host && !host.includes(':')) {
+        host = `${host}:1188`;
+      }
+
+      hiddenUrlEl.value = `${proto}${host}/rk7api/v0/xmlinterface.xml`;
+    }
+
+    async function serverTestFormConnection() {
+      const type = document.getElementById('server-field-type').value || 'api';
+      const btn = document.getElementById('sql-btn-test');
+      const msg = document.getElementById('sql-modal-msg');
+
+      btn.disabled = true;
       btn.innerHTML = '<i class="ph ph-spinner animate-spin text-base"></i> Đang test...';
 
       try {
-
-        const res = await window.pywebview.api.sql_test_connection(profile);
-
-        msg.classList.remove('hidden');
-
-        if (res.success) {
-
-          msg.className = 'p-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-800 border border-emerald-200';
-
-          msg.innerHTML = `<strong>Thành công!</strong> ${res.message}<br><span class="text-[11px] text-emerald-600 font-mono">${res.server_version || ''}</span>`;
-
+        let res;
+        if (type === 'api') {
+          serverUpdateApiUrlPreview();
+          const hostVal = document.getElementById('api-field-host').value.trim();
+          if (!hostVal) {
+            alert('Vui lòng nhập Địa chỉ IP / Host máy chủ RK7!');
+            btn.disabled = false;
+            btn.innerHTML = '<i class="ph ph-plugs text-base"></i> Kiểm tra kết nối';
+            return;
+          }
+          const profile = {
+            url: document.getElementById('api-field-url').value.trim(),
+            user: document.getElementById('api-field-user').value.trim() || 'httpapi',
+            password: document.getElementById('api-field-pass').value.trim() || '1'
+          };
+          res = await window.pywebview.api.api_test_connection(profile);
         } else {
+          const profile = {
+            host: document.getElementById('sql-field-host').value.trim(),
+            database: document.getElementById('sql-field-db').value.trim(),
+            user: document.getElementById('sql-field-user').value.trim(),
+            password: document.getElementById('sql-field-pass').value.trim()
+          };
+          if (!profile.host || !profile.database) {
+            alert('Vui lòng nhập Host và Database Name!');
+            btn.disabled = false;
+            btn.innerHTML = '<i class="ph ph-plugs text-base"></i> Kiểm tra kết nối';
+            return;
+          }
+          res = await window.pywebview.api.sql_test_connection(profile);
+        }
 
+        if (msg) {
+          msg.classList.remove('hidden');
+          if (res.success) {
+            msg.className = 'p-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-800 border border-emerald-200';
+            msg.innerHTML = `<strong>Thành công!</strong> ${res.message}<br><span class="text-[11px] text-emerald-600 font-mono">Phiên bản: ${res.server_version || ''} | Bảng: ${res.ref_tables_count || ''}</span>`;
+          } else {
+            msg.className = 'p-3 rounded-xl text-xs font-medium bg-rose-50 text-rose-800 border border-rose-200';
+            msg.innerHTML = `<strong>Thất bại:</strong> ${res.error}`;
+          }
+        }
+      } catch (err) {
+        if (msg) {
           msg.className = 'p-3 rounded-xl text-xs font-medium bg-rose-50 text-rose-800 border border-rose-200';
-
-          msg.innerHTML = `<strong>Thất bại:</strong> ${res.error}`;
-
+          msg.innerHTML = `<strong>Lỗi:</strong> ${err.message || err}`;
+          msg.classList.remove('hidden');
         }
-
-      } catch (err) {
-
-        msg.className = 'p-3 rounded-xl text-xs font-medium bg-rose-50 text-rose-800 border border-rose-200';
-
-        msg.innerHTML = `<strong>Lỗi:</strong> ${err.message || err}`;
-
-        msg.classList.remove('hidden');
-
       } finally {
-
         btn.disabled = false;
-
         btn.innerHTML = '<i class="ph ph-plugs text-base"></i> Kiểm tra kết nối';
-
       }
-
     }
 
-
-
-    async function sqlTestConnectionDirect(id) {
-
-      const item = sqlConnectionsList.find(c => c.id === id);
-
-      if (!item) return;
-
-      try {
-
-        const res = await window.pywebview.api.sql_test_connection(item);
-
-        if (res.success) {
-
-          alert(`Kết nối thành công tới database '${item.database}'!
-
-Server: ${res.server_version || item.host}`);
-
-        } else {
-
-          alert(`Không thể kết nối tới '${item.name}':
-
-${res.error}`);
-
-        }
-
-      } catch (err) {
-
-        alert('Lỗi: ' + (err.message || err));
-
-      }
-
-    }
-
-
-
-    async function sqlSaveFormConnection() {
-
+    async function serverSaveFormConnection() {
+      const type = document.getElementById('server-field-type').value || 'api';
       const name = document.getElementById('sql-field-name').value.trim();
-
-      const host = document.getElementById('sql-field-host').value.trim();
-
-      const db = document.getElementById('sql-field-db').value.trim();
-
       let pkg = document.getElementById('sql-field-package').value.trim();
+      const id = document.getElementById('sql-field-id').value || null;
 
-      if (!name || !host || !db) {
-
-        alert('Vui lòng điền đầy đủ Tên hồ sơ, Host và Database!');
-
+      if (!name) {
+        alert('Vui lòng nhập Tên chuỗi / Nhà hàng!');
         return;
-
       }
-
       if (!pkg) {
-
         pkg = name.toLowerCase().replace(/[^a-z0-9_]/g, '_');
-
       }
 
-      const profile = {
-
-        id: document.getElementById('sql-field-id').value || null,
-
-        name: name,
-
-        package_id: pkg,
-
-        host: host,
-
-        database: db,
-
-        user: document.getElementById('sql-field-user').value.trim(),
-
-        password: document.getElementById('sql-field-pass').value.trim(),
-
-      };
-
       try {
-
-        const res = await window.pywebview.api.sql_save_connection(profile);
-
-        if (res.success) {
-
-          sqlConnectionsList = res.connections || [];
-
-          sqlRenderConnections();
-
-          sqlCloseModal();
-
+        let res;
+        if (type === 'api') {
+          serverUpdateApiUrlPreview();
+          const hostVal = document.getElementById('api-field-host').value.trim();
+          if (!hostVal) {
+            alert('Vui lòng nhập Địa chỉ IP / Host máy chủ RK7!');
+            return;
+          }
+          const profile = {
+            id: id,
+            name: name,
+            type: 'api',
+            package_id: pkg,
+            url: document.getElementById('api-field-url').value.trim(),
+            user: document.getElementById('api-field-user').value.trim() || 'httpapi',
+            password: document.getElementById('api-field-pass').value.trim() || '1'
+          };
+          res = await window.pywebview.api.api_save_connection(profile);
         } else {
-
-          alert('Không thể lưu cấu hình: ' + res.error);
-
+          const host = document.getElementById('sql-field-host').value.trim();
+          const db = document.getElementById('sql-field-db').value.trim();
+          if (!host || !db) {
+            alert('Vui lòng nhập Host và Database Name!');
+            return;
+          }
+          const profile = {
+            id: id,
+            name: name,
+            type: 'sql',
+            package_id: pkg,
+            host: host,
+            database: db,
+            user: document.getElementById('sql-field-user').value.trim(),
+            password: document.getElementById('sql-field-pass').value.trim()
+          };
+          res = await window.pywebview.api.sql_save_connection(profile);
         }
 
+        if (res.success) {
+          serverCloseModal();
+          await serverLoadConnections();
+        } else {
+          alert('Không thể lưu kết nối: ' + (res.error || 'Lỗi không xác định'));
+        }
       } catch (err) {
-
         alert('Lỗi: ' + (err.message || err));
-
       }
-
     }
 
-
-
-    async function sqlDeleteConnection(id) {
-
-      if (!confirm('Bạn có chắc chắn muốn xóa hồ sơ kết nối database này?')) return;
-
+    async function serverDeleteConnection(id, type) {
+      if (!confirm('Bạn có chắc chắn muốn xóa hồ sơ kết nối máy chủ này không?')) return;
       try {
-
-        const res = await window.pywebview.api.sql_delete_connection(id);
-
-        if (res.success) {
-
-          sqlConnectionsList = res.connections || [];
-
-          sqlRenderConnections();
-
+        let res;
+        if (type === 'api') {
+          res = await window.pywebview.api.api_delete_connection(id);
         } else {
+          res = await window.pywebview.api.sql_delete_connection(id);
+        }
+        if (res.success) {
+          await serverLoadConnections();
+        } else {
+          alert('Không thể xóa: ' + (res.error || 'Lỗi'));
+        }
+      } catch (err) {
+        alert('Lỗi: ' + (err.message || err));
+      }
+    }
 
-          alert('Không thể xóa: ' + res.error);
+    async function serverTestConnectionDirect(item) {
+      try {
+        let res;
+        if (item.type === 'api') {
+          res = await window.pywebview.api.api_test_connection(item);
+        } else {
+          res = await window.pywebview.api.sql_test_connection(item);
+        }
+        if (res.success) {
+          alert(`Kết nối thành công tới máy chủ!\n\n${res.message || ''}\nServer: ${res.server_version || ''}`);
+        } else {
+          alert(`Không thể kết nối tới '${item.name}':\n\n${res.error}`);
+        }
+      } catch (err) {
+        alert('Lỗi: ' + (err.message || err));
+      }
+    }
 
+    // ==========================================
+    // LIVE PROGRESS MODAL FOR SYNC
+    // ==========================================
+
+    const SYNC_TABLE_DEFS = [
+      { key: "RESTAURANTS", name: "1. RESTAURANTS", desc: "Danh sách nhà hàng & cơ sở", icon: "ph-buildings", iconColor: "text-blue-500 bg-blue-50 border-blue-200" },
+      { key: "PRICETYPES", name: "2. PRICETYPES", desc: "Bảng giá bán hàng", icon: "ph-tag", iconColor: "text-amber-500 bg-amber-50 border-amber-200" },
+      { key: "EMPLOYEES", name: "3. EMPLOYEES", desc: "Nhân viên & thu ngân", icon: "ph-users", iconColor: "text-indigo-500 bg-indigo-50 border-indigo-200" },
+      { key: "CURRENCIES", name: "4. CURRENCIES", desc: "Hình thức thanh toán & loại tiền", icon: "ph-coins", iconColor: "text-emerald-500 bg-emerald-50 border-emerald-200" },
+      { key: "DISCOUNTS", name: "5. DISCOUNTS", desc: "Chiết khấu & khuyến mãi", icon: "ph-ticket", iconColor: "text-rose-500 bg-rose-50 border-rose-200" },
+      { key: "TRADEGROUPS", name: "6. TRADEGROUPS", desc: "Nhóm bán hàng", icon: "ph-storefront", iconColor: "text-purple-500 bg-purple-50 border-purple-200" },
+      { key: "ORDERTYPES", name: "7. ORDERTYPES", desc: "Loại đơn hàng (Dine-in, Grab...)", icon: "ph-receipt", iconColor: "text-cyan-500 bg-cyan-50 border-cyan-200" },
+      { key: "CATEGLIST", name: "8. CATEGLIST", desc: "Cây nhóm thực đơn", icon: "ph-folder-notch-open", iconColor: "text-orange-500 bg-orange-50 border-orange-200" },
+      { key: "TABLES", name: "9. TABLES", desc: "Danh mục bàn", icon: "ph-grid-four", iconColor: "text-teal-500 bg-teal-50 border-teal-200" },
+      { key: "MODIFIERS", name: "10. MODIFIERS", desc: "Topping & món phụ", icon: "ph-pizza", iconColor: "text-pink-500 bg-pink-50 border-pink-200" },
+      { key: "PROPERTIES", name: "11. PROPERTIES", desc: "Mã SAP, MONTV, NOTINVOICE", icon: "ph-sliders-horizontal", iconColor: "text-violet-500 bg-violet-50 border-violet-200" },
+      { key: "MENUITEMS", name: "12. MENUITEMS", desc: "Toàn bộ danh mục món ăn", icon: "ph-cooking-pot", iconColor: "text-amber-600 bg-amber-50 border-amber-200" }
+    ];
+
+    function serverOpenSyncModal(item) {
+      const modal = document.getElementById('server-sync-modal');
+      const title = document.getElementById('sync-modal-title');
+      const subtitle = document.getElementById('sync-modal-subtitle');
+      const statusText = document.getElementById('sync-modal-status-text');
+      const percentEl = document.getElementById('sync-modal-percent');
+      const bar = document.getElementById('sync-modal-progress-bar');
+      const closeBtn = document.getElementById('sync-modal-btn-close');
+      const stepsContainer = document.getElementById('sync-modal-steps');
+      const badgeEl = document.getElementById('sync-modal-badge');
+      const stepCounter = document.getElementById('sync-modal-step-counter');
+      const protocolTag = document.getElementById('sync-modal-protocol-tag');
+      const spotlightCard = document.getElementById('sync-spotlight-card');
+      const spotlightIcon = document.getElementById('sync-spotlight-icon');
+      const spotlightLabel = document.getElementById('sync-spotlight-step-label');
+
+      const isApi = (item.type === 'api');
+
+      if (title) title.textContent = 'Đồng bộ Master Data';
+      if (subtitle) {
+        subtitle.textContent = item.name || (isApi ? (item.url || 'API Server') : (item.host || 'SQL Server'));
+      }
+      const pkgTag = document.getElementById('sync-modal-pkg-tag');
+      if (pkgTag) {
+        pkgTag.textContent = `gói: ${item.package_id || 'masterdata'}`;
+      }
+
+      if (protocolTag) {
+        if (isApi) {
+          protocolTag.className = "px-2 py-0.5 rounded-md text-[10px] font-mono font-extrabold bg-emerald-50 text-emerald-700 border border-emerald-200 inline-flex items-center gap-1 shrink-0 whitespace-nowrap";
+          protocolTag.innerHTML = '<i class="ph ph-lightning text-emerald-600"></i> RK7 XML API';
+        } else {
+          protocolTag.className = "px-2 py-0.5 rounded-md text-[10px] font-mono font-extrabold bg-blue-50 text-blue-700 border border-blue-200 inline-flex items-center gap-1 shrink-0 whitespace-nowrap";
+          protocolTag.innerHTML = '<i class="ph ph-database text-blue-600"></i> SQL Server (NOLOCK)';
+        }
+      }
+
+      if (statusText) statusText.textContent = isApi ? "Đang gửi yêu cầu kết nối tới trạm RK7..." : "Đang kết nối ADODB tới SQL Server...";
+      if (percentEl) percentEl.textContent = "0%";
+      if (bar) {
+        bar.style.width = "0%";
+        bar.className = "h-full bg-gradient-to-r from-indigo-500 via-sky-400 to-emerald-400 rounded-full transition-all duration-300";
+      }
+      if (stepCounter) stepCounter.textContent = "0 / 12";
+
+      if (spotlightCard) {
+        spotlightCard.className = "p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950 text-white shadow-lg border border-slate-800 transition-all";
+      }
+      if (spotlightIcon) {
+        spotlightIcon.setAttribute('src', 'icons/nexushub.json');
+        spotlightIcon.setAttribute('trigger', 'loop');
+        spotlightIcon.setAttribute('colors', 'primary:#ffffff,secondary:#38bdf8');
+      }
+      if (spotlightLabel) spotlightLabel.textContent = "BẮT ĐẦU KHỞI TẠO";
+
+      if (badgeEl) {
+        badgeEl.className = "px-3.5 py-1.5 rounded-full text-xs font-extrabold tracking-wide uppercase bg-amber-50 text-amber-700 border border-amber-200 flex items-center gap-2 shadow-2xs shrink-0 whitespace-nowrap";
+        badgeEl.innerHTML = '<span class="relative flex h-2 w-2 shrink-0"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span></span><span>Đang đồng bộ</span>';
+      }
+
+      if (closeBtn) {
+        closeBtn.disabled = true;
+        closeBtn.className = "h-10 px-6 rounded-xl bg-slate-200 text-slate-400 font-extrabold text-xs inline-flex items-center gap-1.5 transition-all shadow-xs cursor-not-allowed";
+        closeBtn.innerHTML = 'Đóng';
+      }
+
+      // Render initial step checklist with custom icons
+      if (stepsContainer) {
+        stepsContainer.innerHTML = SYNC_TABLE_DEFS.map((s, idx) => `
+          <div id="sync-step-${s.key}" class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-slate-200/80 transition-all hover:border-slate-300">
+            <div class="flex items-center gap-3 min-w-0">
+              <span id="sync-step-icon-${s.key}" class="w-8 h-8 rounded-xl flex items-center justify-center ${s.iconColor} border shrink-0 opacity-70 shadow-2xs">
+                <i class="ph ${s.icon} text-base"></i>
+              </span>
+              <div class="truncate">
+                <span class="font-extrabold text-slate-800 text-xs">${s.name}:</span>
+                <span class="text-slate-500 ml-1.5 text-[11px]">${s.desc}</span>
+              </div>
+            </div>
+            <span id="sync-step-badge-${s.key}" class="text-[10px] font-mono text-slate-400 bg-slate-100 px-2 py-0.5 rounded-md shrink-0">chờ lượt</span>
+          </div>
+        `).join('');
+      }
+
+      // Start elapsed timer
+      serverSyncStartTime = Date.now();
+      const elapsedEl = document.getElementById('sync-modal-elapsed');
+      if (serverSyncTimer) clearInterval(serverSyncTimer);
+      serverSyncTimer = setInterval(() => {
+        const sec = Math.floor((Date.now() - serverSyncStartTime) / 1000);
+        if (elapsedEl) {
+          elapsedEl.innerHTML = `
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-slate-200 font-bold font-mono text-xs shadow-2xs">
+              <i class="ph ph-timer text-indigo-500 text-sm"></i> Thời gian: ${sec}s
+            </span>
+          `;
+        }
+      }, 500);
+
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function serverCloseSyncModal() {
+      if (serverSyncTimer) {
+        clearInterval(serverSyncTimer);
+        serverSyncTimer = null;
+      }
+      const modal = document.getElementById('server-sync-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    // Window global callback called by evaluate_js from python backend (both API & SQL)
+    window.onMasterApiSyncProgress = function(data) {
+      try {
+        const { step, total, table, status, message, count } = data;
+        const percent = Math.min(100, Math.round((step / (total || 12)) * 100));
+
+        const bar = document.getElementById('sync-modal-progress-bar');
+        const percentEl = document.getElementById('sync-modal-percent');
+        const statusText = document.getElementById('sync-modal-status-text');
+        const stepCounter = document.getElementById('sync-modal-step-counter');
+        const spotlightCard = document.getElementById('sync-spotlight-card');
+        const spotlightIconWrap = document.getElementById('sync-spotlight-icon-wrap');
+        const spotlightIcon = document.getElementById('sync-spotlight-icon');
+        const spotlightLabel = document.getElementById('sync-spotlight-step-label');
+
+        if (bar) bar.style.width = `${percent}%`;
+        if (percentEl) percentEl.textContent = `${percent}%`;
+        if (statusText) statusText.textContent = message;
+        if (stepCounter && step > 0) stepCounter.textContent = `${Math.min(step, 12)} / 12`;
+
+        if (spotlightLabel && step > 0 && table !== 'FINISHED' && table !== 'ERROR') {
+          spotlightLabel.textContent = `BƯỚC ${Math.min(step, 12)} / 12: ${table}`;
         }
 
-      } catch (err) {
+        // Step checklist element
+        const stepRow = document.getElementById(`sync-step-${table}`);
+        const stepIcon = document.getElementById(`sync-step-icon-${table}`);
+        const stepBadge = document.getElementById(`sync-step-badge-${table}`);
+        const matchedDef = SYNC_TABLE_DEFS.find(s => s.key === table);
 
-        alert('Lỗi: ' + (err.message || err));
+        if (stepRow && stepIcon && stepBadge) {
+          if (status === 'running') {
+            stepRow.className = "flex items-center justify-between p-2.5 rounded-xl bg-indigo-50/80 border border-indigo-300 shadow-2xs transition-all";
+            stepIcon.className = `w-8 h-8 rounded-xl flex items-center justify-center ${matchedDef?.iconColor || 'text-indigo-600 bg-indigo-50 border-indigo-200'} border-2 border-indigo-500 shrink-0 shadow-xs`;
+            stepIcon.innerHTML = `<i class="ph-bold ${matchedDef?.icon || 'ph-gear'} text-base"></i>`;
+            stepBadge.className = "text-[10px] font-mono text-indigo-700 font-extrabold shrink-0 bg-indigo-100 px-2.5 py-1 rounded-md flex items-center gap-1.5 shadow-2xs";
+            stepBadge.innerHTML = '<i class="ph ph-spinner animate-spin text-xs"></i> đang tải...';
+            stepRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            if (spotlightIcon) {
+              spotlightIcon.setAttribute('src', 'icons/nexushub.json');
+              spotlightIcon.setAttribute('trigger', 'loop');
+            }
+          } else if (status === 'done') {
+            stepRow.className = "flex items-center justify-between p-2.5 rounded-xl bg-white border border-slate-200 transition-all hover:border-slate-300";
+            stepIcon.className = `w-8 h-8 rounded-xl flex items-center justify-center ${matchedDef?.iconColor || 'text-emerald-700 bg-emerald-50 border-emerald-200'} border shrink-0 shadow-2xs opacity-100`;
+            stepIcon.innerHTML = `<i class="ph-bold ${matchedDef?.icon || 'ph-check'} text-base"></i>`;
+            const formattedCount = (count !== null && count !== undefined) ? `${Number(count).toLocaleString()} bản ghi` : "xong";
+            stepBadge.className = "text-[11px] font-mono text-emerald-800 font-extrabold shrink-0 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-lg flex items-center gap-1.5 shadow-2xs";
+            stepBadge.innerHTML = `<i class="ph-bold ph-check text-xs text-emerald-600"></i> ${formattedCount}`;
+          } else if (status === 'error') {
+            stepRow.className = "flex items-center justify-between p-2.5 rounded-xl bg-rose-50 border border-rose-200 transition-all";
+            stepIcon.className = "w-8 h-8 rounded-xl flex items-center justify-center text-rose-700 bg-rose-100 border border-rose-200 shrink-0";
+            stepIcon.innerHTML = '<i class="ph-bold ph-x text-base"></i>';
+            stepBadge.className = "text-[10px] font-mono text-rose-700 font-bold shrink-0 bg-rose-100 px-2 py-0.5 rounded-md";
+            stepBadge.textContent = "lỗi";
+          }
+        }
 
+        if (table === 'FINISHED') {
+          // STOP THE TIMER IMMEDIATELY
+          if (serverSyncTimer) {
+            clearInterval(serverSyncTimer);
+            serverSyncTimer = null;
+          }
+          const finalSec = Math.max(1, Math.round((Date.now() - serverSyncStartTime) / 1000));
+          const elapsedEl = document.getElementById('sync-modal-elapsed');
+          if (elapsedEl) {
+            elapsedEl.innerHTML = `
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200 font-extrabold font-mono text-xs shadow-2xs">
+                <i class="ph-fill ph-check-circle text-emerald-600 text-sm"></i> Hoàn tất trong ${finalSec}s
+              </span>
+            `;
+          }
+
+          const badgeEl = document.getElementById('sync-modal-badge');
+          if (badgeEl) {
+            badgeEl.className = "px-3.5 py-1.5 rounded-full text-xs font-extrabold tracking-wide uppercase bg-emerald-50 text-emerald-800 border border-emerald-300 flex items-center gap-1.5 shadow-2xs shrink-0 whitespace-nowrap";
+            badgeEl.innerHTML = '<i class="ph-fill ph-check-circle text-emerald-600 text-sm"></i> Hoàn thành';
+          }
+
+          if (bar) {
+            bar.style.width = '100%';
+            bar.className = "h-full bg-emerald-400 rounded-full transition-all duration-300";
+          }
+          if (percentEl) percentEl.textContent = '100%';
+          if (stepCounter) stepCounter.textContent = '12 / 12';
+
+          if (spotlightCard) {
+            spotlightCard.className = "p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950 text-white shadow-lg border border-emerald-700/60 transition-all";
+          }
+          if (spotlightIconWrap) {
+            spotlightIconWrap.className = "w-11 h-11 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0 shadow-inner";
+          }
+          if (spotlightIcon) {
+            spotlightIcon.setAttribute('src', 'icons/sync/DISCOUNTS.json');
+            spotlightIcon.setAttribute('trigger', 'loop');
+          }
+          if (spotlightLabel) {
+            spotlightLabel.textContent = "HOÀN TẤT ĐỒNG BỘ";
+          }
+
+          const closeBtn = document.getElementById('sync-modal-btn-close');
+          if (closeBtn) {
+            closeBtn.disabled = false;
+            closeBtn.className = "h-10 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs inline-flex items-center gap-2 transition-all shadow-md cursor-pointer";
+            closeBtn.innerHTML = '<i class="ph-bold ph-check text-sm"></i> Đóng & Cập nhật';
+          }
+        } else if (table === 'ERROR') {
+          // STOP THE TIMER ON ERROR
+          if (serverSyncTimer) {
+            clearInterval(serverSyncTimer);
+            serverSyncTimer = null;
+          }
+          if (spotlightIcon) {
+            spotlightIcon.setAttribute('src', 'icons/issues.json');
+            spotlightIcon.setAttribute('trigger', 'loop');
+            spotlightIcon.setAttribute('colors', 'primary:#e11d48,secondary:#e11d48');
+          }
+          const badgeEl = document.getElementById('sync-modal-badge');
+          if (badgeEl) {
+            badgeEl.className = "px-3.5 py-1.5 rounded-full text-xs font-extrabold tracking-wide uppercase bg-rose-50 text-rose-700 border border-rose-200 flex items-center gap-1.5 shadow-2xs shrink-0 whitespace-nowrap";
+            badgeEl.innerHTML = '<i class="ph-fill ph-warning-circle text-rose-600"></i> Lỗi đồng bộ';
+          }
+
+          if (bar) {
+            bar.className = "h-full bg-rose-500 rounded-full transition-all duration-300";
+          }
+
+          if (spotlightCard) {
+            spotlightCard.className = "p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-rose-950 to-slate-900 text-white shadow-lg border border-rose-800 transition-all";
+          }
+          if (spotlightIconWrap) {
+            spotlightIconWrap.className = "w-11 h-11 rounded-xl bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-rose-400 shrink-0 shadow-inner";
+          }
+          if (spotlightLabel) {
+            spotlightLabel.textContent = "ĐỒNG BỘ THẤT BẠI";
+          }
+
+          const closeBtn = document.getElementById('sync-modal-btn-close');
+          if (closeBtn) {
+            closeBtn.disabled = false;
+            closeBtn.className = "h-10 px-6 rounded-xl bg-slate-800 hover:bg-slate-900 text-white font-extrabold text-xs inline-flex items-center gap-2 transition-all shadow-md cursor-pointer";
+            closeBtn.innerHTML = 'Đóng';
+          }
+          const statusText = document.getElementById('sync-modal-status-text');
+          if (statusText) statusText.textContent = `Lỗi: ${message || 'Đồng bộ thất bại'}`;
+        }
+      } catch (e) {
+        console.error("onMasterApiSyncProgress error:", e);
       }
+    };
 
-    }
-
-
-
-    async function sqlRunSync(id) {
-
-      const btn = document.getElementById(`sql-btn-sync-${id}`);
-
-      const origText = btn ? btn.innerHTML : '';
-
-      if (btn) {
-
-        btn.disabled = true;
-
-        btn.innerHTML = '<i class="ph ph-spinner animate-spin text-base"></i> Đang đồng bộ...';
-
-      }
+    async function serverRunSync(item) {
+      serverOpenSyncModal(item);
 
       try {
+        let res;
+        if (item.type === 'api') {
+          res = await window.pywebview.api.api_sync_connection(item.id);
+        } else {
+          res = await window.pywebview.api.sql_sync_connection(item.id);
+        }
 
-        const res = await window.pywebview.api.sql_sync_connection(id);
+        // Always ensure timer is stopped
+        if (serverSyncTimer) {
+          clearInterval(serverSyncTimer);
+          serverSyncTimer = null;
+        }
 
-        if (res.success) {
+        const closeBtn = document.getElementById('sync-modal-btn-close');
+        if (closeBtn) {
+          closeBtn.disabled = false;
+          closeBtn.className = "h-10 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs inline-flex items-center gap-2 transition-all shadow-md cursor-pointer";
+          closeBtn.innerHTML = '<i class="ph-bold ph-check text-sm"></i> Đóng & Cập nhật';
+        }
 
-          alert(`Đồng bộ thành công!
+        if (res && res.success) {
+          const statusText = document.getElementById('sync-modal-status-text');
+          if (statusText) statusText.textContent = `Đồng bộ hoàn tất! (${res.stats?.restaurants_count || 0} quán, ${res.stats?.menu_items_count || 0} món)`;
 
-- Số nhà hàng: ${res.stats?.restaurants_count || 0}
+          const elapsedEl = document.getElementById('sync-modal-elapsed');
+          const finalDuration = res.stats?.duration_sec || Math.max(1, Math.round((Date.now() - serverSyncStartTime) / 1000));
+          if (elapsedEl) {
+            elapsedEl.innerHTML = `
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200 font-extrabold font-mono text-xs shadow-2xs">
+                <i class="ph-fill ph-check-circle text-emerald-600 text-sm"></i> Hoàn tất trong ${finalDuration}s
+              </span>
+            `;
+          }
 
-- Số món: ${res.stats?.menu_items_count || 0}
-
-- Nhân viên: ${res.stats?.employees_count || 0}`);
-
-          await sqlLoadConnections();
-
+          await serverLoadConnections();
           if (typeof nexusLoadMasterPackages === 'function') {
-
             await nexusLoadMasterPackages();
-
           }
-
           if (typeof checkviewReloadMasterPackages === 'function') {
-
             await checkviewReloadMasterPackages();
-
           }
-
         } else {
-
-          alert(`Lỗi đồng bộ SQL:
-
-${res.error}`);
-
+          const statusText = document.getElementById('sync-modal-status-text');
+          if (statusText) statusText.textContent = `Thất bại: ${res?.error || 'Lỗi đồng bộ'}`;
         }
-
       } catch (err) {
-
-        alert('Lỗi: ' + (err.message || err));
-
-      } finally {
-
-        if (btn) {
-
-          btn.disabled = false;
-
-          btn.innerHTML = origText;
-
+        if (serverSyncTimer) {
+          clearInterval(serverSyncTimer);
+          serverSyncTimer = null;
         }
-
+        const closeBtn = document.getElementById('sync-modal-btn-close');
+        if (closeBtn) {
+          closeBtn.disabled = false;
+          closeBtn.className = "h-10 px-6 rounded-xl bg-slate-800 hover:bg-slate-900 text-white font-extrabold text-xs inline-flex items-center gap-2 transition-all shadow-md cursor-pointer";
+          closeBtn.innerHTML = 'Đóng';
+        }
+        const statusText = document.getElementById('sync-modal-status-text');
+        if (statusText) statusText.textContent = `Lỗi ngoại lệ: ${err.message || err}`;
       }
-
     }
 
 
@@ -18185,7 +19458,7 @@ ${res.error}`);
           showAppUpdateModal(res);
         } else {
           if (statusText) {
-            statusText.innerHTML = `<span class="text-emerald-600 font-bold flex items-center gap-1"><i class="ph ph-check-circle"></i> Bạn đang dùng phiên bản mới nhất (v${res.current_version || '4.2.0'}).</span>`;
+            statusText.innerHTML = `<span class="text-emerald-600 font-bold flex items-center gap-1"><i class="ph ph-check-circle"></i> Bạn đang dùng phiên bản mới nhất (v${res.current_version || '4.3.0'}).</span>`;
           }
         }
       } catch (err) {
@@ -18219,7 +19492,7 @@ ${res.error}`);
           showAppUpdateModal(res);
         } else {
           if (statusText) {
-            statusText.innerHTML = `<span class="text-slate-600 font-medium">Bạn đang dùng phiên bản mới nhất (${res.current_version || 'v4.2.0'}).</span>`;
+            statusText.innerHTML = `<span class="text-slate-600 font-medium">Bạn đang dùng phiên bản mới nhất (${res.current_version || 'v4.3.0'}).</span>`;
           }
         }
       } catch (err) {
@@ -18414,6 +19687,9 @@ ${res.error}`);
         }
       }
     };
+
+    // ==========================================
+    // ==========================================
 </script>
 
   <!-- ==================== MODAL: ABOUT & CHANGELOG ==================== -->
@@ -18428,7 +19704,7 @@ ${res.error}`);
           <div>
             <div class="flex items-center gap-2">
               <h3 class="text-base font-extrabold text-[#101828]">RK7 PRO Manager</h3>
-              <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-blue-100 text-blue-700 border border-blue-200">v4.2.0 Official</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-blue-100 text-blue-700 border border-blue-200">v4.3.0 Official</span>
             </div>
             <p class="text-xs text-[#667085] mt-0.5">Shortcut Manager, UDB CheckView & Script Vault</p>
           </div>
@@ -18443,7 +19719,7 @@ ${res.error}`);
         <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center justify-between">
           <div>
             <div class="text-[11px] font-bold text-slate-700 uppercase tracking-wide">Trạng thái phiên bản</div>
-            <div class="text-xs text-slate-500 mt-0.5" id="about-modal-status">Đang chạy phiên bản v4.2.0</div>
+            <div class="text-xs text-slate-500 mt-0.5" id="about-modal-status">Đang chạy phiên bản v4.3.0</div>
           </div>
           <button id="btn-about-check-update" onclick="checkAppUpdateFromAbout()" class="h-8 px-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-2xs transition-all">
             <i class="ph ph-arrows-clockwise text-sm"></i>
@@ -18456,6 +19732,24 @@ ${res.error}`);
             <i class="ph ph-sparkle text-amber-500 text-sm"></i>
             <span>Nhật ký cập nhật &amp; Thay đổi (Changelog)</span>
           </h4>
+
+          <!-- Version 4.3.0 -->
+          <div class="p-3.5 rounded-2xl bg-white border border-blue-200/90 shadow-2xs space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                <i class="ph ph-sparkle text-blue-600"></i>
+                Phiên bản 4.3.0 (Nexus HUB Đồng Bộ RK7 XML API, Tối Ưu UX &amp; Thiết Kế Độc Lập)
+              </span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-200">Minor</span>
+            </div>
+            <ul class="text-[11px] text-slate-600 space-y-1 pl-4 list-disc leading-relaxed">
+              <li><b>Nexus HUB (Trung tâm chỉ huy &amp; đồng bộ dữ liệu):</b> Hợp nhất quản lý kết nối cơ sở dữ liệu nội bộ (MS SQL Server) và API từ xa (RK7 XML API). Đồng bộ tự động 12 bảng tham chiếu Master Data vào kho dùng chung.</li>
+              <li><b>Đồng bộ RK7 XML API Siêu Tốc (Zero-Config):</b> Rút gọn cấu hình chỉ cần nhập IP hoặc IP:Cổng (tự động điền cổng mặc định 1188, endpoint <code>/rk7api/v0/xmlinterface.xml</code> và tài khoản <code>httpapi</code>/<code>1</code>), loại bỏ thao tác rườm rà.</li>
+              <li><b>Bảng điều khiển tiến trình đồng bộ thời gian thực:</b> Giao diện Command Hub với tiến trình đồng bộ 12 danh mục Master trực quan, thẻ trạng thái tổng hợp kèm tỷ lệ % và tên bảng đang xử lý, chỉ huy mượt mà.</li>
+              <li><b>Tối ưu trải nghiệm bảng kết nối (UX Ergonomics):</b> Tách biệt rõ ràng Ngày và Giờ đồng bộ; căn chỉnh độ rộng cột tối ưu loại bỏ triệt để thanh cuộn ngang; nâng cấp nút Đồng bộ lớn hơn (36px) bấm chính xác và êm tay.</li>
+              <li><b>Biểu tượng hoạt họa Offline 100%:</b> Toàn bộ hệ thống icon Lordicon trên thanh điều hướng hoạt động hoàn toàn offline không phụ thuộc internet.</li>
+            </ul>
+          </div>
 
           <!-- Version 4.2.0 -->
           <div class="p-3.5 rounded-2xl bg-white border border-blue-200/90 shadow-2xs space-y-2">

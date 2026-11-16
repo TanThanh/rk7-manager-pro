@@ -1,0 +1,362 @@
+{
+  "1000015": {
+    "code": 1000058,
+    "name": "SS_Isushi",
+    "sapcode": "SS"
+  },
+  "1003751": {
+    "code": 1000061,
+    "name": "DR_Daruma",
+    "sapcode": "DR"
+  },
+  "1004470": {
+    "code": 1000054,
+    "name": "KK_Kichi-Kichi",
+    "sapcode": "KK"
+  },
+  "1007357": {
+    "code": 1137049,
+    "name": "SG_Shogun",
+    "sapcode": "SG"
+  },
+  "1007366": {
+    "code": 1000060,
+    "name": "ST_37th Street",
+    "sapcode": "ST"
+  },
+  "1007367": {
+    "code": 1008127,
+    "name": "CB_CowBoy Jacks",
+    "sapcode": "CB"
+  },
+  "1007368": {
+    "code": 1000059,
+    "name": "GG_Gogi House",
+    "sapcode": "GG"
+  },
+  "1007369": {
+    "code": 1020345,
+    "name": "HT_Hutong",
+    "sapcode": "HT"
+  },
+  "1007370": {
+    "code": 1088339,
+    "name": "GF_Icook",
+    "sapcode": "GF"
+  },
+  "1007371": {
+    "code": 1010799,
+    "name": "KP_Kpub",
+    "sapcode": "KP"
+  },
+  "1007372": {
+    "code": 1000055,
+    "name": "SM_SumoBBQ",
+    "sapcode": "SM"
+  },
+  "1007373": {
+    "code": 1000056,
+    "name": "VV_Vuvuzela",
+    "sapcode": "VV"
+  },
+  "1007374": {
+    "code": 2308575,
+    "name": "YT_Yutang",
+    "sapcode": "YT"
+  },
+  "1008459": {
+    "code": 1000053,
+    "name": "AS_Ashima",
+    "sapcode": "AS"
+  },
+  "1008460": {
+    "code": 1052678,
+    "name": "CT_Canteen",
+    "sapcode": "CT"
+  },
+  "1008461": {
+    "code": 1000062,
+    "name": "City Beer Station",
+    "sapcode": "BS"
+  },
+  "1017088": {
+    "code": 1445705,
+    "name": "MW_Manwah",
+    "sapcode": "MW"
+  },
+  "1036883": {
+    "code": 1036883,
+    "name": "CP_Addys Pizza",
+    "sapcode": "CP"
+  },
+  "1047547": {
+    "code": 1026945,
+    "name": "CJ_Crystal Jade",
+    "sapcode": "CJ"
+  },
+  "1047548": {
+    "code": 2314133,
+    "name": "SQ_SýÌng Quãn",
+    "sapcode": "SQ"
+  },
+  "1088713": {
+    "code": 1000081,
+    "name": "CI_The Coffee Inn",
+    "sapcode": "CI"
+  },
+  "1098108": {
+    "code": 1,
+    "name": "GS_Gogi Steak",
+    "sapcode": "GS"
+  },
+  "1102942": {
+    "code": 2,
+    "name": "IP_I PhõÒ",
+    "sapcode": "IP"
+  },
+  "1103046": {
+    "code": 3,
+    "name": "KT_Ktop",
+    "sapcode": "KT"
+  },
+  "1203738": {
+    "code": 4,
+    "name": "SS_Isushi Teppanyaki",
+    "sapcode": "IS"
+  },
+  "1241186": {
+    "code": 5,
+    "name": "G_Delivery",
+    "sapcode": "GD"
+  },
+  "1242272": {
+    "code": 6,
+    "name": "IC_ICook store",
+    "sapcode": "IC"
+  },
+  "1246648": {
+    "code": 7,
+    "name": "IC_ICOOKSTORE",
+    "sapcode": "IC"
+  },
+  "1275340": {
+    "code": 9,
+    "name": "GC_Catering",
+    "sapcode": "GC"
+  },
+  "1281253": {
+    "code": 8,
+    "name": "ST_Sieu Thi BVBM",
+    "sapcode": "ST"
+  },
+  "1281254": {
+    "code": 10,
+    "name": "TCI_ The Coffee In BVBM",
+    "sapcode": "CI"
+  },
+  "1281266": {
+    "code": 11,
+    "name": "CT_Canteen BVBM",
+    "sapcode": "CT"
+  },
+  "1302403": {
+    "code": 12,
+    "name": "CTB_Citi Beer",
+    "sapcode": "BS"
+  },
+  "1330979": {
+    "code": 14,
+    "name": "UP_Union District Pizza & Grill",
+    "sapcode": "UP"
+  },
+  "1347980": {
+    "code": 13,
+    "name": "CK_Chix Max",
+    "sapcode": "CK"
+  },
+  "1380208": {
+    "code": 15,
+    "name": "WM_Woomaster",
+    "sapcode": "WM"
+  },
+  "1411396": {
+    "code": 16,
+    "name": "PC_Mak Mak Thai",
+    "sapcode": "PC"
+  },
+  "1424297": {
+    "code": 17,
+    "name": "UT_Universal Tea",
+    "sapcode": "UT"
+  },
+  "1449540": {
+    "code": 18,
+    "name": "CD_CloudPot",
+    "sapcode": "CD"
+  },
+  "1458406": {
+    "code": 19,
+    "name": "LC_Lach Ca Lach Cach",
+    "sapcode": "LC"
+  },
+  "1458407": {
+    "code": 20,
+    "name": "FC_FlyChef",
+    "sapcode": "FC"
+  },
+  "1470507": {
+    "code": 21,
+    "name": "HC_Hang Cuon",
+    "sapcode": "HC"
+  },
+  "1482307": {
+    "code": 22,
+    "name": "NY_99 Cents Fresh Pizza",
+    "sapcode": "NY"
+  },
+  "1488237": {
+    "code": 24,
+    "name": "MT_Man Tang Guo",
+    "sapcode": "MT"
+  },
+  "1508957": {
+    "code": 23,
+    "name": "PI_Pho Inn",
+    "sapcode": "PI"
+  },
+  "1519300": {
+    "code": 25,
+    "name": "HB_Happy Bull",
+    "sapcode": "HB"
+  },
+  "1525947": {
+    "code": 26,
+    "name": "SY_Sakura Yakiniku",
+    "sapcode": "SY"
+  },
+  "1526183": {
+    "code": 27,
+    "name": "KZ_Kozakura",
+    "sapcode": "KZ"
+  },
+  "1532706": {
+    "code": 28,
+    "name": "GV_Gather Village",
+    "sapcode": "GV"
+  },
+  "1536617": {
+    "code": 29,
+    "name": "MM_Mamas Bakery",
+    "sapcode": "MB"
+  },
+  "1536881": {
+    "code": 30,
+    "name": "CH_CHIBO",
+    "sapcode": "CH"
+  },
+  "1547239": {
+    "code": 31,
+    "name": "UC_Universal Coffee",
+    "sapcode": "UC"
+  },
+  "1580297": {
+    "code": 33,
+    "name": "GO_GSO",
+    "sapcode": "GO"
+  },
+  "1582646": {
+    "code": 34,
+    "name": "MG_Mala Gang",
+    "sapcode": "MG"
+  },
+  "1591031": {
+    "code": 32,
+    "name": "CT_Canteen DaiNam",
+    "sapcode": "CT"
+  },
+  "1595807": {
+    "code": 35,
+    "name": "CT_Canteen Cafe DaiNam",
+    "sapcode": "CT"
+  },
+  "1604086": {
+    "code": 36,
+    "name": "GF_Icook & RYO",
+    "sapcode": "GF"
+  },
+  "1630319": {
+    "code": 37,
+    "name": "SB_Sakura Shabu Shabu",
+    "sapcode": "SB"
+  },
+  "1645881": {
+    "code": 38,
+    "name": "VX_Vinh Xanh",
+    "sapcode": "VX"
+  },
+  "1729965": {
+    "code": 39,
+    "name": "SX_Sushi X",
+    "sapcode": "SX"
+  },
+  "1806382": {
+    "code": 40,
+    "name": "BB_Bâòp BuÌng",
+    "sapcode": "BB"
+  },
+  "1809719": {
+    "code": 41,
+    "name": "WY_Wow!Yakiniku",
+    "sapcode": "WY"
+  },
+  "1830284": {
+    "code": 42,
+    "name": "DN_Dao Niu Guo",
+    "sapcode": "DN"
+  },
+  "1864214": {
+    "code": 43,
+    "name": "CV_Cha Ca Van Van",
+    "sapcode": "CV"
+  },
+  "1978535": {
+    "code": 44,
+    "name": "HP_HuTong Palace",
+    "sapcode": "HP"
+  },
+  "2004895": {
+    "code": 45,
+    "name": "NR_NgonYaRamen",
+    "sapcode": "NR"
+  },
+  "2039140": {
+    "code": 46,
+    "name": "PZ_Pizza360",
+    "sapcode": "PZ"
+  },
+  "2071356": {
+    "code": 47,
+    "name": "DC_D2C",
+    "sapcode": "DC"
+  },
+  "2208314": {
+    "code": 48,
+    "name": "AF_Ashima Forest",
+    "sapcode": "AF"
+  },
+  "2345964": {
+    "code": 49,
+    "name": "CT_Canteen FPT",
+    "sapcode": "CT"
+  },
+  "2367259": {
+    "code": 50,
+    "name": "CT_Canteen 123MartFPT",
+    "sapcode": "CT"
+  },
+  "1282458": {
+    "code": 18,
+    "name": "CD_CloudPot",
+    "sapcode": "CD"
+  }
+}

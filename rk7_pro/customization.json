@@ -1,0 +1,34 @@
+{
+    "7BRIDGE.lnk": {
+        "name": "SEVEN BRIDGES",
+        "color": "#7C3AED",
+        "icon": "coffee",
+        "background": "card_backgrounds/99b99b7c7e86ec00.png"
+    },
+    "BACKIMTHANG.lnk": {
+        "name": "",
+        "color": "#2563EB",
+        "icon": "bridge",
+        "background": null
+    },
+    "BASSIN (SORA).lnk": {
+        "name": "BASSIN",
+        "color": "#0D9488"
+    },
+    "CINE.lnk": {
+        "name": "CIN\u00c9",
+        "color": "#DC2626",
+        "icon": "building"
+    },
+    "GGG HCM.lnk": {
+        "name": "",
+        "color": "#D97706",
+        "icon": null
+    },
+    "HIGHLAND.lnk": {
+        "name": "",
+        "color": "#0D9488",
+        "icon": null,
+        "background": "card_backgrounds/c98228d9db2910347452.png"
+    }
+}

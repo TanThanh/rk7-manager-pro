@@ -4103,6 +4103,22 @@
     "1004042": {
       "package_id": "cvl_data",
       "name": "Cuu Van Long - Aeon Mall Ha Long, QN"
+    },
+    "4": {
+      "package_id": "cvl_data",
+      "name": ""
+    },
+    "3": {
+      "package_id": "qsr_masterdata",
+      "name": ""
+    },
+    "1003025": {
+      "package_id": "qsr_masterdata",
+      "name": ""
+    },
+    "5": {
+      "package_id": "cvl_data",
+      "name": ""
     }
   },
   "packages": {
@@ -4119,10 +4135,10 @@
       "display_name": "GSF",
       "file": "gsf_masterdata.json",
       "source_file": "SQL: 192.168.62.92,9433/RS_REPH",
-      "restaurants_count": 119,
-      "menu_items_count": 11270,
-      "price_scales_count": 135,
-      "size_kb": 3784.3
+      "restaurants_count": 109,
+      "menu_items_count": 11329,
+      "price_scales_count": 136,
+      "size_kb": 4693.9
     },
     "ggg_hcm_data": {
       "package_id": "ggg_hcm_data",
@@ -4154,22 +4170,24 @@
       "size_kb": 475.2
     },
     "qsr_masterdata": {
+      "package_id": "qsr_masterdata",
+      "display_name": "QSR API (61.28.234.200)",
       "file": "qsr_masterdata.json",
-      "display_name": "QSR_Master",
-      "source_file": "refsdata_qsr_data.udb",
-      "restaurants_count": 206,
-      "menu_items_count": 6958,
+      "source_file": "API: https://61.28.234.200:1188/rk7api/v0/xmlinterface.xml",
+      "restaurants_count": 198,
+      "menu_items_count": 6979,
       "price_scales_count": 48,
-      "size_kb": 9505.9
+      "size_kb": 11512.5
     },
     "cvl_data": {
+      "package_id": "cvl_data",
+      "display_name": "CVL",
       "file": "cvl_data.json",
-      "display_name": "cvl_data",
-      "source_file": "refsdata_cuuvanlong.udb",
-      "restaurants_count": 15,
+      "source_file": "API: https://61.28.233.12:5580/rk7api/v0/xmlinterface.xml",
+      "restaurants_count": 17,
       "menu_items_count": 149,
       "price_scales_count": 5,
-      "size_kb": 288.5
+      "size_kb": 445.3
     }
   }
 }

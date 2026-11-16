@@ -23,3 +23,28 @@ build/
 Desktop/
 .vscode/
 .idea/
+.vs/
+
+# Local sensitive configuration and credentials
+auth_users.json
+settings.json
+sql_connections.json
+api_connections.json
+favorites.json
+rk7_pro/launch_history.json
+rk7_pro/favorites.json
+*.ini
+
+# Test dumps, raw UDB and XML test files
+*.udb
+*.xml
+*.dll
+*.exe
+cache/
+exports/
+test-update-4.0.3/
+check_prop_sample.py
+*.bat
+tools/
+
+

@@ -1,0 +1,2828 @@
+{
+  "GLOBALSHIFTS": {
+    "title": "Ca chung",
+    "description": "Thông tin ca chung: ngày kinh doanh, thời điểm mở/đóng, nhà hàng và trạng thái ca.",
+    "fields": {
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`SHIFTNUM`": {
+        "en": "Shift number",
+        "vi": "Số ca chung",
+        "desc": "Số lượng hoặc số thứ tự số ca chung theo bảng. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`GUIDSTRING`": {
+        "en": "Shift GUID",
+        "vi": "GUID ca",
+        "desc": "Định danh nội bộ của bản ghi ca chung.",
+        "ref": "—"
+      },
+      "`CREATETIME`": {
+        "en": "Created at",
+        "vi": "Giờ tạo ca",
+        "desc": "Thời điểm giờ tạo ca được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`STARTTIME`": {
+        "en": "Started at",
+        "vi": "Giờ bắt đầu",
+        "desc": "Thời điểm giờ bắt đầu được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`CLOSETIME`": {
+        "en": "Closed at",
+        "vi": "Giờ đóng ca",
+        "desc": "Thời điểm giờ đóng ca được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IMANAGER`": {
+        "en": "Shift manager",
+        "vi": "Quản lý ca",
+        "desc": "Mã tham chiếu quản lý ca được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`SHIFTDATE`": {
+        "en": "Business date",
+        "vi": "Ngày kinh doanh",
+        "desc": "Thời điểm ngày kinh doanh được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`CLOSED`": {
+        "en": "Closed flag",
+        "vi": "Đã đóng ca",
+        "desc": "Trạng thái/cờ đã đóng ca của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SENDED`": {
+        "en": "Sent flag",
+        "vi": "Đã gửi dữ liệu",
+        "desc": "Thông tin đã gửi dữ liệu được lưu trong GLOBALSHIFTS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IBASICCURRENCY`": {
+        "en": "Base currency",
+        "vi": "Tiền tệ cơ sở",
+        "desc": "Mã tham chiếu tiền tệ cơ sở được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`INATIONALCURRENCY`": {
+        "en": "National currency",
+        "vi": "Tiền tệ quốc gia",
+        "desc": "Thông tin tiền tệ quốc gia được lưu trong GLOBALSHIFTS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IRESTAURANT`": {
+        "en": "Restaurant ID",
+        "vi": "Nhà hàng",
+        "desc": "Mã tham chiếu nhà hàng được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`RESTAURANTS`"
+      },
+      "`ORIGINALSHIFTDATE`": {
+        "en": "Original shift date",
+        "vi": "Ngày ca gốc",
+        "desc": "Thời điểm ngày ca gốc được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SHIFTLOADDATETIME`": {
+        "en": "Loaded at",
+        "vi": "Giờ tải ca",
+        "desc": "Thời điểm giờ tải ca được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`STATUS`": {
+        "en": "Shift status",
+        "vi": "Trạng thái ca",
+        "desc": "Trạng thái/cờ trạng thái ca của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`FLAGS`": {
+        "en": "Shift flags",
+        "vi": "Cờ ca",
+        "desc": "Trạng thái/cờ cờ ca của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill.",
+        "ref": "—"
+      }
+    }
+  },
+  "OPERATIONLOG": {
+    "title": "Nhật ký thao tác",
+    "description": "Nhật ký thao tác trên POS: thời điểm, nhân viên, lệnh đã thực hiện và đối tượng tác động.",
+    "fields": {
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Mã Cash Server ghi nhận sự kiện.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`SIFR`": {
+        "en": "Log ID",
+        "vi": "Mã dòng log",
+        "desc": "Mã riêng của dòng nhật ký, không phải mã thao tác.",
+        "ref": "—"
+      },
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "ID visit chứa order liên quan; có thể là `0` với thao tác không gắn visit.",
+        "ref": "[VISITS](#visits)"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order ID",
+        "vi": "Mã order",
+        "desc": "ID order **trong visit**, không nên tra riêng lẻ.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`ICOMMONSHIFT`": {
+        "en": "Common shift",
+        "vi": "Ca chung",
+        "desc": "Số ca chung liên quan đến thao tác.",
+        "ref": "[GLOBALSHIFTS](#globalshifts)"
+      },
+      "`DATETIME`": {
+        "en": "Event time",
+        "vi": "Thời gian",
+        "desc": "Thời điểm thao tác được ghi nhận.",
+        "ref": "—"
+      },
+      "`STATION`": {
+        "en": "POS station",
+        "vi": "Máy POS",
+        "desc": "Mã trạm thu ngân/POS phát sinh thao tác.",
+        "ref": "`CASHES`"
+      },
+      "`OPERATION`": {
+        "en": "Operation code",
+        "vi": "Mã thao tác",
+        "desc": "Mã lệnh đã thực hiện trên POS; xem tên và mô tả tại danh mục OPERATIONS.",
+        "ref": "`OPERATIONS`"
+      },
+      "`PARAMETER`": {
+        "en": "Parameter",
+        "vi": "Tham số",
+        "desc": "Tham số đi kèm lệnh; cách hiểu thay đổi theo từng mã thao tác.",
+        "ref": "—"
+      },
+      "`OPERATOR`": {
+        "en": "Operator",
+        "vi": "Người thao tác",
+        "desc": "Mã nhân viên thực hiện thao tác.",
+        "ref": "`EMPLOYEES`"
+      },
+      "`OPERATORROLE`": {
+        "en": "Operator role",
+        "vi": "Vai trò thao tác",
+        "desc": "Mã vai trò của nhân viên thực hiện.",
+        "ref": "`EMPLOYEEGROUPS`"
+      },
+      "`MANAGER`": {
+        "en": "Approver",
+        "vi": "Người xác nhận",
+        "desc": "Nhân viên được ghi ở vai trò xác nhận; không tự suy ra có phê duyệt hai bước.",
+        "ref": "`EMPLOYEES`"
+      },
+      "`MANAGERROLE`": {
+        "en": "Approver role",
+        "vi": "Vai trò xác nhận",
+        "desc": "Mã vai trò của người xác nhận.",
+        "ref": "`EMPLOYEEGROUPS`"
+      },
+      "`MENUITEM`": {
+        "en": "Menu item",
+        "vi": "Mã món",
+        "desc": "Mã món liên quan, nếu thao tác tác động tới món.",
+        "ref": "`MENUITEMS`"
+      },
+      "`QNT`": {
+        "en": "Dish quantity",
+        "vi": "SL món",
+        "desc": "Số lượng món liên quan đến thao tác; kiểm tra quy ước số lẻ/đơn vị trước khi hiển thị.",
+        "ref": "—"
+      },
+      "`MAKETSCHEMEDETAIL`": {
+        "en": "Print layout",
+        "vi": "Mẫu in",
+        "desc": "Mã mẫu chứng từ, nếu thao tác liên quan việc in.",
+        "ref": "`MAKETSCHEMEDETAILS`"
+      },
+      "`SESSIONUNI`": {
+        "en": "Session ID",
+        "vi": "Mã phiên order",
+        "desc": "Mã block/phiên của order liên quan tới thao tác.",
+        "ref": "[ORDERSESSIONS](#ordersessions)"
+      },
+      "`ORDERSUMBEFORE`": {
+        "en": "Amount before",
+        "vi": "Tiền trước",
+        "desc": "Giá trị order trước khi lệnh được thực hiện.",
+        "ref": "—"
+      },
+      "`ORDERSUMAFTER`": {
+        "en": "Amount after",
+        "vi": "Tiền sau",
+        "desc": "Giá trị order sau khi lệnh được thực hiện.",
+        "ref": "—"
+      },
+      "`REASONID`": {
+        "en": "Void reason",
+        "vi": "Mã lý do hủy",
+        "desc": "ID lý do hủy liên quan thao tác; muốn xem tên cần tra danh mục.",
+        "ref": "`ORDERVOIDS`"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Record GUID",
+        "vi": "GUID bản ghi",
+        "desc": "Mã GUID nhận diện bản ghi/thời điểm ghi nhận trong cơ chế đồng bộ.",
+        "ref": "—"
+      }
+    }
+  },
+  "UPDATEVERSIONS": {
+    "title": "Phiên bản cập nhật",
+    "description": "Theo dõi phiên bản hoặc tiến trình cập nhật dữ liệu tham chiếu/hệ thống.",
+    "fields": {
+      "`TABLENAME`": {
+        "en": "Reference table",
+        "vi": "Tên danh mục",
+        "desc": "Thông tin tên danh mục được lưu trong UPDATEVERSIONS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`TABLEVERS`": {
+        "en": "Collection version",
+        "vi": "Phiên bản",
+        "desc": "Thông tin phiên bản được lưu trong UPDATEVERSIONS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`RECSTAMP`": {
+        "en": "Record stamp",
+        "vi": "Dấu thời gian",
+        "desc": "Thông tin dấu thời gian được lưu trong UPDATEVERSIONS. **[Cần xác minh]**",
+        "ref": "—"
+      }
+    }
+  },
+  "SESSIONDISHES": {
+    "title": "Món trong order",
+    "description": "Các món được ghi nhận trong từng order, số lượng, giá, trạng thái và thời điểm phục vụ.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`).",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order identifier",
+        "vi": "Mã order",
+        "desc": "Định danh order trong visit.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`SESSIONUNI`": {
+        "en": "Session UNI",
+        "vi": "Mã phiên món",
+        "desc": "Thông tin mã phiên món được lưu trong SESSIONDISHES. **[Cần xác minh]**",
+        "ref": "[ORDERSESSIONS](#ordersessions)"
+      },
+      "`SORTORDER`": {
+        "en": "Sort order",
+        "vi": "Thứ tự món",
+        "desc": "Thông tin thứ tự món được lưu trong SESSIONDISHES. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`UNI`": {
+        "en": "Item UNI",
+        "vi": "ID món trong order",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống.",
+        "ref": "—"
+      },
+      "`SIFR`": {
+        "en": "Menu item ID",
+        "vi": "Mã món RK7",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`STATE`": {
+        "en": "Dish state",
+        "vi": "Trạng thái món",
+        "desc": "Trạng thái/cờ trạng thái món của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ICREATOR`": {
+        "en": "Creator",
+        "vi": "NV thêm món",
+        "desc": "Mã tham chiếu nv thêm món được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`IAUTHOR`": {
+        "en": "Author",
+        "vi": "NV xác nhận",
+        "desc": "Mã tham chiếu nv xác nhận được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`ICREATORROLE`": {
+        "en": "Creator role",
+        "vi": "Vai trò tạo",
+        "desc": "Mã tham chiếu vai trò tạo được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`ROLES`"
+      },
+      "`IAUTHORROLE`": {
+        "en": "Author role",
+        "vi": "Vai trò sửa",
+        "desc": "Mã tham chiếu vai trò sửa được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`ROLES`"
+      },
+      "`QUANTITY`": {
+        "en": "Quantity",
+        "vi": "Số lượng món",
+        "desc": "Thông tin số lượng món được lưu trong SESSIONDISHES. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PRICE`": {
+        "en": "Unit price",
+        "vi": "Đơn giá",
+        "desc": "Giá trị đơn giá của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PRLISTSUM`": {
+        "en": "Price list sum",
+        "vi": "Tiền niêm yết",
+        "desc": "Giá trị tiền niêm yết của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DISCOUNTSUM`": {
+        "en": "Discount sum",
+        "vi": "Tiền giảm",
+        "desc": "Giá trị tiền giảm của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PAYSUM`": {
+        "en": "Paid sum",
+        "vi": "Tiền thanh toán",
+        "desc": "Giá trị tiền thanh toán của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`VOIDSTIME`": {
+        "en": "Void time",
+        "vi": "Giờ hủy món",
+        "desc": "Thời điểm giờ hủy món được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`CREATIONDATETIME`": {
+        "en": "Created at",
+        "vi": "Giờ thêm món",
+        "desc": "Thời điểm giờ thêm món được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`COMBODISHUNI`": {
+        "en": "Parent combo dish",
+        "vi": "Món combo cha",
+        "desc": "Thông tin món combo cha được lưu trong SESSIONDISHES. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`COMBOMODIUNI`": {
+        "en": "Combo modifier UNI",
+        "vi": "Modifier combo",
+        "desc": "Thông tin modifier combo được lưu trong SESSIONDISHES. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`COMBODISCUNI`": {
+        "en": "Combo discount UNI",
+        "vi": "Giảm giá combo",
+        "desc": "Thông tin giảm giá combo được lưu trong SESSIONDISHES. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`GLOBALIDENT`": {
+        "en": "Global ID",
+        "vi": "ID toàn cục",
+        "desc": "Định danh nội bộ của bản ghi món trong order.",
+        "ref": "—"
+      },
+      "`GUIDSTRING`": {
+        "en": "Dish GUID",
+        "vi": "GUID món",
+        "desc": "Định danh nội bộ của bản ghi món trong order.",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill.",
+        "ref": "—"
+      }
+    }
+  },
+  "TAXPARTS": {
+    "title": "Chi tiết thuế",
+    "description": "Các phần thuế được áp dụng/phân bổ cho món, order hoặc chứng từ.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`).",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order identifier",
+        "vi": "Mã order",
+        "desc": "Định danh order trong visit.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`BINDINGUNI`": {
+        "en": "Payment binding UNI",
+        "vi": "Dòng tính thuế",
+        "desc": "Thông tin dòng tính thuế được lưu trong TAXPARTS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`UNI`": {
+        "en": "Tax row UNI",
+        "vi": "ID dòng thuế",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống.",
+        "ref": "—"
+      },
+      "`SIFR`": {
+        "en": "Tax ID",
+        "vi": "Mã thuế",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`BASEFORTAX`": {
+        "en": "Tax base",
+        "vi": "Giá tính thuế",
+        "desc": "Thông tin giá tính thuế được lưu trong TAXPARTS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`TAXRATE`": {
+        "en": "Tax rate",
+        "vi": "Thuế suất",
+        "desc": "Thông tin thuế suất được lưu trong TAXPARTS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`TAXFLAGS`": {
+        "en": "Tax flags",
+        "vi": "Cờ thuế",
+        "desc": "Thông tin cờ thuế được lưu trong TAXPARTS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SUM`": {
+        "en": "Tax amount",
+        "vi": "Tiền thuế",
+        "desc": "Giá trị tiền hoặc tổng cộng theo đối tượng dòng.",
+        "ref": "—"
+      },
+      "`NATIONALSUM`": {
+        "en": "National tax sum",
+        "vi": "Thuế tiền quốc gia",
+        "desc": "Giá trị thuế tiền quốc gia của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`TAXRATEID`": {
+        "en": "Tax rate ID",
+        "vi": "Mã mức thuế",
+        "desc": "Thông tin mã mức thuế được lưu trong TAXPARTS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill.",
+        "ref": "—"
+      }
+    }
+  },
+  "PAYBINDINGS": {
+    "title": "Phân bổ thanh toán",
+    "description": "Thông tin gắn khoản thanh toán với các đối tượng/hóa đơn tương ứng.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`).",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order identifier",
+        "vi": "Mã order",
+        "desc": "Định danh order trong visit.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`UNI`": {
+        "en": "Binding UNI",
+        "vi": "ID phân bổ",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống.",
+        "ref": "—"
+      },
+      "`DISHUNI`": {
+        "en": "Dish UNI",
+        "vi": "Món liên kết",
+        "desc": "Thông tin món liên kết được lưu trong PAYBINDINGS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PAYMENTUNI`": {
+        "en": "Payment UNI",
+        "vi": "Thanh toán liên kết",
+        "desc": "Thông tin thanh toán liên kết được lưu trong PAYBINDINGS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PRICESUM`": {
+        "en": "Price sum",
+        "vi": "Tiền món",
+        "desc": "Giá trị tiền món của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PAYSUM`": {
+        "en": "Payment amount",
+        "vi": "Tiền phân bổ",
+        "desc": "Giá trị tiền phân bổ của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DISCOUNTSUM`": {
+        "en": "Discount sum",
+        "vi": "Tiền giảm",
+        "desc": "Giá trị tiền giảm của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill.",
+        "ref": "—"
+      },
+      "PAYMENTMETHOD": {
+        "en": "Payment Calculation Method (FFD tag 1214)",
+        "vi": "Phương thức tính thanh toán theo FFD (Признак способа расчета)",
+        "desc": "Mã quy định tính chất thanh toán theo chuẩn tài khóa FFD tag 1214 (1: Trả trước 100%, 2: Trả trước 1 phần, 3: Đặt cọc/Tạm ứng, 4: Thanh toán toàn bộ, 5: Thanh toán 1 phần & nợ, 6: Ghi nợ, 7: Thanh toán nợ).",
+        "ref": "Bảng FFD 1214 / UCS R-Keeper"
+      }
+    }
+  },
+  "DISHMODIFIERS": {
+    "title": "Modifier của món",
+    "description": "Các lựa chọn thêm/bớt, chế biến hoặc modifier gắn với món.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`).",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order identifier",
+        "vi": "Mã order",
+        "desc": "Định danh order trong visit.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`DISHUNI`": {
+        "en": "Dish UNI",
+        "vi": "Món gốc",
+        "desc": "Thông tin món gốc được lưu trong DISHMODIFIERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SORTORDER`": {
+        "en": "Sort order",
+        "vi": "Thứ tự modifier",
+        "desc": "Thông tin thứ tự modifier được lưu trong DISHMODIFIERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`UNI`": {
+        "en": "Modifier UNI",
+        "vi": "ID modifier",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống.",
+        "ref": "—"
+      },
+      "`SIFR`": {
+        "en": "Modifier ID",
+        "vi": "Mã modifier",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`ICREATOR`": {
+        "en": "Creator",
+        "vi": "NV tạo",
+        "desc": "Mã tham chiếu nv tạo được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`IAUTHOR`": {
+        "en": "Author",
+        "vi": "NV xác nhận",
+        "desc": "Mã tham chiếu nv xác nhận được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`ICREATORROLE`": {
+        "en": "Creator role",
+        "vi": "Vai trò tạo",
+        "desc": "Mã tham chiếu vai trò tạo được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`ROLES`"
+      },
+      "`IAUTHORROLE`": {
+        "en": "Author role",
+        "vi": "Vai trò sửa",
+        "desc": "Mã tham chiếu vai trò sửa được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`ROLES`"
+      },
+      "`OPENNAME`": {
+        "en": "Open name",
+        "vi": "Tên mở",
+        "desc": "Thông tin tên mở được lưu trong DISHMODIFIERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PRICE`": {
+        "en": "Price",
+        "vi": "Đơn giá",
+        "desc": "Giá trị đơn giá của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SRCPRICE`": {
+        "en": "Source price",
+        "vi": "Giá gốc",
+        "desc": "Giá trị giá gốc của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PRLISTSUM`": {
+        "en": "Price list sum",
+        "vi": "Tiền modifier",
+        "desc": "Giá trị tiền modifier của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SRCPRLISTSUM`": {
+        "en": "Source list sum",
+        "vi": "Tiền gốc",
+        "desc": "Giá trị tiền gốc của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PIECES`": {
+        "en": "Pieces",
+        "vi": "Số phần",
+        "desc": "Thông tin số phần được lưu trong DISHMODIFIERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SRCMODICNT`": {
+        "en": "Original modifier count",
+        "vi": "SL modifier gốc",
+        "desc": "Số lượng hoặc số thứ tự sl modifier gốc theo bảng. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`MODICNT`": {
+        "en": "Modifier count",
+        "vi": "SL modifier",
+        "desc": "Số lượng hoặc số thứ tự sl modifier theo bảng. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`GLOBALIDENT`": {
+        "en": "Global ID",
+        "vi": "ID toàn cục",
+        "desc": "Định danh nội bộ của bản ghi modifier của món.",
+        "ref": "—"
+      },
+      "`COMBODISHUNI`": {
+        "en": "Combo dish UNI",
+        "vi": "Món combo cha",
+        "desc": "Thông tin món combo cha được lưu trong DISHMODIFIERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`GUIDSTRING`": {
+        "en": "Modifier GUID",
+        "vi": "GUID modifier",
+        "desc": "Định danh nội bộ của bản ghi modifier của món.",
+        "ref": "—"
+      },
+      "`FREEMODICNT`": {
+        "en": "Free modifier count",
+        "vi": "SL miễn phí",
+        "desc": "Số lượng hoặc số thứ tự sl miễn phí theo bảng. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill.",
+        "ref": "—"
+      }
+    }
+  },
+  "VISITGUESTS": {
+    "title": "Khách theo lượt phục vụ",
+    "description": "Thông tin khách được ghi nhận theo lượt phục vụ.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`). **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`UNI`": {
+        "en": "Guest UNI",
+        "vi": "ID khách",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`SIFR`": {
+        "en": "Guest ID",
+        "vi": "Mã khách",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      }
+    }
+  },
+  "ORDERSESSIONS": {
+    "title": "Phiên order",
+    "description": "Các block/phiên phát sinh trong order, dùng chia đợt gọi hoặc phục vụ.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`).",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order identifier",
+        "vi": "Mã order",
+        "desc": "Định danh order trong visit.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`UNI`": {
+        "en": "Session UNI",
+        "vi": "ID phiên",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống.",
+        "ref": "—"
+      },
+      "`SORTORDER`": {
+        "en": "Session order",
+        "vi": "Thứ tự phiên",
+        "desc": "Thông tin thứ tự phiên được lưu trong ORDERSESSIONS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`STATE`": {
+        "en": "Session state",
+        "vi": "Trạng thái phiên",
+        "desc": "Trạng thái/cờ trạng thái phiên của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ICREATOR`": {
+        "en": "Creator",
+        "vi": "NV tạo",
+        "desc": "Mã tham chiếu nv tạo được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`IAUTHOR`": {
+        "en": "Author",
+        "vi": "NV xác nhận",
+        "desc": "Mã tham chiếu nv xác nhận được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`ICREATORROLE`": {
+        "en": "Creator role",
+        "vi": "Vai trò tạo",
+        "desc": "Mã tham chiếu vai trò tạo được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`ROLES`"
+      },
+      "`IAUTHORROLE`": {
+        "en": "Author role",
+        "vi": "Vai trò sửa",
+        "desc": "Mã tham chiếu vai trò sửa được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`ROLES`"
+      },
+      "`ISESSIONTYPE`": {
+        "en": "Session type",
+        "vi": "Loại phiên",
+        "desc": "Trạng thái/cờ loại phiên của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`GUIDSTRING`": {
+        "en": "Session GUID",
+        "vi": "GUID phiên",
+        "desc": "Định danh nội bộ của bản ghi phiên order.",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill.",
+        "ref": "—"
+      },
+      "ISESSIONTYPE": {
+        "en": "Session type",
+        "vi": "Loại phiên món",
+        "desc": "Nguồn gốc và phương thức tạo phiên món theo enum TSessionType (0: stAuto Tự động tạo, 1: stManual Tạo thủ công, 2: stTransferIn Chuyển từ order khác, 3: stTransferShift Chuyển từ ca trước sang, 4: stTransferUnion Chuyển khi gộp order, 5: stXML Tạo qua XML, 6: stTransferReturn Chuyển trả món).",
+        "ref": "—"
+      }
+    }
+  },
+  "GENERATORS": {
+    "title": "Bộ sinh mã",
+    "description": "Trạng thái bộ đếm dùng phát sinh mã định danh nội bộ.",
+    "fields": {
+      "`SIFR`": {
+        "en": "Generator ID",
+        "vi": "ID bộ sinh",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`NAME`": {
+        "en": "Generator name",
+        "vi": "Tên bộ sinh",
+        "desc": "Thông tin tên bộ sinh được lưu trong GENERATORS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`VALUE`": {
+        "en": "Current value",
+        "vi": "Giá trị hiện tại",
+        "desc": "Thông tin giá trị hiện tại được lưu trong GENERATORS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`RECSTAMP`": {
+        "en": "Record stamp",
+        "vi": "Dấu thời gian",
+        "desc": "Thông tin dấu thời gian được lưu trong GENERATORS. **[Cần xác minh]**",
+        "ref": "—"
+      }
+    }
+  },
+  "DISHVOIDS": {
+    "title": "Lịch sử hủy món",
+    "description": "Thông tin hủy món, số lượng bị hủy, lý do và người liên quan.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`).",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order identifier",
+        "vi": "Mã order",
+        "desc": "Định danh order trong visit.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`DISHUNI`": {
+        "en": "Dish UNI",
+        "vi": "Món bị hủy",
+        "desc": "Thông tin món bị hủy được lưu trong DISHVOIDS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SORTORDER`": {
+        "en": "Sort order",
+        "vi": "Thứ tự",
+        "desc": "Thông tin thứ tự được lưu trong DISHVOIDS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`UNI`": {
+        "en": "Void UNI",
+        "vi": "ID bản ghi",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống.",
+        "ref": "—"
+      },
+      "`SIFR`": {
+        "en": "Void reason ID",
+        "vi": "Mã lý do hủy",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`ICREATOR`": {
+        "en": "Creator",
+        "vi": "NV tạo",
+        "desc": "Mã tham chiếu nv tạo được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`IAUTHOR`": {
+        "en": "Author",
+        "vi": "NV xác nhận",
+        "desc": "Mã tham chiếu nv xác nhận được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`ICREATORROLE`": {
+        "en": "Creator role",
+        "vi": "Vai trò tạo",
+        "desc": "Mã tham chiếu vai trò tạo được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`ROLES`"
+      },
+      "`IAUTHORROLE`": {
+        "en": "Author role",
+        "vi": "Vai trò sửa",
+        "desc": "Mã tham chiếu vai trò sửa được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`ROLES`"
+      },
+      "`SESSIONUNI`": {
+        "en": "Session UNI",
+        "vi": "Mã phiên",
+        "desc": "Thông tin mã phiên được lưu trong DISHVOIDS. **[Cần xác minh]**",
+        "ref": "[ORDERSESSIONS](#ordersessions)"
+      },
+      "`INCLOSECH_UNI`": {
+        "en": "Receipt UNI",
+        "vi": "Hóa đơn liên quan",
+        "desc": "Thông tin hóa đơn liên quan được lưu trong DISHVOIDS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`INCLOSECH_ORDERIDENT`": {
+        "en": "Receipt order ID",
+        "vi": "Order hóa đơn",
+        "desc": "Thông tin order hóa đơn được lưu trong DISHVOIDS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`INCLOSECH_MIDSERVER`": {
+        "en": "Receipt cash server",
+        "vi": "Server hóa đơn",
+        "desc": "Thông tin server hóa đơn được lưu trong DISHVOIDS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`INCLOSECH_CLOSESTATION`": {
+        "en": "Close station",
+        "vi": "POS in hóa đơn",
+        "desc": "Thông tin pos in hóa đơn được lưu trong DISHVOIDS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`INCLOSECH_MAKETID`": {
+        "en": "Print layout",
+        "vi": "Mẫu in hóa đơn",
+        "desc": "Thông tin mẫu in hóa đơn được lưu trong DISHVOIDS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill.",
+        "ref": "—"
+      }
+    }
+  },
+  "CLOCKRECS": {
+    "title": "Chấm công",
+    "description": "Dữ liệu vào ca, ra ca và thời gian làm việc của nhân viên.",
+    "fields": {
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`IDENT`": {
+        "en": "Record ID",
+        "vi": "ID bản ghi",
+        "desc": "Mã tham chiếu id bản ghi được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`EMPID`": {
+        "en": "Employee ID",
+        "vi": "Nhân viên",
+        "desc": "Thông tin nhân viên được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ROLEID`": {
+        "en": "Role ID",
+        "vi": "Vai trò",
+        "desc": "Thông tin vai trò được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`CARDCODE`": {
+        "en": "Card code",
+        "vi": "Mã thẻ",
+        "desc": "Thông tin mã thẻ được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`STARTTIME`": {
+        "en": "Clock-in",
+        "vi": "Giờ vào",
+        "desc": "Thời điểm giờ vào được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ENDTIME`": {
+        "en": "Clock-out",
+        "vi": "Giờ ra",
+        "desc": "Thời điểm giờ ra được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SHIFTSTARTTIME`": {
+        "en": "Scheduled start",
+        "vi": "Bắt đầu ca",
+        "desc": "Thời điểm bắt đầu ca được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SHIFTDURATION`": {
+        "en": "Shift duration",
+        "vi": "Thời lượng ca",
+        "desc": "Thông tin thời lượng ca được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`MAXSHIFTDURATION`": {
+        "en": "Maximum duration",
+        "vi": "Giới hạn ca",
+        "desc": "Thông tin giới hạn ca được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ISTARTCOMMONSHIFT`": {
+        "en": "Starting common shift",
+        "vi": "Ca vào",
+        "desc": "Trạng thái/cờ ca vào của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IENDCOMMONSHIFT`": {
+        "en": "Ending common shift",
+        "vi": "Ca ra",
+        "desc": "Mã tham chiếu ca ra được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ISTARTSTATION`": {
+        "en": "Clock-in station",
+        "vi": "POS giờ vào",
+        "desc": "Trạng thái/cờ pos giờ vào của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IENDSTATION`": {
+        "en": "Clock-out station",
+        "vi": "POS giờ ra",
+        "desc": "Mã tham chiếu pos giờ ra được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ISTARTMANAGER`": {
+        "en": "Start manager",
+        "vi": "QL xác nhận vào",
+        "desc": "Trạng thái/cờ ql xác nhận vào của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IENDMANAGER`": {
+        "en": "End manager",
+        "vi": "QL xác nhận ra",
+        "desc": "Mã tham chiếu ql xác nhận ra được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DURATION`": {
+        "en": "Duration",
+        "vi": "Tổng giờ làm",
+        "desc": "Thông tin tổng giờ làm được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`RIGHTDURATION`": {
+        "en": "Net duration",
+        "vi": "Giờ hợp lệ",
+        "desc": "Thông tin giờ hợp lệ được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`NOENDINGLABEL`": {
+        "en": "Missing clock-out",
+        "vi": "Thiếu giờ ra",
+        "desc": "Thông tin thiếu giờ ra được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`AUTOENTRANCE`": {
+        "en": "Automatic entrance",
+        "vi": "Tự động vào",
+        "desc": "Thông tin tự động vào được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DELAY`": {
+        "en": "Delay",
+        "vi": "Độ trễ",
+        "desc": "Thông tin độ trễ được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`LATENESS`": {
+        "en": "Late flag",
+        "vi": "Đi trễ",
+        "desc": "Thông tin đi trễ được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`MANUALLYCHANGED`": {
+        "en": "Manual change",
+        "vi": "Đã sửa công",
+        "desc": "Thông tin đã sửa công được lưu trong CLOCKRECS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`STATUS`": {
+        "en": "Status",
+        "vi": "Trạng thái",
+        "desc": "Trạng thái/cờ trạng thái của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill.",
+        "ref": "—"
+      }
+    }
+  },
+  "EXTERNALIDS": {
+    "title": "Mã định danh ngoài",
+    "description": "Ánh xạ định danh của order/lượt phục vụ với hệ thống bên ngoài.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`). **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order identifier",
+        "vi": "Mã order",
+        "desc": "Định danh order trong visit. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`EXTID`": {
+        "en": "External ID",
+        "vi": "Mã đối tác",
+        "desc": "Thông tin mã đối tác được lưu trong EXTERNALIDS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`GUIDSTRING`": {
+        "en": "Record GUID",
+        "vi": "GUID bản ghi",
+        "desc": "Định danh nội bộ của bản ghi mã định danh ngoài.",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      }
+    }
+  },
+  "DEFERREDSYNC": {
+    "title": "Hàng đợi đồng bộ",
+    "description": "Dữ liệu/chỉ thị đồng bộ đang chờ được xử lý hoặc gửi đi.",
+    "fields": {
+      "`REFID`": {
+        "en": "Reference ID",
+        "vi": "Mã danh mục",
+        "desc": "Thông tin mã danh mục được lưu trong DEFERREDSYNC. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`COLLECTIONNAME`": {
+        "en": "Collection name",
+        "vi": "Tên danh mục",
+        "desc": "Thông tin tên danh mục được lưu trong DEFERREDSYNC. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DEFFDATAVERSION`": {
+        "en": "Deferred version",
+        "vi": "Phiên bản chờ",
+        "desc": "Thông tin phiên bản chờ được lưu trong DEFERREDSYNC. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DEFFLASTCHANGE`": {
+        "en": "Last change",
+        "vi": "Ngày thay đổi",
+        "desc": "Thông tin ngày thay đổi được lưu trong DEFERREDSYNC. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`LASTACTUALIZATION`": {
+        "en": "Last synced",
+        "vi": "Lần đồng bộ cuối",
+        "desc": "Thông tin lần đồng bộ cuối được lưu trong DEFERREDSYNC. **[Cần xác minh]**",
+        "ref": "—"
+      }
+    }
+  },
+  "CURRLINES": {
+    "title": "Dòng tiền thanh toán",
+    "description": "Dòng giá trị theo tiền tệ gắn với đơn hàng/chứng từ.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`). **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order identifier",
+        "vi": "Mã order",
+        "desc": "Định danh order trong visit. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`UNI`": {
+        "en": "Currency line UNI",
+        "vi": "ID dòng",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`PAYMENTUNI`": {
+        "en": "Payment UNI",
+        "vi": "Mã thanh toán",
+        "desc": "Thông tin mã thanh toán được lưu trong CURRLINES. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`BINDINGUNI`": {
+        "en": "Binding UNI",
+        "vi": "Dòng phân bổ",
+        "desc": "Thông tin dòng phân bổ được lưu trong CURRLINES. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SUM`": {
+        "en": "Amount",
+        "vi": "Số tiền",
+        "desc": "Giá trị tiền hoặc tổng cộng theo đối tượng dòng. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      }
+    }
+  },
+  "MESSAGES": {
+    "title": "Thông báo hệ thống",
+    "description": "Các bản tin hoặc thông báo được lưu trong dữ liệu hệ thống.",
+    "fields": {
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`UNI`": {
+        "en": "Message UNI",
+        "vi": "ID tin nhắn",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`DATETIME`": {
+        "en": "Created at",
+        "vi": "Giờ tạo",
+        "desc": "Thời điểm giờ tạo được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`TEXT`": {
+        "en": "Message text",
+        "vi": "Nội dung",
+        "desc": "Thông tin nội dung được lưu trong MESSAGES. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ONDELETEURL`": {
+        "en": "Delete callback URL",
+        "vi": "URL khi xóa",
+        "desc": "Thông tin url khi xóa được lưu trong MESSAGES. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      }
+    }
+  },
+  "ORDERS": {
+    "title": "Đơn gọi món",
+    "description": "Thông tin order thuộc một lượt phục vụ: trạng thái, nhân viên, bàn và thời gian.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`).",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`IDENTINVISIT`": {
+        "en": "Order identifier",
+        "vi": "Mã order trong visit",
+        "desc": "Mã tham chiếu mã order trong visit được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ICREATOR`": {
+        "en": "Creator",
+        "vi": "NV tạo",
+        "desc": "Mã tham chiếu nv tạo được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`IAUTHOR`": {
+        "en": "Author",
+        "vi": "NV xác nhận",
+        "desc": "Mã tham chiếu nv xác nhận được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`ICREATORROLE`": {
+        "en": "Creator role",
+        "vi": "Vai trò tạo",
+        "desc": "Mã tham chiếu vai trò tạo được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`ROLES`"
+      },
+      "`IAUTHORROLE`": {
+        "en": "Author role",
+        "vi": "Vai trò sửa",
+        "desc": "Mã tham chiếu vai trò sửa được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`ROLES`"
+      },
+      "`ILASTUSER`": {
+        "en": "Last editor",
+        "vi": "NV lưu cuối",
+        "desc": "Mã tham chiếu nv lưu cuối được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`FLAGS`": {
+        "en": "Order flags",
+        "vi": "Cờ order",
+        "desc": "Trạng thái/cờ cờ order của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`GUESTSCOUNT`": {
+        "en": "Guest count",
+        "vi": "Số khách",
+        "desc": "Số lượng hoặc số thứ tự số khách theo bảng. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`LASTSERVICE`": {
+        "en": "Last service",
+        "vi": "Lần phục vụ cuối",
+        "desc": "Thông tin lần phục vụ cuối được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`NUMONTABLE`": {
+        "en": "Party at table",
+        "vi": "Nhóm trên bàn",
+        "desc": "Thông tin nhóm trên bàn được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`OPENTIME`": {
+        "en": "Opened at",
+        "vi": "Giờ mở order",
+        "desc": "Thời điểm giờ mở order được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`TABLEID`": {
+        "en": "Table ID",
+        "vi": "Mã bàn",
+        "desc": "Thông tin mã bàn được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`TABLENAME`": {
+        "en": "Table name",
+        "vi": "Tên bàn",
+        "desc": "Thông tin tên bàn được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ORDERNAME`": {
+        "en": "Order name",
+        "vi": "Tên order",
+        "desc": "Thông tin tên order được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PROMOCODE`": {
+        "en": "Promo code",
+        "vi": "Mã khuyến mãi",
+        "desc": "Thông tin mã khuyến mãi được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`COT`": {
+        "en": "Order type",
+        "vi": "Loại order",
+        "desc": "Thông tin loại order được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`UOT`": {
+        "en": "Order category",
+        "vi": "Nhóm order",
+        "desc": "Thông tin nhóm order được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DEFAULTER`": {
+        "en": "Defaulter type",
+        "vi": "Loại đối tượng",
+        "desc": "Thông tin loại đối tượng được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ICOMMONSHIFT`": {
+        "en": "Common shift",
+        "vi": "Số ca chung",
+        "desc": "Mã tham chiếu số ca chung được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "[GLOBALSHIFTS](#globalshifts)"
+      },
+      "`MAINWAITER`": {
+        "en": "Main waiter",
+        "vi": "NV phục vụ chính",
+        "desc": "Thông tin nv phục vụ chính được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PAID`": {
+        "en": "Paid flag",
+        "vi": "Đã thanh toán",
+        "desc": "Thông tin đã thanh toán được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PRICELISTSUM`": {
+        "en": "Price list total",
+        "vi": "Tiền niêm yết",
+        "desc": "Giá trị tiền niêm yết của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`TOPAYSUM`": {
+        "en": "Amount due",
+        "vi": "Còn phải trả",
+        "desc": "Giá trị còn phải trả của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PAIDSUM`": {
+        "en": "Paid total",
+        "vi": "Đã trả",
+        "desc": "Giá trị đã trả của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DISCOUNTSUM`": {
+        "en": "Discount total",
+        "vi": "Tiền giảm",
+        "desc": "Giá trị tiền giảm của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`LASTCHECKUNI`": {
+        "en": "Last receipt UNI",
+        "vi": "Hóa đơn cuối",
+        "desc": "Thông tin hóa đơn cuối được lưu trong ORDERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`GUIDSTRING`": {
+        "en": "Order GUID",
+        "vi": "GUID order",
+        "desc": "Định danh nội bộ của bản ghi đơn gọi món.",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill.",
+        "ref": "—"
+      }
+    }
+  },
+  "PRINTCHECKS": {
+    "title": "Hóa đơn RK7",
+    "description": "Hóa đơn/receipt: số check, in tạm tính, đóng bill, tiền, thuế và trạng thái.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Lượt phục vụ chứa hóa đơn.",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server ID",
+        "vi": "Máy chủ POS",
+        "desc": "Máy chủ Cash Server lưu hóa đơn.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order ID",
+        "vi": "Mã order",
+        "desc": "Định danh order trong visit.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`SESSIONUNI`": {
+        "en": "Order session ID",
+        "vi": "Mã phiên món",
+        "desc": "Định danh block/session của order.",
+        "ref": "[ORDERSESSIONS](#ordersessions)"
+      },
+      "`UNI`": {
+        "en": "Receipt UNI",
+        "vi": "Mã bản ghi bill",
+        "desc": "Định danh bản ghi hóa đơn bên trong order.",
+        "ref": "—"
+      },
+      "`STATE`": {
+        "en": "Receipt state",
+        "vi": "Trạng thái bill",
+        "desc": "Trạng thái hóa đơn; giá trị 6 trong mẫu là đã đóng/đã thanh toán.",
+        "ref": "—"
+      },
+      "`ICREATOR`": {
+        "en": "Paying employee ID",
+        "vi": "NV thanh toán",
+        "desc": "Nhân viên xử lý thanh toán theo mô tả bảng PRINTCHECKS.",
+        "ref": "`EMPLOYEES`"
+      },
+      "`IAUTHOR`": {
+        "en": "Payment confirmer ID",
+        "vi": "NV xác nhận",
+        "desc": "Nhân viên xác nhận thanh toán theo mô tả bảng PRINTCHECKS.",
+        "ref": "`EMPLOYEES`"
+      },
+      "`ICREATORROLE`": {
+        "en": "Creator role ID",
+        "vi": "Quyền NV tạo",
+        "desc": "Vai trò của nhân viên tạo/xử lý bản ghi.",
+        "ref": "`ROLES`"
+      },
+      "`IAUTHORROLE`": {
+        "en": "Author role ID",
+        "vi": "Quyền NV xác nhận",
+        "desc": "Vai trò của nhân viên xác nhận.",
+        "ref": "`ROLES`"
+      },
+      "`CLOSEDATETIME`": {
+        "en": "Receipt print time",
+        "vi": "Giờ in hóa đơn",
+        "desc": "Thời điểm đóng/in receipt theo cơ chế lưu hóa đơn.",
+        "ref": "—"
+      },
+      "`BILLDATETIME`": {
+        "en": "Bill print time",
+        "vi": "Giờ in tạm tính",
+        "desc": "Thời điểm in bill tạm tính.",
+        "ref": "—"
+      },
+      "`STARTDATETIME`": {
+        "en": "Calculation start time",
+        "vi": "Giờ bắt đầu tính",
+        "desc": "Bắt đầu quá trình tính hóa đơn.",
+        "ref": "—"
+      },
+      "`DRAWERDATETIME`": {
+        "en": "Drawer close time",
+        "vi": "Giờ đóng ngăn tiền",
+        "desc": "Thời điểm đóng ngăn kéo tiền.",
+        "ref": "—"
+      },
+      "`ICLOSESTATION`": {
+        "en": "Closing station ID",
+        "vi": "POS bắt đầu in",
+        "desc": "POS khởi tạo việc in receipt.",
+        "ref": "`CASHES`"
+      },
+      "`FLAGS`": {
+        "en": "Receipt flags",
+        "vi": "Cờ hệ thống",
+        "desc": "Bitmask điều khiển; bit 1: cố định kết quả thay vì tính lại.",
+        "ref": "—"
+      },
+      "`ISHIFT`": {
+        "en": "Cash shift number",
+        "vi": "Số ca thu ngân",
+        "desc": "Ca thu ngân có hóa đơn.",
+        "ref": "[SHIFTS](#shifts)"
+      },
+      "`IFISCSHIFT`": {
+        "en": "Fiscal shift number",
+        "vi": "Số ca tài chính",
+        "desc": "Ca của thiết bị tài chính/fiscal register.",
+        "ref": "—"
+      },
+      "`IPRINTSTATION`": {
+        "en": "Printing station ID",
+        "vi": "POS in bill",
+        "desc": "Máy POS thực hiện in hóa đơn.",
+        "ref": "`CASHES`"
+      },
+      "`IDRAWER`": {
+        "en": "Cash drawer ID",
+        "vi": "Mã ngăn tiền",
+        "desc": "Ngăn kéo/két tiền liên quan.",
+        "ref": "`DEVICES`"
+      },
+      "`IPRINTER`": {
+        "en": "Printer ID",
+        "vi": "Mã máy in",
+        "desc": "Thiết bị in hóa đơn.",
+        "ref": "`DEVICES`"
+      },
+      "`EXTFISCID`": {
+        "en": "External fiscal ID",
+        "vi": "Mã máy tài chính",
+        "desc": "Định danh nội bộ của thiết bị fiscal.",
+        "ref": "—"
+      },
+      "`PRINTNUMBER`": {
+        "en": "Printed receipt number",
+        "vi": "Số lần/số thứ tự in",
+        "desc": "Số thứ tự/lần in theo cơ chế in hóa đơn; khác CHECKNUM.",
+        "ref": "—"
+      },
+      "`CHECKNUM`": {
+        "en": "Check number",
+        "vi": "Số hóa đơn",
+        "desc": "Số hóa đơn do RK7 cấp và hiển thị khi tra cứu.",
+        "ref": "—"
+      },
+      "`PARENTCHECKNUM`": {
+        "en": "Parent check number",
+        "vi": "Bill gốc",
+        "desc": "Số hóa đơn mẹ khi tách theo phân loại.",
+        "ref": "—"
+      },
+      "`GUESTCNT`": {
+        "en": "Guest count",
+        "vi": "Số khách",
+        "desc": "Số khách trên hóa đơn.",
+        "ref": "—"
+      },
+      "`SEAT`": {
+        "en": "Seat number",
+        "vi": "Số ghế",
+        "desc": "Ghế áp dụng cho hóa đơn.",
+        "ref": "—"
+      },
+      "`DELETED`": {
+        "en": "Receipt deleted flag",
+        "vi": "Đã xóa?",
+        "desc": "Dấu hiệu hóa đơn bị đánh dấu xóa; xác nhận giá trị theo dữ liệu thực tế.",
+        "ref": "—"
+      },
+      "`UNDOTRANSACTIONS`": {
+        "en": "Separate transaction flag",
+        "vi": "Giao dịch tách",
+        "desc": "Cờ giao dịch đã chạy riêng, thường khi lỗi in hóa đơn.",
+        "ref": "—"
+      },
+      "`IDELETEMANAGER`": {
+        "en": "Deletion approver ID",
+        "vi": "NV duyệt xóa",
+        "desc": "Nhân viên xác nhận việc xóa hóa đơn.",
+        "ref": "`EMPLOYEES`"
+      },
+      "`DELETEDATETIME`": {
+        "en": "Receipt deletion time",
+        "vi": "Giờ xóa bill",
+        "desc": "Ngày giờ xóa hóa đơn; giá trị 0 có thể là chưa có.",
+        "ref": "—"
+      },
+      "`BASICSUM`": {
+        "en": "Basic currency sum",
+        "vi": "Tiền cơ sở",
+        "desc": "Tổng giá trị hóa đơn theo tiền tệ cơ sở.",
+        "ref": "—"
+      },
+      "`BINDEDSUM`": {
+        "en": "Dish-bound receipt sum",
+        "vi": "Tiền món trên bill",
+        "desc": "Tổng hóa đơn theo các món được gắn.",
+        "ref": "—"
+      },
+      "`NATIONALSUM`": {
+        "en": "National currency sum",
+        "vi": "Tiền nội tệ",
+        "desc": "Tổng hóa đơn theo tiền tệ quốc gia.",
+        "ref": "—"
+      },
+      "`FISCALSUM`": {
+        "en": "Fiscal sum",
+        "vi": "Tiền fiscal",
+        "desc": "Giá trị ghi nhận cho nghiệp vụ fiscal.",
+        "ref": "—"
+      },
+      "`PRLISTSUM`": {
+        "en": "Price list sum",
+        "vi": "Tiền giá niêm yết",
+        "desc": "Tổng giá niêm yết trước phần giảm giá/phân bổ liên quan.",
+        "ref": "—"
+      },
+      "`DISCOUNTSUM`": {
+        "en": "Discount sum",
+        "vi": "Tiền giảm giá",
+        "desc": "Tổng khoản giảm giá của hóa đơn, thường biểu diễn số âm.",
+        "ref": "—"
+      },
+      "`TOPAYSUM`": {
+        "en": "Remaining to pay",
+        "vi": "Còn phải trả",
+        "desc": "Số còn phải trả của hóa đơn; 0 thường là không còn dư nợ.",
+        "ref": "—"
+      },
+      "`DISHPRICELISTSUM`": {
+        "en": "Dish list sum",
+        "vi": "Giá món",
+        "desc": "Tổng giá niêm yết các món.",
+        "ref": "—"
+      },
+      "`CHARGEPRICELISTSUM`": {
+        "en": "Markup list sum",
+        "vi": "Tiền tăng giá",
+        "desc": "Tổng khoản cộng giá/markup theo bảng giá.",
+        "ref": "—"
+      },
+      "`TAXSUM`": {
+        "en": "Basic-currency tax",
+        "vi": "Tổng tiền thuế",
+        "desc": "Thuế tính theo tiền tệ cơ sở.",
+        "ref": "—"
+      },
+      "`TAXSUMADDED`": {
+        "en": "Added tax",
+        "vi": "Thuế cộng thêm",
+        "desc": "Phần thuế cộng thêm, không mặc định là toàn bộ thuế.",
+        "ref": "—"
+      },
+      "`BONUSSUM`": {
+        "en": "Bonus sum",
+        "vi": "Tiền thưởng",
+        "desc": "Giá trị bonus theo tiền tệ cơ sở.",
+        "ref": "—"
+      },
+      "`GLOBALIDENT`": {
+        "en": "Global identifier",
+        "vi": "Mã định danh chung",
+        "desc": "Mã định danh toàn cục của hóa đơn, khác CHECKNUM.",
+        "ref": "—"
+      },
+      "`PRINTTRY`": {
+        "en": "Print attempt count",
+        "vi": "Số lượt thử in",
+        "desc": "Số lần thử in receipt, không phải số hóa đơn.",
+        "ref": "—"
+      },
+      "`ISBILL`": {
+        "en": "Is bill flag",
+        "vi": "Là bill tạm?",
+        "desc": "Cờ nhận diện bản ghi bill/proforma.",
+        "ref": "—"
+      },
+      "`IVOID`": {
+        "en": "Receipt void reason ID",
+        "vi": "Mã lý do hủy",
+        "desc": "Mã loại/lý do void hóa đơn.",
+        "ref": "`ORDERVOIDS`"
+      },
+      "`OPENVOIDNAME`": {
+        "en": "Custom void reason",
+        "vi": "Tên lý do hủy",
+        "desc": "Nội dung tên lý do hủy do người dùng nhập.",
+        "ref": "—"
+      },
+      "`IDELETEPERSON`": {
+        "en": "Receipt deleter ID",
+        "vi": "NV xóa bill",
+        "desc": "Người thực hiện xóa hóa đơn.",
+        "ref": "`EMPLOYEES`"
+      },
+      "`BASICRATE`": {
+        "en": "Basic exchange rate",
+        "vi": "Tỷ giá cơ sở",
+        "desc": "Tỷ giá quy đổi sang tiền cơ sở; cần kiểm tra hệ số của RK7.",
+        "ref": "—"
+      },
+      "`WASALLCHANGETOTIP`": {
+        "en": "All change to tip",
+        "vi": "Tiền thừa thành tip?",
+        "desc": "Cờ chuyển toàn bộ tiền thừa thành tip.",
+        "ref": "—"
+      },
+      "`BILLERROR`": {
+        "en": "Receipt print error",
+        "vi": "Lỗi in bill?",
+        "desc": "Cờ có lỗi khi in hóa đơn.",
+        "ref": "—"
+      },
+      "`INVOICEUNI`": {
+        "en": "Invoice UNI",
+        "vi": "Mã hóa đơn VAT",
+        "desc": "Định danh bản ghi invoice liên kết.",
+        "ref": "`INVOICES`"
+      },
+      "`INVOICEPRINTED`": {
+        "en": "Invoice printed flag",
+        "vi": "Đã in VAT?",
+        "desc": "Cờ invoice đã được in.",
+        "ref": "—"
+      },
+      "`COPIESPRINTED`": {
+        "en": "Printed copies",
+        "vi": "Số bản đã in",
+        "desc": "Số bản sao receipt được in.",
+        "ref": "—"
+      },
+      "`IDRAWERSHIFT`": {
+        "en": "Drawer registration shift",
+        "vi": "Ca ngăn tiền",
+        "desc": "Phiên đăng ký ngăn/két tiền.",
+        "ref": "`REGISTRATIONS`"
+      },
+      "`IBUSINESSPERIOD`": {
+        "en": "Business period ID",
+        "vi": "Kỳ kinh doanh",
+        "desc": "Mã kỳ kinh doanh.",
+        "ref": "`BUSINESSPERIODS`"
+      },
+      "`IGNOREINREP`": {
+        "en": "Ignore in reports",
+        "vi": "Bỏ qua báo cáo?",
+        "desc": "Cờ loại trừ bản ghi khỏi báo cáo phù hợp.",
+        "ref": "—"
+      },
+      "`ISPREPAYRECEIPT`": {
+        "en": "Prepayment receipt",
+        "vi": "Phiếu trả trước?",
+        "desc": "Cờ hóa đơn fiscal trả trước.",
+        "ref": "—"
+      },
+      "`ISDEPOSITRECEIPT`": {
+        "en": "Cash deposit receipt",
+        "vi": "Phiếu nộp tiền?",
+        "desc": "Cờ chứng từ fiscal nộp tiền vào két.",
+        "ref": "—"
+      },
+      "`ISWITHDRAWALRECEIPT`": {
+        "en": "Cash withdrawal receipt",
+        "vi": "Phiếu rút tiền?",
+        "desc": "Cờ chứng từ fiscal rút tiền khỏi két.",
+        "ref": "—"
+      },
+      "`ISTARERECEIPT`": {
+        "en": "Repurchase receipt",
+        "vi": "Phiếu mua lại?",
+        "desc": "Cờ phiếu fiscal mua lại/thu hồi hàng.",
+        "ref": "—"
+      },
+      "`SQI`": {
+        "en": "Service quality index",
+        "vi": "Chỉ số dịch vụ",
+        "desc": "Chỉ số chất lượng dịch vụ.",
+        "ref": "—"
+      },
+      "`GUIDSTRING`": {
+        "en": "Record GUID",
+        "vi": "GUID bản ghi",
+        "desc": "Mã GUID duy nhất của hóa đơn.",
+        "ref": "—"
+      },
+      "`PAYFISCALSUM`": {
+        "en": "Fiscal payments sum",
+        "vi": "Tiền thanh toán fiscal",
+        "desc": "Tổng thanh toán fiscal theo nội tệ.",
+        "ref": "—"
+      },
+      "`RECEIPTTAXTYPE`": {
+        "en": "Receipt tax type",
+        "vi": "Loại thuế bill",
+        "desc": "Hệ thống thuế / Loại thuế của bill (0: Thuế phổ thông ОСН, 1: УСН Doanh thu, 2: УСН DT-CP, 3: ЕНВД, 4: ЕСХН, 5: Патент). Dùng để tự động tách hóa đơn theo chế độ thuế.",
+        "ref": "0: ОСН (general) | 1: УСН доход | 2: УСН доход-расход | 3: ЕНВД | 4: ЕСХН | 5: Патент"
+      },
+      "`BILLPRINTED`": {
+        "en": "Bill printed flag",
+        "vi": "Đã in tạm tính?",
+        "desc": "Cờ ghi nhận đã in bill.",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "Database status",
+        "vi": "Trạng thái DB",
+        "desc": "Trạng thái lưu trữ; -1 được xem là xóa theo tài liệu.",
+        "ref": "—"
+      },
+      "`DELETEPRINTNUMBER`": {
+        "en": "Deletion print number",
+        "vi": "Số phiếu xóa",
+        "desc": "Số chứng từ in xóa receipt.",
+        "ref": "—"
+      },
+      "`FISCDOCNUMBER`": {
+        "en": "Fiscal document number",
+        "vi": "Số chứng từ fiscal",
+        "desc": "Số fiscal của chứng từ in receipt.",
+        "ref": "—"
+      },
+      "`DELETEFISCDOCNUMBER`": {
+        "en": "Fiscal deletion document",
+        "vi": "Số fiscal xóa",
+        "desc": "Số fiscal của chứng từ xóa receipt.",
+        "ref": "—"
+      },
+      "`GLOBALFISCALID`": {
+        "en": "Global fiscal ID",
+        "vi": "Mã fiscal chung",
+        "desc": "Định danh fiscal toàn cục của hóa đơn.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction record GUID",
+        "vi": "GUID giao dịch",
+        "desc": "GUID định danh thời điểm/bản ghi giao dịch đồng bộ.",
+        "ref": "—"
+      }
+    }
+  },
+  "SERVPRINTERS": {
+    "title": "Dữ liệu in bếp",
+    "description": "Thông tin phục vụ hoạt động in chế biến hoặc in phục vụ.",
+    "fields": {
+      "`DEVICE`": {
+        "en": "Logical printer",
+        "vi": "Máy in logic",
+        "desc": "Thông tin máy in logic được lưu trong SERVPRINTERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`LASTSEQ`": {
+        "en": "Last service print sequence",
+        "vi": "Số in gần nhất",
+        "desc": "Thông tin số in gần nhất được lưu trong SERVPRINTERS. **[Cần xác minh]**",
+        "ref": "—"
+      }
+    }
+  },
+  "VISITS": {
+    "title": "Lượt phục vụ",
+    "description": "Lượt phục vụ của khách/bàn, có thể chứa nhiều order.",
+    "fields": {
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`SIFR`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`STARTTIME`": {
+        "en": "Opened at",
+        "vi": "Giờ mở lượt",
+        "desc": "Thời điểm giờ mở lượt được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`CLOSETIME`": {
+        "en": "Closed at",
+        "vi": "Giờ kết thúc",
+        "desc": "Thời điểm giờ kết thúc được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`GUIDSTRING`": {
+        "en": "Visit GUID",
+        "vi": "GUID lượt",
+        "desc": "Định danh nội bộ của bản ghi lượt phục vụ.",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      }
+    }
+  },
+  "ACTIVITYLIST": {
+    "title": "Hoạt động hệ thống",
+    "description": "Danh sách sự kiện/hoạt động hệ thống; ý nghĩa chi tiết cần đối chiếu UDB thực tế.",
+    "fields": {
+      "`SIFR`": {
+        "en": "Activity ID",
+        "vi": "ID hoạt động",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`NAME`": {
+        "en": "Activity name",
+        "vi": "Tên hoạt động",
+        "desc": "Thông tin tên hoạt động được lưu trong ACTIVITYLIST. **[Cần xác minh]**",
+        "ref": "—"
+      }
+    }
+  },
+  "DRAWERLOG": {
+    "title": "Nhật ký két tiền",
+    "description": "Lịch sử sự kiện liên quan đến ngăn/két tiền.",
+    "fields": {
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`DATETIME`": {
+        "en": "Event time",
+        "vi": "Giờ ghi nhận",
+        "desc": "Thời điểm giờ ghi nhận được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IDRAWER`": {
+        "en": "Drawer ID",
+        "vi": "Ngăn kéo",
+        "desc": "Mã tham chiếu ngăn kéo được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`DEVICES`"
+      },
+      "`SUM`": {
+        "en": "Amount",
+        "vi": "Số tiền",
+        "desc": "Giá trị tiền hoặc tổng cộng theo đối tượng dòng. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      }
+    }
+  },
+  "HARDWAREINFO": {
+    "title": "Thông tin thiết bị",
+    "description": "Metadata về thiết bị/phần cứng sử dụng trên trạm.",
+    "fields": {
+      "`SIFR`": {
+        "en": "Device ID",
+        "vi": "Mã thiết bị",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`NAME`": {
+        "en": "Device name",
+        "vi": "Tên thiết bị",
+        "desc": "Thông tin tên thiết bị được lưu trong HARDWAREINFO. **[Cần xác minh]**",
+        "ref": "—"
+      }
+    }
+  },
+  "LIC_CHECK_ANSWERS": {
+    "title": "Phản hồi kiểm tra license",
+    "description": "Kết quả hoặc phản hồi từ cơ chế kiểm tra bản quyền.",
+    "fields": {
+      "`SIFR`": {
+        "en": "Check ID",
+        "vi": "ID kiểm tra",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`RESULT`": {
+        "en": "Result",
+        "vi": "Kết quả",
+        "desc": "Thông tin kết quả được lưu trong LIC_CHECK_ANSWERS. **[Cần xác minh]**",
+        "ref": "—"
+      }
+    }
+  },
+  "PAYMENTS": {
+    "title": "Giao dịch thanh toán",
+    "description": "Các khoản thanh toán phát sinh đối với order/hóa đơn.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`). **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order identifier",
+        "vi": "Mã order",
+        "desc": "Định danh order trong visit. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`UNI`": {
+        "en": "Payment UNI",
+        "vi": "ID thanh toán",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`SIFR`": {
+        "en": "Currency ID",
+        "vi": "Mã phương thức",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`SUM`": {
+        "en": "Payment amount",
+        "vi": "Số tiền",
+        "desc": "Giá trị tiền hoặc tổng cộng theo đối tượng dòng. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`BASICSUM`": {
+        "en": "Base amount",
+        "vi": "Tiền cơ sở",
+        "desc": "Giá trị tiền cơ sở của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`NATIONALSUM`": {
+        "en": "National amount",
+        "vi": "Tiền quốc gia",
+        "desc": "Giá trị tiền quốc gia của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ICREATOR`": {
+        "en": "Creator",
+        "vi": "NV thanh toán",
+        "desc": "Mã tham chiếu nv thanh toán được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`IAUTHOR`": {
+        "en": "Author",
+        "vi": "NV xác nhận",
+        "desc": "Mã tham chiếu nv xác nhận được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`GUIDSTRING`": {
+        "en": "Payment GUID",
+        "vi": "GUID thanh toán",
+        "desc": "Định danh nội bộ của bản ghi giao dịch thanh toán.",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "STATE": {
+        "en": "Payment state",
+        "vi": "Trạng thái thanh toán",
+        "desc": "Trạng thái bản ghi thanh toán theo enum TDrawItemState (6: đã hoàn tất/đóng).",
+        "ref": "—"
+      },
+      "PAYLINETYPE": {
+        "en": "Payment line type",
+        "vi": "Loại dòng thanh toán",
+        "desc": "Phương thức thanh toán theo enum TPayLineType (0: Tiền mặt pltCash, 1: Thẻ ngân hàng pltCrCard, 2: Phòng KS pltHotel, 3: Thẻ PDS pltPayCard,...).",
+        "ref": "—"
+      }
+    }
+  },
+  "PAYMENTSEXTRA": {
+    "title": "Thông tin thanh toán bổ sung",
+    "description": "Dữ liệu bổ sung cho giao dịch thanh toán.",
+    "fields": {
+      "`VISIT`": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Liên kết lượt phục vụ (`VISITS`). **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "[VISITS](#visits)"
+      },
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ORDERIDENT`": {
+        "en": "Order identifier",
+        "vi": "Mã order",
+        "desc": "Định danh order trong visit. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "[ORDERS](#orders)"
+      },
+      "`PAYMENTUNI`": {
+        "en": "Payment UNI",
+        "vi": "Mã thanh toán",
+        "desc": "Thông tin mã thanh toán được lưu trong PAYMENTSEXTRA. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`UNI`": {
+        "en": "Extra UNI",
+        "vi": "ID dòng thêm",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`DATA`": {
+        "en": "Extra data",
+        "vi": "Dữ liệu mở rộng",
+        "desc": "Thông tin dữ liệu mở rộng được lưu trong PAYMENTSEXTRA. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      }
+    }
+  },
+  "REGPERS": {
+    "title": "Đăng ký nhân viên",
+    "description": "Thông tin nhân viên đăng ký sử dụng vị trí/ca; cần xác nhận phiên bản.",
+    "fields": {
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`EMPID`": {
+        "en": "Employee ID",
+        "vi": "Mã nhân viên",
+        "desc": "Thông tin mã nhân viên được lưu trong REGPERS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`STATION`": {
+        "en": "Station ID",
+        "vi": "Máy POS",
+        "desc": "Thông tin máy pos được lưu trong REGPERS. **[Cần xác minh]**",
+        "ref": "`CASHES`"
+      }
+    }
+  },
+  "SHIFTS": {
+    "title": "Ca thu ngân",
+    "description": "Ca làm việc của trạm/thu ngân: mở ca, đóng ca, tổng tiền.",
+    "fields": {
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`ISTATION`": {
+        "en": "Station ID",
+        "vi": "Máy POS",
+        "desc": "Trạng thái/cờ máy pos của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "`CASHES`"
+      },
+      "`SHIFTNUM`": {
+        "en": "Shift number",
+        "vi": "Số ca",
+        "desc": "Số lượng hoặc số thứ tự số ca theo bảng. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ICOMMONSHIFT`": {
+        "en": "Common shift",
+        "vi": "Ca chung",
+        "desc": "Mã tham chiếu ca chung được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "[GLOBALSHIFTS](#globalshifts)"
+      },
+      "`STARTSHIFTNUM`": {
+        "en": "First unclosed shift",
+        "vi": "Ca đầu chưa đóng",
+        "desc": "Số lượng hoặc số thứ tự ca đầu chưa đóng theo bảng. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`CREATETIME`": {
+        "en": "Created at",
+        "vi": "Giờ tạo",
+        "desc": "Thời điểm giờ tạo được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`STARTTIME`": {
+        "en": "Started at",
+        "vi": "Giờ mở",
+        "desc": "Thời điểm giờ mở được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`CLOSETIME`": {
+        "en": "Closed at",
+        "vi": "Giờ đóng",
+        "desc": "Thời điểm giờ đóng được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IMANAGER`": {
+        "en": "Shift manager",
+        "vi": "Quản lý ca",
+        "desc": "Mã tham chiếu quản lý ca được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`BASICSUM`": {
+        "en": "Base sum",
+        "vi": "Tiền cơ sở",
+        "desc": "Giá trị tiền cơ sở của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`FISCALSUM`": {
+        "en": "Fiscal sum",
+        "vi": "Tiền fiscal",
+        "desc": "Giá trị tiền fiscal của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`NATIONALSUM`": {
+        "en": "National sum",
+        "vi": "Tiền quốc gia",
+        "desc": "Giá trị tiền quốc gia của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`CLOSED`": {
+        "en": "Closed flag",
+        "vi": "Đã đóng",
+        "desc": "Trạng thái/cờ đã đóng của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SENDED`": {
+        "en": "Sent flag",
+        "vi": "Đã gửi",
+        "desc": "Thông tin đã gửi được lưu trong SHIFTS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PRINTSHIFTNUM`": {
+        "en": "Printed shift no.",
+        "vi": "Số ca in",
+        "desc": "Số lượng hoặc số thứ tự số ca in theo bảng. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IPRINTSTATION`": {
+        "en": "Print station",
+        "vi": "POS in",
+        "desc": "Mã tham chiếu pos in được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`CASHES`"
+      },
+      "`IPRINTER`": {
+        "en": "Printer",
+        "vi": "Máy in",
+        "desc": "Mã tham chiếu máy in được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`PRINTERASSIGNS`"
+      },
+      "`EXTFISCID`": {
+        "en": "External fiscal ID",
+        "vi": "Mã fiscal ngoài",
+        "desc": "Thông tin mã fiscal ngoài được lưu trong SHIFTS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`PRINTED`": {
+        "en": "Printed flag",
+        "vi": "Đã in",
+        "desc": "Trạng thái/cờ đã in của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ISLASTSHIFT`": {
+        "en": "Last shift flag",
+        "vi": "Ca cuối",
+        "desc": "Trạng thái/cờ ca cuối của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`LASTPRINTNUMBER`": {
+        "en": "Last receipt no.",
+        "vi": "Bill cuối",
+        "desc": "Thông tin bill cuối được lưu trong SHIFTS. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ZREPNUM`": {
+        "en": "Z report no.",
+        "vi": "Số báo cáo Z",
+        "desc": "Số lượng hoặc số thứ tự số báo cáo z theo bảng. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill.",
+        "ref": "—"
+      }
+    }
+  },
+  "CASHINOUT": {
+    "title": "Thu/chi tiền mặt",
+    "description": "Chứng từ nộp/rút tiền tại két hoặc ngăn tiền.",
+    "fields": {
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`UNI`": {
+        "en": "Row UNI",
+        "vi": "ID dòng",
+        "desc": "Định danh nội bộ, không đảm bảo duy nhất toàn hệ thống.",
+        "ref": "—"
+      },
+      "`ISDEPOSIT`": {
+        "en": "Deposit/collection",
+        "vi": "Thu hay chi",
+        "desc": "Trạng thái/cờ thu hay chi của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ISTATION`": {
+        "en": "Station",
+        "vi": "Máy POS",
+        "desc": "Trạng thái/cờ máy pos của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "`CASHES`"
+      },
+      "`ICOMMONSHIFT`": {
+        "en": "Common shift",
+        "vi": "Ca chung",
+        "desc": "Mã tham chiếu ca chung được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "[GLOBALSHIFTS](#globalshifts)"
+      },
+      "`ISHIFT`": {
+        "en": "Cash shift",
+        "vi": "Ca thu ngân",
+        "desc": "Trạng thái/cờ ca thu ngân của bản ghi; cần kiểm tra bộ giá trị. **[Cần xác minh]**",
+        "ref": "[SHIFTS](#shifts)"
+      },
+      "`IDRAWERSHIFT`": {
+        "en": "Drawer shift",
+        "vi": "Ca két",
+        "desc": "Mã tham chiếu ca két được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`SIFR`": {
+        "en": "Record ID",
+        "vi": "ID chứng từ",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`ORIGINALSUM`": {
+        "en": "Original sum",
+        "vi": "Số tiền gốc",
+        "desc": "Giá trị số tiền gốc của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`NATIONALSUM`": {
+        "en": "National sum",
+        "vi": "Tiền quốc gia",
+        "desc": "Giá trị tiền quốc gia của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`REALORIGINALSUM`": {
+        "en": "Actual amount",
+        "vi": "Tiền thực tế",
+        "desc": "Giá trị tiền thực tế của bản ghi; đơn vị tùy cấu hình RK7. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`ICASHIER`": {
+        "en": "Cashier",
+        "vi": "Thu ngân",
+        "desc": "Mã tham chiếu thu ngân được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`IPRINTER`": {
+        "en": "Printer",
+        "vi": "Máy in",
+        "desc": "Mã tham chiếu máy in được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`PRINTERASSIGNS`"
+      },
+      "`KIND`": {
+        "en": "Cash flow type",
+        "vi": "Loại thu chi",
+        "desc": "Thông tin loại thu chi được lưu trong CASHINOUT. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IDRAWER`": {
+        "en": "Drawer",
+        "vi": "Ngăn kéo",
+        "desc": "Mã tham chiếu ngăn kéo được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`DEVICES`"
+      },
+      "`PRINTNUMBER`": {
+        "en": "Print number",
+        "vi": "Số in",
+        "desc": "Thông tin số in được lưu trong CASHINOUT. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`DATETIME`": {
+        "en": "Transaction time",
+        "vi": "Giờ thu chi",
+        "desc": "Thời điểm giờ thu chi được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`CARDCODE`": {
+        "en": "Card code",
+        "vi": "Mã thẻ",
+        "desc": "Thông tin mã thẻ được lưu trong CASHINOUT. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IREASON`": {
+        "en": "Reason ID",
+        "vi": "Lý do thu chi",
+        "desc": "Mã tham chiếu lý do thu chi được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`OPENREASONNAME`": {
+        "en": "Open reason",
+        "vi": "Lý do nhập tay",
+        "desc": "Thông tin lý do nhập tay được lưu trong CASHINOUT. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`IAUTHOR`": {
+        "en": "Author",
+        "vi": "NV xác nhận",
+        "desc": "Mã tham chiếu nv xác nhận được lưu trong bản ghi. **[Cần xác minh]**",
+        "ref": "`EMPLOYEES`"
+      },
+      "`DBSTATUS`": {
+        "en": "DB record status",
+        "vi": "Trạng thái DB",
+        "desc": "`-1` thường biểu thị bản ghi xóa; kiểm tra phiên bản.",
+        "ref": "—"
+      },
+      "`TRANSACT_GUID`": {
+        "en": "Transaction GUID",
+        "vi": "GUID giao dịch",
+        "desc": "ID đồng bộ/ghi nhận, không phải mã bill.",
+        "ref": "—"
+      }
+    }
+  },
+  "CASHSUMS": {
+    "title": "Tổng hợp tiền két",
+    "description": "Giá trị tiền trong két/ngăn thu ngân; cần xác minh cấu trúc UDB.",
+    "fields": {
+      "`MIDSERVER`": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server ghi nhận bản ghi.",
+        "ref": "`CASHGROUPS`"
+      },
+      "`SUM`": {
+        "en": "Cash total",
+        "vi": "Tổng tiền",
+        "desc": "Giá trị tiền hoặc tổng cộng theo đối tượng dòng. **Cần kiểm chứng tên trường trên UDB.**.",
+        "ref": "—"
+      },
+      "`CURRENCY`": {
+        "en": "Currency",
+        "vi": "Tiền tệ",
+        "desc": "Thông tin tiền tệ được lưu trong CASHSUMS. **[Cần xác minh]**",
+        "ref": "`CURRENCIES`"
+      }
+    }
+  },
+  "FISCALREGISTERS": {
+    "title": "Thiết bị fiscal",
+    "description": "Thông tin thiết bị fiscal/kết nối hóa đơn thuế.",
+    "fields": {
+      "`SIFR`": {
+        "en": "Device ID",
+        "vi": "Mã thiết bị",
+        "desc": "Mã định danh của bản ghi trong bảng này.",
+        "ref": "—"
+      },
+      "`NAME`": {
+        "en": "Device name",
+        "vi": "Tên thiết bị",
+        "desc": "Thông tin tên thiết bị được lưu trong FISCALREGISTERS. **[Cần xác minh]**",
+        "ref": "—"
+      }
+    }
+  },
+  "INFO": {
+    "title": "Thông tin UDB",
+    "description": "Thông tin metadata tổng quát của cơ sở dữ liệu UDB.",
+    "fields": {
+      "`NAME`": {
+        "en": "Info name",
+        "vi": "Tên thông tin",
+        "desc": "Thông tin tên thông tin được lưu trong INFO. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`VALUE`": {
+        "en": "Info value",
+        "vi": "Giá trị",
+        "desc": "Thông tin giá trị được lưu trong INFO. **[Cần xác minh]**",
+        "ref": "—"
+      }
+    }
+  },
+  "VERSION": {
+    "title": "Phiên bản UDB",
+    "description": "Thông tin phiên bản và các bộ đếm về tệp UDB.",
+    "fields": {
+      "`NUMBER`": {
+        "en": "Schema version",
+        "vi": "Phiên bản cấu trúc",
+        "desc": "Thông tin phiên bản cấu trúc được lưu trong VERSION. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`CREATED`": {
+        "en": "Database created",
+        "vi": "Giờ tạo DB",
+        "desc": "Thông tin giờ tạo db được lưu trong VERSION. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`BACKUPTIME`": {
+        "en": "Last backup",
+        "vi": "Giờ sao lưu",
+        "desc": "Thời điểm giờ sao lưu được ghi nhận. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`TRANSACTIONCOUNT`": {
+        "en": "Transaction count",
+        "vi": "Đếm giao dịch",
+        "desc": "Số lượng hoặc số thứ tự đếm giao dịch theo bảng. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`BACKUPCOUNT`": {
+        "en": "Backup count",
+        "vi": "Số lần backup",
+        "desc": "Số lượng hoặc số thứ tự số lần backup theo bảng. **[Cần xác minh]**",
+        "ref": "—"
+      },
+      "`LIGHTWEIGHTMODE`": {
+        "en": "Lightweight mode",
+        "vi": "Chế độ UDB",
+        "desc": "Thông tin chế độ udb được lưu trong VERSION. **[Cần xác minh]**",
+        "ref": "—"
+      }
+    }
+  },
+  "KDSDATA": {
+    "title": "Màn hình bếp KDS",
+    "description": "Dữ liệu điều phối và theo dõi tiến độ chế biến món ăn trên màn hình bếp KDS (Kitchen Display System).",
+    "fields": {
+      "KDSSIFR": {
+        "en": "KDS record ID",
+        "vi": "Mã định danh KDS",
+        "desc": "Khóa chính bản ghi điều phối món ăn trên hệ thống KDS.",
+        "ref": "—"
+      },
+      "MIDSERVER": {
+        "en": "Cash server",
+        "vi": "Máy chủ POS",
+        "desc": "Xác định Cash Server xử lý món KDS.",
+        "ref": "CASHGROUPS"
+      },
+      "VISITID": {
+        "en": "Visit ID",
+        "vi": "Mã lượt bàn",
+        "desc": "Mã tham chiếu lượt bàn chứa món KDS.",
+        "ref": "VISITS"
+      },
+      "KDSSTATE": {
+        "en": "KDS processing state",
+        "vi": "Trạng thái bếp",
+        "desc": "Trạng thái chế biến món trên màn hình bếp: 0=Chưa xác định, 1=Đã gửi bếp (kdsSent), 2=Đang nấu (kdsCooking), 3=Đã nấu xong (kdsCooked), 4=Đã nhận món (kdsTaken), 5=Đang soạn đơn, 6=Đã soạn xong, 7=Tạm hoãn, 8=Tiếp tục nấu, 9=Đã hủy.",
+        "ref": "—"
+      },
+      "KDSFLAGS": {
+        "en": "KDS operational flags",
+        "vi": "Cờ xử lý KDS",
+        "desc": "Cờ điều phối KDS (1: cho phép xóa/hủy món).",
+        "ref": "—"
+      },
+      "SENTAT": {
+        "en": "Sent time",
+        "vi": "Giờ gửi bếp",
+        "desc": "Thời điểm đơn món được chuyển vào màn hình bếp KDS.",
+        "ref": "—"
+      },
+      "INITAT": {
+        "en": "Started time",
+        "vi": "Bắt đầu nấu",
+        "desc": "Thời điểm đầu bếp bấm bắt đầu chế biến món trên màn hình KDS.",
+        "ref": "—"
+      },
+      "DONEAT": {
+        "en": "Finished time",
+        "vi": "Hoàn thành nấu",
+        "desc": "Thời điểm đầu bếp bấm hoàn tất món ăn.",
+        "ref": "—"
+      },
+      "TAKEAT": {
+        "en": "Picked up time",
+        "vi": "Giờ lấy món",
+        "desc": "Thời điểm nhân viên phục vụ nhận món ra đồ cho khách.",
+        "ref": "—"
+      },
+      "COOKTM": {
+        "en": "Actual cooking duration",
+        "vi": "Thời gian nấu thực tế",
+        "desc": "Thời lượng chế biến thực tế của đầu bếp (tính bằng giây).",
+        "ref": "—"
+      },
+      "MENUCOOKTIME": {
+        "en": "Standard cooking duration",
+        "vi": "Thời gian nấu chuẩn",
+        "desc": "Thời lượng chế biến định chuẩn trên thực đơn R-Keeper 7 (tính bằng giây).",
+        "ref": "—"
+      },
+      "MENUCATEGORY": {
+        "en": "KDS menu category",
+        "vi": "Nhóm bếp KDS",
+        "desc": "Phân loại tuyến bếp KDS tiếp nhận món.",
+        "ref": "—"
+      },
+      "SERVPRINTNUM": {
+        "en": "Service print number",
+        "vi": "Số phiếu chế biến",
+        "desc": "Số thứ tự in phiếu báo bếp / chế biến.",
+        "ref": "—"
+      }
+    }
+  }
+}

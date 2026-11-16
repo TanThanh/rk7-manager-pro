@@ -1,0 +1,2528 @@
+{
+  "100": {
+    "en": "Go to selector",
+    "vi": "Chuyển tới Selector",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "101": {
+    "en": "Automatic go to selector",
+    "vi": "Chuyển tới Selector tự động",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "103": {
+    "en": "Up",
+    "vi": "Trên",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "104": {
+    "en": "Down",
+    "vi": "Xuống",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "105": {
+    "en": "Left",
+    "vi": "Trái",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "106": {
+    "en": "Right",
+    "vi": "Quyền",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "107": {
+    "en": "Page up",
+    "vi": "Tr.Trên",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "108": {
+    "en": "Page down",
+    "vi": "Tr.Dưới",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "109": {
+    "en": "Home",
+    "vi": "Trang chủ",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "110": {
+    "en": "End",
+    "vi": "Kết thúc",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "111": {
+    "en": "F10",
+    "vi": "F10",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "114": {
+    "en": "Number",
+    "vi": "Số",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "115": {
+    "en": "Decimal point",
+    "vi": "Chấm",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "116": {
+    "en": "Alphabetic",
+    "vi": "Alpha",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "117": {
+    "en": "Special characters",
+    "vi": "Các ký tự đặc biệt",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "118": {
+    "en": "Double zero",
+    "vi": "00",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "119": {
+    "en": "OK",
+    "vi": "OK",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "120": {
+    "en": "Delete / Insert",
+    "vi": "Xóa(Ins)",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "121": {
+    "en": "New",
+    "vi": "Tạo mới",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "122": {
+    "en": "Delete",
+    "vi": "Xóa",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "123": {
+    "en": "Login",
+    "vi": "Đăng nhập",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "124": {
+    "en": "Backspace",
+    "vi": "Phím lùi",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "126": {
+    "en": "List",
+    "vi": "Danh sách",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "127": {
+    "en": "Exit",
+    "vi": "Thoát",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "128": {
+    "en": "Next field",
+    "vi": "Trường tiếp theo",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "129": {
+    "en": "Previous",
+    "vi": "Trước",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "130": {
+    "en": "List 2",
+    "vi": "Danh sách 2",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "131": {
+    "en": "Calculator",
+    "vi": "Máy tính",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "132": {
+    "en": "All",
+    "vi": "Tất cả",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "133": {
+    "en": "Add",
+    "vi": "Cộng",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "134": {
+    "en": "Subtract",
+    "vi": "Trừ",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "135": {
+    "en": "Multiply",
+    "vi": "Nhân",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "136": {
+    "en": "Divide",
+    "vi": "Chia",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "137": {
+    "en": "Function",
+    "vi": "Hàm",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "138": {
+    "en": "Unit price",
+    "vi": "Đơn giá",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "139": {
+    "en": "Save screenshot to file",
+    "vi": "Lưu ảnh chụp màn hình vào file",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "140": {
+    "en": "Keyboard scan code",
+    "vi": "Mã nhận từ bàn phím",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "141": {
+    "en": "Equals",
+    "vi": "Bằng",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "142": {
+    "en": "Print",
+    "vi": "In",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "143": {
+    "en": "Next sheet",
+    "vi": "Sheet tiếp theo",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "144": {
+    "en": "Previous sheet",
+    "vi": "Sheet trước",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "145": {
+    "en": "Switch application",
+    "vi": "Chuyển chương trình",
+    "type": "Điều khiển UI",
+    "note": "Phím điều hướng/giao diện; không suy ra thay đổi dữ liệu kinh doanh."
+  },
+  "202": {
+    "en": "Open own order",
+    "vi": "Mở order của mình",
+    "type": "Quyền/thao tác",
+    "note": "Mở order của nhân viên hiện tại, không phải tạo order."
+  },
+  "203": {
+    "en": "Open any order",
+    "vi": "Mở order bất kỳ",
+    "type": "Quyền/thao tác",
+    "note": "Mở order bất kỳ nếu được cấp quyền."
+  },
+  "204": {
+    "en": "Can register oneself",
+    "vi": "Có thể tự đăng ký",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "205": {
+    "en": "Can register other positions",
+    "vi": "Có thể đăng ký các vị trí khác",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "206": {
+    "en": "Unregister (end session)",
+    "vi": "Hủy đăng nhập (kết thúc làm việc)",
+    "type": "Quyền/thao tác",
+    "note": "Kết thúc phiên đăng nhập, không phải xóa order."
+  },
+  "207": {
+    "en": "Edit notes and additional information",
+    "vi": "Soạn thảo ghi chÚ & thông tin bổ sung",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "208": {
+    "en": "Change revenue center",
+    "vi": "Thay đổi Trung tâm doanh thu",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "209": {
+    "en": "Confirm quantity",
+    "vi": "Xác nhận số lượng",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "210": {
+    "en": "Confirm guest count",
+    "vi": "Xác nhận số khách",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "211": {
+    "en": "Be order waiter",
+    "vi": "Là nhân viên phục vụ Order",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "212": {
+    "en": "Decrease order amount",
+    "vi": "Giảm Tổng trên Order",
+    "type": "Quyền/thao tác",
+    "note": "Quyền giảm tổng order; không đồng nghĩa đã giảm số tiền."
+  },
+  "213": {
+    "en": "Change total discount",
+    "vi": "Thay đổi tổng giảm giá",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "214": {
+    "en": "Create order",
+    "vi": "Lập order",
+    "type": "Quyền/thao tác",
+    "note": "Tạo order mới; không mặc định đồng nghĩa mở visit."
+  },
+  "215": {
+    "en": "Create visit",
+    "vi": "Lập visit",
+    "type": "Quyền/thao tác",
+    "note": "Tạo visit; có thể chứa nhiều order."
+  },
+  "216": {
+    "en": "Edit elements of other employees",
+    "vi": "Có thể soạn thảo các phần tử của nhân viên khác",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "217": {
+    "en": "Assign main waiter to order",
+    "vi": "Thiết lập nhân viên bàn chính cho Order",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "218": {
+    "en": "Reprint receipt permission",
+    "vi": "Quyền thử in lại hóa đơn",
+    "type": "Quyền/thao tác",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "219": {
+    "en": "Cancel receipt after print attempt",
+    "vi": "Quyền hủy hóa đơn sau khi thử in",
+    "type": "Quyền/thao tác",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "220": {
+    "en": "Remove automatic discount",
+    "vi": "Gỡ bỏ giảm giá tự động",
+    "type": "Quyền/thao tác",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "221": {
+    "en": "Close order",
+    "vi": "Đóng Order",
+    "type": "Quyền/thao tác",
+    "note": "Đóng order, không đồng nghĩa đóng receipt hay thanh toán."
+  },
+  "222": {
+    "en": "Confirm operations",
+    "vi": "Xác nhận các giao dịch",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "223": {
+    "en": "Change client card",
+    "vi": "Có thể thay đổi thẻ khách hàng",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "224": {
+    "en": "Register at any position",
+    "vi": "Có thể đăng ký tại vị trí bất kỳ",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "225": {
+    "en": "Add dishes to others’ orders",
+    "vi": "Có thể thêm các món ăn cho các order khác.",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "226": {
+    "en": "Add discounts to others’ orders",
+    "vi": "Có thể thêm các giảm giá cho các order khác.",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "227": {
+    "en": "Login at station",
+    "vi": "Đăng nhập vào trạm làm việc",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "228": {
+    "en": "Delete unsaved dish",
+    "vi": "Xóa món ăn chưa lưu",
+    "type": "Quyền/thao tác",
+    "note": "Xóa món chưa lưu; không mặc định có trong SESSIONDISHES."
+  },
+  "229": {
+    "en": "Transfer dish within order",
+    "vi": "Chuyển món ăn trong order",
+    "type": "Quyền/thao tác",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "230": {
+    "en": "Cash in/out from any drawer",
+    "vi": "Tiền Thu/Nộp từ khay bất kỳ",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "231": {
+    "en": "Manager confirmation for PDS card",
+    "vi": "Xác nhận của Quản lý để áp dụng Thẻ thành viên",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "232": {
+    "en": "Replace void reason",
+    "vi": "A sự thay thế của xóa",
+    "type": "Quyền/thao tác",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "233": {
+    "en": "Change guest type",
+    "vi": "Sửa đổi loại khách",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "234": {
+    "en": "Change guest count",
+    "vi": "Sửa đổi số lượng khách",
+    "type": "Quyền/thao tác",
+    "note": "Thay đổi số khách; kiểm tra số trước/sau."
+  },
+  "235": {
+    "en": "Delete discount",
+    "vi": "Xóa giảm giá",
+    "type": "Quyền/thao tác",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "236": {
+    "en": "First registration after startup",
+    "vi": "Đăng ký đầu tiên sau khởi động",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "237": {
+    "en": "Personalized currencies",
+    "vi": "Tiền tệ đã cá nhân hóa",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "238": {
+    "en": "Manager confirmation for discount",
+    "vi": "Xác nhận của Quản lý để áp dụng Giảm giá",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "239": {
+    "en": "Reprint Z report after failure",
+    "vi": "In báo cáo Z sau thất bại",
+    "type": "Quyền/thao tác",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "240": {
+    "en": "Reprint guest bill",
+    "vi": "Quyền in lại Tạm tính",
+    "type": "Quyền/thao tác",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "241": {
+    "en": "Print other waiters’ reports",
+    "vi": "In báo cáo theo các nhân viên bàn khác",
+    "type": "Quyền/thao tác",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "242": {
+    "en": "Print tax-free settlement reports",
+    "vi": "In các báo cáo theo thanh toán \"không thuế\"",
+    "type": "Quyền/thao tác",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "243": {
+    "en": "Delete prepared dish",
+    "vi": "Xóa món ăn đã chế biến",
+    "type": "Quyền/thao tác",
+    "note": "Quyền xóa món đã chế biến; không đủ để kết luận món nào bị xóa."
+  },
+  "244": {
+    "en": "Edit currency additional information",
+    "vi": "Có thể soạn thảo thông tin bổ sung cho tiền tệ",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "245": {
+    "en": "Change system time",
+    "vi": "Thay đổi thời gian hệ thống",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "246": {
+    "en": "Login on station by password",
+    "vi": "Đăng nhập trạm làm việc bằng mật khẩu",
+    "type": "Quyền/thao tác",
+    "note": "Đăng nhập bằng mật khẩu; không phải thay đổi mật khẩu."
+  },
+  "247": {
+    "en": "Close cash shift",
+    "vi": "Đóng ca két tiền",
+    "type": "Quyền/thao tác",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "248": {
+    "en": "Manual visit selection",
+    "vi": "Tùy chọn lựa chọn visit",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "249": {
+    "en": "Change order table",
+    "vi": "Đổi bàn của order",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "250": {
+    "en": "Authorize bank card",
+    "vi": "Authorize bank card",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "251": {
+    "en": "Cancel payment mode",
+    "vi": "Có thể hủy chế độ thanh toán",
+    "type": "Quyền/thao tác",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "253": {
+    "en": "Clock-in/clock-out form",
+    "vi": "Form Giờ-Vào/Giờ-Ra",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "254": {
+    "en": "Operations after max cash amount",
+    "vi": "Vận hành khi Số tiền bị vượt quá ngưỡng Tối đa",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "255": {
+    "en": "Transfer dishes from order",
+    "vi": "Chuyển món ăn từ order",
+    "type": "Quyền/thao tác",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "256": {
+    "en": "Interchange dishes",
+    "vi": "Interchange dishes",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "257": {
+    "en": "Receipt print error",
+    "vi": "Hóa đơn in lỗi",
+    "type": "Quyền/thao tác",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "258": {
+    "en": "Delete markup",
+    "vi": "Delete markup",
+    "type": "Quyền/thao tác",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "259": {
+    "en": "Change delivery order status",
+    "vi": "Change an order status of delivery",
+    "type": "Quyền/thao tác",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "260": {
+    "en": "Delete award/penalty item",
+    "vi": "Delete award\\penalty item",
+    "type": "Quyền/thao tác",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "261": {
+    "en": "Cancel bank card authorization",
+    "vi": "Cancel bank card authorization",
+    "type": "Quyền/thao tác",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "262": {
+    "en": "Any printing",
+    "vi": "Any printing",
+    "type": "Quyền/thao tác",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "301": {
+    "en": "Change guest label",
+    "vi": "Thay đổi nhãn khách",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "302": {
+    "en": "Other waiters",
+    "vi": "Các nhân viên bàn khác",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "303": {
+    "en": "Select table from floor plan",
+    "vi": "Chọn bàn từ sơ đồ bàn",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "304": {
+    "en": "Choose visit for new order",
+    "vi": "Chọn visit cho order mới",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "305": {
+    "en": "Close visit",
+    "vi": "Đóng visit",
+    "type": "Quyền/chức năng",
+    "note": "Đóng visit; cần đối chiếu trạng thái order bên trong."
+  },
+  "306": {
+    "en": "Create empty order",
+    "vi": "Lập order rỗng",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "307": {
+    "en": "Create empty visit",
+    "vi": "Lập visit rỗng",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "308": {
+    "en": "Create order and edit",
+    "vi": "Lập order và soạn thảo",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "309": {
+    "en": "Auto-close order",
+    "vi": "Tự động đóng order",
+    "type": "Quyền/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "310": {
+    "en": "Guest type selector",
+    "vi": "Selector loại khách",
+    "type": "Quyền/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "311": {
+    "en": "Table selector",
+    "vi": "Selector bàn",
+    "type": "Quyền/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "312": {
+    "en": "Revenue center selector",
+    "vi": "Selector Trung tâm doanh thu",
+    "type": "Quyền/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "313": {
+    "en": "Waiter selector",
+    "vi": "Bộ lựa chọn của Nhân viên Phục vj",
+    "type": "Quyền/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "314": {
+    "en": "Expand order buttons",
+    "vi": "Phóng to các nút order",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "315": {
+    "en": "Compact order buttons",
+    "vi": "Các nút bấm order (nhỏ)",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "316": {
+    "en": "Order selector",
+    "vi": "Selector orders",
+    "type": "Quyền/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "317": {
+    "en": "Show orders of visit",
+    "vi": "Hiển thị các order của visit",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "319": {
+    "en": "Calculate visit",
+    "vi": "Tính visit",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "320": {
+    "en": "Join tables",
+    "vi": "Ghép bàn",
+    "type": "Quyền/chức năng",
+    "note": "Ghép bàn; đối chiếu VISIT và bảng trước/sau."
+  },
+  "321": {
+    "en": "Merge visits",
+    "vi": "Gộp visits",
+    "type": "Quyền/chức năng",
+    "note": "Gộp nhiều visit thành một; đối chiếu visit nguồn và đích."
+  },
+  "340": {
+    "en": "Select order to work with",
+    "vi": "Chọn order để làm việc",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "341": {
+    "en": "Select order to close",
+    "vi": "Chọn order để đóng",
+    "type": "Quyền/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "342": {
+    "en": "Select order",
+    "vi": "Chọn order",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "343": {
+    "en": "Closed tariffication selector",
+    "vi": "Selector \"Tính cước đã tắt\"",
+    "type": "Quyền/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "344": {
+    "en": "Complete tariffication",
+    "vi": "Kết thúc tính cước",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "345": {
+    "en": "Transfer tariffication",
+    "vi": "Chuyển cước",
+    "type": "Quyền/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "346": {
+    "en": "Change tariffication device",
+    "vi": "Thay đổi thiết bị tính cước",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "347": {
+    "en": "Change tariffication parameters",
+    "vi": "Thay đổi tham số tính cước",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "348": {
+    "en": "Assign client to tariffication",
+    "vi": "Xác định cước cho khách",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "349": {
+    "en": "Open tariffication selector",
+    "vi": "Selector \"Tính cước đã mở\"",
+    "type": "Quyền/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "350": {
+    "en": "Open floor plan",
+    "vi": "Mở sơ đồ bàn",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "351": {
+    "en": "Add tariffication to order",
+    "vi": "Thêm cước vào order",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "352": {
+    "en": "Restore tariffication",
+    "vi": "Phục hồi Tính cước",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "353": {
+    "en": "Edit tariffication type",
+    "vi": "Soạn thảo loại Cước",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "354": {
+    "en": "Synchronize tariffication devices",
+    "vi": "Đồng bộ hóa các thiết bị tính cước",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "355": {
+    "en": "Change time limit",
+    "vi": "Thay đổi giới hạn thời gian",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "356": {
+    "en": "Change money limit",
+    "vi": "Thay đổi giới hạn tiền",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "357": {
+    "en": "Reserved orders selector",
+    "vi": "Chuyển tới Selector \"Các order đặt trước\"",
+    "type": "Quyền/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "358": {
+    "en": "Future reservation",
+    "vi": "Đặt bàn trong tương lai",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "359": {
+    "en": "Today reservations",
+    "vi": "Today reservations",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "360": {
+    "en": "Future reservation",
+    "vi": "Đặt bàn trong tương lai",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "361": {
+    "en": "Pause tariffication",
+    "vi": "Tặm ngừng Tính cước",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "400": {
+    "en": "Dish selector",
+    "vi": "Chuyển tới Selector Món ăn",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "401": {
+    "en": "Modifier selector",
+    "vi": "Chuyển tới Selector Modifiers",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "402": {
+    "en": "Commission agent selector",
+    "vi": "Chuyển tới Selector Người hưởng hoa hồng",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "403": {
+    "en": "Discount selector",
+    "vi": "Chuyển tới Selector Giảm giá",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "404": {
+    "en": "Prepayment selector",
+    "vi": "Chuyển tới Selector Trả trước",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "405": {
+    "en": "Selectors selector",
+    "vi": "Chuyển tới Selector của các Selectors",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "406": {
+    "en": "Payment selector",
+    "vi": "Chuyển tới Selector Thanh toán",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "407": {
+    "en": "Edit amount",
+    "vi": "Soạn thảo tổng",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "408": {
+    "en": "Set open price",
+    "vi": "Thiết lập giá mở",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "409": {
+    "en": "Set seat number",
+    "vi": "Chỉ rõ số của khách",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "410": {
+    "en": "Set default seat",
+    "vi": "Chỉ rõ số của khách mặc định",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "411": {
+    "en": "Delete entire line",
+    "vi": "Xóa cả dòng",
+    "type": "Lệnh/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "412": {
+    "en": "Edit line content",
+    "vi": "Soạn thảo nội dung dòng",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "413": {
+    "en": "Service line selector",
+    "vi": "Go to service line selector",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "414": {
+    "en": "Split dishes by batches",
+    "vi": "Tách món ăn theo các phiên",
+    "type": "Lệnh/chức năng",
+    "note": "Tách món theo lượt/batch; không mặc nhiên tách bill."
+  },
+  "415": {
+    "en": "Split dishes by seats",
+    "vi": "Tách món theo các khách",
+    "type": "Lệnh/chức năng",
+    "note": "Tách món theo khách/seat; cần đối chiếu phiên/order đích."
+  },
+  "416": {
+    "en": "Save and close order",
+    "vi": "Đóng order và lưu lại",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "417": {
+    "en": "Close order without saving",
+    "vi": "Đóng order mà không lưu",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "418": {
+    "en": "Order type",
+    "vi": "Loại Order",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "419": {
+    "en": "Order voids selector",
+    "vi": "Go to order voids selector",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "420": {
+    "en": "Calculate receipt",
+    "vi": "Tính hóa đơn",
+    "type": "Lệnh/chức năng",
+    "note": "Tính giá trị receipt; chưa xác nhận thanh toán."
+  },
+  "421": {
+    "en": "Calculate receipt by guests",
+    "vi": "Tính hóa đơn cho các khách",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "422": {
+    "en": "Prepare later",
+    "vi": "Chuẩn bị Sau",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "423": {
+    "en": "Markups selector",
+    "vi": "Go to markups selector",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "424": {
+    "en": "Change dish weight",
+    "vi": "Sửa trọng lượng món",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "425": {
+    "en": "Print time",
+    "vi": "Thời gian In",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "426": {
+    "en": "Print time (within)",
+    "vi": "Thời gian In (trong)",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "427": {
+    "en": "Reminder time",
+    "vi": "Thời gian Nhắc",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "428": {
+    "en": "Reminder time (within)",
+    "vi": "Thời gian Nhắc (trong)",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "429": {
+    "en": "Ready time",
+    "vi": "Thời gian sẵn sàng",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "430": {
+    "en": "Ready time (within)",
+    "vi": "Thời gian sẵn sàng (trong)",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "431": {
+    "en": "Add prepayment",
+    "vi": "Thêm trả trước",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "432": {
+    "en": "Split dishes by orders",
+    "vi": "Tách món theo các Order",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "433": {
+    "en": "Denominations",
+    "vi": "Các Mệnh giá",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "434": {
+    "en": "Pack dishes",
+    "vi": "Gói các món ăn",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "435": {
+    "en": "Add guest",
+    "vi": "Thêm khách",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "436": {
+    "en": "Split printed dishes by batches",
+    "vi": "Tách món ăn đã in theo các phiên",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "437": {
+    "en": "Show cooking recipe",
+    "vi": "Hiển thị công thức chế biến",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "438": {
+    "en": "Hidden elements",
+    "vi": "Các phần tử ẩn",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "439": {
+    "en": "Quick receipt",
+    "vi": "Hóa đơn nhanh",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "440": {
+    "en": "Open seat",
+    "vi": "Mở chỗ",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "441": {
+    "en": "Close seat",
+    "vi": "Đóng chỗ",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "442": {
+    "en": "Seat to table",
+    "vi": "Chỗ ngồi cho bàn",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "443": {
+    "en": "Split menu",
+    "vi": "Menu \"Split\"",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "444": {
+    "en": "Visible elements",
+    "vi": "Các phần tử nhìn thấy",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "445": {
+    "en": "Modifier groups",
+    "vi": "Nhóm các Modifier",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "446": {
+    "en": "Change order information",
+    "vi": "Thay đổi Thông tin Order",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "447": {
+    "en": "Request weight from scales",
+    "vi": "Yêu cầu trọng lượng từ cân",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "450": {
+    "en": "Delete modifier group",
+    "vi": "Xóa nhóm modifier",
+    "type": "Lệnh/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "451": {
+    "en": "Next modifier group",
+    "vi": "Nhóm modifier tiếp theo",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "452": {
+    "en": "Delete dish",
+    "vi": "Xóa món ăn",
+    "type": "Lệnh/chức năng",
+    "note": "Xóa dòng món; cần đối chiếu SESSIONDISHES / DISHVOIDS."
+  },
+  "453": {
+    "en": "Delete all",
+    "vi": "Xóa tất cả",
+    "type": "Lệnh/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "454": {
+    "en": "Close mode",
+    "vi": "Chế độ đóng",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "455": {
+    "en": "Pay receipt",
+    "vi": "Thanh toán Hóa đơn",
+    "type": "Lệnh/chức năng",
+    "note": "Thao tác thanh toán; kiểm tra PAYBINDINGS để biết kết quả."
+  },
+  "456": {
+    "en": "Refund",
+    "vi": "Trả lại",
+    "type": "Lệnh/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "457": {
+    "en": "Convert change to tip",
+    "vi": "Tiền thừa làm Tip",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "458": {
+    "en": "Convert payment to prepayment",
+    "vi": "Chuyển từ thanh toán sang trả trước",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "459": {
+    "en": "Close receipt",
+    "vi": "Đóng hóa đơn",
+    "type": "Lệnh/chức năng",
+    "note": "Đóng receipt/hóa đơn; đối chiếu PRINTCHECKS.STATE và thời gian."
+  },
+  "460": {
+    "en": "Cancel receipt payment",
+    "vi": "Hủy thanh toán hóa đơn",
+    "type": "Lệnh/chức năng",
+    "note": "Hủy phần thanh toán của receipt; không đồng nghĩa xóa món."
+  },
+  "461": {
+    "en": "Print guest bill",
+    "vi": "In tạm tính",
+    "type": "Lệnh/chức năng",
+    "note": "In bill tạm tính (guest bill), chưa phải hóa đơn thanh toán."
+  },
+  "462": {
+    "en": "Print guest bills by guests",
+    "vi": "In tạm tính cho các khách",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "463": {
+    "en": "Cancel guest bill",
+    "vi": "Hủy Tạm tính",
+    "type": "Lệnh/chức năng",
+    "note": "Hủy bill tạm tính; không đồng nghĩa hủy thanh toán."
+  },
+  "464": {
+    "en": "Split printed dishes by orders",
+    "vi": "Tách món ăn đã in theo các order",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "465": {
+    "en": "Split dishes by serving order",
+    "vi": "Tách món ăn theo thứ tự giao",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "466": {
+    "en": "Delete closed receipt",
+    "vi": "Xóa hóa đơn đã đóng",
+    "type": "Lệnh/chức năng",
+    "note": "Xóa receipt đã đóng; thao tác rủi ro cao."
+  },
+  "467": {
+    "en": "Print prepayment",
+    "vi": "In trả trước",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "468": {
+    "en": "Delete prepayment",
+    "vi": "Xóa trả trước",
+    "type": "Lệnh/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "469": {
+    "en": "Temporary registration",
+    "vi": "Đăng ký tạm thời",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "470": {
+    "en": "Cancel temporary registration",
+    "vi": "Hủy đăng nhập tạm thời",
+    "type": "Lệnh/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "471": {
+    "en": "Open cash drawer",
+    "vi": "Mở ngăn kéo đựng tiền",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "472": {
+    "en": "Restore receipt",
+    "vi": "Phục hồi Hóa đơn",
+    "type": "Lệnh/chức năng",
+    "note": "Khôi phục receipt; xác định receipt nào."
+  },
+  "473": {
+    "en": "Print receipt copy",
+    "vi": "In bản sao hóa đơn",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "474": {
+    "en": "Close unpaid order",
+    "vi": "Đóng order chưa thanh toán",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "475": {
+    "en": "Dish",
+    "vi": "Món ăn",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "476": {
+    "en": "Modifier",
+    "vi": "Modifier",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "477": {
+    "en": "Commission agent",
+    "vi": "Người hưởng hoa hồng",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "478": {
+    "en": "Discount",
+    "vi": "Giảm giá",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "479": {
+    "en": "Markup",
+    "vi": "Tăng giá",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "480": {
+    "en": "Payments",
+    "vi": "Các thanh toán",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "481": {
+    "en": "Change order type",
+    "vi": "Thay đổi loại Order",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "482": {
+    "en": "Voids",
+    "vi": "Hủy",
+    "type": "Lệnh/chức năng",
+    "note": "Quyền/thao tác Voids - chọn lý do hủy; không đủ để khẳng định món đã bị xóa."
+  },
+  "483": {
+    "en": "Open closed order",
+    "vi": "Mở order đã đóng",
+    "type": "Lệnh/chức năng",
+    "note": "Mở lại order đã đóng; kiểm tra lần thay đổi kế tiếp."
+  },
+  "484": {
+    "en": "Close order from order dialog",
+    "vi": "Đóng order từ hộp thoại order",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "485": {
+    "en": "Change serving order",
+    "vi": "Thay đổi thứ tự giao",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "486": {
+    "en": "Edit VAT invoice",
+    "vi": "Soạn thảo HĐ GTGT",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "487": {
+    "en": "Undo receipt without refund",
+    "vi": "Undo receipt without refund",
+    "type": "Lệnh/chức năng",
+    "note": "Hủy receipt nhưng không hoàn tiền; đặc thù chế độ sử dụng."
+  },
+  "488": {
+    "en": "Search objects by name",
+    "vi": "Search for objects by name",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "489": {
+    "en": "Exit order form",
+    "vi": "Thoát khỏi Form order",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "490": {
+    "en": "Service printing",
+    "vi": "Dịch vụ in",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "491": {
+    "en": "Transfer table",
+    "vi": "Chuyển bàn",
+    "type": "Lệnh/chức năng",
+    "note": "Chuyển bàn; kiểm tra bảng nguồn/đích."
+  },
+  "492": {
+    "en": "Move order content to another order",
+    "vi": "Thêm nội dung order vào order khác",
+    "type": "Lệnh/chức năng",
+    "note": "Chuyển nội dung order sang order khác; kiểm tra VISIT / ORDERIDENT."
+  },
+  "493": {
+    "en": "Join combo",
+    "vi": "Join combo",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "494": {
+    "en": "Divide combo",
+    "vi": "Divide combo",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "495": {
+    "en": "Order display: collapsed",
+    "vi": "Chế độ xem Order: gộp lại",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "496": {
+    "en": "Order display: detailed",
+    "vi": "Chế độ xem Order: chi tiết",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "497": {
+    "en": "Save one order and open in transfer dialog",
+    "vi": "Hộp thoai chuyển món ăn: Lưu 1 order và mở",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "498": {
+    "en": "Stop flow-meter device",
+    "vi": "Ngưng Thiết bị Đo chất lỏng",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "499": {
+    "en": "Flow-meter selector",
+    "vi": "Selector \"Thiết bị đo chất lỏng\"",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "500": {
+    "en": "Combo for change",
+    "vi": "Combo for change",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "501": {
+    "en": "Next order",
+    "vi": "Go to next order",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "502": {
+    "en": "Previous order",
+    "vi": "Chuyển tới Order trước",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "503": {
+    "en": "Print time (before)",
+    "vi": "Print time (before)",
+    "type": "Lệnh/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "504": {
+    "en": "Reminder time (before)",
+    "vi": "Remind time (before)",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "505": {
+    "en": "Prepare later (reservation)",
+    "vi": "Prepare Later (reservation)",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "506": {
+    "en": "Drive-through order request",
+    "vi": "Order request (Drive-through)",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "507": {
+    "en": "Repurchase dishes",
+    "vi": "Repurchasing of a dishes",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "508": {
+    "en": "Repurchase dish selector",
+    "vi": "Chuyển tới Selector \"Nhận lại món ăn\"",
+    "type": "Lệnh/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "509": {
+    "en": "Create empty order",
+    "vi": "Lập order rỗng",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "510": {
+    "en": "Move current dish to another packet",
+    "vi": "Transfer a current dish to other packet",
+    "type": "Lệnh/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "520": {
+    "en": "Sort orders by table",
+    "vi": "Sắp xếp order theo số bàn",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "521": {
+    "en": "Sort by revenue center and order type",
+    "vi": "Săp xếp order theo Trung tâm doanh thu, loại order",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "522": {
+    "en": "Sort by start time",
+    "vi": "Sắp xếp order theo thời gian bắt đầu",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "523": {
+    "en": "Sort by label",
+    "vi": "Sắp xếp order theo nhãn",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "524": {
+    "en": "Sort by guest type and guest count",
+    "vi": "Sắp xếp order theo loại khách, số khách",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "525": {
+    "en": "Sort by visit",
+    "vi": "Sắp xếp order theo visit",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "526": {
+    "en": "Sort by main waiter",
+    "vi": "Sắp xếp order theo tên nhân viên bàn chính",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "527": {
+    "en": "Sort by last save time",
+    "vi": "Sắp xếp order theo thời gian lưu cuối cùng",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "528": {
+    "en": "Sort by amount",
+    "vi": "Sắp xếp order theo giá trị",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "529": {
+    "en": "Sort items by name",
+    "vi": "Sắp xếp phần từ theo tên",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "530": {
+    "en": "Sort items by code",
+    "vi": "Sắp xếp phần từ theo mã",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "531": {
+    "en": "Custom sort",
+    "vi": "Custom sort of items",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "532": {
+    "en": "Sort by cardholder",
+    "vi": "Sắp xếp theo chủ thẻ",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "540": {
+    "en": "Order search form",
+    "vi": "Form tìm kiếm Order",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "541": {
+    "en": "Filter receipt number",
+    "vi": "Lọc số hóa đơn",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "542": {
+    "en": "Filter note text",
+    "vi": "Lọc theo một phần của lời ghi chú",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "543": {
+    "en": "Filter waiter",
+    "vi": "Lọc nhân viên",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "544": {
+    "en": "Filter table",
+    "vi": "Lọc bàn",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "545": {
+    "en": "Filter card number",
+    "vi": "Lọc số thẻ",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "546": {
+    "en": "Filter dish",
+    "vi": "Lọc món ăn",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "547": {
+    "en": "Filter currency",
+    "vi": "Lọc tiền tệ",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "548": {
+    "en": "Filter payment amount",
+    "vi": "Lọc lượng thanh toán",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "549": {
+    "en": "Filter discount",
+    "vi": "Lọc giảm giá",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "550": {
+    "en": "Filter close time",
+    "vi": "Lọc thời gian đóng",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "551": {
+    "en": "Filter order type",
+    "vi": "Lọc trên Loại order",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "552": {
+    "en": "Filter revenue center",
+    "vi": "Lọc trên Trung tâm doanh thu",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "553": {
+    "en": "Filter unpaid orders",
+    "vi": "Lọc order không thanh toán",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "554": {
+    "en": "Filter closed receipts",
+    "vi": "Filter on closed receipts",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "555": {
+    "en": "Filter deleted receipts",
+    "vi": "Filter on deleted receipts",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "556": {
+    "en": "Filter start time",
+    "vi": "Lọc thời gian bắt đầu",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "557": {
+    "en": "Filter order extra information",
+    "vi": "Lọc theo thông tin mở rộng của order",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "558": {
+    "en": "Filter fiscal device",
+    "vi": "Filter by fiscal device",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "559": {
+    "en": "Filter fiscal report number",
+    "vi": "Filter by fiscal report number",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "560": {
+    "en": "Filter employee tax ID",
+    "vi": "Filter by employee INN",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "570": {
+    "en": "Calculator MC",
+    "vi": "Tính MC",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "571": {
+    "en": "Calculator MR",
+    "vi": "Tính MR",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "572": {
+    "en": "Calculator MS",
+    "vi": "Tính MS",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "573": {
+    "en": "Calculator M+",
+    "vi": "Tính M+",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "574": {
+    "en": "Calculator M-",
+    "vi": "Tính M-",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "575": {
+    "en": "Calculator +/-",
+    "vi": "Tính +/-",
+    "type": "UI / tra cứu",
+    "note": "Thao tác sắp xếp/tìm kiếm/tính toán giao diện; không mặc định thay đổi order."
+  },
+  "802": {
+    "en": "Order selection form",
+    "vi": "Form chọn order",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "803": {
+    "en": "Close cashier shift",
+    "vi": "Đóng ca thu ngân",
+    "type": "Menu/chức năng",
+    "note": "Đóng ca thu ngân, khác đóng ca chung."
+  },
+  "804": {
+    "en": "Personnel registration",
+    "vi": "Đăng ký nhân viên",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "805": {
+    "en": "New order and visit form",
+    "vi": "Form tạo Order và Visit",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "806": {
+    "en": "Add new order to existing visit",
+    "vi": "Thêm order mới vào form Visit đã có",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "807": {
+    "en": "Exit",
+    "vi": "Thoát",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "808": {
+    "en": "Extract unclosed order portions",
+    "vi": "Trích các phần chưa đóng của các order",
+    "type": "Menu/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "809": {
+    "en": "Close common shift",
+    "vi": "Đóng ca chung",
+    "type": "Menu/chức năng",
+    "note": "Đóng ca chung; kiểm tra GLOBALSHIFTS."
+  },
+  "810": {
+    "en": "Closed orders list",
+    "vi": "Danh sách các order đã đóng",
+    "type": "Menu/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "811": {
+    "en": "Paid receipts list",
+    "vi": "Danh sách các Bill đã tính tiền",
+    "type": "Menu/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "812": {
+    "en": "Cash deposit into drawer",
+    "vi": "Nộp tiền vào két (thu)",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "813": {
+    "en": "Cash withdrawal from drawer",
+    "vi": "Rút tiền từ két (chi)",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "814": {
+    "en": "POS cash reports",
+    "vi": "Các báo cáo trên máy POS",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "815": {
+    "en": "About",
+    "vi": "Về chương trình",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "817": {
+    "en": "Inventory dish count",
+    "vi": "Kiểm số lượng món ăn tồn",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "818": {
+    "en": "MCR algorithm testing form",
+    "vi": "Form kiểm tra thuật toán MCR",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "819": {
+    "en": "Reload master data",
+    "vi": "Tải lại Các danh mục Master-Data",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "820": {
+    "en": "Tariffication",
+    "vi": "Tính cước",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "821": {
+    "en": "Clock-in/out form",
+    "vi": "Form Giờ-Vào/Giờ-Ra",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "822": {
+    "en": "View reports",
+    "vi": "Xem Báo cáo",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "823": {
+    "en": "Top up prepaid card",
+    "vi": "Nạp tiền vào thẻ trả trước",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "824": {
+    "en": "Order control form",
+    "vi": "Form kiểm soát Order",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "825": {
+    "en": "Show card information",
+    "vi": "Hiển thị form thông tin thẻ",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "826": {
+    "en": "Out-of-stock dishes",
+    "vi": "Các món ngưng bán",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "827": {
+    "en": "Stock form",
+    "vi": "Form kho",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "828": {
+    "en": "Reservation form",
+    "vi": "A form 'Reservation'",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "829": {
+    "en": "Restart computer",
+    "vi": "Khởi động lại máy tính",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "830": {
+    "en": "Shut down PC",
+    "vi": "Tắt máy PC",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "831": {
+    "en": "Internal stock transaction",
+    "vi": "Giao dịch kho nội bộ",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "832": {
+    "en": "Awards and penalties",
+    "vi": "Thưởng và Phạt",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "833": {
+    "en": "Suspend delivery",
+    "vi": "Suspend delivery",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "834": {
+    "en": "Resume delivery",
+    "vi": "Resume delivery",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "835": {
+    "en": "Withdraw money from card",
+    "vi": "Rút tiền từ thẻ",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "836": {
+    "en": "Search loyalty card by name",
+    "vi": "Tìm thẻ thành viên bằng tên",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "837": {
+    "en": "Activate CRM card",
+    "vi": "Activation of the CRM card",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "838": {
+    "en": "Open web plugin window",
+    "vi": "Open WEB plugin window",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "839": {
+    "en": "Service line",
+    "vi": "Service Line",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "840": {
+    "en": "Delivery form",
+    "vi": "Delivery form",
+    "type": "Menu/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "901": {
+    "en": "Unregister current drawer user",
+    "vi": "Hủy đăng ký két tiền người dùng hiện tại",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "902": {
+    "en": "Clear all dish selections",
+    "vi": "Hủy lựa chọn tất cả các món",
+    "type": "Quyền/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "903": {
+    "en": "Unregister all users",
+    "vi": "Hủy đăng nhập tất cả các người dùng",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "904": {
+    "en": "Unregistered employees",
+    "vi": "Nhân viên chưa đăng nhập",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "905": {
+    "en": "Show serving positions",
+    "vi": "Hiển thị danh sách các vị trí phục vụ",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "906": {
+    "en": "Show employees",
+    "vi": "Hiển thị danh sách nhân viên",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "907": {
+    "en": "Open user form",
+    "vi": "Mở form người sử dụng",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "908": {
+    "en": "Clock in",
+    "vi": "Giờ-vào",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "909": {
+    "en": "Clock out",
+    "vi": "Giờ-ra",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "910": {
+    "en": "Clock in/out without card",
+    "vi": "Giờ-vào/Giờ-ra không cần thẻ",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "911": {
+    "en": "User task 911",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "912": {
+    "en": "User task 912",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "913": {
+    "en": "User task 913",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "914": {
+    "en": "User task 914",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "915": {
+    "en": "User task 915",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "916": {
+    "en": "User task 916",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "917": {
+    "en": "User task 917",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "918": {
+    "en": "User task 918",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "919": {
+    "en": "User task 919",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "920": {
+    "en": "User task 920",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "921": {
+    "en": "Set current item",
+    "vi": "Thiết lập phần tử hiện tại",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "922": {
+    "en": "Set text input",
+    "vi": "Thiết lập nhập văn bản",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "923": {
+    "en": "Execute remote FarCards (PDS) operations",
+    "vi": "Thực hiện các giao dịch từ xa FarCards (PDS)",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "924": {
+    "en": "Flip screen",
+    "vi": "Flip screen",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "925": {
+    "en": "Keyboard",
+    "vi": "Bàn phím",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "926": {
+    "en": "Lock touch/mouse",
+    "vi": "Khóa cảm ứng/chuột",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "927": {
+    "en": "Control stock quantity changes",
+    "vi": "Kiểm soát số lượng tồn thay đổi",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "928": {
+    "en": "Enable suspended block",
+    "vi": "Kích hoạt block bị tạm ngưng",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "929": {
+    "en": "Print maket selector",
+    "vi": "Print Maket Select",
+    "type": "Quyền/chức năng",
+    "note": "Chức năng giao diện/lựa chọn; không chắc đã thực thi hành động nghiệp vụ."
+  },
+  "930": {
+    "en": "Dish control: waiter call",
+    "vi": "Dish control: waiter call",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "931": {
+    "en": "Dish control: done 1",
+    "vi": "Kiểm soát món ăn: xong",
+    "type": "Quyền/chức năng",
+    "note": "Nhiều mã có tên tương tự; phân biệt bằng mã và ngữ cảnh, không gộp mã."
+  },
+  "932": {
+    "en": "Dish control: done 2",
+    "vi": "Kiểm soát món ăn: xong",
+    "type": "Quyền/chức năng",
+    "note": "Nhiều mã có tên tương tự; phân biệt bằng mã và ngữ cảnh, không gộp mã."
+  },
+  "933": {
+    "en": "Dish control: done 3",
+    "vi": "Kiểm soát món ăn: xong",
+    "type": "Quyền/chức năng",
+    "note": "Nhiều mã có tên tương tự; phân biệt bằng mã và ngữ cảnh, không gộp mã."
+  },
+  "934": {
+    "en": "External-system user authentication",
+    "vi": "External system user authentication",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "935": {
+    "en": "Change role information",
+    "vi": "Thay đổi thông tin quyền",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "936": {
+    "en": "Change authentication data",
+    "vi": "Thay đổi chứng thực quyền truy cập",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "937": {
+    "en": "Change access rights",
+    "vi": "Thay đổi quyền truy cập",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "938": {
+    "en": "Special driver menu",
+    "vi": "Driver Menu đặc biệt",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "939": {
+    "en": "Modifier layout",
+    "vi": "Sơ đồ Modifier",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "940": {
+    "en": "Cash management",
+    "vi": "Quản lý tiền mặt",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "941": {
+    "en": "Switch personnel registration mode",
+    "vi": "Personal registration: switch registration mode",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "942": {
+    "en": "Switch personnel unregistration mode",
+    "vi": "Personal registration: switch unregistration mode",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "943": {
+    "en": "Unregister another employee’s drawer",
+    "vi": "Hủy đăng ký két tiền của nhân viên khác",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "944": {
+    "en": "Invoice search",
+    "vi": "Invoice search",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "945": {
+    "en": "Set next invoice number",
+    "vi": "Set invoice next number",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "946": {
+    "en": "Clear service print queue",
+    "vi": "Clear service print queue",
+    "type": "Quyền/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "947": {
+    "en": "Reprint saved slips",
+    "vi": "Reprinting of saved slips",
+    "type": "Quyền/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "1011": {
+    "en": "User task 1011",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "1012": {
+    "en": "User task 1012",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "1013": {
+    "en": "User task 1013",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "1014": {
+    "en": "User task 1014",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "1015": {
+    "en": "User task 1015",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "1016": {
+    "en": "User task 1016",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "1017": {
+    "en": "User task 1017",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "1018": {
+    "en": "User task 1018",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "1019": {
+    "en": "User task 1019",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "1020": {
+    "en": "User task 1020",
+    "vi": "Các tác vụ của người dùng",
+    "type": "Tác vụ tùy biến",
+    "note": "Tên chung “User task”; cần đối chiếu cấu hình Functional Keys/Scripts để biết hành động thực tế."
+  },
+  "1100": {
+    "en": "Station offline for N minutes",
+    "vi": "Station was offline N minutes",
+    "type": "Sự kiện hệ thống",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1101": {
+    "en": "Station online after inactivity",
+    "vi": "Station was on after idle",
+    "type": "Sự kiện hệ thống",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1102": {
+    "en": "Upper-level server offline for N minutes",
+    "vi": "Up level server was offline N minutes",
+    "type": "Sự kiện hệ thống",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1103": {
+    "en": "Upper-level server online again",
+    "vi": "Up level server became online after idle",
+    "type": "Sự kiện hệ thống",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1104": {
+    "en": "Cash server offline for N minutes",
+    "vi": "Cash server was offline N minutes",
+    "type": "Sự kiện hệ thống",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1105": {
+    "en": "First station connection",
+    "vi": "First connect of station",
+    "type": "Sự kiện hệ thống",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1106": {
+    "en": "First report-server connection",
+    "vi": "First connect with report server",
+    "type": "Sự kiện hệ thống",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1107": {
+    "en": "First cash-server startup",
+    "vi": "First start cash server",
+    "type": "Sự kiện hệ thống",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1108": {
+    "en": "Hard cash-server termination",
+    "vi": "Hard cash server terminate",
+    "type": "Sự kiện hệ thống",
+    "note": "Cash server bị kết thúc bất thường; cần kiểm tra MID log."
+  },
+  "1109": {
+    "en": "Restore last receipt",
+    "vi": "Phục hồi hóa đơn cuối cÙng",
+    "type": "Quyền/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "1110": {
+    "en": "Restore selected receipt",
+    "vi": "Phục hồi hóa đơn lựa chọn",
+    "type": "Quyền/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "1111": {
+    "en": "Delete receipt (1111)",
+    "vi": "Xóa hóa đơn",
+    "type": "Quyền/chức năng",
+    "note": "Nhiều mã có tên tương tự; phân biệt bằng mã và ngữ cảnh, không gộp mã."
+  },
+  "1112": {
+    "en": "Delete receipt (1112)",
+    "vi": "Xóa hóa đơn",
+    "type": "Quyền/chức năng",
+    "note": "Nhiều mã có tên tương tự; phân biệt bằng mã và ngữ cảnh, không gộp mã."
+  },
+  "1113": {
+    "en": "Change order extended information",
+    "vi": "Thay đổi thông tin mở rộng của order",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1114": {
+    "en": "Add dish to prohibited list",
+    "vi": "Dish is added to the prohibited dishes",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1115": {
+    "en": "Remove dish from prohibited list",
+    "vi": "Dish is removed from the prohibited dishes",
+    "type": "Quyền/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "1116": {
+    "en": "Web service",
+    "vi": "Web-service",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1117": {
+    "en": "Auto-reject unsaved delivery order",
+    "vi": "Automatic order rejection before saving (Delivery Club)",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1118": {
+    "en": "Auto-confirm delivery order",
+    "vi": "Automatic order confirmation (Delivery Club)",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1119": {
+    "en": "Delivery order rejection details",
+    "vi": "Details for rejected orders (Delivery Club)",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1120": {
+    "en": "Confirm revenue on fiscal printer failure",
+    "vi": "Confirmation of revenue in fiscal registrar failure",
+    "type": "Quyền/chức năng",
+    "note": "Cần đối chiếu bản ghi trước/sau để xác minh kết quả, không chỉ dựa tên operation."
+  },
+  "1121": {
+    "en": "Switch to standby cash server",
+    "vi": "Switch to reserve cash server",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1122": {
+    "en": "Goods return",
+    "vi": "Return of the goods",
+    "type": "Quyền/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "1123": {
+    "en": "Launch TeamViewer",
+    "vi": "Run a Team Viewer program",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1124": {
+    "en": "Change goods-return payments",
+    "vi": "Can change payments in a goods return orders",
+    "type": "Quyền/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "1125": {
+    "en": "Arbitrary return",
+    "vi": "Arbitrary return",
+    "type": "Quyền/chức năng",
+    "note": "Nhạy cảm: cần đối chiếu VISIT, ORDERIDENT, MIDSERVER, đối tượng bị tác động và log liên quan."
+  },
+  "1126": {
+    "en": "Split receipt",
+    "vi": "Tách hóa đơn",
+    "type": "Quyền/chức năng",
+    "note": "Tách receipt; kiểm tra receipt nguồn/đích."
+  },
+  "1127": {
+    "en": "Checklist",
+    "vi": "Check list",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1128": {
+    "en": "Coupons",
+    "vi": "Coupons",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1129": {
+    "en": "Reservation chart",
+    "vi": "Reservation chart form",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1130": {
+    "en": "Combo assistant",
+    "vi": "Combo assistant",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1131": {
+    "en": "Show ingredients",
+    "vi": "Show list of ingredients",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  },
+  "1132": {
+    "en": "Control cash recount",
+    "vi": "Control cash recount",
+    "type": "Quyền/chức năng",
+    "note": "Tên trong OPERATIONS mô tả quyền/lệnh; khi xuất hiện trong OPERATIONLOG cần xem ngữ cảnh và trường dữ liệu."
+  }
+}

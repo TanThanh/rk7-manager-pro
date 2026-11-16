@@ -1,0 +1,440 @@
+{
+  "VISIT": {
+    "en": "Visit ID",
+    "vi": "Mã lượt bàn",
+    "desc": "Lượt phục vụ chứa hóa đơn",
+    "ref": "VISITS.SIFR"
+  },
+  "MIDSERVER": {
+    "en": "Cash server ID",
+    "vi": "Máy chủ POS",
+    "desc": "Máy chủ Cash Server lưu hóa đơn",
+    "ref": "CASHGROUPS.SIFR"
+  },
+  "ORDERIDENT": {
+    "en": "Order ID",
+    "vi": "Mã order",
+    "desc": "Định danh order trong visit",
+    "ref": "ORDERS.IDENTINVISIT"
+  },
+  "SESSIONUNI": {
+    "en": "Order session ID",
+    "vi": "Mã phiên món",
+    "desc": "Định danh block/session của order",
+    "ref": "ORDERSESSIONS.UNI"
+  },
+  "UNI": {
+    "en": "Receipt UNI",
+    "vi": "Mã bản ghi bill",
+    "desc": "Định danh bản ghi hóa đơn bên trong order",
+    "ref": "PRINTCHECKS.UNI"
+  },
+  "STATE": {
+    "en": "Receipt state",
+    "vi": "Trạng thái bill",
+    "desc": "Trạng thái xử lý hóa đơn; mẫu 6 = đã đóng/đã thanh toán",
+    "ref": ""
+  },
+  "ICREATOR": {
+    "en": "Paying employee ID",
+    "vi": "NV thanh toán",
+    "desc": "Nhân viên thực hiện thanh toán theo tài liệu",
+    "ref": "EMPLOYEES.SIFR"
+  },
+  "IAUTHOR": {
+    "en": "Payment confirmer ID",
+    "vi": "NV xác nhận",
+    "desc": "Nhân viên xác nhận thanh toán theo tài liệu",
+    "ref": "EMPLOYEES.SIFR"
+  },
+  "ICREATORROLE": {
+    "en": "Creator role ID",
+    "vi": "Quyền NV tạo",
+    "desc": "Vai trò của nhân viên tạo/xử lý bản ghi",
+    "ref": "ROLES.SIFR"
+  },
+  "IAUTHORROLE": {
+    "en": "Author role ID",
+    "vi": "Quyền NV xác nhận",
+    "desc": "Vai trò của nhân viên xác nhận",
+    "ref": "ROLES.SIFR"
+  },
+  "CLOSEDATETIME": {
+    "en": "Receipt print time",
+    "vi": "Giờ in hóa đơn",
+    "desc": "Thời điểm in receipt theo tài liệu, thường gắn với bước đóng bill",
+    "ref": ""
+  },
+  "BILLDATETIME": {
+    "en": "Bill print time",
+    "vi": "Giờ in tạm tính",
+    "desc": "Thời điểm in bill tạm tính",
+    "ref": ""
+  },
+  "STARTDATETIME": {
+    "en": "Calculation start time",
+    "vi": "Giờ bắt đầu tính",
+    "desc": "Bắt đầu quá trình tính hóa đơn",
+    "ref": ""
+  },
+  "DRAWERDATETIME": {
+    "en": "Drawer close time",
+    "vi": "Giờ đóng ngăn tiền",
+    "desc": "Thời điểm đóng ngăn kéo tiền",
+    "ref": ""
+  },
+  "ICLOSESTATION": {
+    "en": "Closing station ID",
+    "vi": "POS bắt đầu in",
+    "desc": "POS khởi tạo việc in receipt",
+    "ref": "CASHES.SIFR"
+  },
+  "FLAGS": {
+    "en": "Receipt flags",
+    "vi": "Cờ hệ thống",
+    "desc": "Bitmask điều khiển; bit 1: cố định kết quả thay vì tính lại",
+    "ref": ""
+  },
+  "ISHIFT": {
+    "en": "Cash shift number",
+    "vi": "Số ca thu ngân",
+    "desc": "Ca thu ngân có hóa đơn",
+    "ref": "SHIFTS.SHIFTNUM"
+  },
+  "IFISCSHIFT": {
+    "en": "Fiscal shift number",
+    "vi": "Số ca tài chính",
+    "desc": "Ca của thiết bị tài chính/fiscal register",
+    "ref": ""
+  },
+  "IPRINTSTATION": {
+    "en": "Printing station ID",
+    "vi": "POS in bill",
+    "desc": "Máy POS thực hiện in hóa đơn",
+    "ref": "CASHES.SIFR"
+  },
+  "IDRAWER": {
+    "en": "Cash drawer ID",
+    "vi": "Mã ngăn tiền",
+    "desc": "Ngăn kéo/két tiền liên quan",
+    "ref": "DEVICES.SIFR"
+  },
+  "IPRINTER": {
+    "en": "Printer ID",
+    "vi": "Mã máy in",
+    "desc": "Thiết bị in hóa đơn",
+    "ref": "DEVICES.SIFR"
+  },
+  "EXTFISCID": {
+    "en": "External fiscal ID",
+    "vi": "Mã máy tài chính",
+    "desc": "Định danh nội bộ của thiết bị fiscal",
+    "ref": ""
+  },
+  "PRINTNUMBER": {
+    "en": "Printed receipt number",
+    "vi": "Số lần/số thứ tự in",
+    "desc": "Số được in trên receipt; không mặc nhiên là tổng số lần in",
+    "ref": ""
+  },
+  "CHECKNUM": {
+    "en": "Check number",
+    "vi": "Số hóa đơn",
+    "desc": "Số check được gán trong RK7",
+    "ref": ""
+  },
+  "PARENTCHECKNUM": {
+    "en": "Parent check number",
+    "vi": "Bill gốc",
+    "desc": "Số hóa đơn mẹ khi tách theo phân loại",
+    "ref": "PRINTCHECKS.CHECKNUM"
+  },
+  "GUESTCNT": {
+    "en": "Guest count",
+    "vi": "Số khách",
+    "desc": "Số khách trên hóa đơn",
+    "ref": ""
+  },
+  "SEAT": {
+    "en": "Seat number",
+    "vi": "Số ghế",
+    "desc": "Ghế áp dụng cho hóa đơn",
+    "ref": ""
+  },
+  "DELETED": {
+    "en": "Receipt deleted flag",
+    "vi": "Đã xóa?",
+    "desc": "Cờ đánh dấu hóa đơn bị xóa",
+    "ref": ""
+  },
+  "UNDOTRANSACTIONS": {
+    "en": "Separate transaction flag",
+    "vi": "Giao dịch tách",
+    "desc": "Cờ giao dịch đã chạy riêng, thường khi lỗi in hóa đơn",
+    "ref": ""
+  },
+  "IDELETEMANAGER": {
+    "en": "Deletion approver ID",
+    "vi": "NV duyệt xóa",
+    "desc": "Nhân viên xác nhận việc xóa hóa đơn",
+    "ref": "EMPLOYEES.SIFR"
+  },
+  "DELETEDATETIME": {
+    "en": "Receipt deletion time",
+    "vi": "Giờ xóa bill",
+    "desc": "Ngày giờ xóa hóa đơn; giá trị 0 có thể là chưa có",
+    "ref": ""
+  },
+  "BASICSUM": {
+    "en": "Basic currency sum",
+    "vi": "Tiền cơ sở",
+    "desc": "Tổng theo tiền tệ cơ sở",
+    "ref": ""
+  },
+  "BINDEDSUM": {
+    "en": "Dish-bound receipt sum",
+    "vi": "Tiền món trên bill",
+    "desc": "Tổng hóa đơn theo các món được gắn",
+    "ref": ""
+  },
+  "NATIONALSUM": {
+    "en": "National currency sum",
+    "vi": "Tiền nội tệ",
+    "desc": "Tổng hóa đơn theo tiền tệ quốc gia",
+    "ref": ""
+  },
+  "FISCALSUM": {
+    "en": "Fiscal sum",
+    "vi": "Tiền fiscal",
+    "desc": "Giá trị ghi nhận cho nghiệp vụ fiscal",
+    "ref": ""
+  },
+  "PRLISTSUM": {
+    "en": "Price list sum",
+    "vi": "Tiền giá niêm yết",
+    "desc": "Giá món và modifier trước giảm giá",
+    "ref": ""
+  },
+  "DISCOUNTSUM": {
+    "en": "Discount sum",
+    "vi": "Tiền giảm giá",
+    "desc": "Tổng giảm giá phân bổ vào hóa đơn, thường âm",
+    "ref": ""
+  },
+  "TOPAYSUM": {
+    "en": "Remaining to pay",
+    "vi": "Còn phải trả",
+    "desc": "Tiền còn phải thanh toán; bill đã trả thường bằng 0",
+    "ref": ""
+  },
+  "DISHPRICELISTSUM": {
+    "en": "Dish list sum",
+    "vi": "Giá món",
+    "desc": "Tổng giá niêm yết các món",
+    "ref": ""
+  },
+  "CHARGEPRICELISTSUM": {
+    "en": "Markup list sum",
+    "vi": "Tiền tăng giá",
+    "desc": "Tổng khoản cộng giá/markup theo bảng giá",
+    "ref": ""
+  },
+  "TAXSUM": {
+    "en": "Basic-currency tax",
+    "vi": "Tổng tiền thuế",
+    "desc": "Thuế tính theo tiền tệ cơ sở",
+    "ref": ""
+  },
+  "TAXSUMADDED": {
+    "en": "Added tax",
+    "vi": "Thuế cộng thêm",
+    "desc": "Phần thuế được cộng thêm, không tự xem là toàn bộ thuế",
+    "ref": ""
+  },
+  "BONUSSUM": {
+    "en": "Bonus sum",
+    "vi": "Tiền thưởng",
+    "desc": "Giá trị bonus theo tiền tệ cơ sở",
+    "ref": ""
+  },
+  "GLOBALIDENT": {
+    "en": "Global identifier",
+    "vi": "Mã định danh chung",
+    "desc": "Định danh toàn hệ thống của phần tử",
+    "ref": ""
+  },
+  "PRINTTRY": {
+    "en": "Print attempt count",
+    "vi": "Số lượt thử in",
+    "desc": "Số lần hệ thống thử in receipt",
+    "ref": ""
+  },
+  "ISBILL": {
+    "en": "Is bill flag",
+    "vi": "Là bill tạm?",
+    "desc": "Cờ nhận diện bản ghi bill/proforma",
+    "ref": ""
+  },
+  "IVOID": {
+    "en": "Receipt void reason ID",
+    "vi": "Mã lý do hủy",
+    "desc": "Mã loại/lý do void hóa đơn",
+    "ref": "ORDERVOIDS.SIFR"
+  },
+  "OPENVOIDNAME": {
+    "en": "Custom void reason",
+    "vi": "Tên lý do hủy",
+    "desc": "Nội dung tên lý do hủy do người dùng nhập",
+    "ref": ""
+  },
+  "IDELETEPERSON": {
+    "en": "Receipt deleter ID",
+    "vi": "NV xóa bill",
+    "desc": "Người thực hiện xóa hóa đơn",
+    "ref": "EMPLOYEES.SIFR"
+  },
+  "BASICRATE": {
+    "en": "Basic exchange rate",
+    "vi": "Tỷ giá cơ sở",
+    "desc": "Tỷ giá tiền tệ cơ sở; cần xác nhận hệ số quy đổi",
+    "ref": ""
+  },
+  "WASALLCHANGETOTIP": {
+    "en": "All change to tip",
+    "vi": "Tiền thừa thành tip?",
+    "desc": "Cờ chuyển toàn bộ tiền thừa thành tip",
+    "ref": ""
+  },
+  "BILLERROR": {
+    "en": "Receipt print error",
+    "vi": "Lỗi in bill?",
+    "desc": "Cờ có lỗi khi in hóa đơn",
+    "ref": ""
+  },
+  "INVOICEUNI": {
+    "en": "Invoice UNI",
+    "vi": "Mã hóa đơn VAT",
+    "desc": "Định danh bản ghi invoice liên kết",
+    "ref": "INVOICES.UNI"
+  },
+  "INVOICEPRINTED": {
+    "en": "Invoice printed flag",
+    "vi": "Đã in VAT?",
+    "desc": "Cờ invoice đã được in",
+    "ref": ""
+  },
+  "COPIESPRINTED": {
+    "en": "Printed copies",
+    "vi": "Số bản đã in",
+    "desc": "Số bản sao receipt được in",
+    "ref": ""
+  },
+  "IDRAWERSHIFT": {
+    "en": "Drawer registration shift",
+    "vi": "Ca ngăn tiền",
+    "desc": "Phiên đăng ký ngăn/két tiền",
+    "ref": "REGISTRATIONS.IDENT"
+  },
+  "IBUSINESSPERIOD": {
+    "en": "Business period ID",
+    "vi": "Kỳ kinh doanh",
+    "desc": "Mã kỳ kinh doanh",
+    "ref": "BUSINESSPERIODS.SIFR"
+  },
+  "IGNOREINREP": {
+    "en": "Ignore in reports",
+    "vi": "Bỏ qua báo cáo?",
+    "desc": "Cờ loại trừ bản ghi khỏi báo cáo phù hợp",
+    "ref": ""
+  },
+  "ISPREPAYRECEIPT": {
+    "en": "Prepayment receipt",
+    "vi": "Phiếu trả trước?",
+    "desc": "Cờ hóa đơn fiscal trả trước",
+    "ref": ""
+  },
+  "ISDEPOSITRECEIPT": {
+    "en": "Cash deposit receipt",
+    "vi": "Phiếu nộp tiền?",
+    "desc": "Cờ chứng từ fiscal nộp tiền vào két",
+    "ref": ""
+  },
+  "ISWITHDRAWALRECEIPT": {
+    "en": "Cash withdrawal receipt",
+    "vi": "Phiếu rút tiền?",
+    "desc": "Cờ chứng từ fiscal rút tiền khỏi két",
+    "ref": ""
+  },
+  "ISTARERECEIPT": {
+    "en": "Repurchase receipt",
+    "vi": "Phiếu mua lại?",
+    "desc": "Cờ phiếu fiscal mua lại/thu hồi hàng",
+    "ref": ""
+  },
+  "SQI": {
+    "en": "Service quality index",
+    "vi": "Chỉ số dịch vụ",
+    "desc": "Chỉ số chất lượng dịch vụ",
+    "ref": ""
+  },
+  "GUIDSTRING": {
+    "en": "Record GUID",
+    "vi": "GUID bản ghi",
+    "desc": "Mã GUID duy nhất của hóa đơn",
+    "ref": ""
+  },
+  "PAYFISCALSUM": {
+    "en": "Fiscal payments sum",
+    "vi": "Tiền thanh toán fiscal",
+    "desc": "Tổng thanh toán fiscal theo nội tệ",
+    "ref": ""
+  },
+  "RECEIPTTAXTYPE": {
+    "en": "Receipt tax type",
+    "vi": "Loại thuế bill",
+    "desc": "Hệ thống thuế / Loại thuế của bill (0: Thuế phổ thông ОСН, 1: УСН Doanh thu, 2: УСН DT-CP, 3: ЕНВД, 4: ЕСХН, 5: Патент). Dùng để tự động tách hóa đơn theo chế độ thuế.",
+    "ref": "0: ОСН (general) | 1: УСН доход | 2: УСН доход-расход | 3: ЕНВД | 4: ЕСХН | 5: Патент"
+  },
+  "BILLPRINTED": {
+    "en": "Bill printed flag",
+    "vi": "Đã in tạm tính?",
+    "desc": "Cờ ghi nhận đã in bill",
+    "ref": ""
+  },
+  "DBSTATUS": {
+    "en": "Database status",
+    "vi": "Trạng thái DB",
+    "desc": "Trạng thái lưu trữ; -1 được xem là xóa theo tài liệu",
+    "ref": ""
+  },
+  "DELETEPRINTNUMBER": {
+    "en": "Deletion print number",
+    "vi": "Số phiếu xóa",
+    "desc": "Số chứng từ in xóa receipt",
+    "ref": ""
+  },
+  "FISCDOCNUMBER": {
+    "en": "Fiscal document number",
+    "vi": "Số chứng từ fiscal",
+    "desc": "Số fiscal của chứng từ in receipt",
+    "ref": ""
+  },
+  "DELETEFISCDOCNUMBER": {
+    "en": "Fiscal deletion document",
+    "vi": "Số fiscal xóa",
+    "desc": "Số fiscal của chứng từ xóa receipt",
+    "ref": ""
+  },
+  "GLOBALFISCALID": {
+    "en": "Global fiscal ID",
+    "vi": "Mã fiscal chung",
+    "desc": "Định danh fiscal toàn cục của hóa đơn",
+    "ref": ""
+  },
+  "TRANSACT_GUID": {
+    "en": "Transaction record GUID",
+    "vi": "GUID giao dịch",
+    "desc": "GUID định danh thời điểm/bản ghi giao dịch đồng bộ",
+    "ref": ""
+  }
+}

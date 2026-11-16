@@ -1,0 +1,33 @@
+{
+  "XOA_CA_CHUNG_TREN_DATABASE.sql": {
+    "title": "XÓA CA CHUNG TRÊN DATABASE",
+    "description": "Script dùng để xóa ca chung trên database của nhà hàng khi bị lỗi lệch giờ hoặc kẹt ca.",
+    "tags": [
+      "#DELETE_CACHUNG",
+      "#SHIFTDATE",
+      "#DATABASE"
+    ],
+    "is_favorite": true
+  },
+  "SCRIPT_CHECK_DATA_SKYMONITOR_VS_RK7.sql": {
+    "title": "SCRIPT CHECK DATA SKYMONITOR VS RK7",
+    "description": "Script dùng so sánh dữ liệu của Skymonitor và RK7 (sau khi đóng ca chung) xem có bị lệch hay không.",
+    "tags": [
+      "#SKYMONITOR",
+      "#RK7",
+      "#DATA",
+      "#CACHUNG"
+    ],
+    "is_favorite": false
+  },
+  "SCRIPT_CHECK_XEM_SHIFTNUM_CO_BI_TRUNG.sql": {
+    "title": "SCRIPT CHECK XEM SHIFTNUM CÓ BỊ TRÙNG",
+    "description": "Dùng để kiểm tra 1 nhà có bị trùng ca chung, nhận diện những ca chung bị trùng lặp.",
+    "tags": [
+      "#SQL",
+      "#CHECK_SHIFTNUM",
+      "#TRUNG_SHIFT"
+    ],
+    "is_favorite": false
+  }
+}
